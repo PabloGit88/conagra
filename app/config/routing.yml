@@ -1,4 +1,4 @@
-odiseo_con_angra:
-    resource: "@OdiseoConAngraBundle/Resources/config/main.yml"
+odiseo_con_agra:
+    resource: "@OdiseoConAgraBundle/Resources/config/main.yml"
     prefix:   /
 

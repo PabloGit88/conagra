@@ -1,2 +1,0 @@
-odiseo_con_angra_frontend:
-    resource: "@OdiseoConAngraBundle/Resources/config/routing/frontend/main.yml"
