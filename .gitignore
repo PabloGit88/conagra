@@ -2,7 +2,7 @@
 /app/bootstrap*
 
 # Symfony directories
-/vendor/*
+/vendor/
 app/logs/*
 app/cache/*
 web/css/*
@@ -13,7 +13,7 @@ web/uploads/*
 web/bundles/*
 web/assets/compiled/*
 web/media/*
-composer.lock
+/composer.lock
 
 
 # Configuration files
