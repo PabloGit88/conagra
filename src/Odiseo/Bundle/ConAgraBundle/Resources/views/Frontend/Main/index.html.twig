@@ -1,35 +1,9 @@
-{% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
- 
- 
+{% extends 'OdiseoConAgraBundle:Frontend:intro_layout.html.twig' %}
  
 {% block content %}
-
- 	<div class="container-fluid wrapper" style="background-image: url(/bundles/odiseoconagra/images/background_bienvenida.jpg);">
-	
-		<header>
-			<div class="row-fluid">
-				<div class="col-md-12">
-					<img  class="img-responsive" src="{{ asset('bundles/odiseoconagra/images/header_bienvenida.jpg') }}">
-				</div>
-			</div>
-		</header>
-		
-		<div class="row-fluid">
-		
-		
-		<!-- register -->
-			{{ include('OdiseoConAgraBundle:Frontend/Main:registerForm.html.twig') }}
-		
-		</div>
-		
-		<footer>
-		<div class="row-fluid">
-			<div class="col-md-12">
-				<img  class="img-responsive" src="{{ asset('bundles/odiseoconagra/images/footer_bienvenida.jpg') }}">
-			</div>
-		</div>
-
-		</footer>
-
-	</div>
+<!-- register -->
+<h2>Bienvenido</h2>
+<h4>Plataforma de Información ConAgra</h4>
+<a href="{{ path('odiseo_conagra_frontend_register') }}">Nuevo ingreso / registro</a>
+<a href="{{ path('odiseo_conagra_frontend_login') }}">Login</a>
 {% endblock %}

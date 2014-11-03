@@ -2,23 +2,32 @@ html, body {
     margin: 0;
     padding: 0;
     height:100%;
+    width: 100%;
 }
 
 .wrapper {
-    position: absolute;
+	background: url(../images/background_bienvenida.jpg) no-repeat;
+    background-size:cover;
     width: 100%;
     height: 100%;
-    z-index: 0;
-    background-size:cover;
+    padding: 0;
 }
 
-footer{
-	position:absolute;
+.wrapper > header > div,
+.wrapper > footer > div {
+	padding: 0;
+}
+
+.wrapper > header > div img,
+.wrapper > footer > div img {
+	width: 100%;
+}
+	
+.wrapper > section {
+}
+
+.wrapper > footer {
+	width: 100%;
+	position: fixed;
 	bottom: 0px;
 } 
-
-header{
-	position:absolute;
-	top: 0px;
-} 
-

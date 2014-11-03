@@ -10,4 +10,14 @@ class MainController extends Controller
     {
         return $this->render('OdiseoConAgraBundle:Frontend/Main:index.html.twig');
     }
+    
+    public function registerAction()
+    {
+    	return $this->render('OdiseoConAgraBundle:Frontend/Main:register.html.twig');
+    }
+    
+    public function loginAction()
+    {
+    	return $this->render('OdiseoConAgraBundle:Frontend/Main:login.html.twig');
+    }
 }
