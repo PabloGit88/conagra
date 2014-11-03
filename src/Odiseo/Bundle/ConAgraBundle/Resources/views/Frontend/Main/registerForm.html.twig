@@ -1,6 +1,6 @@
 <div class="registerForm">
 	<form class="form" action="#" method="post" id="register-form">
-			<div class="row">
+			<div class="row-fluid">
 				<div class="col-xs-12 col-sm-4">
 					<input type="text" class="form-control" name="register[fullname]" id="register_fullname" placeholder="Nombre y Apellido"
 						data-rule-required="true"
@@ -17,8 +17,8 @@
               		>
 				</div>       
 			</div>
-          	<div class="row">
-            	<div class="col-xs-12 col-sm-4">
+          	<div class="row-fluid">
+            	<div class="col-xs-12 col-md-12 col-sm-4">
               		<select class="form-control" name="register[provincia]" id="register_provincia"
               			data-rule-required="true"
               		>
@@ -33,7 +33,7 @@
 						<option value="Santiago del Estero">Santiago del Estero</option> <option value="Tierra del Fuego">Tierra del Fuego</option> <option value="Tucuman">Tucuman</option>
            			</select>
             	</div>
-            	<div class="col-xs-12 col-sm-4">
+            	<div class="col-xs-12 col-md-12 col-sm-4">
               		<input type="text" class="form-control" name="register[dni]" id="register_dni" placeholder="DNI"
               			maxlength="8"
 						data-rule-required="true" data-rule-minlength="8" data-rule-maxlength="8"  data-rule-digits="true"

@@ -1,6 +1,35 @@
 {% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
  
+ 
+ 
 {% block content %}
-	<!-- register -->
-	{{ include('OdiseoConAgraBundle:Frontend/Main:registerForm.html.twig') }}
+
+ 	<div class="container-fluid wrapper" style="background-image: url(/bundles/odiseoconagra/images/background_bienvenida.jpg);">
+	
+		<header>
+			<div class="row-fluid">
+				<div class="col-md-12">
+					<img  class="img-responsive" src="{{ asset('bundles/odiseoconagra/images/header_bienvenida.jpg') }}">
+				</div>
+			</div>
+		</header>
+		
+		<div class="row-fluid">
+		
+		
+		<!-- register -->
+			{{ include('OdiseoConAgraBundle:Frontend/Main:registerForm.html.twig') }}
+		
+		</div>
+		
+		<footer>
+		<div class="row-fluid">
+			<div class="col-md-12">
+				<img  class="img-responsive" src="{{ asset('bundles/odiseoconagra/images/footer_bienvenida.jpg') }}">
+			</div>
+		</div>
+
+		</footer>
+
+	</div>
 {% endblock %}
