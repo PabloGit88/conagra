@@ -1,9 +1,17 @@
 {% extends 'OdiseoConAgraBundle:Frontend:intro_layout.html.twig' %}
  
 {% block content %}
-<!-- register -->
-<h2>Bienvenido</h2>
-<h4>Plataforma de Información ConAgra</h4>
-<a href="{{ path('odiseo_conagra_frontend_register') }}">Nuevo ingreso / registro</a>
-<a href="{{ path('odiseo_conagra_frontend_login') }}">Login</a>
+<div class="welcome">
+	<img src="{{ asset('bundles/odiseoconagra/images/logo_conagra_white.png') }}" class="logo center-block">
+	<h2>Bienvenido</h2>
+	<h4>Plataforma de Información ConAgra</h4>
+	<ul class="actions">
+		<li>
+			<a href="{{ path('odiseo_conagra_frontend_register') }}" class="btn btn-borderer">Nuevo ingreso / registro</a>
+		</li>
+		<li>
+			<a href="{{ path('odiseo_conagra_frontend_login') }}" class="btn btn-borderer">Login</a>
+		</li>
+	</ul>
+</div>
 {% endblock %}
