@@ -1,54 +1,55 @@
 <div class="registerForm">
-	<form class="form" action="#" method="post" id="register-form">
-			<div class="row-fluid">
-				<div class="col-xs-12 col-sm-4">
-					<input type="text" class="form-control" name="register[fullname]" id="register_fullname" placeholder="Nombre y Apellido"
-						data-rule-required="true"
-					>
-				</div>
-				<div class="col-xs-12 col-sm-4">
-					<input type="text" class="form-control" name="register[mail]" id="register_mail" placeholder="Email"
-						data-rule-required="true" data-rule-email="true"
-					>
-				</div>
-				<div class="col-xs-12 col-sm-4">
-              		<input type="text" class="form-control" name="register[telefono]" id="register_telefono" placeholder="Teléfono"
-              			data-rule-digits="true"
-              		>
-				</div>       
-			</div>
-          	<div class="row-fluid">
-            	<div class="col-xs-12 col-md-12 col-sm-4">
-              		<select class="form-control" name="register[provincia]" id="register_provincia"
+	<form class="form" action="#" method="post">
+          	<div class="row form-group">
+            	<div class="col-xs-6 col-sm-6">
+              		<select class="form-control" name="register[country]" id="register_country"
               			data-rule-required="true"
               		>
               			<option value="">Provincia</option>
-               			<option value="Buenos Aires">Buenos Aires</option>
-						<option value="Ciudad de Buenos Aires">Ciudad de Buenos Aires</option>
-						<option value="Catamarca">Catamarca</option> <option value="Chaco">Chaco</option> <option value="Chubut">Chubut</option> <option value="Cordoba">Cordoba</option>
-						<option value="Corrientes">Corrientes</option> <option value="Entre Rios">Entre Rios</option> <option value="Formosa">Formosa</option> <option value="Jujuy">Jujuy</option>
-						<option value="La Pampa">La Pampa</option> <option value="La Rioja">La Rioja</option> <option value="Mendoza">Mendoza</option> <option value="Misiones">Misiones</option>
-						<option value="Neuquen">Neuquen</option> <option value="Rio Negro">Rio Negro</option> <option value="Salta">Salta</option> <option value="San Juan">San Juan</option>
-						<option value="San Luis">San Luis</option> <option value="Santa Cruz">Santa Cruz</option> <option value="Santa Fe">Santa Fe</option>
-						<option value="Santiago del Estero">Santiago del Estero</option> <option value="Tierra del Fuego">Tierra del Fuego</option> <option value="Tucuman">Tucuman</option>
+               			<option value="Argentina">Argentina</option>
+						<option value="Estados Unidos">Estados Unidos</option>
            			</select>
             	</div>
-            	<div class="col-xs-12 col-md-12 col-sm-4">
-              		<input type="text" class="form-control" name="register[dni]" id="register_dni" placeholder="DNI"
-              			maxlength="8"
-						data-rule-required="true" data-rule-minlength="8" data-rule-maxlength="8"  data-rule-digits="true"
+            	<div class="col-xs-6 col-sm-6">
+              		<input type="text" class="form-control" name="register[distributor]" id="register_distributor" placeholder="Distribuidor"
+						data-rule-required="true"
               		>
             	</div>
-            	<div class="col-xs-12 col-sm-4">
-              		<select class="form-control" name="register[edad]" id="register_edad"
+          	</div>
+			<div class="row form-group">
+				<div class="col-xs-6 col-sm-6">
+					<input type="text" class="form-control" name="register[name]" id="register_name" placeholder="Nombre"
+						data-rule-required="true"
+					>
+				</div>
+				<div class="col-xs-6 col-sm-6">
+					<input type="text" class="form-control" name="register[mail]" id="register_mail" placeholder="Mail"
+						data-rule-required="true" data-rule-email="true"
+					>
+				</div>     
+			</div>
+			<div class="row form-group">
+            	<div class="col-xs-6 col-sm-6">
+              		<select class="form-control" name="register[charge]" id="register_charge"
               			data-rule-required="true" data-rule-digits="true"
              			>
-              			<option value="">Edad</option>
-              			{% for age in 18..80 %}
-              			<option value="{{ age }}">{{ age }}</option>
-                		{% endfor %}
+              			<option value="">Cargo</option>
+              			<option value="1">Empresario</option>
              		</select>
            		</div>
-          	</div>
+				<div class="col-xs-6 col-sm-6">
+					<input type="password" class="form-control" name="register[password]" id="register_password" placeholder="Crear contraseña"
+						data-rule-required="true"
+					>
+				</div>     
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-sm-6">
+				</div>
+				<div class="col-xs-6 col-sm-6 buttons">
+					<button type="submit" class="btn btn-default">Cancelar</button>
+					<button type="submit" class="btn btn-danger">Ingresar</button>
+				</div>
+			</div>
 	</form>
 </div>
