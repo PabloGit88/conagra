@@ -6,3 +6,7 @@
 	padding-right: 30px;
 	background: url(../images/arrow.png) no-repeat right 10px center;
 }
+
+section .error{
+	border-color: red;	
+}
