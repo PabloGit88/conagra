@@ -1,11 +1,2 @@
-odiseo_conagra_frontend_index:
-    path:     /
-    defaults: { _controller: OdiseoConAgraBundle:Frontend/Main:index }
-
-odiseo_conagra_frontend_register:
-    path:     /register
-    defaults: { _controller: OdiseoConAgraBundle:Frontend/Main:register }
-    
-odiseo_conagra_frontend_login:
-    path:     /login
-    defaults: { _controller: OdiseoConAgraBundle:Frontend/Main:login }
+odiseo_conangra_frontend_intro:
+    resource: "@OdiseoConAgraBundle/Resources/config/routing/frontend/intro.yml"

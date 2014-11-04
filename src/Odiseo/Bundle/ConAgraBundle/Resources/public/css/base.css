@@ -1,0 +1,8 @@
+.btn-borderer,
+.btn-borderer:hover {
+	color: #FFFFFF;
+	border: 2px solid #FFFFFF;
+	font-size: 18px;
+	padding-right: 30px;
+	background: url(../images/arrow.png) no-repeat right 10px center;
+}

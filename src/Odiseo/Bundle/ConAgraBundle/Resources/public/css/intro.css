@@ -1,0 +1,101 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height:100%;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+	background: url(../images/background_bienvenida.jpg) no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.wrapper > header > div,
+.wrapper > footer > div {
+	padding: 0;
+}
+
+.wrapper > header > div img,
+.wrapper > footer > div img {
+	width: 100%;
+}
+
+.wrapper > footer {
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+} 
+
+
+/** Welcome screen **/
+section .welcome .logo {
+	margin-top: 40px;
+}
+
+section .welcome h2 {
+	font-weight: 300;
+	font-size: 40px;
+	color: #cccaa7;
+	text-align: center;
+	margin-top: 40px;
+}
+
+section .welcome h4 {
+	font-size: 22px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+section .welcome ul.actions {
+	margin-top: 70px;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+section .welcome ul.actions li {
+	display: inline-block;
+}
+
+/** Register form **/
+section .registerForm {
+	width: 531px;
+	height: 242px;
+	background-color: #f4f4f4;
+	
+}
+
+section .registerForm form {
+	padding: 20px;
+}
+
+section .registerForm form input, 
+section .registerForm form select {
+	width: 240px;
+	height: 40px;
+}
+
+section .registerForm form .form-group {
+	margin-bottom: 10px;
+}
+
+section .registerForm form button {
+	margin:0;
+}
+
+section .registerForm form button:first-child {
+	width: 91px;
+	height: 43px;
+	margin-right: 14px;
+}
+
+section .registerForm form button:last-child {
+	width: 121px;
+	height: 43px;
+}

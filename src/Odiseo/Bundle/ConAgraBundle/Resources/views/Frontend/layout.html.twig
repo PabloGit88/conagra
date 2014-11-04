@@ -16,33 +16,19 @@
 	    
 		{# stylesheets... #}
 		{% block stylesheets %}
-		{% stylesheets output='css/intro.min.css' filter='cssrewrite'
+		{% stylesheets output='css/frontend.min.css' filter='cssrewrite'
 			'bundles/odiseoconagra/css/bootstrap.min.css'
 			'bundles/odiseoconagra/css/base.css'
-			'bundles/odiseoconagra/css/intro.css'
+			'bundles/odiseoconagra/css/main.css'
 		%}
 		<link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
 		{% endstylesheets %}
 		{% endblock %}
     </head>
     <body>
-    	<div class="container-fluid wrapper">
-			<header class="row-fluid">
-				<div class="col-md-12">
-					<img class="img-responsive" src="{{ asset('bundles/odiseoconagra/images/header_bienvenida.jpg') }}">
-				</div>
-			</header>
-    		<section class="row-fluid">
-    			<div class="col-md-12">
-					{% block content %}
-					{% endblock %}
-				</div>
-			</section>
-			<footer class="row-fluid">
-				<div class="col-md-12">
-					<img  class="img-responsive" src="{{ asset('bundles/odiseoconagra/images/footer_bienvenida.jpg') }}">
-				</div>
-			</footer>
+    	<div class="container wrapper">
+			{% block content %}
+			{% endblock %}
 		</div>
     </body>
 </html>
