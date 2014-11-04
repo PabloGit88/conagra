@@ -31,3 +31,36 @@ html, body {
 	position: fixed;
 	bottom: 0px;
 } 
+
+/* register form */
+.container .registerForm{
+	width: 531px;
+	height: 242px;
+	background-color: #f4f4f4;
+	
+}
+
+.container .registerForm form{
+	padding: 20px;
+}
+.container .registerForm form input, .container .registerForm form select{
+	width: 240px;
+	height: 40px;
+}
+
+.container .registerForm form .form-group{
+	margin-bottom: 10px;
+}
+.container .registerForm form button{
+	margin:0;
+}
+.container .registerForm form button:first-child{
+	width: 91px;
+	height: 43px;
+	margin-right: 14px;
+}
+
+.container .registerForm form button:last-child{
+	width: 121px;
+	height: 43px;
+}
