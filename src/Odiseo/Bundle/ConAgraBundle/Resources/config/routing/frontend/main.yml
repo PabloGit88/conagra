@@ -1,2 +1,6 @@
 odiseo_conangra_frontend_intro:
     resource: "@OdiseoConAgraBundle/Resources/config/routing/frontend/intro.yml"
+    
+odiseo_conangra_frontend_quien_es:
+    prefix:   /secure/quien-es-conagra
+    resource: "@OdiseoConAgraBundle/Resources/config/routing/frontend/quien_es.yml"

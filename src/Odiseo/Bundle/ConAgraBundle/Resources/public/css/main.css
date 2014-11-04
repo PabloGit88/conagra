@@ -7,3 +7,20 @@ html, body {
     text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 }
+
+body {
+	background: url(../images/background.jpg) no-repeat;
+	background-size: cover;
+	background-position: bottom center;
+}
+
+.wrapper {	
+	height: 100%;
+	position: relative;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}

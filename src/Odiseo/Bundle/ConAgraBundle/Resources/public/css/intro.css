@@ -61,6 +61,7 @@ section .welcome ul.actions {
 
 section .welcome ul.actions li {
 	display: inline-block;
+	margin-left: 10px;
 }
 
 /** Register form **/
