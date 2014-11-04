@@ -2,5 +2,12 @@
  
 {% block content %}
 <!-- register -->
-{{ include('OdiseoConAgraBundle:Frontend/Intro:registerForm.html.twig') }}
+<div class="welcome">
+	<img src="{{ asset('bundles/odiseoconagra/images/logo_conagra_white.png') }}" class="logo center-block">
+	<h4>Plataforma de Información ConAgra</h4>
+	<div class="registerForm center-block">
+		{{ include('OdiseoConAgraBundle:Frontend/Intro:registerForm.html.twig') }}
+	</div>
+</div>
+
 {% endblock %}

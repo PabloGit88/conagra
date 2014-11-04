@@ -61,8 +61,9 @@ section .welcome ul.actions {
 
 section .welcome ul.actions li {
 	display: inline-block;
+	margin-left: 10px;
 }
-
+/* INTRO FORMS */
 /** Register form **/
 section .registerForm {
 	width: 531px;
@@ -71,31 +72,58 @@ section .registerForm {
 	
 }
 
-section .registerForm form {
+section .registerForm form, section .loginForm form {
 	padding: 20px;
 }
 
-section .registerForm form input, 
-section .registerForm form select {
-	width: 240px;
+section .registerForm form input, section .registerForm form select, section .loginForm form input {
 	height: 40px;
 }
 
-section .registerForm form .form-group {
+section .registerForm form .customSelect select{
+   background: transparent;
+   padding: 5px;
+   line-height: 1;
+   -webkit-appearance: none;
+ }
+
+section .registerForm form .customSelect {
+   overflow: hidden;
+   background: url(../images/arrow_select.png) no-repeat right 25px center;
+}
+   
+section .registerForm form .form-group, section .loginForm form .form-group {
 	margin-bottom: 10px;
 }
 
-section .registerForm form button {
+section .registerForm form button, section .loginForm form button  {
 	margin:0;
 }
 
-section .registerForm form button:first-child {
+section .registerForm form .cancelButton,section .loginForm form .cancelButton{
 	width: 91px;
 	height: 43px;
-	margin-right: 14px;
 }
 
-section .registerForm form button:last-child {
+section .registerForm form .submitButton,section .loginForm form .submitButton {
 	width: 121px;
 	height: 43px;
+	float: right;
 }
+
+/* loginForm */
+
+section .loginForm {
+	width: 284px;
+	height: 213px;
+	background-color: #f4f4f4;
+	margin-top:35px;
+	
+}
+section .loginForm form {
+	padding: 35px 23px 23px 23px;
+}
+section .loginForm form .buttons{
+	margin-top:10px;
+}
+/**/
