@@ -19,6 +19,65 @@ body {
 	position: relative;
 }
 
+header .navbar-default {
+	background: none;
+	border: none;	
+}
+
+header .navbar .navbar-brand {
+	padding: 15px 0;
+	height: auto;	
+} 
+
+header .navbar-nav {
+	float: right;	
+}
+
+header .navbar-nav > li {
+	display: table;
+	width: 130px;
+	height: 123px;
+}
+
+header .navbar-nav > li > a {	
+	display: table-cell;
+	height: 100%;
+	vertical-align: middle;
+	color: #333333;
+	padding: 0;
+}
+
+header .navbar-default .navbar-nav>.active>a, 
+header .navbar-default .navbar-nav>.active>a:hover, 
+header .navbar-default .navbar-nav>.active>a:focus {
+	background: none;
+}
+
+header .navbar-nav > li > a span {
+	display: block;
+	display: table-cell;
+	height: 42px;
+	padding: 0 15px;
+	border-left: 1px solid #333333;
+	vertical-align: middle;
+}
+
+header .navbar-default .navbar-nav>.active>a span, 
+header .navbar-default .navbar-nav>.active>a:hover span, 
+header .navbar-default .navbar-nav>.active>a:focus span {
+	border-left: 1px solid #cf3232;
+	color: #cf3232;
+}
+
+#content .mainTitle {
+	font-family: 'hand_of_sean_demoregular';
+	font-size: 22px;
+	padding-left: 40px;
+	background: url(../images/fruit.png) no-repeat;
+	background-size: contain;
+	background-position: left center;
+}
+
 footer {
 	position: absolute;
 	bottom: 0;
