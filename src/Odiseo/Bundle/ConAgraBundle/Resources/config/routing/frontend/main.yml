@@ -4,3 +4,19 @@ odiseo_conangra_frontend_intro:
 odiseo_conangra_frontend_quien_es:
     prefix:   /secure/quien-es-conagra
     resource: "@OdiseoConAgraBundle/Resources/config/routing/frontend/quien_es.yml"
+
+odiseo_conangra_frontend_entrenamiento_marcas:
+    prefix:   /secure/entrenamiento-marcas
+    resource: "@OdiseoConAgraBundle/Resources/config/routing/frontend/entrenamiento_marcas.yml"
+   
+odiseo_conangra_frontend_conagra_latam:
+    prefix:   /secure/conagra-latam
+    resource: "@OdiseoConAgraBundle/Resources/config/routing/frontend/conagra_latam.yml"
+    
+odiseo_conangra_frontend_planogramas:
+    prefix:   /secure/planogramas
+    resource: "@OdiseoConAgraBundle/Resources/config/routing/frontend/planogramas.yml"    
+    
+odiseo_conangra_frontend_promociones:
+    prefix:   /secure/promociones
+    resource: "@OdiseoConAgraBundle/Resources/config/routing/frontend/promociones.yml"

@@ -1,0 +1,7 @@
+odiseo_conagra_frontend_planogramas_index:
+    path:     /
+    defaults: { _controller: OdiseoConAgraBundle:Frontend/Planogramas:index }
+    
+odiseo_conagra_frontend_planogramas_page:
+    path:     /{page}
+    defaults: { _controller: OdiseoConAgraBundle:Frontend/Planogramas:showPage }
