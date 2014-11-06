@@ -128,7 +128,7 @@ section .loginForm form .buttons{
 
 /* header */
 .header, .footer{
-	height: 20%
+	height: 15%;
 }
 
 .header img{	
