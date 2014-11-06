@@ -3,9 +3,10 @@ odiseo_conagra_frontend_index:
     defaults: { _controller: OdiseoConAgraBundle:Frontend/Intro:index }
 
 odiseo_conagra_frontend_register:
-    path:     /register
+    path:     /register2
     defaults: { _controller: OdiseoConAgraBundle:Frontend/Intro:register }
     
 odiseo_conagra_frontend_login:
-    path:     /login
+    path:     /login2
     defaults: { _controller: OdiseoConAgraBundle:Frontend/Intro:login }
+   

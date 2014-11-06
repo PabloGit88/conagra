@@ -18,6 +18,7 @@ class IntroController extends Controller
     
     public function loginAction()
     {
+    	
     	return $this->render('OdiseoConAgraBundle:Frontend/Intro:login.html.twig');
     }
 }

@@ -1,22 +1,23 @@
-<form class="form" action="#" method="post">
+<form class="form" action="{{ path("fos_user_security_check") }}" method="post" method="post">
 		<div class="row form-group">
 			<div class="col-xs-12 col-sm-12">
-				<input type="text" class="form-control" name="register[mail]" id="register_mail" placeholder="Mail"
+				<input type="text" class="form-control" name="_username" id="register_mail" placeholder="Mail"
 					data-rule-required="true" data-rule-email="true"
 				>
 			</div> 
 		</div>
 		<div class="row form-group">
 			<div class="col-xs-12 col-sm-12">
-				<input type="password" class="form-control" name="register[password]" id="register_password" placeholder="Contraseña"
+				<input type="password" class="form-control" name="_password" id="register_password" placeholder="Contraseña"
 					data-rule-required="true"
 				>
 			</div>     
 		</div>
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 buttons">
+	
 				<a href="{{ path('odiseo_conagra_frontend_index') }}" class="btn btn-default cancelButton">Cancelar</a>
-				<button type="submit" class="btn btn-danger submitButton">Ingresar</button>
+				<button  type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans({}, 'FOSUserBundle') }}"  class="btn btn-danger submitButton">Ingresar</button>
 			</div>
 		</div>
 </form>
