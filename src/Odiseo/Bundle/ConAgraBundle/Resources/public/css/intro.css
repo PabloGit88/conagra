@@ -67,7 +67,6 @@ section .welcome ul.actions li {
 /** Register form **/
 section .registerForm {
 	width: 531px;
-	height: 242px;
 	background-color: #f4f4f4;
 	
 }
@@ -110,12 +109,10 @@ section .registerForm form .submitButton,section .loginForm form .submitButton {
 	height: 43px;
 	float: right;
 }
-
 /* loginForm */
 
 section .loginForm {
 	width: 284px;
-	height: 213px;
 	background-color: #f4f4f4;
 	margin-top:35px;
 	
@@ -127,3 +124,14 @@ section .loginForm form .buttons{
 	margin-top:10px;
 }
 /**/
+
+
+/* MEDIA QUERYS */
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 768px)  { 
+
+	section .registerForm {
+		width: 87%;
+	}	
+}
