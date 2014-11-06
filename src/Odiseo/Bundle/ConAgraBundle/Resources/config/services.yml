@@ -2,3 +2,15 @@ services:
 #    odiseo_conangra.example:
 #        class: Odiseo\Bundle\ConAngraBundle\Example
 #        arguments: [@service_id, "plain_value", %parameter%]
+
+services:
+    conagra_user.registration.form.type:
+        class: Odiseo\Bundle\ConAgraBundle\Form\Type\RegistrationFormType
+        arguments: [%fos_user.model.user.class%]
+        tags:
+            - { name: form.type, alias: conagra_user_registration }
+    conagra_user.form.handler.registration:
+        class: Odiseo\Bundle\ConAgraBundle\Form\Handler\RegistrationFormHandler
+        arguments: ["@fos_user.registration.form", "@request", "@fos_user.user_manager", "@fos_user.mailer", "@fos_user.util.token_generator"]
+        scope: request
+        public: false

@@ -1,0 +1,12 @@
+{% extends 'OdiseoConAgraBundle:Frontend:intro_layout.html.twig' %}
+ 
+{% block content %}
+<!-- login -->
+<div class="welcome">
+	<img src="{{ asset('bundles/odiseoconagra/images/logo_conagra_white.png') }}" class="logo center-block">
+	<h4>Plataforma de Información ConAgra</h4>
+	<div class="loginForm center-block">
+		{{ include('OdiseoConAgraBundle:Frontend/Intro:loginForm.html.twig') }}
+	</div>
+</div>
+{% endblock %}

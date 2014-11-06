@@ -4,7 +4,7 @@
     $(document).ready(function() 
     {
     	var sending = false;
-    	$(".registerForm form, .loginForm form").validate(
+    	$(".registerForm form").validate(
     	{
 			onkeyup: false,
 			onclick: false,
@@ -22,10 +22,11 @@
 			},
 			invalidHandler: function(event, validator)
 			{
-				//alert("Debes completar todos los campos correctamente para continuar.");
+				alert("Debes completar todos los campos correctamente para continuar.");
 			},
 			submitHandler: function(form)
 			{	
+				alert("submit");
 				if(sending == false)
 	        	{
 					sending = true;
