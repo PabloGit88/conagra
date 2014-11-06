@@ -69,6 +69,25 @@ header .navbar-default .navbar-nav>.active>a:focus span {
 	color: #cf3232;
 }
 
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.content-image {
+	height:100%;
+    width: 100%;
+}
+
+#content {
+	position: absolute;
+	top: 123px;
+	bottom: 31px;
+	width: 100%;
+	overflow: auto;
+}
+
 #content .mainTitle {
 	font-family: 'hand_of_sean_demoregular';
 	font-size: 22px;
@@ -78,14 +97,19 @@ header .navbar-default .navbar-nav>.active>a:focus span {
 	background-position: left center;
 }
 
-footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
+#content .brands-container {
+	margin-top: 80px;
 }
 
-.content-image{
-	height:100%;
-    width: 100%;
-	
+#content .brands-container ul.brands {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#content .brands-container ul.brands li {
+	display: inline-block;
+	margin-right: 20px;
+	-webkit-box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.32);
+	-moz-box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.32);
+	box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.32); 
 }
