@@ -1,4 +1,4 @@
-<svg width="491.25" height="650" xmlns="http://www.w3.org/2000/svg">
+<svg width="491.25" height="640"  viewbox="0 0 102 102" xmlns="http://www.w3.org/2000/svg">
  <metadata id="metadata8">image/svg+xml</metadata>
  <defs>
   <clipPath clipPathUnits="userSpaceOnUse" id="clipPath16">
@@ -162,11 +162,7 @@
    <path d="m0,520l393,0l0,-520l-393,0l0,520z" id="path690"/>
   </clipPath>
  </defs>
- <g>
-  <title>background</title>
-  <rect fill="none" id="canvas_background" height="652" width="493.25" y="-1" x="-1"/>
- </g>
- <g>
+ <g  fill="opacity(0.5)">
   <title>Layer 1</title>
   <g transform="matrix(1.25,0,0,-1.25,0,650) " id="brasil">
    <g id="g14" clip-path="url(#clipPath16)">
