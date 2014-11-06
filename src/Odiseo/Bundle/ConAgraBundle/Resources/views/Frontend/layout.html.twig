@@ -38,17 +38,17 @@
 		        			<span class="icon-bar"></span>
 		        			<span class="icon-bar"></span>
 		      			</button>
-		      			<a class="navbar-brand" href="#"><img src="{{ asset('bundles/odiseoconagra/images/logo_conagra.png') }}"></a>
+		      			<a class="navbar-brand" href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'many-stories' }) }}"><img src="{{ asset('bundles/odiseoconagra/images/logo_conagra.png') }}"></a>
 	    			</div>
 	
 	    			<!-- Collect the nav links, forms, and other content for toggling -->
 	    			<div class="collapse navbar-collapse" id="mainMenu">
 	      				<ul class="nav navbar-nav">
 	        				<li class="active"><a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'many-stories' }) }}"><span>QUIÉN ES <strong>CONAGRA</strong></span></a></li>
-	        				<li><a href="#"><span>ENTRENAMIENTO <strong>DE MARCAS</strong></span></a></li>
-	        				<li><a href="#"><span>CONAGRA <strong>LATAM</strong></span></a></li>
+	        				<li><a href="{{ path('odiseo_conagra_frontend_entrenamiento_marcas_page', { 'page': 'our-core-brands' }) }}"><span>ENTRENAMIENTO <strong>DE MARCAS</strong></span></a></li>
+	        				<li><a href="{{ path('odiseo_conagra_frontend_conagra_latam_page', { 'page': 'conagra-latam' }) }}"><span>CONAGRA <strong>LATAM</strong></span></a></li>
 	        				<li><a href="{{ path('odiseo_conagra_frontend_planogramas_index') }}"><span>PLANOGRAMAS</span></a></li>
-	        				<li><a href="#"><span>PROMOCIONES</span></a></li>
+	        				<li><a href="{{ path('odiseo_conagra_frontend_promociones_page', { 'page': 'promociones' }) }}"><span>PROMOCIONES</span></a></li>
 	      				</ul>
 	    			</div><!-- /.navbar-collapse -->
 				</nav>
