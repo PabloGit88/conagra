@@ -1,0 +1,17 @@
+/* Bootrstrap max XS */ 
+@media only screen and (max-width : 768px)  
+{ 
+}
+
+/* Bootrstrap max MD */
+@media only screen and (max-width : 768px)  
+{ 
+	header .navbar-nav > li {
+		width: 80px;
+		font-size: 10px;
+	}
+	
+	header .navbar-nav > li > a {
+		line-height: 16px;
+	}
+}
