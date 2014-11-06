@@ -27,21 +27,51 @@
     </head>
     <body>
     	<div class="container-fluid wrapper">
-			<header class="row-fluid">
-				<div class="col-md-12">
-					<img class="img-responsive" src="{{ asset('bundles/odiseoconagra/images/header_bienvenida.jpg') }}">
+			<header class="row-fluid header">
+				<div class="col-md-2 col-sm-2 col-xs-2 marca ACTII">
 				</div>
+				<div class="col-md-2 col-sm-2 col-xs-2 marca bonnet">					
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-2 marca hunts">					
+				</div>		
+				<div class="col-md-2 col-sm-2 col-xs-2 marca vancamps">					
+				</div>		
+				<div class="col-md-2 col-sm-2 col-xs-2 marca pam">					
+				</div>		
+				<div class="col-md-2 col-sm-2 col-xs-2 marca wesson">					
+				</div>		
 			</header>
     		<section class="row-fluid">
     			<div class="col-md-12">
+
+			        {% for type, messages in app.session.flashBag.all %}
+			            {% for message in messages %}
+			                <div class="{{ type }}">
+			                    {{ message|trans({}, 'FOSUserBundle') }}
+			                </div>
+			            {% endfor %}
+			        {% endfor %}
+    			
 					{% block content %}
 					{% endblock %}
 				</div>
 			</section>
-			<footer class="row-fluid">
-				<div class="col-md-12">
-					<img  class="img-responsive" src="{{ asset('bundles/odiseoconagra/images/footer_bienvenida.jpg') }}">
+			<footer class="row-fluid footer">
+				<div class="col-md-2 col-sm-2 col-xs-2 marca snack">
 				</div>
+				<div class="col-md-2 col-sm-2 col-xs-2 marca healty">					
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-2 marca peterpan">					
+				</div>		
+				<div class="col-md-2 col-sm-2 col-xs-2 marca david">					
+				</div>		
+				<div class="col-md-2 col-sm-2 col-xs-2 marca swiss">					
+				</div>		
+				<div class="col-md-2 col-sm-2 col-xs-2 marca banquet">					
+				</div>					
+				<!--  <div class="col-md-12">
+					<img  class="img-responsive" src="{ { asset('bundles/odiseoconagra/images/footer_bienvenida.jpg') }}">
+				</div>-->
 			</footer>
 		</div>
 		<!-- javascript -->		

@@ -102,6 +102,7 @@ section .registerForm form button, section .loginForm form button  {
 section .registerForm form .cancelButton,section .loginForm form .cancelButton{
 	width: 91px;
 	height: 43px;
+	padding-top: 10px;
 }
 
 section .registerForm form .submitButton,section .loginForm form .submitButton {
@@ -125,13 +126,125 @@ section .loginForm form .buttons{
 }
 /**/
 
+/* header */
+.header, .footer{
+	height: 20%
+}
+
+.header img{	
+	width: 45% !important;
+	position: absolute;
+	right: 4%;
+	top: 30%;
+}
+
+.container-fluid .ACTII{
+	background: url(../images/marcas/ACTII.jpg) no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	height: 100%;
+	position: relative;
+}
+.container-fluid .bonnet{
+	background: url(../images/marcas/bonnet.jpg) no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	height: 100%;
+	position: relative;
+}
+.container-fluid .hunts{
+	background: url(../images/marcas/hunts.jpg) no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	height: 100%;
+	position: relative;
+}
+.container-fluid .vancamps{
+	background: url(../images/marcas/vancamps.jpg) no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	height: 100%;
+	position: relative;
+}
+.container-fluid .pam{
+	background: url(../images/marcas/pam.jpg) no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	height: 100%;
+	position: relative;
+}
+.container-fluid .wesson{
+	background: url(../images/marcas/wesson.jpg) no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	height: 100%;
+	position: relative;
+}
+
+
+/*footer */
+
+.container-fluid .snack{
+	background: url(../images/marcas/snack.jpg) no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	height: 100%;
+	position: relative;
+}
+.container-fluid .healty{
+	background: url(../images/marcas/healty2.jpg) no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	height: 100%;
+	position: relative;
+}
+.container-fluid .peterpan{
+	background: url(../images/marcas/peterpan.jpg) no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	height: 100%;
+	position: relative;
+}
+.container-fluid .david{
+	background: url(../images/marcas/david.jpg) no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	height: 100%;
+	position: relative;
+}
+.container-fluid .swiss{
+	background: url(../images/marcas/swiss.jpg) no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	height: 100%;
+	position: relative;
+}
+.container-fluid .banquet{
+	background: url(../images/marcas/banquet2.jpg) no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	height: 100%;
+	position: relative;
+}
+
 
 /* MEDIA QUERYS */
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 768px)  { 
-
+	
+	section .welcome-register .logo{
+		margin-top: 30px;
+		width: 47%;
+	}
+	section .welcome-register h4 {
+		font-size: 16px;
+	}
+	section .registerForm form {
+		padding: 17px;
+	}
 	section .registerForm {
 		width: 87%;
 	}	
+
 }
