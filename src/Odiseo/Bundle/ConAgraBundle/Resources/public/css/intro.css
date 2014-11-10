@@ -128,7 +128,7 @@ section .loginForm form .buttons{
 
 /* header */
 .header, .footer{
-	height: 20%
+	height: 15%;
 }
 
 .header img{	
@@ -139,7 +139,7 @@ section .loginForm form .buttons{
 }
 
 .container-fluid .ACTII{
-	background: url(../images/marcas/ACTII.jpg) no-repeat;
+	background: url(../images/marcas/actii.jpg) no-repeat;
 	background-size: cover;
 	background-position: center bottom;
 	height: 100%;
