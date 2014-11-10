@@ -1,5 +1,10 @@
 .planogramas{
 	height:100%;
+	overflow:auto;
+}
+
+
+.hunt_background{
 	background-image: url("/bundles/odiseoconagra/images/planogramas/hunts/hunts_tomatoes.png");
 	background-repeat: no-repeat;
 	background-position: 80% 100%;
