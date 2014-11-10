@@ -104,15 +104,17 @@ footer {
 
 #content .brands-container ul.brands {
 	text-align: center;
-	margin-bottom: 20px;
 }
 
 #content .brands-container ul.brands li {
 	display: inline-block;
 	margin-right: 20px;
-	-webkit-box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.32);
-	-moz-box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.32);
-	box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.32); 
+	margin-bottom: 20px;
+	
+	-webkit-filter: drop-shadow(10px 10px 14px rgba(0, 0, 0, 0.7));
+	filter: drop-shadow(10px 10px 14px 0px rgba(0, 0, 0, 0.32)); /*url(shadow.svg#drop-shadow);*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=10, OffY=10,Color='#000000')";
+	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=10, OffY=10, Color='#000000')";
 }
 
 .marca_descripcion
