@@ -45,7 +45,7 @@
 	    			<div class="collapse navbar-collapse" id="mainMenu">
 	      				<ul class="nav navbar-nav">
 	        				<li class="active"><a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'many-stories' }) }}"><span>QUIÉN ES <strong>CONAGRA</strong></span></a></li>
-	        				<li><a href="{{ path('odiseo_conagra_frontend_entrenamiento_marcas_page', { 'page': 'our-core-brands' }) }}"><span>ENTRENAMIENTO <strong>DE MARCAS</strong></span></a></li>
+	        				<li><a href="{{ path('odiseo_conagra_frontend_entrenamiento_marcas_index') }}"><span>ENTRENAMIENTO <strong>DE MARCAS</strong></span></a></li>
 	        				<li><a href="{{ path('odiseo_conagra_frontend_conagra_latam_page', { 'page': 'conagra-latam' }) }}"><span>CONAGRA <strong>LATAM</strong></span></a></li>
 	        				<li><a href="{{ path('odiseo_conagra_frontend_planogramas_index') }}"><span>PLANOGRAMAS</span></a></li>
 	        				<li><a href="{{ path('odiseo_conagra_frontend_promociones_page', { 'page': 'promociones' }) }}"><span>PROMOCIONES</span></a></li>
@@ -67,7 +67,8 @@
 		{% block javascripts %}
 		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 		{% javascripts output='js/frontend.min.js'
-			'bundles/odiseoconagra/js/vendor/bootstrap.min.js'
+		   'bundles/odiseoconagra/js/vendor/bootstrap.min.js'
+		   'bundles/odiseoconagra/js/main.js'	
 		%}
 		<script type="text/javascript" src="{{ asset_url }}"></script>
 		{% endjavascripts %}
