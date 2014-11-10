@@ -133,12 +133,31 @@ img.marca_descripcion{
 }
 
 #content .infoBrand {
-	
+	margin-bottom: 100px;
+}
+
+#content .infoBrand .tabs {
+	height: 60px;
+	width: 65%;
 }
 
 #content .infoBrand .info {
+	height: 326px;
 }
 
-#content .infoBrand .info {
-	background: url(../images/infobrand_info_background.png) no-repeat;
+#content .infoBrand .info .mainInfo {
+	float: left;
+	width: 65%;
+	height: 100%;
+	padding: 70px 100px 45px 45px;
+	background: url(../images/infoBrand/info_background.png) no-repeat;
+	background-size: cover;
+}
+
+#content .infoBrand .info .otherData {
+	float: left;
+	width: 332px;
+	height: 340px;
+	background: url(../images/infoBrand/other_data_box.png) no-repeat;
+	margin-left: -85px;
 }

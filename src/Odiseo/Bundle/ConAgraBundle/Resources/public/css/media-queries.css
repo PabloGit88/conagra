@@ -4,7 +4,7 @@
 }
 
 /* Bootrstrap max MD */
-@media only screen and (max-width : 768px)  
+@media only screen and (max-width : 992px)  
 { 
 	header .navbar-nav > li {
 		width: 80px;
