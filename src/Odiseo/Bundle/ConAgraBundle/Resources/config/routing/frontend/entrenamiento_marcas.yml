@@ -1,3 +1,7 @@
+odiseo_conagra_frontend_entrenamiento_marcas_index:
+    path:     /
+    defaults: { _controller: OdiseoConAgraBundle:Frontend/EntrenamientoMarcas:index }
+    
 odiseo_conagra_frontend_entrenamiento_marcas_page:
     path:     /{page}
     defaults: { _controller: OdiseoConAgraBundle:Frontend/EntrenamientoMarcas:showPage }
