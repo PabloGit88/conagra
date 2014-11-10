@@ -25,7 +25,7 @@ header .navbar-default {
 }
 
 header .navbar .navbar-brand {
-	padding: 15px 0;
+	padding: 38px 0;
 	height: auto;	
 } 
 
@@ -83,7 +83,7 @@ footer {
 
 #content {
 	position: absolute;
-	top: 123px;
+	top: 181px;
 	bottom: 31px;
 	width: 100%;
 	overflow: visible;
@@ -91,6 +91,7 @@ footer {
 
 #content .mainTitle {
 	font-family: 'hand_of_sean_demoregular';
+	margin: 0 0 20px 0;
 	font-size: 22px;
 	padding-left: 40px;
 	background: url(../images/fruit.png) no-repeat;
