@@ -36,7 +36,7 @@ header .navbar-nav {
 header .navbar-nav > li {
 	display: table;
 	width: 130px;
-	height: 123px;
+	height: 169px;
 }
 
 header .navbar-nav > li > a {	
@@ -85,7 +85,7 @@ footer {
 	position: absolute;
 	top: 181px;
 	bottom: 31px;
-	width: 100%;
+	width: 1140px;
 	overflow: visible;
 }
 
@@ -97,6 +97,26 @@ footer {
 	background: url(../images/fruit.png) no-repeat;
 	background-size: contain;
 	background-position: left center;
+}
+
+#content .mainTitleContent .backButton {
+	font-family: 'Roboto', sans-serif;
+	margin-right: 15px;
+	color: #333333;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	-khtml-opacity: 0.6;
+	opacity: 0.6;
+	text-decoration: none;
+}
+
+#content .mainTitleContent .backButton:hover {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
 }
 
 #content .brands-container {
@@ -273,4 +293,33 @@ img.marca_descripcion{
 
 #content .infoBrand .info .otherData .otherContent ul li {
 	margin-bottom: 10px;
+}
+
+#content .infoBrand .social {
+	position: relative;
+}
+
+#content .infoBrand .social ul {
+	margin: 0;
+	position: absolute;
+	left: 36px;
+	top: 12px;
+}
+
+#content .infoBrand .social ul li {
+	float: left;
+	margin-right: 6px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	-khtml-opacity: 0.6;
+	opacity: 0.6;
+}
+
+#content .infoBrand .social ul li:hover {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
 }

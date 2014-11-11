@@ -2,7 +2,10 @@
  
 {% block content %}
 <div class="entrenamiento_marcas">
-	<h1 class="mainTitle">Our Core Brands</h1>
+	<div class="mainTitleContent clearfix">
+		<h1 class="mainTitle pull-left">Entrenamiento de marcas</h1>
+		<a href="{{ path('odiseo_conagra_frontend_entrenamiento_marcas_index') }}" class="backButton pull-right">&larr; Volver a inicio</a>
+	</div>
 	<div class="infoBrand">
 		<div class="tabs">
 			<ul>
@@ -32,6 +35,14 @@ deben tener mayor espacio.
 					</ul>
 				</div>
 			</div>
+		</div>
+		<div class="social">
+			<ul>
+				<li><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/wp-icon.png') }}"></a></li>
+				<li><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/twitter-icon.png') }}"></a></li>
+				<li><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/facebook-icon.png') }}"></a></li>
+				<li><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/instagram-icon.png') }}"></a></li>
+			</ul>
 		</div>
 	</div>
 </div>

@@ -1,9 +1,12 @@
-/* Bootrstrap max XS */ 
-@media only screen and (max-width : 768px)  
+/* Bootrstrap max MD (> 992 && <= 1200) */
+@media only screen and (max-width : 1200px)  
 { 
+	#content {
+		width: 940px;
+	}
 }
 
-/* Bootrstrap max MD */
+/* Bootrstrap max SM (> 768 && <= 992) */
 @media only screen and (max-width : 992px)  
 { 
 	header .navbar-nav > li {
@@ -13,5 +16,17 @@
 	
 	header .navbar-nav > li > a {
 		line-height: 16px;
+	}
+	
+	#content {
+		width: 720px;
+	}
+}
+
+/* Bootrstrap max XS (<= 768) */ 
+@media only screen and (max-width : 768px)  
+{ 
+	#content {
+		width: auto;
 	}
 }
