@@ -32,7 +32,7 @@ div .indicaciones{
 	
 }
 
-div .logo
+.planograma .logo
 {
 	float: right;
 	width: 30%;
@@ -41,6 +41,18 @@ div .logo
 .planogramas a
 {
 	color:black;	
+}
+
+.planogramas .bordo{
+	color:#cf3232;
+}
+
+/** ACT II **/
+
+.act_background{
+	background-image: url("/bundles/odiseoconagra/images/planogramas/act II/pochoclos.png");
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
 }
 
 
