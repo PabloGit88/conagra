@@ -25,7 +25,7 @@ header .navbar-default {
 }
 
 header .navbar .navbar-brand {
-	padding: 15px 0;
+	padding: 38px 0;
 	height: auto;	
 } 
 
@@ -83,7 +83,7 @@ footer {
 
 #content {
 	position: absolute;
-	top: 123px;
+	top: 181px;
 	bottom: 31px;
 	width: 100%;
 	overflow: visible;
@@ -91,6 +91,7 @@ footer {
 
 #content .mainTitle {
 	font-family: 'hand_of_sean_demoregular';
+	margin: 0 0 20px 0;
 	font-size: 22px;
 	padding-left: 40px;
 	background: url(../images/fruit.png) no-repeat;
@@ -141,17 +142,93 @@ img.marca_descripcion{
 	width: 65%;
 }
 
+#content .infoBrand .tabs ul {
+	height: 100%;
+	margin: 0;
+	float: right;
+	margin-right: 25px;
+}
+
+#content .infoBrand .tabs ul li {
+	height: 100%;
+	float: left;
+}
+
+#content .infoBrand .tabs ul li a {
+	height: 100%;
+	display: block;
+}
+
+#content .infoBrand .tabs ul li a.infoMarca {
+	width: 130px;
+	background: url(../images/infoBrand/tab_blue_info.png) no-repeat;
+}
+
+#content .infoBrand .tabs ul li a.infoMarca:hover,
+#content .infoBrand .tabs ul li a.infoMarca.active {
+	background: url(../images/infoBrand/tab_blue_info_selected.png) no-repeat;
+}
+	
+#content .infoBrand .tabs ul li a.catalogo {
+	width: 135px;
+	background: url(../images/infoBrand/tab_blue_catalogo.png) no-repeat;
+}
+
+#content .infoBrand .tabs ul li a.catalogo:hover,
+#content .infoBrand .tabs ul li a.catalogo.active {
+	background: url(../images/infoBrand/tab_blue_catalogo_selected.png) no-repeat;
+}
+
+#content .infoBrand .tabs ul li a.manual {
+	width: 119px;
+	background: url(../images/infoBrand/tab_blue_manual.png) no-repeat;
+}
+
+#content .infoBrand .tabs ul li a.manual:hover,
+#content .infoBrand .tabs ul li a.manual.active {
+	background: url(../images/infoBrand/tab_blue_manual_selected.png) no-repeat;
+}
+
 #content .infoBrand .info {
 	height: 326px;
+	position: relative;
+}
+
+#content .infoBrand .info > img.logo {
+	position: absolute;
+	top: -48px;
+	left: 20px;
+	z-index: 999;
 }
 
 #content .infoBrand .info .mainInfo {
 	float: left;
 	width: 65%;
 	height: 100%;
-	padding: 70px 100px 45px 45px;
+	padding: 60px 120px 45px 45px;
 	background: url(../images/infoBrand/info_background.png) no-repeat;
 	background-size: cover;
+	-webkit-filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.4));
+	filter: drop-shadow(0px 8px 7px rgba(0, 0, 0, 0.4));
+	-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=8, OffY=7,Color='#000000')";
+	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=8, OffY=7, Color='#000000')";
+}
+
+#content .infoBrand .info .mainInfo h3 {
+	font-family: 'hand_of_sean_demoregular';
+	font-size: 18px;
+	color: #0070bd;
+}
+
+#content .infoBrand .info .mainInfo .infoContent {
+	overflow: auto;
+	height: 180px;
+	margin: 0;
+}
+
+#content .infoBrand .info .mainInfo p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
 }
 
 #content .infoBrand .info .otherData {
@@ -160,4 +237,40 @@ img.marca_descripcion{
 	height: 340px;
 	background: url(../images/infoBrand/other_data_box.png) no-repeat;
 	margin-left: -85px;
+	color: #FFFFFF;
+	padding: 28px;
+	-webkit-filter: drop-shadow(0px 8px 7px rgba(0, 0, 0, 0.4));
+	filter: drop-shadow(0px 8px 7px rgba(0, 0, 0, 0.4));
+	-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=8, OffY=7,Color='#000000')";
+	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=8, OffY=7, Color='#000000')";
+}
+
+#content .infoBrand .info .otherData h3 {
+	font-family: 'hand_of_sean_demoregular';
+	font-size: 22px;
+	margin: 10px 0 5px 0;
+	padding-left: 55px;
+	height: 50px;
+	line-height: 38px;
+	background: url(../images/infoBrand/asterisk_blue.png) no-repeat;
+}
+
+#content .infoBrand .info .otherData .otherContent {
+	margin-top: 10px;
+	font-family: 'Roboto', sans-serif;
+	line-height: 16px;
+	-webkit-box-shadow: 0px -18px 18px -16px rgba(50, 50, 50, 0.30);
+	-moz-box-shadow: 0px -18px 18px -16px rgba(50, 50, 50, 0.30);
+	box-shadow: 0px -18px 18px -16px rgba(50, 50, 50, 0.30);
+	padding-top: 20px;
+}
+
+#content .infoBrand .info .otherData .otherContent ul {
+	list-style: initial;
+	margin-left: 25px;
+	width: 82%;
+}
+
+#content .infoBrand .info .otherData .otherContent ul li {
+	margin-bottom: 10px;
 }
