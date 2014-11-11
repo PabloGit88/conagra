@@ -9,20 +9,43 @@
 	<div class="infoBrand">
 		<div class="tabs">
 			<ul>
-				<li><a href="#" class="infoMarca active"></a></li>
-				<li><a href="#" class="catalogo"></a></li>
-				<li><a href="#" class="manual"></a></li>
+				<li><a href="#" class="infoMarca active" data-tab="infoMarca"></a></li>
+				<li><a href="#" class="catalogo" data-tab="catalogo"></a></li>
+				<li><a href="#" class="manual" data-tab="manual"></a></li>
 			</ul>
 		</div>
 		<div class="info">
 			<img src="{{ asset('bundles/odiseoconagra/images/marcas/solo/act2.png') }}" class="logo">
 			<div class="mainInfo">
-				<h3>Información de la marca</h3>
-				<div class="infoContent">
-					<p>En 1981, Golden Valley Microwave Foods creó la marca ACT I,  unas palomitas refrigeradas que se vendían a través de máquinas expendedoras. Y en 1984, se desarrolla una revolucionaria bolsa que permitiría a los granos estallar en cualquier microondas. Este novedoso producto se llamaría ACT II, y paso a ser parte del portafolio de ConAgra Foods Inc. en 1991. 
-Hoy en día, ACT II es la marca líder de palomitas para microondas, que se vende en más de 50 países, ocupando en muchos de los casos el 1 o 2 lugar de esta categoría. Y dentro de snacks, es la segunda categoría con crecimiento más rápido crecimiento, ¡con un promedio de más del 7.5% en los últimos cinco años!*
-deben tener mayor espacio.
-					</p>
+				<div class="tabContent infoMarca">
+					<h3>Información de la marca</h3>
+					<div class="infoContent">
+						<p>En 1981, Golden Valley Microwave Foods creó la marca ACT I,  unas palomitas refrigeradas que se vendían a través de máquinas expendedoras. Y en 1984, se desarrolla una revolucionaria bolsa que permitiría a los granos estallar en cualquier microondas. Este novedoso producto se llamaría ACT II, y paso a ser parte del portafolio de ConAgra Foods Inc. en 1991. 
+	Hoy en día, ACT II es la marca líder de palomitas para microondas, que se vende en más de 50 países, ocupando en muchos de los casos el 1 o 2 lugar de esta categoría. Y dentro de snacks, es la segunda categoría con crecimiento más rápido crecimiento, ¡con un promedio de más del 7.5% en los últimos cinco años!*
+	deben tener mayor espacio.
+						</p>
+					</div>
+				</div>
+				<div class="tabContent catalogo hide">
+					<h3>Catálogo ACT II</h3>
+					<div class="infoContent">
+						<img src="{{ asset('bundles/odiseoconagra/images/catalogos/act2.png') }}" class="img-responsive center-block">
+					</div>
+				</div>
+				<div class="tabContent manual hide">
+					<h3>Manual de marca</h3>
+					<div class="infoContent">
+						<div class="downloads clearfix">
+							<div class="downloadItem">
+								<a href="#" class="name">Manual de la marca</a>
+								<p class="fileInfo">PDF, 10MB</p>
+							</div>
+							<div class="downloadItem">
+								<a href="#" class="name">Sell Sheet</a>
+								<p class="fileInfo">PDF, 2.46MB</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="otherData">

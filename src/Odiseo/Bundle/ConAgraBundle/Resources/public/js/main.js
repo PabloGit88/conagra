@@ -20,6 +20,23 @@
     	$('#belice_point').tooltip({ title:'<img src="/bundles/odiseoconagra/images/conagralatam/image.png"  style="background-color: transparent;height:100px; width:100px;">', container:'body', html:true});
     	$('#el_salvador_point').tooltip({ title:'<img src="/bundles/odiseoconagra/images/conagralatam/image.png"  style="background-color: transparent;height:100px; width:100px;">', container:'body', html:true});
     
+    	//Entrenamiento de marcas
+    	$('.infoBrand .tabs a').click(function(e)
+    	{
+    		e.preventDefault();
+    		
+    		if(!$(this).hasClass('active'))
+    		{
+    			var goToTabClass = $(this).data('tab');
+    			
+    			$('.infoBrand .tabs a').removeClass('active');
+    			$(this).addClass('active');
+    			
+    			$('.infoBrand .info .tabContent').removeClass('hide');
+    			$('.infoBrand .info .tabContent').hide();
+    			$('.infoBrand .info .tabContent.'+goToTabClass).show();
+    		}
+    	});
     });
     
 })( jQuery );
