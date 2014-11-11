@@ -56,3 +56,12 @@ div .indicaciones{
 }
 
 
+/** WESSON**/
+
+.wesson_background{
+	background-image: url("/bundles/odiseoconagra/images/planogramas/wesson/wesson_1_1.png"),url("/bundles/odiseoconagra/images/planogramas/wesson/wesson_1_2.png"), url("/bundles/odiseoconagra/images/planogramas/wesson/wesson_1_3.png"),url("/bundles/odiseoconagra/images/planogramas/wesson/wesson_1_4.png");
+	background-repeat: no-repeat;
+	background-position: 20% 85%,35% 85%,50% 85%,65% 85%;
+}
+
+
