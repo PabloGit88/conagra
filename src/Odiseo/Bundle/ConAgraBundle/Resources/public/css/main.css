@@ -178,7 +178,7 @@ img.marca_descripcion{
 	display: block;
 }
 
-#content .infoBrand .tabs ul li a.infoMarca {
+#content .infoBrand .tabs ul li a.infoMarca{
 	width: 130px;
 	background: url(../images/infoBrand/tab_blue_info.png) no-repeat;
 }
@@ -207,7 +207,102 @@ img.marca_descripcion{
 #content .infoBrand .tabs ul li a.manual.active {
 	background: url(../images/infoBrand/tab_blue_manual_selected.png) no-repeat;
 }
+/* GREEN */
+#content .infoBrand .tabs ul li a.infoMarca.green{
+	width: 130px;
+	background: url(../images/infoBrand/tab_green_info.png) no-repeat;
+}
 
+#content .infoBrand .tabs ul li a.infoMarca.green:hover,
+#content .infoBrand .tabs ul li a.infoMarca.green.active {
+	background: url(../images/infoBrand/tab_green_info_selected.png) no-repeat;
+}
+	
+#content .infoBrand .tabs ul li a.catalogo.green {
+	width: 135px;
+	background: url(../images/infoBrand/tab_green_catalogo.png) no-repeat;
+}
+
+#content .infoBrand .tabs ul li a.catalogo.green:hover,
+#content .infoBrand .tabs ul li a.catalogo.green.active {
+	background: url(../images/infoBrand/tab_green_catalogo_selected.png) no-repeat;
+}
+
+#content .infoBrand .tabs ul li a.manual.green {
+	width: 119px;
+	background: url(../images/infoBrand/tab_green_manual.png) no-repeat;
+}
+
+#content .infoBrand .tabs ul li a.manual.green:hover,
+#content .infoBrand .tabs ul li a.manual.green.active {
+	background: url(../images/infoBrand/tab_green_manual_selected.png) no-repeat;
+}
+
+/**/
+/* YELLOW */
+#content .infoBrand .tabs ul li a.infoMarca.yellow{
+	width: 130px;
+	background: url(../images/infoBrand/tab_yellow_info.png) no-repeat;
+}
+
+#content .infoBrand .tabs ul li a.infoMarca.yellow:hover,
+#content .infoBrand .tabs ul li a.infoMarca.yellow.active {
+	background: url(../images/infoBrand/tab_yellow_info_selected.png) no-repeat;
+}
+	
+#content .infoBrand .tabs ul li a.catalogo.yellow {
+	width: 135px;
+	background: url(../images/infoBrand/tab_yellow_catalogo.png) no-repeat;
+}
+
+#content .infoBrand .tabs ul li a.catalogo.yellow:hover,
+#content .infoBrand .tabs ul li a.catalogo.yellow.active {
+	background: url(../images/infoBrand/tab_yellow_catalogo_selected.png) no-repeat;
+}
+
+#content .infoBrand .tabs ul li a.manual.yellow {
+	width: 119px;
+	background: url(../images/infoBrand/tab_yellow_manual.png) no-repeat;
+}
+
+#content .infoBrand .tabs ul li a.manual.yellow:hover,
+#content .infoBrand .tabs ul li a.manual.yellow.active {
+	background: url(../images/infoBrand/tab_yellow_manual_selected.png) no-repeat;
+}
+
+/**/
+/* RED */
+#content .infoBrand .tabs ul li a.infoMarca.red{
+	width: 130px;
+	background: url(../images/infoBrand/tab_red_info.png) no-repeat;
+}
+
+#content .infoBrand .tabs ul li a.infoMarca.red:hover,
+#content .infoBrand .tabs ul li a.infoMarca.red.active {
+	background: url(../images/infoBrand/tab_red_info_selected.png) no-repeat;
+}
+	
+#content .infoBrand .tabs ul li a.catalogo.red {
+	width: 135px;
+	background: url(../images/infoBrand/tab_red_catalogo.png) no-repeat;
+}
+
+#content .infoBrand .tabs ul li a.catalogo.red:hover,
+#content .infoBrand .tabs ul li a.catalogo.red.active {
+	background: url(../images/infoBrand/tab_red_catalogo_selected.png) no-repeat;
+}
+
+#content .infoBrand .tabs ul li a.manual.red {
+	width: 119px;
+	background: url(../images/infoBrand/tab_red_manual.png) no-repeat;
+}
+
+#content .infoBrand .tabs ul li a.manual.red:hover,
+#content .infoBrand .tabs ul li a.manual.red.active {
+	background: url(../images/infoBrand/tab_red_manual_selected.png) no-repeat;
+}
+
+/**/
 #content .infoBrand .info {
 	height: 326px;
 	position: relative;
@@ -218,6 +313,9 @@ img.marca_descripcion{
 	top: -48px;
 	left: 20px;
 	z-index: 999;
+}
+#content .infoBrand.wesson .info > img.logo {
+	top: -19px;
 }
 
 #content .infoBrand .info .mainInfo {
@@ -238,11 +336,28 @@ img.marca_descripcion{
 	font-size: 18px;
 	color: #0070bd;
 }
+#content .infoBrand .info .mainInfo.green h3{
+	font-family: 'hand_of_sean_demoregular';
+	font-size: 18px;
+	color: #5d9f4e;
+}
+#content .infoBrand .info .mainInfo.red h3{
+	font-family: 'hand_of_sean_demoregular';
+	font-size: 18px;
+	color: #cb2432;
+}
+#content .infoBrand .info .mainInfo.red h4 {
+	font-size: 18px;
+	color: #cb2432;
+}
 
 #content .infoBrand .info .mainInfo .infoContent {
 	overflow: auto;
 	height: 180px;
 	margin: 0;
+}
+#content .infoBrand.wesson .info .mainInfo .infoContent {
+	height: 206px;
 }
 
 #content .infoBrand .info .mainInfo p {
@@ -286,6 +401,16 @@ img.marca_descripcion{
 	-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=8, OffY=7,Color='#000000')";
 	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=8, OffY=7, Color='#000000')";
 }
+#content .infoBrand .info .otherData.red {
+	background: url(../images/infoBrand/other_data_box_red.png) no-repeat;
+}
+#content .infoBrand .info .otherData.green {
+	background: url(../images/infoBrand/other_data_box_green.png) no-repeat;
+}
+#content .infoBrand .info .otherData.yellow {
+	background: url(../images/infoBrand/other_data_box_yellow.png) no-repeat;
+}
+
 
 #content .infoBrand .info .otherData h3 {
 	font-family: 'hand_of_sean_demoregular';
@@ -296,6 +421,25 @@ img.marca_descripcion{
 	line-height: 38px;
 	background: url(../images/infoBrand/asterisk_blue.png) no-repeat;
 }
+#content .infoBrand .info .otherData.red h3 {
+	background: url(../images/infoBrand/asterisk_red.png) no-repeat;
+}
+#content .infoBrand .info .otherData.green h3 {
+	background: url(../images/infoBrand/asterisk_green.png) no-repeat;
+}
+#content .infoBrand .info .otherData.yellow h3 {
+	background: url(../images/infoBrand/asterisk_yellow.png) no-repeat;
+}
+#content .infoBrand.wesson .info .mainInfo.green .catalogo h3{
+	margin: 0;
+}
+#content .infoBrand.snackpack .info .otherData a {
+	font-size: 14px;
+	padding-left: 25px;
+	text-decoration:none; 
+	color: #FFFFFF;
+	background: url(../images/infoBrand/star.png) no-repeat center left;
+}
 
 #content .infoBrand .info .otherData .otherContent {
 	margin-top: 10px;
@@ -305,6 +449,13 @@ img.marca_descripcion{
 	-moz-box-shadow: 0px -18px 18px -16px rgba(50, 50, 50, 0.30);
 	box-shadow: 0px -18px 18px -16px rgba(50, 50, 50, 0.30);
 	padding-top: 20px;
+}
+#content .infoBrand.peterpan .info .otherData .otherContent, #content .infoBrand.pam .info .otherData .otherContent{
+	font-size: 13px;
+	line-height: 14px;
+}
+#content .infoBrand.pam .info .otherData .otherContent p{
+	padding-left:23px;
 }
 
 #content .infoBrand .info .otherData .otherContent ul {

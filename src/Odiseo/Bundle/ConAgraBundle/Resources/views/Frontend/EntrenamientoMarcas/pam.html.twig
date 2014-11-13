@@ -1,0 +1,76 @@
+{% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
+ 
+{% block content %}
+<div class="entrenamiento_marcas">
+	<div class="mainTitleContent clearfix">
+		<h1 class="mainTitle pull-left">Entrenamiento de marcas</h1>
+		<a href="{{ path('odiseo_conagra_frontend_entrenamiento_marcas_index') }}" class="backButton pull-right">&larr; Volver a inicio</a>
+	</div>
+	<div class="infoBrand pam">
+		<div class="tabs">
+			<ul>
+				<li><a href="#" class="infoMarca red active" data-tab="infoMarca"></a></li>
+				<li><a href="#" class="catalogo red" data-tab="catalogo"></a></li>
+				<li><a href="#" class="manual red" data-tab="manual"></a></li>
+			</ul>
+		</div>
+		<div class="info">
+			<img src="{{ asset('bundles/odiseoconagra/images/marcas/solo/pam.png') }}" class="logo">
+			<div class="mainInfo red">
+				<div class="tabContent infoMarca">
+					<h3>Información de la marca</h3>
+					<h4>Con PAM®, te va a ir bien!</h4>
+					<div class="infoContent">
+						<p>PAM® fue introducido en 1961 por Leon Rubin quien, con Arthur Meyerhoff, comenzó Gibraltar Industries para comercializar productos en aerosol.
+							El nombre PAM es un acrónimo de Producto de Arthur Meyerhoff.  
+							<br><br>
+							Este innovador producto, que forma parte de ConAgra Foods desde el 2000, utiliza una mezcla única de aceites, siendo el principal ingrediente el de canola. 
+							El ser un aerosol le permite esparcirse por todo el recipiente, sartén o parilla creando una capa antiadherente haciendo que el cocinar con PAM® sea fácil, saludable y simplemente más fácil para limpiar. 			
+						</p>
+					</div>
+				</div>
+				<div class="tabContent catalogo red hide">
+					<h3>Catálogo</h3>
+					<div class="infoContent">
+						<img src="{{ asset('bundles/odiseoconagra/images/catalogos/pam.png') }}" class="img-responsive center-block">
+					</div>
+				</div>
+				<div class="tabContent manual red hide">
+					<h3>Manual de marca</h3>
+					<div class="infoContent">
+						<div class="downloads clearfix">
+							<div class="downloadItem">
+								<a href="#" class="name">Manual de la marca</a>
+								<p class="fileInfo">PDF, 10MB</p>
+							</div>
+							<div class="downloadItem">
+								<a href="#" class="name">Sell Sheet</a>
+								<p class="fileInfo">PDF, 2.46MB</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="otherData yellow">
+				<h3>Datos curiosos</h3>
+				<div class="otherContent">
+					<p>TIPS PARA USAR PAM®</p>
+					<ul>
+						<li>PAM es bueno para cocinar bajo en grasas, con tan pocas calorías como 4cal por ½ segundo de spray.  </li>
+						<li>Para evitar que el queso y otros alimentos se peguen al utilizar un rallador, rocíe brevemente un poco de PAM.</li>  
+						<li>Antes de encender su parilla rocíe la misma con un poco de PAM y también los utensilios.</li>
+					</ul>					
+				</div>
+			</div>
+		</div>
+		<div class="social">
+			<ul>
+				<li><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/wp-icon.png') }}"></a></li>
+				<li><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/twitter-icon.png') }}"></a></li>
+				<li><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/facebook-icon.png') }}"></a></li>
+				<li><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/instagram-icon.png') }}"></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+{% endblock %}
