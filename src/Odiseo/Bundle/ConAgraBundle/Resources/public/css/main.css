@@ -330,6 +330,24 @@ img.marca_descripcion{
 	-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=8, OffY=7,Color='#000000')";
 	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=8, OffY=7, Color='#000000')";
 }
+#content .infoBrand.swissmiss .info .mainInfo {
+	background: url(../images/infoBrand/info_swissmiss_background.png) no-repeat;
+}
+#content .infoBrand.pam .info .mainInfo {
+	background: url(../images/infoBrand/info_pam_background.png) no-repeat;
+}
+#content .infoBrand.peterpan .info .mainInfo {
+	background: url(../images/infoBrand/info_peterpan_background.png) no-repeat;
+}
+#content .infoBrand.snackpack .info .mainInfo {
+	background: url(../images/infoBrand/info_snackpack_background.png) no-repeat;
+}
+#content .infoBrand.wesson .info .mainInfo {
+	background: url(../images/infoBrand/info_wesson_background.png) no-repeat;
+}
+#content .infoBrand.hunts .info .mainInfo {
+	background: url(../images/infoBrand/info_hunts_background.png) no-repeat;
+}
 
 #content .infoBrand .info .mainInfo h3 {
 	font-family: 'hand_of_sean_demoregular';

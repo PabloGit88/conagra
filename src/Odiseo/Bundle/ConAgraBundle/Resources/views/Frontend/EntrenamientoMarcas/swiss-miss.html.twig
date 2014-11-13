@@ -1,0 +1,61 @@
+{% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
+ 
+{% block content %}
+<div class="entrenamiento_marcas">
+	<div class="mainTitleContent clearfix">
+		<h1 class="mainTitle pull-left">Entrenamiento de marcas</h1>
+		<a href="{{ path('odiseo_conagra_frontend_entrenamiento_marcas_index') }}" class="backButton pull-right">&larr; Volver a inicio</a>
+	</div>
+	<div class="infoBrand swissmiss">
+		<div class="tabs">
+			<ul>
+				<li><a href="#" class="infoMarca active" data-tab="infoMarca"></a></li>
+				<li><a href="#" class="catalogo" data-tab="catalogo"></a></li>
+				<li><a href="#" class="manual" data-tab="manual"></a></li>
+			</ul>
+		</div>
+		<div class="info">
+			<img src="{{ asset('bundles/odiseoconagra/images/marcas/solo/swissmiss.png') }}" class="logo">
+			<div class="mainInfo">
+				<div class="tabContent infoMarca">
+					<h3>Información de la marca</h3>
+					<div class="infoContent">
+						<p>Es el nombre de uno de los chocolates en polvos más deliciosos de todo el mundo y producido por ConAgra Foods. 
+						   Originalmente, en la década de 1950, la compañía vendía su chocolate caliente como una bebida para los pasajeros de líneas aéreas. Debido a rápida popularidad que empezó a tener el delicioso chocolate caliente la bebida se empezó a vender en  supermercados y tiendas de conveniencia.
+						   <br><br>
+						   Swiss Miss tiene un amplio portafolio de modificadores de leche polvo que incluye: chocolate de leche, con malva, de dieta y sabores más indulgentes como: 
+						   trufa de chocolate, vainilla francesa, chocolate oscuro, chocolate con menta, chocolate con caramelo. En adición la compañía también ha desarrollado unos 
+						   deliciosos pudines refrigerados con el delicioso sabor chocolate caliente.
+						</p>
+					</div>
+				</div>
+				<div class="tabContent catalogo hide">
+					<h3>Catálogo</h3>
+					<div class="infoContent">
+						<img src="{{ asset('bundles/odiseoconagra/images/catalogos/swissmiss.png') }}" class="img-responsive center-block">
+					</div>
+				</div>
+				<div class="tabContent manual hide">
+					<h3>Manual de marca</h3>
+					<div class="infoContent">
+						<div class="downloads clearfix">
+							<div class="downloadItem">
+								<a href="#" class="name">Asset Guide</a>
+								<p class="fileInfo">PDF, 434KB</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="social">
+			<ul>
+				<li><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/wp-icon.png') }}"></a></li>
+				<li><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/twitter-icon.png') }}"></a></li>
+				<li><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/facebook-icon.png') }}"></a></li>
+				<li><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/instagram-icon.png') }}"></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+{% endblock %}
