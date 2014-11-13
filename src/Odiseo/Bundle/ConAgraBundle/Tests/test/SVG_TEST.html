@@ -15,6 +15,8 @@
 
 
 <style>
+.clicked{
+}
 
 
 </style>
@@ -358,14 +360,14 @@
     </g>
    </g>
   </g>
-  <g transform="matrix(1.25,0,0,-1.25,0,650) " id="el_salvador_country">
+  <g transform="matrix(1.25,0,0,-1.25,0,650) " id="elsalvador_country">
    <g id="g302" clip-path="url(#clipPath304)">
     <g id="g308">
      <g id="g310"/>
      <g id="g316">
       <g  clip-path="url(#clipPath312)" id="g318">
        <g id="g320">
-        <path fill="#909090"  fill-rule="nonzero" d="m108,381.375l0.324,0.41699l2.801,3.604l4.042,-2.06299l-0.417,-5.146" id="el_salvador-path"/>
+        <path fill="#909090"  fill-rule="nonzero" d="m108,381.375l0.324,0.41699l2.801,3.604l4.042,-2.06299l-0.417,-5.146" id="elsalvador-path"/>
        </g>
       </g>
      </g>
@@ -631,11 +633,23 @@
   </g>
  </g>
   <image   visibility="hidden" overflow="visible" width="198" height="105" id="brasil-tooltip" xlink:href="brasil_tooltip.png" transform="matrix(1 0 0 1 297.5 260.625)"></image>
+  <image   visibility="hidden" overflow="visible" width="198" height="105" id="chile-tooltip" xlink:href="chile_tooltip.png" transform="matrix(1 0 0 1 181 372)"></image>
+  <image   visibility="hidden" overflow="visible" width="198" height="105" id="paraguay-tooltip" xlink:href="paraguay_tooltip.png" transform="matrix(1 0 0 1 249.5 300.625)"></image>
+  <image   visibility="hidden" overflow="visible" width="198" height="105" id="bolivia-tooltip" xlink:href="bolivia_tooltip.png" transform="matrix(1 0 0 1 203.5 263.625)"></image>
+  <image  visibility="hidden" overflow="visible" width="198" height="105" id="peru-tooltip" xlink:href="peru_tooltip.png" transform="matrix(1 0 0 1 142 222.625)"></image>
+  <image  visibility="hidden" overflow="visible" width="198" height="105" id="colombia-tooltip" xlink:href="colombia_tooltip.png" transform="matrix(1 0 0 1 165 148)"></image>
+  <image  visibility="hidden" overflow="visible" width="198" height="105" id="panama-tooltip" xlink:href="panama_tooltip.png" transform="matrix(1 0 0 1 117 112)"></image>
+  <image  visibility="hidden" overflow="visible" width="198" height="105" id="costarica-tooltip" xlink:href="costarica_tooltip.png" transform="matrix(1 0 0 1 102.5 109)"></image>
+  <image  visibility="hidden" overflow="visible" width="198" height="105" id="nicaragua-tooltip" xlink:href="nicaragua_tooltip.png" transform="matrix(1 0 0 1 99.3 89)"></image>
+  <image  visibility="hidden" overflow="visible" width="198" height="105" id="honduras-tooltip" xlink:href="honduras_tooltip.png" transform="matrix(1 0 0 1 93.3 75)"></image>
+  <image  visibility="hidden" overflow="visible" width="198" height="105" id="elsalvador-tooltip" xlink:href="elsalvador_tooltip.png" transform="matrix(1 0 0 1 82.5 83)"></image>
+  <image  visibility="hidden" overflow="visible" width="198" height="105" id="guatemala-tooltip" xlink:href="guatemala_tooltip.png" transform="matrix(1 0 0 1 73 72)"></image>
+  <image  visibility="hidden" overflow="visible" width="198" height="105" id="belice-tooltip" xlink:href="belice_tooltip.png" transform="matrix(1 0 0 1 70.6 50)"></image>
+  
+  svg>
 
-  </svg>
 
-
-
+<p style="visibility:hidden;" id="activeCountry"></p>
 </body>
 
 <script type="text/ecmascript">
@@ -665,43 +679,57 @@ function getIdSelector(event){
 	return null;
 }
   
+
+function hasToPaint(idSelector){
+	var country = idSelector.replace("-path","").replace("#","");
+	var activeCountry = $('#activeCountry').html();
+	return !(country == activeCountry);
+}
+
   
 function paint(idSelector){
-	
 	if ( idSelector != null){
+		if ( !hasToPaint(idSelector) )
+			return ;
 		$(idSelector).css('fill','url(#linearGradient24)');
+		var idToolTip = idSelector.replace("-path","-tooltip");
+		$(idToolTip).css('visibility', 'visible');
 	}
-	var idToolTip = idSelector.replace("-path","") + "-tooltip";
-	$(idToolTip).css('visibility', 'visible');
+	
 
 }
 
 function unPaint(idSelector){
 	if ( idSelector != null){
+		if ( !hasToPaint(idSelector) )
+			return ;
 		$(idSelector).css('fill', '#909090');
+		var idToolTip = idSelector.replace("-path","-tooltip");
+		$(idToolTip).css('visibility', 'hidden');	
 	}	
-	var idToolTip = idSelector.replace("-path","") + "-tooltip";
-	$(idToolTip).css('visibility', 'hidden');	
+	
 }
   
 $( 'path[id$=-path]').each(function() {
 		$( this ).mouseenter(function(evt) {
 			var idSelector = getIdSelector(event);
 			paint(idSelector);
-			
-		
 		});
 		
 		$( this ).mouseout(function(evt) {
 				var idSelector = getIdSelector(event);
 				unPaint(idSelector);
-				//$('#brasil_point').tooltip('hide');
 		});
+		
+		$( this ).click(function(evt) {
+				onClickAction(evt);
+		});
+		
+	
 });
 
 $( 'g[id$=_point]').each(function() {
 		$( this ).mouseenter(function(evt) {
-			
 			var idSelector = "#" + evt.fromElement.id ;
 			paint(idSelector);
 		});
@@ -711,16 +739,35 @@ $( 'image[id$=-tooltip]').each(function() {
 		
 		$( this ).mouseenter(function(evt) {
 				var idToolTip = evt.currentTarget.id;
-				var idSelector = "#" + idToolTip.replace("-tooltip","") + "-path";
+				var idSelector = "#" + idToolTip.replace("-tooltip","-path");
 				paint(idSelector);
 		});
 		
 		$( this ).mouseout(function(evt) {
 				var idToolTip = evt.currentTarget.id;
-				var idSelector = "#" + idToolTip.replace("-tooltip","") + "-path";
+				var idSelector = "#" + idToolTip.replace("-tooltip","-path");
 				unPaint(idSelector);
 		});
+		
+		$( this ).click(function(evt) {
+		
+				onClickAction(evt);
+		});
 });
+
+function onClickAction(evt){
+	var activeCountry = $('#activeCountry').html();
+	var id = evt.currentTarget.id;
+	var clickedCountry = id.replace('-tooltip', "");
+	clickedCountry = clickedCountry.replace('-path', "");
+	$('#activeCountry').html(clickedCountry);
+	if (activeCountry != "") {
+		var idSelectorActiveCountry = "#"+ activeCountry + "-path";
+		unPaint( idSelectorActiveCountry);
+	}
+	
+	
+}
 
 
 

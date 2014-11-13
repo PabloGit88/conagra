@@ -1,0 +1,74 @@
+{% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
+ 
+{% block content %}
+<div class="entrenamiento_marcas">
+	<div class="mainTitleContent clearfix">
+		<h1 class="mainTitle pull-left">Entrenamiento de marcas</h1>
+		<a href="{{ path('odiseo_conagra_frontend_entrenamiento_marcas_index') }}" class="backButton pull-right">&larr; Volver a inicio</a>
+	</div>
+	<div class="infoBrand hunts">
+		<div class="tabs">
+			<ul>
+				<li><a href="#" class="infoMarca green active" data-tab="infoMarca"></a></li>
+				<li><a href="#" class="catalogo green" data-tab="catalogo"></a></li>
+				<li><a href="#" class="manual green" data-tab="manual"></a></li>
+			</ul>
+		</div>
+		<div class="info">
+			<img src="{{ asset('bundles/odiseoconagra/images/marcas/solo/hunts.png') }}" class="logo">
+			<div class="mainInfo red">
+				<div class="tabContent infoMarca">
+					<h3>Información de la marca</h3>
+					<h4>Hunt's ®</h4>
+					<div class="infoContent">
+						<p>En 1888, los hermanos Joseph y William Hunt abren un pequeño negocio a la par del rancho de su padre en donde comercializaban las frutas y verduras de la zona, y que aprendieron a cultivar de su madre.
+						<br><br> 
+						Pronto, en 1890, los hermanos encontraron que sus ambiciones habían superado sus instalaciones, y, se mudaron a un edificio más grande en Santa Rosa,
+						California., donde Hunt’s Brothers Packing Company estaba siendo fundada. Hoy, Hunt's® es la única marca americana en tener productos de tomate en los
+						siete segmentos de enlatados: -cortados; en cubitos tomates enteros, aplastado, estofado, salsa, pasta y puré. 						
+						</p>
+					</div>
+				</div>
+				<div class="tabContent catalogo red hide">
+					<h3>Catálogo</h3>
+					<div class="infoContent">
+						<img src="{{ asset('bundles/odiseoconagra/images/catalogos/hunts.png') }}" class="img-responsive center-block">
+					</div>
+				</div>
+				<div class="tabContent manual red hide">
+					<h3>Manual de marca</h3>
+					<div class="infoContent">
+						<div class="downloads clearfix">
+							<div class="downloadItem">
+								<a href="#" class="name">Manual de la marca</a>
+								<p class="fileInfo">PDF, 10MB</p>
+							</div>
+							<div class="downloadItem">
+								<a href="#" class="name">Sell Sheet</a>
+								<p class="fileInfo">PDF, 2.46MB</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="otherData red">
+				<h3>Datos curiosos</h3>
+				<div class="otherContent">
+					<p>¿Los tomates enlatados Hunt’s son 100% naturales sin conservantes ni ingredientes artificiales. Hunt’s no contiene jarabe de maíz con alto contenido de fructosa.
+						Todos los tomates Hunt’s son pelados a través del proceso llamado FlashSteam®, que utiliza el vapor del agua para retirar la piel. 
+						Los tomates Hunt’s son cosechados y en cuestión de 8 a 10 horas son enlatados garantizando no solo la frescura sino la 
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="social">
+			<ul>
+				<li><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/wp-icon.png') }}"></a></li>
+				<li><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/twitter-icon.png') }}"></a></li>
+				<li><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/facebook-icon.png') }}"></a></li>
+				<li><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/instagram-icon.png') }}"></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+{% endblock %}

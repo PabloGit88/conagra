@@ -1,0 +1,77 @@
+{% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
+ 
+{% block content %}
+<div class="entrenamiento_marcas">
+	<div class="mainTitleContent clearfix">
+		<h1 class="mainTitle pull-left">Entrenamiento de marcas</h1>
+		<a href="{{ path('odiseo_conagra_frontend_entrenamiento_marcas_index') }}" class="backButton pull-right">&larr; Volver a inicio</a>
+	</div>
+	<div class="infoBrand peterpan">
+		<div class="tabs">
+			<ul>
+				<li><a href="#" class="infoMarca yellow active" data-tab="infoMarca"></a></li>
+				<li><a href="#" class="catalogo yellow" data-tab="catalogo"></a></li>
+				<li><a href="#" class="manual yellow" data-tab="manual"></a></li>
+			</ul>
+		</div>
+		<div class="info">
+			<img src="{{ asset('bundles/odiseoconagra/images/marcas/solo/peterpan.png') }}" class="logo">
+			<div class="mainInfo red">
+				<div class="tabContent infoMarca">
+					<h3>Información de la marca</h3>
+					<div class="infoContent">
+						<p>Peter Pan es una marca de mantequilla de maní producida por ConAgra Foods y que lleva el nombre del personaje de J.M. 
+						Barrie y que desde finales de agosto de 2007, la versión del personaje de Peter Pan de Disney se convertiría en la mascota oficial de la marca.
+						<br><br>
+						Hay algo mágico en el sabor saludable, de la mantequilla de mani Peter Pan Peanut que tanto los niños como los padres no pueden resistirse. Su sabor es delicioso y puro y emana: 
+						sabor y diversión exaltando al niño interior que todos llevamos dentro. 
+						<br><br>
+						La mantequilla de maní Peter Pan se vende en diversas variedades: crujiente, cremoso, miel tostada, cremosa reducida en grasas, crunchy reducido en grasas y
+						 cremosa con azúcar reducida. 										
+						</p>
+					</div>
+				</div>
+				<div class="tabContent catalogo red hide">
+					<h3>Catálogo</h3>
+					<div class="infoContent">
+						<img src="{{ asset('bundles/odiseoconagra/images/catalogos/peterpan.png') }}" class="img-responsive center-block">
+					</div>
+				</div>
+				<div class="tabContent manual red hide">
+					<h3>Manual de marca</h3>
+					<div class="infoContent">
+						<div class="downloads clearfix">
+							<div class="downloadItem">
+								<a href="#" class="name">Manual de la marca</a>
+								<p class="fileInfo">PDF, 10MB</p>
+							</div>
+							<div class="downloadItem">
+								<a href="#" class="name">Sell Sheet</a>
+								<p class="fileInfo">PDF, 2.46MB</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="otherData red">
+				<h3>Datos curiosos</h3>
+				<div class="otherContent">
+					<ul>
+						<li>La mantequilla de maní Peter Pan era originalmente empacada en envases de metal pero debido a la escases del mismo durante la Segunda Guerra Mundial tuvo que ser cambiado a envases plásticos. </li>
+						<li>En versiones anteriores del producto, Peter Pan fue descrita como una mujer en vez de un niño.</li>  
+						<li>Peter Pan y los personajes de Disney aparecieron por primera vez en la campaña de publicidad la mantequilla de mani en 1953. </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="social">
+			<ul>
+				<li><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/wp-icon.png') }}"></a></li>
+				<li><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/twitter-icon.png') }}"></a></li>
+				<li><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/facebook-icon.png') }}"></a></li>
+				<li><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/instagram-icon.png') }}"></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+{% endblock %}
