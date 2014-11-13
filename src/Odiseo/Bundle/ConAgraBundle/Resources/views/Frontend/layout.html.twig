@@ -55,10 +55,12 @@
 	    			</div><!-- /.navbar-collapse -->
 				</nav>
     		</header>
+    		{% block main %}
     		<div id="content">
 				{% block content %}
 				{% endblock %}
 			</div>
+			{% endblock %}
 			<footer>
 				<img src="{{ asset('bundles/odiseoconagra/images/brands_footer.jpg') }}" class="center-block img-responsive">
 			</footer>

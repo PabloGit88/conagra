@@ -1,8 +1,11 @@
 {% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
  
-{% block content %}
-<div class="quien_es">
-	<h1 class="mainTitle">Commercial Foods</h1>
-	<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/commercial_foods.png') }}" alt="commercial-foods" class="img-responsive center-block commercialFoods">
+{% block main %}
+<div id="content">
+	<div class="quien_es">
+		<h1 class="mainTitle">Commercial Foods</h1>
+		<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/commercial_foods.png') }}" alt="commercial-foods" class="img-responsive center-block commercialFoods">
+	</div>
 </div>
+<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/commercial_background.png') }}" alt="commercial background" class="commercialFoodsBackground">
 {% endblock %}

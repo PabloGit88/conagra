@@ -165,6 +165,12 @@ img.marca_descripcion{
 	max-width: 70%;
 }
 
+.commercialFoodsBackground {
+	position: fixed;
+	bottom: 30px;
+	right: 0;
+}
+
 #content .infoBrand {
 	margin-bottom: 100px;
 }
@@ -481,9 +487,16 @@ img.marca_descripcion{
 	box-shadow: 0px -18px 18px -16px rgba(50, 50, 50, 0.30);
 	padding-top: 20px;
 }
-#content .infoBrand.peterpan .info .otherData .otherContent, #content .infoBrand.pam .info .otherData .otherContent{
+#content .infoBrand.peterpan .info .otherData .otherContent{
 	font-size: 13px;
 	line-height: 14px;
+}
+#content .infoBrand.pam .info .otherData .otherContent{
+	font-size: 13px;
+	line-height: 14px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 214px;
 }
 #content .infoBrand.pam .info .otherData .otherContent p{
 	padding-left:23px;
