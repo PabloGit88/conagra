@@ -540,3 +540,7 @@ img.marca_descripcion{
 	-khtml-opacity: 1;
 	opacity: 1;
 }
+
+#content .quien_es .timeline{
+	width: 100%;
+}
