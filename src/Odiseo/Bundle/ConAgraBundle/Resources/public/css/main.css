@@ -65,7 +65,8 @@ header .navbar-nav > li > a span {
 header .navbar-default .navbar-nav>.active>a span, 
 header .navbar-default .navbar-nav>.active>a:hover span, 
 header .navbar-default .navbar-nav>.active>a:focus span {
-	border-left: 1px solid;
+	border-left: 1px solid #cf3232;
+	color: #cf3232;
 	
 }
 
@@ -150,6 +151,18 @@ footer {
 
 img.marca_descripcion{
 	
+}
+
+#content .quien_es {
+	margin-bottom: 80px;
+}
+
+#content .quien_es .mainTitle {
+	margin: 0 0 30px 0;
+}
+
+#content .quien_es img.commercialFoods {
+	max-width: 70%;
 }
 
 #content .infoBrand {
@@ -468,9 +481,16 @@ img.marca_descripcion{
 	box-shadow: 0px -18px 18px -16px rgba(50, 50, 50, 0.30);
 	padding-top: 20px;
 }
-#content .infoBrand.peterpan .info .otherData .otherContent, #content .infoBrand.pam .info .otherData .otherContent{
+#content .infoBrand.peterpan .info .otherData .otherContent{
 	font-size: 13px;
 	line-height: 14px;
+}
+#content .infoBrand.pam .info .otherData .otherContent{
+	font-size: 13px;
+	line-height: 14px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 214px;
 }
 #content .infoBrand.pam .info .otherData .otherContent p{
 	padding-left:23px;
