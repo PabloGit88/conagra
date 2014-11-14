@@ -10,10 +10,8 @@ class RegistrationFormType extends BaseType
 	{
 		//parent::buildForm($builder, $options);
 		// add your custom field$country
-		$builder->add('country', 'choice', array(
-				'choices'   => array('0' => 'Argentina', '1' => 'Estados Unidos'),  'label' => 'País',
-				'required'  => true
-		));
+		$builder->add('country', 'choice', array('choices'   => array('-1' => 'País','0' => 'Estados Unidos', '1' => 'Arentina'),  
+												'label' => 'Cargo','required'  => true));
 		$builder->add('distributor', 'text', array( 'label' => 'Distribuidor', 'required' => true));
 		$builder->add('fullName', 'text', array( 'label' => 'Nombre', 'required' => true));
 		//email

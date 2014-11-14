@@ -1,6 +1,5 @@
 var MAPA = (function($){
 	
-	
 	function getIdSelector(event){
 		var idSelector = event.currentTarget.id;
 		if (idSelector != null && idSelector.indexOf("-path") >= 0)
@@ -8,7 +7,6 @@ var MAPA = (function($){
 		return null;
 	}
 	  
-	
 	function hasToPaint(idSelector){
 		var country = idSelector.replace("-path","").replace("#","");
 		var activeCountry = $('#activeCountry').html();
@@ -24,8 +22,6 @@ var MAPA = (function($){
 			var idToolTip = idSelector.replace("-path","-tooltip");
 			$(idToolTip).css('visibility', 'visible');
 		}
-		
-	
 	}
 	
 	function unPaint(idSelector){
@@ -36,7 +32,6 @@ var MAPA = (function($){
 			var idToolTip = idSelector.replace("-path","-tooltip");
 			$(idToolTip).css('visibility', 'hidden');	
 		}	
-		
 	}
 	
 	function onClickAction(evt){
@@ -76,7 +71,6 @@ var MAPA = (function($){
 				});
 		});
 	
-		
 		$( 'image[id$=-tooltip]').each(function() {
 				
 				$( this ).mouseenter(function(evt) {
@@ -97,7 +91,6 @@ var MAPA = (function($){
 				});
 		});
 	}
-	
 	return {	
 		init : privateInit
 	};

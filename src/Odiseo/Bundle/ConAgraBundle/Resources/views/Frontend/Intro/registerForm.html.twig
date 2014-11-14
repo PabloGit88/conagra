@@ -1,44 +1,30 @@
 <form class="form" action="{{ path('fos_user_registration_register') }}"  {{ form_enctype(form) }} method="post">
        	<div class="row form-group">
            	<div class="col-xs-12 col-sm-6 customSelect">
-           		<select class="form-control" name="fos_user_registration_form[country]" id="register_country"
-           			data-rule-required="true">
-           			<option value="1">Argentina</option>
-					<option value="2">Estados Unidos</option>
-       			</select>
+           		 {{ form_widget(form.country, {'attr': {'class': 'form-control', 'data-rule-required' : 'true', 'placeholder' : 'País'}  }) }}
            	</div>
            	<div class="col-xs-12 col-sm-6">
-           		<input type="text" class="form-control" name="fos_user_registration_form[distributor]" id="register_distributor" placeholder="Distribuidor"
-					data-rule-required="true"
-           		>
+                   		 {{ form_widget(form.distributor, {'attr': {'class': 'form-control', 'data-rule-required' : 'true', 'placeholder' : 'Distribuidor'}  }) }}
            	</div>
        	</div>
 		<div class="row form-group">
 			<div class="col-xs-12 col-sm-6">
-				<input type="text" class="form-control" name="fos_user_registration_form[fullName]" id="register_name" placeholder="Nombre"
-					data-rule-required="true"
-				>
+				 {{ form_widget(form.fullName, {'attr': {'class': 'form-control', 'data-rule-required' : 'true', 'placeholder' : 'Nombre'}  }) }}
 			</div>
 			<div class="col-xs-12 col-sm-6">
-				<input type="text" class="form-control" name="fos_user_registration_form[email]" id="register_mail" placeholder="Mail"
-					data-rule-required="true" data-rule-email="true"
-				>
+					
+				{{ form_widget(form.email, {'attr': {'class': 'form-control', 'data-rule-required' : 'true', 'placeholder' : 'Mail'}  }) }}
 			</div>     
 		</div>
 		<div class="row form-group">
            	<div class="col-xs-12 col-sm-6 customSelect">
-           		<select class="form-control" name="fos_user_registration_form[position]" id="register_charge"
-           			data-rule-required="true"
-           			>
-           			<option value="">Cargo</option>
-           			<option value="1">Empresario</option>
-           		</select>
+           		 {{ form_widget(form.position, {'attr': {'class': 'form-control', 'data-rule-required' : 'true'}  }) }}
        		</div>
 			<div class="col-xs-12 col-sm-6">
-				<input type="password" class="form-control" name="fos_user_registration_form[plainPassword]" id="register_password" placeholder="Crear contraseña"
-					data-rule-required="true"
-				>
-			</div>     
+				
+				{{ form_widget(form.plainPassword, {'attr': {'class': 'form-control', 'data-rule-required' : 'true', 'placeholder' : 'Crear contraseña'}  }) }}
+			</div>
+			{{ form_errors(form) }}     
 		{{ form_row(form._token) }}
 		</div>
 		<div class="row">

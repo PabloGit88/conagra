@@ -26,10 +26,10 @@
 			},
 			submitHandler: function(form)
 			{	
-				alert("submit");
 				if(sending == false)
 	        	{
 					sending = true;
+					form.submit();
 	        	}
 			}
     			

@@ -77,3 +77,5 @@ fos_user:
         form:
             type: conagra_user_registration
             handler: conagra_user.form.handler.registration
+        confirmation:
+            enabled: false
