@@ -12,10 +12,4 @@ fos_user_register:
     
 fos_user_registration_confirmed:
     path:    /register/confirmed
-    defaults: { _controller: OdiseoConAgraBundle:Frontend/Intro:index }
-
-    
-    
-
-    
-
+    defaults: { _controller: OdiseoConAgraBundle:Frontend/QuienEs:showPage }
