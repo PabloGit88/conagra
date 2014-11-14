@@ -84,7 +84,7 @@ footer {
 
 #content {
 	position: absolute;
-	top: 181px;
+	top: 25%;
 	bottom: 31px;
 	width: 1140px;
 	overflow: visible;
@@ -154,7 +154,7 @@ img.marca_descripcion{
 }
 
 #content .quien_es {
-	margin-bottom: 80px;
+
 }
 
 #content .quien_es .mainTitle {
