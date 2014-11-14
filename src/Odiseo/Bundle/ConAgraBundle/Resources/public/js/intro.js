@@ -4,7 +4,7 @@
     $(document).ready(function() 
     {
     	var sending = false;
-    	$(".registerForm form").validate(
+    	$(".registerForm form, .loginForm form").validate(
     	{
 			onkeyup: false,
 			onclick: false,

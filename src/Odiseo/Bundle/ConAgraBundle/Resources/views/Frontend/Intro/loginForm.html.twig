@@ -1,8 +1,13 @@
-<form class="form" action="{{ path("odiseo_conagra_frontend_quien_es_page", { 'page': 'many-stories' }) }}" method="post" method="post">
+{% if error %}
+<div class="alert alert-danger">
+	{{ error|trans({}, 'FOSUserBundle') }}
+</div>
+{% endif %}
+<form class="form" action="{{ path("fos_user_security_check") }}" method="post">
 		<div class="row form-group">
 			<div class="col-xs-12 col-sm-12">
 				<input type="text" class="form-control" name="_username" id="register_mail" placeholder="Mail"
-					data-rule-required="true" data-rule-email="true"
+					data-rule-required="true"
 				>
 			</div> 
 		</div>
@@ -15,7 +20,6 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 buttons">
-	
 				<a href="{{ path('odiseo_conagra_frontend_index') }}" class="btn btn-default cancelButton">Cancelar</a>
 				<button  type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans({}, 'FOSUserBundle') }}"  class="btn btn-danger submitButton">Ingresar</button>
 			</div>

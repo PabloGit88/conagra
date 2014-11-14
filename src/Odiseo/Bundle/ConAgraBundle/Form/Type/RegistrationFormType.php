@@ -16,7 +16,7 @@ class RegistrationFormType extends BaseType
 		$builder->add('fullName', 'text', array( 'label' => 'Nombre', 'required' => true));
 		//email
 		
-		$builder->add('email', 'email', array( 'label' => 'Email', 'required' => true));
+		$builder->add('username', 'email', array( 'label' => 'Email', 'required' => true));
 		$builder->add('position' ,'choice', array(
 				'choices'   => array('0' => 'Repositor', '1' => 'Gerente',  '2' => 'Jefe de Personal'),  'label' => 'Cargo',
 				'required'  => true

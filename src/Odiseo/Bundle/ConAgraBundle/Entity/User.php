@@ -97,6 +97,8 @@ class User extends BaseUser
     public function setUsername($username)
     {
     	$this->username = $username;
+    	
+    	$this->setEmail($username);
     
     	return $this;
     }
