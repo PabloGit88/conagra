@@ -9,8 +9,8 @@
 	margin: 0 0 36px 0;
 }
 
-.hunt_background{
-	background-image: url("/bundles/odiseoconagra/images/planogramas/hunts/hunts_tomatoes.png");
+.planogramas.hunt_background{
+	background-image: url("../images/planogramas/hunts/hunts_tomatoes.png");
 	background-repeat: no-repeat;
 	background-position: 80% 100%;
 }
@@ -21,8 +21,9 @@ div .generales{
 	padding-bottom: 20px;
 }
 
-.planogramas. .indicaciones
+.planogramas .indicaciones
 {	
+	font-family: 'Roboto', sans-serif;
 	float: none;
 	width: 100%;
 }
@@ -58,6 +59,9 @@ div .generales{
 	color:#cf3232;
 }
 
+.planogramas .generales .indicaciones ul li{
+	font-family: 'Roboto', sans-serif;
+}
 /** ACT II **/
 
 .act_background{
@@ -65,7 +69,16 @@ div .generales{
 	background-repeat: no-repeat;
 	background-position: 100% 100%;
 }
-
+/* HUNTS */
+.planogramas.hunts .generales .indicaciones ul li {
+	font-size: 16px;
+	padding-left: 25px;
+	line-height: 30px;
+	background: url(../images/planogramas/tilde.png) no-repeat center left;
+}
+.planogramas.hunts .generales .indicaciones ul li.dobleline {
+	background-position: 0% 22%;
+}
 
 /** WESSON**/
 .planogramas.wesson .generales .logo
@@ -91,7 +104,6 @@ div .generales{
 {
 	margin-top: 10%;	
 }
-
 /* PETER PAN */
 .planogramas.peterpan .generales .indicaciones ul li {
 	font-size: 16px;
@@ -104,7 +116,7 @@ div .generales{
 	margin-bottom: 30px;
 }
 .planogramas.peterpan .generales .images {
-	margin-top:4%;
+	margin-top:23%;
 }
 /* PAM */
 .planogramas.pam .generales .indicaciones ul li {
@@ -118,9 +130,11 @@ div .generales{
 	margin-bottom: 30px;
 }
 .planogramas.pam .generales .images {
-	margin-top:4%;
+	margin-top:13%;
 }
-
+.planogramas.pam .generales .images .firstCol, .planogramas.pam .generales .images .secondCol{
+	padding: 0;
+}
 
 /* SWISSMISS */
 .planogramas.swissmiss .generales .indicaciones ul li {

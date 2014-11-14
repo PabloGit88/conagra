@@ -336,6 +336,11 @@ img.marca_descripcion{
 #content .infoBrand.wesson .info > img.logo {
 	top: -19px;
 }
+#content .infoBrand.pam .info > img.logo {
+	top: -27px;
+	left: 38px;
+}
+
 
 #content .infoBrand .info .mainInfo {
 	float: left;
@@ -351,6 +356,7 @@ img.marca_descripcion{
 }
 #content .infoBrand.swissmiss .info .mainInfo {
 	background: url(../images/infoBrand/info_swissmiss_background.png) no-repeat;
+	width: 78%;
 }
 #content .infoBrand.pam .info .mainInfo {
 	background: url(../images/infoBrand/info_pam_background.png) no-repeat;
@@ -384,7 +390,8 @@ img.marca_descripcion{
 	color: #cb2432;
 }
 #content .infoBrand .info .mainInfo.red h4 {
-	font-size: 18px;
+	font-size: 16px;
+	font-weight: bold;
 	color: #cb2432;
 }
 
@@ -396,6 +403,22 @@ img.marca_descripcion{
 #content .infoBrand.wesson .info .mainInfo .infoContent {
 	height: 206px;
 }
+#content .infoBrand.hunts .info .mainInfo .tabContent.catalogo .infoContent {
+	margin-top:35px;
+}
+#content .infoBrand.swissmiss .info .mainInfo .tabContent.catalogo .infoContent {
+	height: 195px;
+}
+#content .infoBrand.pam .info .mainInfo .tabContent.catalogo .infoContent {
+	height: 186px;
+}
+#content .infoBrand.peterpan .info .mainInfo .tabContent.catalogo .infoContent {
+	margin-top:35px;
+}
+#content .infoBrand.snackpack .info .mainInfo .tabContent.catalogo .infoContent {
+	margin-top:35px;
+}
+
 
 #content .infoBrand .info .mainInfo p {
 	font-family: 'Roboto', sans-serif;
