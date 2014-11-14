@@ -13,13 +13,14 @@ security:
                 provider: fos_userbundle
                 login_path: /admin/login
                 check_path: /admin/login-check
-                default_target_path: /admin/dashboard
+                default_target_path: /admin
                 use_referer: true
             logout:
                 path: /admin/logout
                 target: /admin/login
             anonymous: true
             context: user
+            access_denied_url: /admin/login
             
         main:
             pattern: ^/

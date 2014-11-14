@@ -12,13 +12,19 @@
 				<th>ID</th>
 				<th>Nombre y Apellido</th>
 				<th>Nombre Usuario</th>
+				<th>País</th>
+				<th>Cargo</th>
+				<th>Distribuidor</th>
 				<th></th>
 			</tr>
-			{% for user in users %}
+			{% for user in users if(user.username != 'admin@conagra.com') %}
 	        <tr>
 				<td>{{ user.id }}</td>
 				<td>{{ user.fullname }}</td>
 				<td>{{ user.username }}</td>
+				<td>{{ user.country }}</td>
+				<td>{{ user.position }}</td>
+				<td>{{ user.distributor }}</td>
 				<td>		
 							
 					<div class="pull-right">
