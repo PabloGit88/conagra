@@ -20,3 +20,12 @@ odiseo_conangra_frontend_planogramas:
 odiseo_conangra_frontend_promociones:
     prefix:   /secure/promociones
     resource: "@OdiseoConAgraBundle/Resources/config/routing/frontend/promociones.yml"
+    
+#FosUserBundle Routes
+fos_user_security_frontend:
+    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+    prefix: /
+
+fos_user_register_frontend:
+    resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
+    prefix: /register

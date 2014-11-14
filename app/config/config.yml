@@ -33,7 +33,7 @@ twig:
 assetic:
     debug:          "%kernel.debug%"
     use_controller: false
-    bundles:        [ OdiseoConAgraBundle ]
+    bundles:        [ GeckoBackendBundle, OdiseoConAgraBundle ]
     #java: /usr/bin/java
     filters:
         cssrewrite: ~
@@ -77,3 +77,10 @@ fos_user:
         form:
             type: conagra_user_registration
             handler: conagra_user.form.handler.registration
+            
+sylius_resource:
+    resources:
+        odiseo_conagra.user:
+            driver: doctrine/orm
+            classes:
+                model: Odiseo\Bundle\ConAgraBundle\Entity\User
