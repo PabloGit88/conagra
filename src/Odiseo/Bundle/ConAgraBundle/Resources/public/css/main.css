@@ -161,6 +161,11 @@ img.marca_descripcion{
 	margin: 0 0 30px 0;
 }
 
+#content .quien_es .boxes {
+	padding: 0;
+}
+
+
 #content .quien_es img.commercialFoods {
 	max-width: 70%;
 }
