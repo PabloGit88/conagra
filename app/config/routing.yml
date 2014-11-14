@@ -9,4 +9,11 @@ fos_user_security:
 fos_user_register:
     resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
     prefix: /register
+<<<<<<< HEAD
 
+=======
+    
+fos_user_registration_confirmed:
+    path:    /register/confirmed
+    defaults: { _controller: OdiseoConAgraBundle:Frontend/QuienEs:showPage }
+>>>>>>> 19b1a1d6bf2c6c6671b7ff49cc09527eef8899e1
