@@ -1,0 +1,39 @@
+{% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
+ 
+{% block content %}
+<div class="planogramas pam">
+	<h1 class="mainTitle">PAM</h1>
+	<div class="generales clearfix">
+		<div class="indicaciones row">
+			<div class="col-md-6">
+			 	<p>
+					<ul>
+						<li>PAM es el aceite en aerosol con mayor variedad de sabores liderando esta categoría.</li>
+						<li>Nuestra recomendación es que el producto se coloque en horizontales, con 2 caras por clase.</li>  
+						<li>Lograr exhibiciones secundarias en zonas de: mezcla para dulces y panes, pasillo de barbacoa y área de huevos o arepas, tortillas y desayunos.</li>
+					</ul>
+				</p>
+			</div>
+			<div class="col-md-6">
+				<div class="logo">
+					<img src="{{ asset('bundles/odiseoconagra/images/planogramas/pam/pam_1_logo.png') }}" alt="PAM"  class="img-responsive">
+				</div>
+			</div>
+		</div>
+		<div class="images">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="img1">
+						<img src="{{ asset('bundles/odiseoconagra/images/planogramas/pam/pam_1_1.png') }}" alt="PAM"  class="img-responsive pull-right">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="img2">
+						<img src="{{ asset('bundles/odiseoconagra/images/planogramas/pam/pam_1_2.png') }}" alt="PAM"  class="img-responsive pull-left">
+					</div>				
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+{% endblock %}
