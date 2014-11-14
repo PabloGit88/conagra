@@ -1,0 +1,12 @@
+odiseo_conagra_backend_dashboard:
+    pattern: /
+    defaults: { _controller: OdiseoConAgraBundle:Backend/Main:dashboard }
+
+odiseo_conagra_backend_user:
+    resource: @OdiseoConAgraBundle/Resources/config/routing/backend/user.yml
+    prefix: /users
+
+
+#FosUserBundle Routes
+odiseo_conagra_backend_security:
+    resource: @OdiseoConAgraBundle/Resources/config/routing/backend/security.yml
