@@ -21,16 +21,3 @@ services:
         arguments: ["@request_stack"]
         tags:
             - { name: twig.extension }
-            
-    conagra.backend.menu_builder:
-        class: Odiseo\Bundle\ConAgraBundle\Menu\BackendMenuBuilder
-        arguments: ["@knp_menu.factory", "@security.context"]
-        
-    conagra.backend.menu.main:
-        class: Knp\Menu\MenuItem # the service definition requires setting the class
-        factory_service: conagra.backend.menu_builder
-        factory_method: createMainMenu
-        arguments: ["@request"]
-        scope: request # needed as we have the request as a dependency here
-        tags:
-            - { name: knp_menu.menu, alias: backend_main_menu } # The alias is what is used to retrieve the menu

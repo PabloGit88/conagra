@@ -1,7 +1,2 @@
 odiseo_conangra_frontend:
     resource: "@OdiseoConAgraBundle/Resources/config/routing/frontend/main.yml"
-    prefix:   /
-    
-odiseo_conangra_backend:
-    resource: "@OdiseoConAgraBundle/Resources/config/routing/backend/main.yml"
-    prefix:   /admin
