@@ -4,4 +4,4 @@ odiseo_conagra:
     
 fos_user_registration_confirmed:
     path:    /register/confirmed
-    defaults: { _controller: OdiseoConAgraBundle:Frontend/QuienEs:showPage }
+    defaults: { _controller: OdiseoConAgraBundle:Frontend/Home:showHome }
