@@ -1,0 +1,16 @@
+<div class="circlemenu" style="z-index: 10;">
+	<ul>
+		<li><a id="hunts-indicaciones-generales" href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'hunts-indicaciones-generales' }) }}"><span></span></a></li>
+		<li><a id="hunts-planograma-sugerido-2" href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'hunts-planograma-sugerido-2' }) }}"><span></span></a></li>
+		<li><a id="hunts-planograma-sugerido-3" href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'hunts-planograma-sugerido-3' }) }}"><span></span></a></li>
+		<li><a id="hunts-planograma-sugerido-4" href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'hunts-planograma-sugerido-4' }) }}"><span></span></a></li>
+		<li><a id="hunts-planograma-sugerido-5" href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'hunts-planograma-sugerido-5' }) }}"><span></span></a></li>
+		<li><a id="hunts-planograma-sugerido-6" href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'hunts-planograma-sugerido-6' }) }}"><span></span></a></li>
+	</ul>
+</div>
+
+<script>
+		var value = window.location.href.substring(window.location.href.lastIndexOf('/') + 1);
+		var element = document.getElementById(value);
+		element.style.background = 'black';
+</script>
