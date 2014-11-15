@@ -27,3 +27,38 @@ ul {
 section .error{
 	border-color: red;	
 }
+
+.tooltip.top .tooltip-arrow {
+	bottom: -5px;
+	margin-left: -15px;
+	border-width: 10px 15px 0;
+	border-top-color: #FFFFFF;	
+	border-style: solid;
+}
+
+.tooltip-inner {
+	background-color: #FFFFFF;
+	max-width: 260px;
+	height: 125px;
+	box-shadow: 0px 3px 0px rgba(200, 187, 187, 1);
+}
+
+.tooltip-inner p {
+	text-align: left;
+	margin: 0 0 0 10px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	overflow-y: scroll;
+	height: 70px;
+	padding-right: 20px;
+	color: #878787;
+}
+
+.tooltip-inner h3 {
+	color: #508934;
+	font-size: 18px;
+	text-align: left;
+	font-weight: bold;
+	margin: 10px 0 10px 6px;
+	font-family: 'Roboto', sans-serif;
+}
