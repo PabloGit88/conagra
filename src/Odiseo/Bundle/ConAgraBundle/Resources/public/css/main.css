@@ -71,6 +71,40 @@ header .navbar-default .navbar-nav>.active>a:focus span {
 	
 }
 
+header .navbar-default .navbar-nav>li.dropdown:hover>a span, 
+header .navbar-default .navbar-nav>li.dropdown:hover>a:hover span, 
+header .navbar-default .navbar-nav>li.dropdown:hover>a:focus span {
+	background: #b3ba30;
+	color: #FFFFFF;
+	padding: 10px 15px;
+	width: 110px;
+	border: none;
+}
+
+header .navbar-default .navbar-nav > li.dropdown:hover > .dropdown-menu {
+	display: block;
+}
+
+header .navbar-default .navbar-nav > li > .dropdown-menu {
+	top: 67%;
+	background: #b3ba30;
+	border: none;
+	min-width: 190px;
+	padding: 0;
+}
+
+header .navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+	line-height: 40px;
+	padding: 0 20px;
+	color: #FFFFFF;
+}
+
+header .navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover, 
+header .navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+	background: #969d15;
+	color: #FFFFFF;
+}
+
 footer {
 	position: fixed;
 	bottom: 0;
