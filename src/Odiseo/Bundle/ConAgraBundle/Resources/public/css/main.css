@@ -142,7 +142,7 @@ footer {
 .marca_descripcion
 {
 	float:left;	
-	
+	margin-top:-7%;
 }
 
 .latam_mapa{
@@ -168,6 +168,7 @@ img.marca_descripcion{
 
 #content .quien_es .boxes {
 	padding: 0;
+	margin-bottom: 30px;
 }
 
 

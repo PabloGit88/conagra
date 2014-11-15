@@ -30,6 +30,7 @@
     </head>
     <body>
     	<div class="container wrapper">
+    		{% block header %}
     		<header>
 	    		<nav class="navbar navbar-default" role="navigation">
 	    			<!-- Brand and toggle get grouped for better mobile display -->
@@ -43,6 +44,7 @@
 		      			<a class="navbar-brand" href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'many-stories' }) }}"><img src="{{ asset('bundles/odiseoconagra/images/logo_conagra.png') }}"></a>
 	    			</div>
 	
+					{% block menu %}
 	    			<!-- Collect the nav links, forms, and other content for toggling -->
 	    			<div class="collapse navbar-collapse" id="mainMenu">
 	      				<ul class="nav navbar-nav">
@@ -53,8 +55,10 @@
 	        				<li {{ is_on_routes(['odiseo_conagra_frontend_promociones'])?'class="active"':'' }}><a href="{{ path('odiseo_conagra_frontend_promociones_page', { 'page': 'promociones' }) }}"><span>PROMOCIONES</span></a></li>
 	      				</ul>
 	    			</div><!-- /.navbar-collapse -->
+	    			{% endblock %}
 				</nav>
     		</header>
+    		{% endblock %}
     		
     		{% block main %}
     		<div id="content">
