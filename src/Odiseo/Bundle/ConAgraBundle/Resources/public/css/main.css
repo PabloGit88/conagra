@@ -163,7 +163,7 @@ img.marca_descripcion{
 }
 
 #content .quien_es.privateLabel .mainTitle {
-	margin: 0 0 110px 0;
+	margin: 0 0 0 0;
 }
 
 #content .quien_es .boxes {
@@ -581,12 +581,18 @@ img.marca_descripcion{
 	width: 100%;
 }
 
+#content .quien_es .circlemenu
+{
+	
+}
+
 .circlemenu{
 
 width: 100%;
 overflow:hidden;
 position: absolute;
-bottom: -45%;
+top:0%;
+
 }
 
 .circlemenu ul{
@@ -628,5 +634,9 @@ bottom: -45%;
 
 .circlemenu a:hover{
 	background: #e9e9e9;
+}
+
+.circlemenu a:active{
+	background: black;
 }
 

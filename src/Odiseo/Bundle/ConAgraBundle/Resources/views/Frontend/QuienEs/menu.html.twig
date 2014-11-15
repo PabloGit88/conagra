@@ -1,0 +1,15 @@
+<div class="circlemenu" style="z-index: 10;">
+	<ul>
+		<li><a id="many-stories" href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'many-stories' }) }}"><span></span></a></li>
+		<li><a id="quick-facts" href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'quick-facts' }) }}"><span></span></a></li>
+		<li><a id="principal-brands" href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'principal-brands' }) }}"><span></span></a></li>
+		<li><a id="private-label" href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'private-label' }) }}"><span></span></a></li>
+		<li><a id="commercial-foods" href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'commercial-foods' }) }}"><span></span></a></li>
+	</ul>
+</div>
+
+<script>
+		var value = window.location.href.substring(window.location.href.lastIndexOf('/') + 1);
+		var element = document.getElementById(value);
+		element.style.background = 'black';
+</script>
