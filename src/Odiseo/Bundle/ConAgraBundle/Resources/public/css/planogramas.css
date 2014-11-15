@@ -1,7 +1,7 @@
 .planogramas{
 	height:100%;
-	overflow:auto;
-	overflow-x:hidden;
+/*	overflow:auto;
+	overflow-x:hidden;*/
 }
 
 #content .planogramas .mainTitle
@@ -116,7 +116,7 @@ div .generales{
 	margin-bottom: 30px;
 }
 .planogramas.peterpan .generales .images {
-	margin-top:23%;
+	margin-top:14%;
 }
 /* PAM */
 .planogramas.pam .generales .indicaciones ul li {
@@ -130,7 +130,7 @@ div .generales{
 	margin-bottom: 30px;
 }
 .planogramas.pam .generales .images {
-	margin-top:13%;
+	margin-top:6%;
 }
 .planogramas.pam .generales .images .firstCol, .planogramas.pam .generales .images .secondCol{
 	padding: 0;

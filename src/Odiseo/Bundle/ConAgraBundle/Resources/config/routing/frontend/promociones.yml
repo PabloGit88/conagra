@@ -1,3 +1,7 @@
+odiseo_conagra_frontend_promociones_index:
+    path:     /
+    defaults: { _controller: OdiseoConAgraBundle:Frontend/Promociones:index }
+
 odiseo_conagra_frontend_promociones_page:
     path:     /{page}
     defaults: { _controller: OdiseoConAgraBundle:Frontend/Promociones:showPage }

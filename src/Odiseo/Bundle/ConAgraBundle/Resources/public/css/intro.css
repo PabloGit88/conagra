@@ -124,6 +124,10 @@ section .loginForm form {
 section .loginForm form .buttons{
 	margin-top:10px;
 }
+section .loginForm .alert{
+	margin-bottom: -25px;
+	padding: 8px;
+}
 /**/
 
 /* header */

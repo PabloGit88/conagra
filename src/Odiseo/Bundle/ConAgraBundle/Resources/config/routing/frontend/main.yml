@@ -1,3 +1,7 @@
+odiseo_conangra_frontend_home:
+    path:     /secure/home
+    defaults: { _controller: OdiseoConAgraBundle:Frontend/Home:showHome }
+
 odiseo_conangra_frontend_intro:
     resource: "@OdiseoConAgraBundle/Resources/config/routing/frontend/intro.yml"
     

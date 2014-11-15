@@ -10,7 +10,8 @@
 		var toolTipContent = "<p><h3 style='color:green;'> 1862</h3> </p><p> </p>";
 	
 		$('.circle').tooltip({ title:toolTipContent, template: toolTiptemplate , container:'body', html:true});
-		
+		$('#many-stories').css('background', 'black');
+	
 	</script>
 
     
@@ -1590,6 +1591,6 @@
 	</div>
 
 </div>
-
+{% include 'OdiseoConAgraBundle:Frontend:QuienEs/menu.html.twig' %}
 
 {% endblock %}
