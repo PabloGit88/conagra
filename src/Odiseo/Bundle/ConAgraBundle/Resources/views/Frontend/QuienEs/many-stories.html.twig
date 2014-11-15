@@ -1,17 +1,31 @@
 {% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
 
-
 {% block javascripts %}
 
     {{ parent() }}
     
     <script>
-	    var toolTiptemplate = "<div class='tooltip' style='margin-top:-42px; role='tooltip' ><div class='tooltip-arrow' ></div><div  style='background-color:white;width:265px; height:115px; box-shadow: 0px 3px 0px rgba(200, 187, 187, 1);' class='tooltip-inner'></div></div>";
-		var toolTipContent = "<p><h3 style='color:green;'> 1862</h3> </p><p> </p>";
+	    var toolTiptemplate = '<div class="tooltip" style="margin-top:-42px;" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>';
+		var toolTipYear = '<h3>';
+		var toolTipYearEnd = '</h3><p>'
+		var toolTipEnd = '</p>';
 	
-		$('.circle').tooltip({ title:toolTipContent, template: toolTiptemplate , container:'body', html:true});
+		$('.circle').each(function()
+		{
+			var year = $(this).attr('id');
+			var text = $(this).data('text');
+			$(this).tooltip({ title: toolTipYear+year+toolTipYearEnd+text+toolTipEnd, template: toolTiptemplate , container:'body', html:true, trigger: 'manual'});
+			$(this).on('click', function (e) 
+			{
+				if(!$(this).hasClass('popover-content'))
+				{
+					$('.circle').tooltip('hide');
+			    	$(this).tooltip('show');
+				}
+			});
+		});
+
 		$('#many-stories').css('background', 'black');
-	
 	</script>
 
     
@@ -153,7 +167,7 @@
 		j/ai2hRH4gAAAABJRU5ErkJggg==" transform="matrix(0.24 0 0 0.24 558.3103 150.4366)">
 				</image>
 				<g>
-					<circle id="1920" class="circle" fill="#508A3F" cx="584.818" cy="176.944" r="8"/>
+					<circle id="1920" class="circle" data-text="Ilhan New and Wally Smith start selling canned bean sprouts at a grocery store in Detroit under the La Choy brand." fill="#508A3F" cx="584.818" cy="176.944" r="8"/>
 					<circle fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" cx="584.818" cy="176.944" r="8"/>
 				</g>
 			</g>
@@ -285,7 +299,8 @@
 		QpgtW7aEMFu2hDBbtmwJYbZsCWG2bNmuaf8TYABVk4Fd9ZgROwAAAABJRU5ErkJggg==" transform="matrix(0.24 0 0 0.24 493.3406 150.4366)">
 				</image>
 				<g>
-					<circle fill="#508A3F" class="circle" id="1919" cx="519.849" cy="176.944" r="8"/>
+					<circle fill="#508A3F" class="circle" data-text="Four Nebraska flour mills (Henry Glade Milling Co. in Grand Island, Ravenna Mills in Ravenna, Hastings Mills in Hastings, and Blackburn-Furry Mill in St. Edward) consolidate and incorporate as
+Nebraska Consolidated Mills (NCM), headquartered in Grand Island, Neb." id="1919" cx="519.849" cy="176.944" r="8"/>
 					<circle fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" cx="519.849" cy="176.944" r="8"/>
 				</g>
 			</g>
@@ -412,7 +427,7 @@
 		8X8CDACM9KanTRjkxAAAAABJRU5ErkJggg==" transform="matrix(0.24 0 0 0.24 428.3709 150.4366)">
 				</image>
 				<g>
-					<circle fill="#508A3F" class="circle" id="1905" cx="454.879" cy="176.944" r="8"/>
+					<circle fill="#508A3F" class="circle" data-text="The Hebrew National Kosher Sausage Factory begins processing ￼￼kosher meats for New York’s numerous delis the Lower East Side of Manhattan." id="1905" cx="454.879" cy="176.944" r="8"/>
 					<circle fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" cx="454.879" cy="176.944" r="8"/>
 				</g>
 			</g>
@@ -538,7 +553,8 @@
 		RkZGRkZGRkZGRkZGRkZGRkZGRkZGRsYN8R8BBgDAyyVnMxh8rgAAAABJRU5ErkJggg==" transform="matrix(0.24 0 0 0.24 363.4012 150.4366)">
 				</image>
 				<g>
-					<circle fill="#508A3F" class="circle" id="1899" cx="389.909" cy="176.944" r="8"/>
+					<circle fill="#508A3F" class="circle" data-text="Chemist David Wesson introduces a
+new method for processing cottonseed oil. Wesson’s vacuum and high- temperature process revolutionizes the cooking oil industry." id="1899" cx="389.909" cy="176.944" r="8"/>
 					<circle fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" cx="389.909" cy="176.944" r="8"/>
 				</g>
 			</g>
@@ -669,7 +685,14 @@
 		LVu2hDBbtoQwW7Zs17T/CDAAZhV0O300plAAAAAASUVORK5CYII=" transform="matrix(0.24 0 0 0.24 298.4315 150.4366)">
 				</image>
 				<g>
-					<circle fill="#508A3F"  id="1867" class="circle" cx="324.939" cy="176.944" r="8"/>
+					<circle fill="#508A3F"  id="1867" class="circle" data-text="Nebraska becomes a state with flour 
+milling as its leading industry. Henry 
+Koenig and Frederick Wiebe build 
+the first steam-powered grain mill in 
+Grand Island and form State Central 
+Flouring Mill. The business is later sold 
+to Henry Glade and renamed Henry 
+Glade Milling Company" cx="324.939" cy="176.944" r="8"/>
 					<circle fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" cx="324.939" cy="176.944" r="8"/>
 				</g>
 			</g>
@@ -801,7 +824,7 @@
 		2bIlhNmyJYTZsmW7pv1PgAEAcsL7D+t4UtkAAAAASUVORK5CYII=" transform="matrix(0.24 0 0 0.24 233.4618 150.4366)">
 				</image>
 				<g>
-					<circle fill="#508A3F" id="1862" class="circle" cx="259.97" cy="176.944" r="8"/>
+					<circle fill="#508A3F" id="1862" class="circle" data-text="Charles Gulden establishes his mustard company near the South Street Seaport in New York City." cx="259.97" cy="176.944" r="8"/>
 					<circle fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" cx="259.97" cy="176.944" r="8"/>
 				</g>
 			</g>
@@ -934,7 +957,7 @@
 		AElFTkSuQmCC" transform="matrix(0.24 0 0 0.24 623.28 150.4366)">
 				</image>
 				<g>
-					<circle fill="#508A3F" id="1926" class="circle" cx="649.788" cy="176.944" r="8"/>
+					<circle fill="#508A3F" id="1926" class="circle" data-text="David Der Herbedian begins roasting sunflower seeds in his grocery store in Fresno, Calif., and sells them in individual serving packages for a nickel apiece." cx="649.788" cy="176.944" r="8"/>
 					<circle fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" cx="649.788" cy="176.944" r="8"/>
 				</g>
 			</g>
@@ -1051,7 +1074,7 @@
 		AElFTkSuQmCC" transform="matrix(0.24 0 0 0.24 688.2497 150.4366)">
 				</image>
 				<g>
-					<circle fill="#508A3F" cx="714.758" id="1929" class="circle" cy="176.944" r="8"/>
+					<circle fill="#508A3F" cx="714.758" id="1929" class="circle" data-text="Customers ask Hector Boiardi, an Italian immigrant and Cleveland restaurant chef, for his pasta sauce so they can eat it at home. The Chef Boyardee brand is born." cy="176.944" r="8"/>
 					<circle fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" cx="714.758" cy="176.944" r="8"/>
 				</g>
 			</g>
@@ -1183,7 +1206,7 @@
 		CLNly3ZN+58AAwBSTvsPVcVvlAAAAABJRU5ErkJggg==" transform="matrix(0.24 0 0 0.24 753.2194 150.4366)">
 				</image>
 				<g>
-					<circle fill="#508A3F" cx="779.727" id="1937" class="circle" cy="176.944" r="8"/>
+					<circle fill="#508A3F" cx="779.727" id="1937" class="circle" data-text="Parkay margarine is introduced" cy="176.944" r="8"/>
 					<circle fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" cx="779.727" cy="176.944" r="8"/>
 				</g>
 			</g>
@@ -1315,7 +1338,8 @@
 		SUVORK5CYII=" transform="matrix(0.24 0 0 0.24 818.1891 150.4366)">
 				</image>
 				<g>
-					<circle fill="#508A3F" cx="844.697" id="1941" class="circle" cy="176.944" r="8"/>
+					<circle fill="#508A3F" cx="844.697" id="1941" class="circle" data-text="In the first NCM expansion outside
+Nebraska, a new flour mill is built at Decatur, Ala." cy="176.944" r="8"/>
 					<circle fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" cx="844.697" cy="176.944" r="8"/>
 				</g>
 			</g>
@@ -1441,7 +1465,7 @@
 		ZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGTcFP8RYABOGiVna75/ZAAAAABJRU5ErkJggg==" transform="matrix(0.24 0 0 0.24 883.1588 150.4366)">
 				</image>
 				<g>
-					<circle fill="#508A3F" cx="909.667" id="1948" class="circle" cy="176.944" r="8"/>
+					<circle fill="#508A3F" cx="909.667" id="1948" class="circle" data-text="Aaron “Bunny” Lapin, a St. Louis inventor, develops a special aerosol valve and creates Reddi-wip real whipped cream. Originally distributed by St. Louis milkmen, it is an instant hit." cy="176.944" r="8"/>
 					<circle fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" cx="909.667" cy="176.944" r="8"/>
 				</g>
 			</g>
@@ -1568,22 +1592,22 @@
 		IyPjhPifAAMAvddDLUMtVJMAAAAASUVORK5CYII=" transform="matrix(0.24 0 0 0.24 168.4921 150.4366)">
 				</image>
 				<g>
-					<circle fill="#508A3F" id="1861" class="circle" cx="195" cy="176.944" r="8"/>
+					<circle fill="#508A3F" id="1861" class="circle" data-text="Gilbert C. Van Camp, once a tinsmith, begins manufacturing canned pork and beans." cx="195" cy="176.944" r="8"/>
 					<circle fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" cx="195" cy="176.944" r="8"/>
 				</g>
 			</g>
-			<text transform="matrix(1 0 0 1 174 215)" fill="#7E7E7E" font-family="'HandOfSeanDemo'" font-size="15.2039">1861</text>
-			<text transform="matrix(1 0 0 1 238 215)" fill="#7E7E7E" font-family="'HandOfSeanDemo'" font-size="15.2039">1862</text>
-			<text transform="matrix(1 0 0 1 303 215)" fill="#7E7E7E" font-family="'HandOfSeanDemo'" font-size="15.2039">1867</text>
-			<text transform="matrix(1 0 0 1 371 215)" fill="#7E7E7E" font-family="'HandOfSeanDemo'" font-size="15.2039">1899</text>
-			<text transform="matrix(1 0 0 1 435 215)" fill="#7E7E7E" font-family="'HandOfSeanDemo'" font-size="15.2039">1905</text>
-			<text transform="matrix(1 0 0 1 502 215)" fill="#7E7E7E" font-family="'HandOfSeanDemo'" font-size="15.2039">1919</text>
-			<text transform="matrix(1 0 0 1 565 215)" fill="#7E7E7E" font-family="'HandOfSeanDemo'" font-size="15.2039">1920</text>
-			<text transform="matrix(1 0 0 1 630 215)" fill="#7E7E7E" font-family="'HandOfSeanDemo'" font-size="15.2039">1926</text>
-			<text transform="matrix(1 0 0 1 696 215)" fill="#7E7E7E" font-family="'HandOfSeanDemo'" font-size="15.2039">1929</text>
-			<text transform="matrix(1 0 0 1 760 215)" fill="#7E7E7E" font-family="'HandOfSeanDemo'" font-size="15.2039">1937</text>
-			<text transform="matrix(1 0 0 1 827 215)" fill="#7E7E7E" font-family="'HandOfSeanDemo'" font-size="15.2039">1941</text>
-			<text transform="matrix(1 0 0 1 890 215)" fill="#7E7E7E" font-family="'HandOfSeanDemo'" font-size="15.2039">1948</text>
+			<text transform="matrix(1 0 0 1 174 215)" fill="#7E7E7E" font-family="'hand_of_sean_demoregular'" font-size="15.2039">1861</text>
+			<text transform="matrix(1 0 0 1 238 215)" fill="#7E7E7E" font-family="'hand_of_sean_demoregular'" font-size="15.2039">1862</text>
+			<text transform="matrix(1 0 0 1 303 215)" fill="#7E7E7E" font-family="'hand_of_sean_demoregular'" font-size="15.2039">1867</text>
+			<text transform="matrix(1 0 0 1 371 215)" fill="#7E7E7E" font-family="'hand_of_sean_demoregular'" font-size="15.2039">1899</text>
+			<text transform="matrix(1 0 0 1 435 215)" fill="#7E7E7E" font-family="'hand_of_sean_demoregular'" font-size="15.2039">1905</text>
+			<text transform="matrix(1 0 0 1 502 215)" fill="#7E7E7E" font-family="'hand_of_sean_demoregular'" font-size="15.2039">1919</text>
+			<text transform="matrix(1 0 0 1 565 215)" fill="#7E7E7E" font-family="'hand_of_sean_demoregular'" font-size="15.2039">1920</text>
+			<text transform="matrix(1 0 0 1 630 215)" fill="#7E7E7E" font-family="'hand_of_sean_demoregular'" font-size="15.2039">1926</text>
+			<text transform="matrix(1 0 0 1 696 215)" fill="#7E7E7E" font-family="'hand_of_sean_demoregular'" font-size="15.2039">1929</text>
+			<text transform="matrix(1 0 0 1 760 215)" fill="#7E7E7E" font-family="'hand_of_sean_demoregular'" font-size="15.2039">1937</text>
+			<text transform="matrix(1 0 0 1 827 215)" fill="#7E7E7E" font-family="'hand_of_sean_demoregular'" font-size="15.2039">1941</text>
+			<text transform="matrix(1 0 0 1 890 215)" fill="#7E7E7E" font-family="'hand_of_sean_demoregular'" font-size="15.2039">1948</text>
 		</g>
 		</svg>
 		
@@ -1591,6 +1615,7 @@
 	</div>
 
 </div>
+
 {% include 'OdiseoConAgraBundle:Frontend:QuienEs/menu.html.twig' %}
 
 {% endblock %}
