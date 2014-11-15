@@ -52,6 +52,8 @@ var MAPA = (function($){
 			$( this ).mouseenter(function(evt) {
 				var idSelector = getIdSelector(event);
 				paint(idSelector);
+				$(idSelector).css('cursor','pointer')
+				
 			});
 			
 			$( this ).mouseout(function(evt) {
@@ -75,8 +77,10 @@ var MAPA = (function($){
 				
 				$( this ).mouseenter(function(evt) {
 						var idToolTip = evt.currentTarget.id;
+						$("#" + idToolTip).css('cursor','pointer')
 						var idSelector = "#" + idToolTip.replace("-tooltip","-path");
 						paint(idSelector);
+						
 				});
 				
 				$( this ).mouseout(function(evt) {
