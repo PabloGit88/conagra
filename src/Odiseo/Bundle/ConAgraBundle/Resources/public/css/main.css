@@ -60,6 +60,7 @@ header .navbar-nav > li > a span {
 	padding: 0 15px;
 	border-left: 1px solid #333333;
 	vertical-align: middle;
+	color:#555;
 }
 
 header .navbar-default .navbar-nav>.active>a span, 
@@ -161,13 +162,20 @@ img.marca_descripcion{
 	margin: 0 0 30px 0;
 }
 
+#content .quien_es.privateLabel .mainTitle {
+	margin: 0 0 110px 0;
+}
+
 #content .quien_es .boxes {
 	padding: 0;
 }
 
 
 #content .quien_es img.commercialFoods {
-	max-width: 70%;
+	max-width: 80%;
+}
+#content .quien_es img.privateLabel {
+	max-width: 82%;
 }
 
 .commercialFoodsBackground {
