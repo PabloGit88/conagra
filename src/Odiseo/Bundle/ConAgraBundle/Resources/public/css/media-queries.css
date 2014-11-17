@@ -25,7 +25,7 @@
 	}
 	/* end Quick Facts */
 	
-		/* Commercial Foods */
+	/* Commercial Foods */
 	.commercial_foods_mobile {
 			display:none;
 	}
@@ -33,7 +33,6 @@
 	#content .quien_es.commercial_foods{
 		display:block;
 	}
-	
 	
 	/* END Commercial Foods */
 	
@@ -94,6 +93,14 @@
 	#content .quien_es.commercial_foods{
 		display:none;
 	}
+	
+	#content .quien_es.commercial_foods{
+		display:none;
+	}
+	
+	.commercialFoodsBackground{
+		display:none;
+	}	
 	
 	/* END Commercial Foods */
 	
