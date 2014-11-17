@@ -1,3 +1,17 @@
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	
+	/* Commercial Foods */
+	.commercial_foods_mobile {
+			display:none;
+	}
+	
+	/* END Commercial Foods */
+	
+}
+
+
 /* Bootrstrap max MD (> 992 && <= 1200) */
 @media only screen and (max-width : 1200px)  
 {
@@ -5,11 +19,24 @@
 		width: 940px;
 	}
 	
-	<!-- quick Facts -->
+	/* quick Facts */
 	#content .quien_es .row div:last-of-type img {
 			margin-left:-15%;
 	}
-	<!-- end Quick Facts -->
+	/* end Quick Facts */
+	
+		/* Commercial Foods */
+	.commercial_foods_mobile {
+			display:none;
+	}
+	
+	#content .quien_es.commercial_foods{
+		display:block;
+	}
+	
+	
+	/* END Commercial Foods */
+	
 
 }
 
@@ -28,25 +55,46 @@
 	#content {
 		width: 720px;
 	}
+	
+		/* Commercial Foods */
+	.commercial_foods_mobile {
+			display:block;
+	}
+	
+	#content .quien_es.commercial_foods{
+		display:none;
+	}
+	
+	
+	/* END Commercial Foods */
 }
 
 /* Bootrstrap max XS (<= 768) */ 
 @media only screen and (max-width : 768px)  
 { 
+
 	#content {
 		width: 90%;
 		left: 5%;
 	}
-	
 	#content .mainTitle {
 		margin: 0 0 30px 0;
 	}
-	
-	<!-- quick Facts -->
-	
+	/* quick Facts */
 	#content .quien_es .row div:last-of-type img {
-			margin-left:26.5%;
+			margin-left:26.5%;		
 	}
-	<!-- end Quick Facts -->
+	/* END Quick Facts */
+	
+	/* Commercial Foods */
+	.commercial_foods_mobile {
+			display:block;
+	}
+	
+	#content .quien_es.commercial_foods{
+		display:none;
+	}
+	
+	/* END Commercial Foods */
 	
 }
