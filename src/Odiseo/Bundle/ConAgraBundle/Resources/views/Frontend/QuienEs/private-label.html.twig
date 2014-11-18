@@ -3,8 +3,15 @@
 {% block content %}
 <div class="quien_es privateLabel">
 	<h1 class="mainTitle">Private Label</h1>
+
 	<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'commercial-foods' }) }}">
 		<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/private_brands.png') }}" alt="private brands"  class="img-responsive privateLabel content-image">
 	</a>
+
+	<div>
+			<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'commercial-foods' }) }}">
+				<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/private_brands_m.png') }}" alt="private brands" >
+			</a>
+	</div>
 </div>
 {% endblock %}
