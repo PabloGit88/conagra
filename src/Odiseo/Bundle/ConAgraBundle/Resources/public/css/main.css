@@ -402,6 +402,15 @@ img.marca_descripcion{
 	-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=8, OffY=7,Color='#000000')";
 	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=8, OffY=7, Color='#000000')";
 }
+
+#content .infoBrand.act2 .info .mainInfo {
+	padding: 50px 120px 45px 45px;
+}
+
+#content .infoBrand.act2 .info .mainInfo .infoContent {
+	height: auto;
+}
+
 #content .infoBrand.swissmiss .info .mainInfo {
 	background: url(../images/infoBrand/info_swissmiss_background.png) no-repeat;
 	width: 78%;
@@ -612,8 +621,30 @@ img.marca_descripcion{
 	opacity: 1;
 }
 
+#content .quien_es .timelineContainer {
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	border: 1px solid red;
+}
+
 #content .quien_es .timeline{
-	width: 100%;
+	width: 5000px;
+}
+
+#content .quien_es .timelineArrows {
+	text-align: center;
+	margin-top: 20px;
+}
+
+#content .quien_es .timelineArrows a {
+	display: inline-block;
+}
+
+#content .quien_es .timelineArrows a:first-child {
+	margin-right: 100px;
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
 }
 
 #content .quien_es .circlemenu
