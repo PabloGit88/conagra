@@ -1,36 +1,128 @@
 {% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
+
+ {% block javascripts %}
+		 {{ parent() }}
+		<script type="text/javascript" src="{{ asset('bundles/odiseoconagra/js/utils.js') }}"></script>
+{% endblock %}
  
 {% block content %}
 <div class="quien_es">
 	<h1 class="mainTitle">Our Principal Brands by Category</h1>
-	<div class="row">
-		<div class="col-md-1 hidden-sm hidden-xs"></div>
-		<div class="col-md-2 col-sm-4 col-xs-6">
+	<div class="row hidden-xs">
+		<div class="col-md-1 hidden-sm hidden-xs col-lg-1"></div>
+		<div class="col-md-2 col-sm-2 col-xs-6">
 			<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'private-label' }) }}">
-				<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/brands_frozen.png') }}" alt="our core brands"  class="img-responsive">
+				<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/brands_frozen_1.png') }}" alt="our core brands"  class="img-responsive">
 			</a>
 		</div>
-		<div class="col-md-2 col-sm-4 col-xs-6">
+		<div class="col-md-2 col-sm-2  col-xs-6 col-lg-2">
 			<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'private-label' }) }}">
-				<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/brands_snack.png') }}" alt="our core brands"  class="img-responsive">
+				<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/brands_snack_1.png') }}" alt="our core brands"  class="img-responsive">
 			</a>
 		</div>
-		<div class="col-md-2 col-sm-4 col-xs-6">
+		<div class="col-md-2 col-sm-2 col-xs-6 col-lg-2">
 			<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'private-label' }) }}">
-				<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/brands_grocery.png') }}" alt="our core brands"  class="img-responsive">
+				<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/brands_grocery_1.png') }}" alt="our core brands"  class="img-responsive">
 			</a>
 		</div>
-		<div class="col-md-2 col-sm-4 col-xs-6">
+		<div class="col-md-2 col-sm-2 col-xs-6 col-lg-2">
 			<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'private-label' }) }}">
-				<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/brands_private_label.png') }}" alt="our core brands"  class="img-responsive">
+				<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/brands_private_label_1.png') }}" alt="our core brands"  class="img-responsive">
 			</a>
 		</div>
-		<div class="col-md-2 col-sm-4 col-xs-6">
+		<div class="col-md-2 col-sm-2 col-xs-6 col-lg-2">
 			<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'private-label' }) }}">
-				<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/brands_commercial.png') }}" alt="our core brands"  class="img-responsive">
+				<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/brands_commercial_1.png') }}" alt="our core brands"  class="img-responsive">
 			</a>
 		</div>
-		<div class="col-md-1 hidden-sm hidden-xs"></div>
+		<div class="col-md-1 hidden-sm hidden-xs col-lg-1"></div>
 	</div>
+	<div class="row hidden-xs">
+		<div class="col-md-1 hidden-sm hidden-xs col-lg-1"></div>
+		<div class="col-md-2 col-sm-2  col-xs-6">
+			<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'private-label' }) }}">
+				<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/brands_frozen_2.png') }}" alt="our core brands"  class="img-responsive">
+			</a>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-6 col-lg-2">
+			<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'private-label' }) }}">
+				<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/brands_snack_2.png') }}" alt="our core brands"  class="img-responsive">
+			</a>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-6 col-lg-2">
+			<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'private-label' }) }}">
+				<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/brands_grocery_2.png') }}" alt="our core brands"  class="img-responsive">
+			</a>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-6 col-lg-2">
+			<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'private-label' }) }}">
+				<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/brands_private_label_2.png') }}" alt="our core brands"  class="img-responsive">
+			</a>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-6 col-lg-2">
+			<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'private-label' }) }}">
+				<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/brands_commercial_2.png') }}" alt="our core brands"  class="img-responsive">
+			</a>
+		</div>
+		<div class="col-md-1 hidden-sm hidden-xs col-lg-1"></div>
+	</div>
+	
+	<!-- layout diferente only for mobile --> 
+	
+	
+	<div class="row visible-xs">
+		<div class="col-xs-5">
+				<img id="brands_frozen" onclick="UTILS.showDescription(this.id);" src="{{ asset('bundles/odiseoconagra/images/quienesconagra/brands_frozen_1.png') }}" alt="our core brands"  class="img-responsive">
+		</div>
+		<div class="col-xs-5">
+				<img id="brands_snack" onclick="UTILS.showDescription(this.id);" src="{{ asset('bundles/odiseoconagra/images/quienesconagra/brands_snack_1.png') }}" alt="our core brands"  class="img-responsive">
+		</div>
+	</div>
+	
+	<div class="row visible-xs">
+		<div class="col-xs-5">
+				<img   id="brands_frozen_m_2" style="display:none;" src="{{ asset('bundles/odiseoconagra/images/quienesconagra/brands_frozen_m_2.png') }}" alt="our core brands"  class="img-responsive">
+		</div>
+		<div class="col-xs-5">
+			
+				<img  id="brands_snack_m_2" style="display:none;" src="{{ asset('bundles/odiseoconagra/images/quienesconagra/brands_snack_m_2.png') }}" alt="our core brands"  class="img-responsive">
+
+		</div>
+	</div>
+	
+	
+	<div class="row visible-xs">
+		<div class="col-xs-5">
+				<img id="brands_grocery" onclick="UTILS.showDescription(this.id);"  src="{{ asset('bundles/odiseoconagra/images/quienesconagra/brands_grocery_1.png') }}" alt="our core brands"  class="img-responsive">
+		</div>
+		<div class="col-xs-5">
+				<img id="brands_private_label" onclick="UTILS.showDescription(this.id);" src="{{ asset('bundles/odiseoconagra/images/quienesconagra/brands_private_label_1.png') }}" alt="our core brands"  class="img-responsive">
+		</div>
+	</div>
+	
+	<div class="row visible-xs">
+		<div class="col-xs-5">
+				<img id="brands_grocery_m_2" style="display:none;" src="{{ asset('bundles/odiseoconagra/images/quienesconagra/brands_grocery_m_2.png') }}" alt="our core brands"  class="img-responsive">
+		</div>
+		<div class="col-xs-5">
+				<img  id="brands_private_label_m_2" style="display:none;" src="{{ asset('bundles/odiseoconagra/images/quienesconagra/brands_private_label_m_2.png') }}" alt="our core brands"  class="img-responsive">
+		</div>
+	</div>
+	
+	<div class="row visible-xs">
+		<div class="col-xs-5">
+				<img id="brands_commercial" onclick="UTILS.showDescription(this.id);" src="{{ asset('bundles/odiseoconagra/images/quienesconagra/brands_commercial_1.png') }}" alt="our core brands"  class="img-responsive">
+		</div>
+		<div class="col-xs-5">
+			
+		</div>
+	</div>
+	<div class="row visible-xs">
+		<div class="col-xs-5">
+				<img  id="brands_commercial_m_2"  style="display:none;" src="{{ asset('bundles/odiseoconagra/images/quienesconagra/brands_commercial_m_2.png') }}" alt="our core brands"  class="img-responsive">
+		</div>
+		<div class="col-xs-5"></div>
+	</div>
+	
 </div>
 {% endblock %}
