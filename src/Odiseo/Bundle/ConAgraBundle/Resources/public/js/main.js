@@ -21,6 +21,34 @@
     			$('.infoBrand .info .tabContent.'+goToTabClass).show();
     		}
     	});
+    	
+    	// Linea de tiempo
+    	var isAnimating = false;
+    	$('.timelineArrows a').click(function(e)
+    	{
+    		e.preventDefault();
+    		if(!isAnimating)
+    		{
+    			var width =  parseInt($('.timelineContainer').css('width'));
+    			var operator = $(this).hasClass('left')?"-":"+";
+	    		$('.timelineContainer').animate( { scrollLeft: operator+'='+(width/2) }, 1000, function() {
+	    			isAnimating = false;
+	    		});
+	    		isAnimating = true;
+    		}
+    	});
+    	
+    	//Scrolls
+    	$('.infoContent').slimScroll({
+            height: 'auto',
+            color: '#555',
+            size: '5px',
+        });
+        $('.pam .otherContent').slimScroll({
+            height: '214px',
+            color: '#555',
+            size: '5px',
+        });
     });
     
 })( jQuery );

@@ -407,10 +407,6 @@ img.marca_descripcion{
 	padding: 50px 120px 45px 45px;
 }
 
-#content .infoBrand.act2 .info .mainInfo .infoContent {
-	height: auto;
-}
-
 #content .infoBrand.swissmiss .info .mainInfo {
 	background: url(../images/infoBrand/info_swissmiss_background.png) no-repeat;
 	width: 78%;
@@ -440,11 +436,15 @@ img.marca_descripcion{
 	font-family: 'hand_of_sean_demoregular';
 	font-size: 18px;
 	color: #5d9f4e;
+	margin-top: 0px;
+	margin-bottom: 10px;
 }
 #content .infoBrand .info .mainInfo.red h3{
 	font-family: 'hand_of_sean_demoregular';
 	font-size: 18px;
 	color: #cb2432;
+	margin-top: 0px;
+	margin-bottom: 30px;
 }
 #content .infoBrand .info .mainInfo.red h4 {
 	font-size: 16px;
@@ -452,30 +452,21 @@ img.marca_descripcion{
 	color: #cb2432;
 }
 
-#content .infoBrand .info .mainInfo .infoContent {
+#content .infoBrand .info .mainInfo .infoMarca .infoContent {
 	overflow: auto;
-	height: 180px;
+	max-height: 165px;
 	margin: 0;
 }
-#content .infoBrand.wesson .info .mainInfo .infoContent {
-	height: 206px;
-}
-#content .infoBrand.hunts .info .mainInfo .tabContent.catalogo .infoContent {
-	margin-top:35px;
-}
-#content .infoBrand.swissmiss .info .mainInfo .tabContent.catalogo .infoContent {
-	height: 195px;
-}
-#content .infoBrand.pam .info .mainInfo .tabContent.catalogo .infoContent {
-	height: 186px;
-}
-#content .infoBrand.peterpan .info .mainInfo .tabContent.catalogo .infoContent {
-	margin-top:35px;
-}
-#content .infoBrand.snackpack .info .mainInfo .tabContent.catalogo .infoContent {
-	margin-top:35px;
+
+#content .infoBrand .info .mainInfo .catalogo .infoContent {
+	/*height: 230px !important;*/
+	max-height: 230px;
+	min-height: 220px;
 }
 
+#content .infoBrand.wesson .info .mainInfo .catalogo .slimScrollDiv{
+	height: 230px !important;
+}
 
 #content .infoBrand .info .mainInfo p {
 	font-family: 'Roboto', sans-serif;
@@ -622,18 +613,18 @@ img.marca_descripcion{
 }
 
 #content .quien_es .timelineContainer {
-	overflow-x: auto;
+	margin-top: 50px;
+	overflow-x: hidden;
 	-webkit-overflow-scrolling: touch;
-	border: 1px solid red;
 }
 
-#content .quien_es .timeline{
-	width: 5000px;
+#content .quien_es .timeline {
+
 }
 
 #content .quien_es .timelineArrows {
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 50px;
 }
 
 #content .quien_es .timelineArrows a {
