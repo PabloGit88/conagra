@@ -8,7 +8,6 @@ var UTILS = (function($){
 			var element =  $(descElementId);
 			$('img[id$="_m_2"]').hide();
 			element.show();
-		
 	}
 	
 	//public methods
