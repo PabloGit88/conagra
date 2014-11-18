@@ -23,9 +23,11 @@ class RegistrationFormType extends BaseType
 		
 		$builder->add('username', 'email', array( 'label' => 'Email', 'required' => true));
 		$builder->add('position' ,'choice', array('choices' => array(
-				'Repositor' => 'Repositor', 
-				'Gerente' => 'Gerente',  
-				'Jefe de Personal' => 'Jefe de Personal'
+				'Mercaderista' => 'Mercaderista',
+				'Supervisor' => 'Supervisor', 
+				'Gerente de Ventas' => 'Gerente de Ventas',
+				'Gerente de Marcas' => 'Gerente de Marca',  
+				'Ayudante General' => 'Ayudante General'
 		), 'label' => 'Cargo', 'required'  => true));
 		
 		$builder->add('plainPassword', 'password', array( 'label' => 'Crear Contraseña', 'required' => true));

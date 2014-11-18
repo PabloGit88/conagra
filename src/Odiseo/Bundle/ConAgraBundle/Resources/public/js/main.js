@@ -21,6 +21,16 @@
     			$('.infoBrand .info .tabContent.'+goToTabClass).show();
     		}
     	});
+        $('.infoContent').slimScroll({
+            height: 'auto',
+            color: '#555',
+            size: '5px',
+        });
+        $('.pam .otherContent').slimScroll({
+            height: '214px',
+            color: '#555',
+            size: '5px',
+        });
     });
     
 })( jQuery );
