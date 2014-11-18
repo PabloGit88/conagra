@@ -63,7 +63,9 @@ div .generales{
 	font-family: 'Roboto', sans-serif;
 }
 /** ACT II **/
-
+.planogramas.act2 .img1{
+	margin-right: 50px;
+}
 .act_background{
 	background-image: url("../images/planogramas/Act II/pochoclos.png");
 	background-repeat: no-repeat;
@@ -75,6 +77,9 @@ div .generales{
 	padding-left: 25px;
 	line-height: 30px;
 	background: url(../images/planogramas/tilde.png) no-repeat center left;
+}
+.planogramas.hunts_sug2 .img1{
+	height:90%;
 }
 .planogramas.hunts .generales .indicaciones ul li.dobleline {
 	background-position: 0% 22%;
@@ -142,7 +147,4 @@ div .generales{
 	padding-left: 25px;
 	line-height: 30px;
 	background: url(../images/planogramas/tilde.png) no-repeat 0% 19%;
-}
-.planogramas.swissmiss .generales .indicaciones .image {
-	padding-top: 30px;
 }
