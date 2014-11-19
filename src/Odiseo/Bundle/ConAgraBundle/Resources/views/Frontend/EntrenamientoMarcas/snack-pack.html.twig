@@ -4,7 +4,9 @@
 <div class="entrenamiento_marcas">
 	<div class="mainTitleContent clearfix">
 		<h1 class="mainTitle pull-left">Entrenamiento de marcas</h1>
-		<a href="{{ path('odiseo_conagra_frontend_entrenamiento_marcas_index') }}" class="backButton pull-right">&larr; Volver a inicio</a>
+		<a href="{{ path('odiseo_conagra_frontend_entrenamiento_marcas_index') }}" class="backButton pull-right">
+			<img src="{{ asset('bundles/odiseoconagra/images/volverInicioButton.png') }}">
+		</a>
 	</div>
 	<div class="infoBrand snackpack">
 		<div class="tabs">
@@ -32,9 +34,30 @@
 					</div>
 				</div>
 				<div class="tabContent catalogo red hide">
+					<ul class="catalogoMenu">
+						<li><a href="#" class="active" data-tab="basicos">BÁSICOS</a></li>
+						<li><a href="#" data-tab="triples">TRIPLES</a></li>
+						<li><a href="#" data-tab="fat-free">FAT FREE</a></li>
+						<li><a href="#" data-tab="sugar-free">SUGAR FREE</a></li>
+						<li><a href="#" data-tab="gelatinas">GELATINAS</a></li>
+					</ul>
 					<h3>Catálogo</h3>
 					<div class="infoContent">
-						<img src="{{ asset('bundles/odiseoconagra/images/catalogos/snackpack.png') }}" class="img-responsive center-block">
+						<div class="catalogoContent basicos">
+							<img src="{{ asset('bundles/odiseoconagra/images/catalogos/snackpack_basicos.png') }}" class="img-responsive center-block">
+						</div>
+						<div class="catalogoContent triples hide">
+							<img src="{{ asset('bundles/odiseoconagra/images/catalogos/snackpack_triples.png') }}" class="img-responsive center-block">
+						</div>
+						<div class="catalogoContent fat-free hide">
+							<img src="{{ asset('bundles/odiseoconagra/images/catalogos/snackpack_fat_free.png') }}" class="img-responsive center-block">
+						</div>
+						<div class="catalogoContent sugar-free hide">
+							<img src="{{ asset('bundles/odiseoconagra/images/catalogos/snackpack_sugar_free.png') }}" class="img-responsive center-block">
+						</div>
+						<div class="catalogoContent gelatinas hide">
+							<img src="{{ asset('bundles/odiseoconagra/images/catalogos/snackpack_gelatinas.png') }}" class="img-responsive center-block">
+						</div>
 					</div>
 				</div>
 				<div class="tabContent manual red hide">
@@ -42,11 +65,11 @@
 					<div class="infoContent">
 						<div class="downloads clearfix">
 							<div class="downloadItem">
-								<a href="#" class="name">Manual de la marca</a>
+								<a class="name" href="{{ asset('bundles/odiseoconagra/downloads/manual/snack_pack_manual.pdf') }}" target="_blank">Manual de la marca</a>
 								<p class="fileInfo">ZIP, 10MB</p>
 							</div>
 							<div class="downloadItem">
-								<a href="#" class="name">Sell Sheet</a>
+								<a class="name" href="{{ asset('bundles/odiseoconagra/downloads/manual/snack_pack_asset_guide.pdf') }}" target="_blank">Asset Guide</a>
 								<p class="fileInfo">ZIP, 2.46MB</p>
 							</div>
 						</div>
@@ -59,7 +82,7 @@
 					<p>¿Sabías Snack Pack hizo un cameo en la película Billy Madison? El personaje de Adam Sandler hace todo lo posible para enganchar un Snack Pack! 					
 					</p>
 					<br>
-					<a href="https://www.youtube.com/watch?v=ZExPoZGQ8gM">Ver video</a>
+					<a href="https://www.youtube.com/watch?v=ZExPoZGQ8gM" class="magnificPopup">Ver video</a>
 				</div>
 			</div>
 		</div>

@@ -4,7 +4,9 @@
 <div class="entrenamiento_marcas">
 	<div class="mainTitleContent clearfix">
 		<h1 class="mainTitle pull-left">Entrenamiento de marcas</h1>
-		<a href="{{ path('odiseo_conagra_frontend_entrenamiento_marcas_index') }}" class="backButton pull-right">&larr; Volver a inicio</a>
+		<a href="{{ path('odiseo_conagra_frontend_entrenamiento_marcas_index') }}" class="backButton pull-right">
+			<img src="{{ asset('bundles/odiseoconagra/images/volverInicioButton.png') }}">
+		</a>
 	</div>
 	<div class="infoBrand pam">
 		<div class="tabs">
@@ -40,12 +42,8 @@
 					<div class="infoContent">
 						<div class="downloads clearfix">
 							<div class="downloadItem">
-								<a href="#" class="name">Manual de la marca</a>
+								<a class="name" href="{{ asset('bundles/odiseoconagra/downloads/manual/pam_asset_guide.pdf') }}" target="_blank">Asset Guide</a>
 								<p class="fileInfo">ZIP, 10MB</p>
-							</div>
-							<div class="downloadItem">
-								<a href="#" class="name">Sell Sheet</a>
-								<p class="fileInfo">ZIP, 2.46MB</p>
 							</div>
 						</div>
 					</div>
@@ -63,6 +61,7 @@
 						<li>Al guardar las sobras, en envases plásticos rocíe el interior con un poco de PAM y luego coloque la comida, esto evitara que el recipiente se le adhieran los olores de la comida anterior.</li>
 					</ul>					
 				</div>
+				<img src="{{ asset('bundles/odiseoconagra/images/arrow_black_down.png') }}" class="arrowScroll">
 			</div>
 		</div>
 		<div class="social hide">

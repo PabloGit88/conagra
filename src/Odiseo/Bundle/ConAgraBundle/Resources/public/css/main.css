@@ -223,9 +223,17 @@ img.marca_descripcion{
 	margin-bottom: 100px;
 }
 
+#content .infoBrand.swissmiss {
+	margin-left: 16%;
+}
+
 #content .infoBrand .tabs {
 	height: 60px;
 	width: 65%;
+}
+
+#content .infoBrand.swissmiss .tabs {
+	width: 81%;
 }
 
 #content .infoBrand .tabs ul {
@@ -391,6 +399,7 @@ img.marca_descripcion{
 
 
 #content .infoBrand .info .mainInfo {
+	position: relative;
 	float: left;
 	width: 65%;
 	height: 100%;
@@ -464,6 +473,32 @@ img.marca_descripcion{
 	min-height: 220px;
 }
 
+#content .infoBrand .info .mainInfo .catalogo .catalogoMenu {	
+	position: absolute;
+	top: 15px;
+	right: 90px;
+}
+
+#content .infoBrand .info .mainInfo .catalogo .catalogoMenu li {
+	float: left;
+	margin-right: 20px;
+}
+
+#content .infoBrand .info .mainInfo .catalogo .catalogoMenu li a {
+	font-family: Roboto, sans-serif;
+	font-size: 12px;
+	color: #03b4f8;
+}
+
+#content .infoBrand.hunts .info .mainInfo .catalogo .catalogoMenu li a,
+#content .infoBrand.wesson .info .mainInfo .catalogo .catalogoMenu li a {
+	color: #63aa5d;
+}
+
+#content .infoBrand .info .mainInfo .catalogo .catalogoMenu li a.active {
+	text-decoration: underline;
+}
+
 #content .infoBrand.wesson .info .mainInfo .catalogo .slimScrollDiv{
 	height: 230px !important;
 }
@@ -497,6 +532,7 @@ img.marca_descripcion{
 }
 
 #content .infoBrand .info .otherData {
+	position: relative;
 	float: left;
 	width: 332px;
 	height: 340px;
@@ -519,6 +555,17 @@ img.marca_descripcion{
 	background: url(../images/infoBrand/other_data_box_yellow.png) no-repeat;
 }
 
+#content .infoBrand .info .otherData .arrowScroll {
+	position: absolute;
+	bottom: 13px;
+	left: 50%;
+	margin-left: -14px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+	filter: alpha(opacity=20);
+	-moz-opacity: 0.2;
+	-khtml-opacity: 0.2;
+	opacity: 0.2;
+}	
 
 #content .infoBrand .info .otherData h3 {
 	font-family: 'hand_of_sean_demoregular';

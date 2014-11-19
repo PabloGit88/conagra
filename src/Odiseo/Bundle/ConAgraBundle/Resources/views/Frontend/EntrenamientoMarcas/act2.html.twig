@@ -4,7 +4,9 @@
 <div class="entrenamiento_marcas">
 	<div class="mainTitleContent clearfix">
 		<h1 class="mainTitle pull-left">Entrenamiento de marcas</h1>
-		<a href="{{ path('odiseo_conagra_frontend_entrenamiento_marcas_index') }}" class="backButton pull-right">&larr; Volver a inicio</a>
+		<a href="{{ path('odiseo_conagra_frontend_entrenamiento_marcas_index') }}" class="backButton pull-right">
+			<img src="{{ asset('bundles/odiseoconagra/images/volverInicioButton.png') }}">
+		</a>
 	</div>
 	<div class="infoBrand act2">
 		<div class="tabs">
@@ -29,9 +31,20 @@
 					</div>
 				</div>
 				<div class="tabContent catalogo hide">
+					<ul class="catalogoMenu">
+						<li><a href="#" class="active" data-tab="act2">ACT II</a></li>
+						<li><a href="#" data-tab="kroritos">KRORITOS</a></li>
+						<li><a href="#" data-tab="tripack">TRI PACK TWO PACK</a></li>
+					</ul>
 					<h3>Catálogo ACT II</h3>
 					<div class="infoContent">
-						<img src="{{ asset('bundles/odiseoconagra/images/catalogos/act2.png') }}" class="img-responsive center-block">
+						<div class="catalogoContent act2">
+							<img src="{{ asset('bundles/odiseoconagra/images/catalogos/act2.png') }}" class="img-responsive center-block">
+						</div>
+						<div class="catalogoContent kroritos hide">
+						</div>
+						<div class="catalogoContent tripack hide">
+						</div>
 					</div>
 				</div>
 				<div class="tabContent manual hide">
@@ -39,11 +52,11 @@
 					<div class="infoContent">
 						<div class="downloads clearfix">
 							<div class="downloadItem">
-								<a href="#" class="name">Manual de la marca</a>
+								<a class="name" href="{{ asset('bundles/odiseoconagra/downloads/manual/act2_manual.pdf') }}" target="_blank">Manual de la marca</a>
 								<p class="fileInfo">ZIP, 10MB</p>
 							</div>
 							<div class="downloadItem">
-								<a href="#" class="name">Sell Sheet</a>
+								<a class="name" href="{{ asset('bundles/odiseoconagra/downloads/manual/act2_sell_sheet.pdf') }}" target="_blank">Sell Sheet</a>
 								<p class="fileInfo">ZIP, 2.46MB</p>
 							</div>
 						</div>

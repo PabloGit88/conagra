@@ -4,7 +4,9 @@
 <div class="entrenamiento_marcas">
 	<div class="mainTitleContent clearfix">
 		<h1 class="mainTitle pull-left">Entrenamiento de marcas</h1>
-		<a href="{{ path('odiseo_conagra_frontend_entrenamiento_marcas_index') }}" class="backButton pull-right">&larr; Volver a inicio</a>
+		<a href="{{ path('odiseo_conagra_frontend_entrenamiento_marcas_index') }}" class="backButton pull-right">
+			<img src="{{ asset('bundles/odiseoconagra/images/volverInicioButton.png') }}">
+		</a>
 	</div>
 	<div class="infoBrand swissmiss">
 		<div class="tabs">
@@ -40,7 +42,7 @@
 					<div class="infoContent">
 						<div class="downloads clearfix">
 							<div class="downloadItem">
-								<a href="#" class="name">Asset Guide</a>
+								<a class="name" href="{{ asset('bundles/odiseoconagra/downloads/manual/swiss_miss_asset_guide.pdf') }}" target="_blank">Asset Guide</a>
 								<p class="fileInfo">ZIP, 434KB</p>
 							</div>
 						</div>

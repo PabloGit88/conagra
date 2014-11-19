@@ -3,7 +3,6 @@
 
     $(document).ready(function() 
     {
-
     	//Entrenamiento de marcas
     	$('.infoBrand .tabs a').click(function(e)
     	{
@@ -19,6 +18,23 @@
     			$('.infoBrand .info .tabContent').removeClass('hide');
     			$('.infoBrand .info .tabContent').hide();
     			$('.infoBrand .info .tabContent.'+goToTabClass).show();
+    		}
+    	});
+    	
+    	$('.infoBrand .catalogoMenu a').click(function(e)
+    	{
+    		e.preventDefault();
+    		
+    		if(!$(this).hasClass('active'))
+    		{
+    			var goToTabClass = $(this).data('tab');
+    			
+    			$('.infoBrand .catalogoMenu a').removeClass('active');
+    			$(this).addClass('active');
+    			
+    			$('.infoBrand .catalogoContent').removeClass('hide');
+    			$('.infoBrand .catalogoContent').hide();
+    			$('.infoBrand .catalogoContent.'+goToTabClass).show();
     		}
     	});
     	
@@ -38,6 +54,9 @@
     		}
     	});
     	
+    	//Modal video
+    	$('.magnificPopup').magnificPopup({type:'iframe'});
+    	
     	//Scrolls
     	$('.infoContent').slimScroll({
             height: 'auto',
@@ -45,7 +64,7 @@
             size: '5px',
         });
         $('.pam .otherContent').slimScroll({
-            height: '214px',
+            height: '200px',
             color: '#555',
             size: '5px',
         });

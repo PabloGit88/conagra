@@ -4,7 +4,9 @@
 <div class="entrenamiento_marcas">
 	<div class="mainTitleContent clearfix">
 		<h1 class="mainTitle pull-left">Entrenamiento de marcas</h1>
-		<a href="{{ path('odiseo_conagra_frontend_entrenamiento_marcas_index') }}" class="backButton pull-right">&larr; Volver a inicio</a>
+		<a href="{{ path('odiseo_conagra_frontend_entrenamiento_marcas_index') }}" class="backButton pull-right">
+			<img src="{{ asset('bundles/odiseoconagra/images/volverInicioButton.png') }}">
+		</a>
 	</div>
 	<div class="infoBrand wesson">
 		<div class="tabs">
@@ -30,9 +32,26 @@
 					</div>
 				</div>
 				<div class="tabContent catalogo red hide">
+					<ul class="catalogoMenu">
+						<li><a href="#" class="active" data-tab="canola">CANOLA</a></li>
+						<li><a href="#" data-tab="vegetal">VEGETAL</a></li>
+						<li><a href="#" data-tab="maiz">MAÍZ</a></li>
+						<li><a href="#" data-tab="mezcla">MEZCLA</a></li>
+					</ul>
 					<h3>Catálogo</h3>
 					<div class="infoContent">
-						<img src="{{ asset('bundles/odiseoconagra/images/catalogos/wesson.png') }}" class="img-responsive center-block">
+						<div class="catalogoContent canola">
+							<img src="{{ asset('bundles/odiseoconagra/images/catalogos/wesson_canola.png') }}" class="img-responsive center-block">
+						</div>
+						<div class="catalogoContent vegetal hide">
+							<img src="{{ asset('bundles/odiseoconagra/images/catalogos/wesson_vegetal.png') }}" class="img-responsive center-block">
+						</div>
+						<div class="catalogoContent maiz hide">
+							<img src="{{ asset('bundles/odiseoconagra/images/catalogos/wesson_maiz.png') }}" class="img-responsive center-block">
+						</div>
+						<div class="catalogoContent mezcla hide">
+							<img src="{{ asset('bundles/odiseoconagra/images/catalogos/wesson_mezcla.png') }}" class="img-responsive center-block">
+						</div>
 					</div>
 				</div>
 				<div class="tabContent manual red hide">
@@ -40,11 +59,11 @@
 					<div class="infoContent">
 						<div class="downloads clearfix">
 							<div class="downloadItem">
-								<a href="#" class="name">Manual de la marca</a>
+								<a class="name" href="{{ asset('bundles/odiseoconagra/downloads/manual/wesson_manual.pdf') }}" target="_blank">Manual de la marca</a>
 								<p class="fileInfo">ZIP, 10MB</p>
 							</div>
 							<div class="downloadItem">
-								<a href="#" class="name">Sell Sheet</a>
+								<a class="name" href="{{ asset('bundles/odiseoconagra/downloads/manual/wesson_sell_sheet.pdf') }}" target="_blank">Sell Sheet</a>
 								<p class="fileInfo">ZIP, 2.46MB</p>
 							</div>
 						</div>

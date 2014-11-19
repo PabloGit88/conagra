@@ -4,7 +4,9 @@
 <div class="entrenamiento_marcas">
 	<div class="mainTitleContent clearfix">
 		<h1 class="mainTitle pull-left">Entrenamiento de marcas</h1>
-		<a href="{{ path('odiseo_conagra_frontend_entrenamiento_marcas_index') }}" class="backButton pull-right">&larr; Volver a inicio</a>
+		<a href="{{ path('odiseo_conagra_frontend_entrenamiento_marcas_index') }}" class="backButton pull-right">
+			<img src="{{ asset('bundles/odiseoconagra/images/volverInicioButton.png') }}">
+		</a>
 	</div>
 	<div class="infoBrand hunts">
 		<div class="tabs">
@@ -30,9 +32,26 @@
 					</div>
 				</div>
 				<div class="tabContent catalogo red hide">
+					<ul class="catalogoMenu">
+						<li><a href="#" class="active" data-tab="pastas">Pastas, Salsas <br>y Variedades</a></li>
+						<li><a href="#" data-tab="variedades">Variedades <br>en Trozos</a></li>
+						<li><a href="#" data-tab="ketchup">Ketchup</a></li>
+						<li><a href="#" data-tab="barbacoa">Barbacoa</a></li>
+					</ul>
 					<h3>Catálogo</h3>
 					<div class="infoContent">
-						<img src="{{ asset('bundles/odiseoconagra/images/catalogos/hunts.png') }}" class="img-responsive center-block">
+						<div class="catalogoContent pastas">
+							<img src="{{ asset('bundles/odiseoconagra/images/catalogos/hunts_pastas.png') }}" class="img-responsive center-block">
+						</div>
+						<div class="catalogoContent variedades hide">
+							<img src="{{ asset('bundles/odiseoconagra/images/catalogos/hunts_variedades.png') }}" class="img-responsive center-block">
+						</div>
+						<div class="catalogoContent ketchup hide">
+							<img src="{{ asset('bundles/odiseoconagra/images/catalogos/hunts_ketchup.png') }}" class="img-responsive center-block">
+						</div>
+						<div class="catalogoContent barbacoa hide">
+							<img src="{{ asset('bundles/odiseoconagra/images/catalogos/hunts_barbacoa.png') }}" class="img-responsive center-block">
+						</div>
 					</div>
 				</div>
 				<div class="tabContent manual red hide">
@@ -40,11 +59,11 @@
 					<div class="infoContent">
 						<div class="downloads clearfix">
 							<div class="downloadItem">
-								<a href="#" class="name">Manual de la marca</a>
+								<a class="name" href="{{ asset('bundles/odiseoconagra/downloads/manual/hunts_manual.pdf') }}" target="_blank">Manual de la marca</a>
 								<p class="fileInfo">ZIP, 10MB</p>
 							</div>
 							<div class="downloadItem">
-								<a href="#" class="name">Sell Sheet</a>
+								<a class="name" href="{{ asset('bundles/odiseoconagra/downloads/manual/hunts_sell_sheets.zip') }}" target="_blank">Sell Sheets</a>
 								<p class="fileInfo">ZIP, 2.46MB</p>
 							</div>
 						</div>
