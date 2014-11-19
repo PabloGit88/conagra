@@ -67,6 +67,10 @@ div .generales{
 	margin-right: 50px;
 }
 
+.planogramas.act2.sugerido2 .img1, .planogramas.act2.sugerido2 .img2{
+	height: 85%;
+}
+
 .planogramas.act2.sugerido3 .img1, .planogramas.act2.sugerido4 .img2, .planogramas.act2.sugerido4 .secondDivImage, .planogramas.act2.sugerido5 .img1{
 	height: 85%;
 }
@@ -97,15 +101,6 @@ div .generales{
  .planogramas.hunts.sugerido5 .img3{
  /*	height:50%;*/
  }
-
-
-.planogramas.hunts.sugerido5 .images2{
-		height:44%;
-}
-.planogramas.hunts.sugerido5 .img2{
-	height:57%;
-}
-
 
 .planogramas.hunts .generales .indicaciones ul li.dobleline {
 	background-position: 0% 22%;
