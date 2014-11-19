@@ -1,14 +1,12 @@
 {% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
  
 {% block content %}
-<div class="planogramas">
+<div class="planogramas wesson sugerido3">
 	<h1 class="mainTitle">Planograma Sugerido Bloque Completo</h1>
-	<div>
-		<a href="#">
-			<img src="{{ asset('bundles/odiseoconagra/images/planogramas/wesson/wesson_3_1.png') }}" alt="wesson"  class="img-responsive pull-left">
-			<img src="{{ asset('bundles/odiseoconagra/images/planogramas/wesson/wesson_3_2.png') }}" alt="wesson"  class="img-responsive pull-left">
-		</a>
-	</div>
+	<a href="#">
+		<img src="{{ asset('bundles/odiseoconagra/images/planogramas/wesson/wesson_3_1.png') }}" alt="wesson"  class="img-responsive img1 pull-left">
+		<img src="{{ asset('bundles/odiseoconagra/images/planogramas/wesson/wesson_3_2.png') }}" alt="wesson"  class="img-responsive img2 pull-left">
+	</a>
 </div>
 {% include 'OdiseoConAgraBundle:Frontend:Planogramas/menu-wesson.html.twig' %}
 {% endblock %}

@@ -1,12 +1,18 @@
 {% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
  
 {% block content %}
-<div class="planogramas">
+<div class="planogramas act2 sugerido4">
 	<h1 class="mainTitle">Exhibición en Mueble</h1>
 	<div>
 		<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'act-planograma-sugerido-5' }) }}">
-			<img src="{{ asset('bundles/odiseoconagra/images/planogramas/Act II/actII_4_1.png') }}" alt="Act" style="position:absolute; top:32%;"class="img-responsive">
-			<img src="{{ asset('bundles/odiseoconagra/images/planogramas/Act II/actII_4_2.png') }}" alt="Act" class="img-responsive center-block">
+		<div class="row">
+			<div class="col-md-5 firstDivImage">
+				<img src="{{ asset('bundles/odiseoconagra/images/planogramas/Act II/actII_4_1.png') }}" alt="Act" class="img-responsive pull-left img1">
+			</div>
+			<div class="col-md-7 secondDivImage">
+				<img src="{{ asset('bundles/odiseoconagra/images/planogramas/Act II/actII_4_2.png') }}" alt="Act" class="img-responsive pull-left img2">
+			</div>
+		</div>
 		</a>
 	</div>
 </div>

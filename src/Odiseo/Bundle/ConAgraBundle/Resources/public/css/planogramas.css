@@ -63,14 +63,23 @@ div .generales{
 	font-family: 'Roboto', sans-serif;
 }
 /** ACT II **/
-.planogramas.act2 .img1{
+.planogramas.act2.sugerido2 .img1{
 	margin-right: 50px;
+}
+
+.planogramas.act2.sugerido3 .img1, .planogramas.act2.sugerido4 .img2, .planogramas.act2.sugerido4 .secondDivImage, .planogramas.act2.sugerido5 .img1{
+	height: 85%;
+}
+.planogramas.act2.sugerido4 .img1{
+	margin-top: 100px;
 }
 .act_background{
 	background-image: url("../images/planogramas/Act II/pochoclos.png");
 	background-repeat: no-repeat;
 	background-position: 100% 100%;
 }
+
+
 /* HUNTS */
 .planogramas.hunts .generales .indicaciones ul li {
 	font-size: 16px;
@@ -78,9 +87,26 @@ div .generales{
 	line-height: 30px;
 	background: url(../images/planogramas/tilde.png) no-repeat center left;
 }
-.planogramas.hunts_sug2 .img1{
-	height:90%;
+.planogramas.hunts.sugerido2 .img1, .planogramas.hunts.sugerido3 .img1, .planogramas.hunts.sugerido4 .img1{
+	height:85%;
 }
+
+.planogramas.hunts.sugerido5 .img1{
+	/*height:50%;*/
+}
+ .planogramas.hunts.sugerido5 .img3{
+ /*	height:50%;*/
+ }
+
+
+.planogramas.hunts.sugerido5 .images2{
+		height:44%;
+}
+.planogramas.hunts.sugerido5 .img2{
+	height:57%;
+}
+
+
 .planogramas.hunts .generales .indicaciones ul li.dobleline {
 	background-position: 0% 22%;
 }
@@ -88,14 +114,13 @@ div .generales{
 /** WESSON**/
 .planogramas.wesson .generales .logo
 {
-	margin-top: 5%;	
+	margin-top: 3%;	
 }
 .planogramas.wesson .generales .contenido
 {
-	margin-top: 5%;
-	margin-left: 27%;	
+	margin-top: 2%;
+	margin-left: 25%;	
 }
-
 
 .planogramas.wesson .generales .contenido .img
 {
@@ -103,12 +128,15 @@ div .generales{
 	margin-left: 5%;	
 }
 
+.planogramas.wesson.sugerido2 .img1{
+		height:85%;
+}
+.planogramas.wesson.sugerido3 .img1,.planogramas.wesson.sugerido3 .img2 {
+		height:85%;
+}
 /* SNACK PACK*/
 
-.planogramas.snackpack .img2
-{
-	margin-top: 10%;	
-}
+
 /* PETER PAN */
 .planogramas.peterpan .generales .indicaciones ul li {
 	font-size: 16px;
@@ -123,6 +151,9 @@ div .generales{
 .planogramas.peterpan .generales .images {
 	margin-top:14%;
 }
+.planogramas.peterpan.sugerido2 .img1 , .planogramas.peterpan.sugerido2 .img1 img {
+	height: 85%;
+}
 /* PAM */
 .planogramas.pam .generales .indicaciones ul li {
 	font-size: 16px;
@@ -135,12 +166,14 @@ div .generales{
 	margin-bottom: 30px;
 }
 .planogramas.pam .generales .images {
-	margin-top:6%;
+	margin-top:7%;
 }
 .planogramas.pam .generales .images .firstCol, .planogramas.pam .generales .images .secondCol{
 	padding: 0;
 }
-
+.planogramas.pam.sugerido3 .img1, .planogramas.pam.sugerido3 .img1 img  {
+	height: 85%;
+}
 /* SWISSMISS */
 .planogramas.swissmiss .generales .indicaciones ul li {
 	font-size: 16px;

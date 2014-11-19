@@ -13,10 +13,11 @@
 	
 	#content  .quien_es.privateLabel a:nth-child(1) img{
 		display:none;
-	}
-		
+	}	
 	/* END Private label */
-	
+	.planogramas.pam .generales .images {
+		margin-top:10%;
+	}	
 }
 
 
@@ -52,7 +53,13 @@
 		
 	/* END Private label */
 	
-	
+	/* planogramas */ 
+	.planogramas.peterpan .generales .images {
+		margin-top: 7% !important;
+	}
+	.planogramas.pam .generales .images {
+	margin-top: 0% !important;
+	}	
 
 }
 
@@ -81,7 +88,12 @@
 		display:none;
 	}
 	
-	
+	.planogramas.peterpan .generales .images {
+		margin-top: 7%;
+	}
+	.planogramas.pam .generales .images {
+		margin-top: 0% !important;
+	}	
 	/* END Commercial Foods */
 }
 

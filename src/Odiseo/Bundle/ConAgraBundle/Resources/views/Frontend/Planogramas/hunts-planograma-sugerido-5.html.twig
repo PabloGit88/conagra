@@ -1,14 +1,16 @@
 {% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
  
 {% block content %}
-<div class="planogramas">
+<div class="planogramas hunts sugerido5">
 	<h1 class="mainTitle">Planogramas</h1>
 	<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'hunts-planograma-sugerido-6' }) }}">
-	<div>
-	<img src="{{ asset('bundles/odiseoconagra/images/planogramas/hunts/hunts_5_1.png') }}" alt="hunts" class="img-responsive pull-left">
-	<img src="{{ asset('bundles/odiseoconagra/images/planogramas/hunts/hunts_5_3.png') }}" alt="hunts" class="img-responsive">
+	<div class="images1">
+		<img src="{{ asset('bundles/odiseoconagra/images/planogramas/hunts/hunts_5_1.png') }}" alt="hunts" class="img-responsive pull-left img1">
+		<img src="{{ asset('bundles/odiseoconagra/images/planogramas/hunts/hunts_5_3.png') }}" alt="hunts" class="img-responsive pull-left img3">
 	</div>
-	<img src="{{ asset('bundles/odiseoconagra/images/planogramas/hunts/hunts_5_2.png') }}" alt="hunts" class="img-responsive">
+	<div class="images2">
+		<img src="{{ asset('bundles/odiseoconagra/images/planogramas/hunts/hunts_5_2.png') }}" alt="hunts" class="img-responsive pull-left img2">
+	</div>
 	</a>
 </div>
 {% include 'OdiseoConAgraBundle:Frontend:Planogramas/menu-hunts.html.twig' %}
