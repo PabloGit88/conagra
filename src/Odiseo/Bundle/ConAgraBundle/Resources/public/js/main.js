@@ -63,7 +63,7 @@
             color: '#555',
             size: '5px',
         });
-        $('.pam .otherContent').slimScroll({
+        $('.pam .otherContent, .wesson .otherContent').slimScroll({
             height: '200px',
             color: '#555',
             size: '5px',
