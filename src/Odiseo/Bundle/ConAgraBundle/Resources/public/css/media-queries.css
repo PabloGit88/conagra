@@ -359,4 +359,15 @@
 		right: -8%;
 	}
 	/* END Entrenamiento de marcas */
+	
+	/* Conagra Latam */
+	
+	#content .conagra_latam .mainTitle{
+		font-size:15px;
+		margin-top: 20px;
+	}
+	
+	
+	/* END Conagra Latam */
+	
 }
