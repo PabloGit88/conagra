@@ -381,7 +381,6 @@ img.marca_descripcion{
 #content .infoBrand .info {
 	height: 326px;
 	position: relative;
-	z-index:-10;
 }
 
 #content .infoBrand .info > img.logo {
