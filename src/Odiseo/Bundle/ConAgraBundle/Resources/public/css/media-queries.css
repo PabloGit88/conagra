@@ -63,7 +63,7 @@
 	.planogramas.wesson .generales .contenido {
 		margin-top: 2% !important;
 	}
-
+}
 /* Bootrstrap max SM (> 768 && <= 992) */
 @media only screen and (max-width : 992px)  
 { 
