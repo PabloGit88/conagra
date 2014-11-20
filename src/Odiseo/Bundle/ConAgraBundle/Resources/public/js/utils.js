@@ -10,9 +10,15 @@ var UTILS = (function($){
 			element.show();
 	}
 	
+	function privateShowModal(){
+		$('.modal').modal('show');
+		
+	}
+	
 	//public methods
 	return {	
-		showDescription : privateShowDescription
+		showDescription : privateShowDescription,
+		showModal : privateShowModal
 	};
 
 })(jQuery);

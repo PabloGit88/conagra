@@ -1,5 +1,10 @@
 {% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
  
+  {% block javascripts %}
+		 {{ parent() }}
+		<script type="text/javascript" src="{{ asset('bundles/odiseoconagra/js/utils.js') }}"></script>
+{% endblock %}
+ 
 {% block content %}
 <div class="entrenamiento_marcas">
 	<div class="mainTitleContent clearfix">
@@ -25,8 +30,8 @@
 						<p>
 							En 1981, Golden Valley Microwave Foods creó la marca ACT I,  unas palomitas refrigeradas que se vendían a través de máquinas expendedoras. Y en 1984, se desarrolla una revolucionaria bolsa que permitiría a los granos estallar en cualquier microondas. Este novedoso producto se llamaría ACT II, y paso a ser parte del portafolio de ConAgra Foods Inc. en 1991.
 							<br> 
-							Hoy en día, ACT II es la marca líder de palomitas para microondas, que se vende en más de 50 países, ocupando en muchos de los casos el 1 o 2 lugar de esta categoría. Y dentro de snacks, es la segunda categoría con crecimiento más rápido crecimiento, ¡con un promedio de más del 7.5% en los últimos cinco años!*
-							deben tener mayor espacio.
+							<span class="description_to_hide"> Hoy en día, ACT II es la marca líder de palomitas para microondas, que se vende en más de 50 países, ocupando en muchos de los casos el 1 o 2 lugar de esta categoría. Y dentro de snacks, es la segunda categoría con crecimiento más rápido crecimiento, ¡con un promedio de más del 7.5% en los últimos cinco años!*
+							deben tener mayor espacio. </span>
 						</p>
 					</div>
 				</div>
@@ -63,7 +68,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="otherData">
+			<div class="otherData hidden-xs">
 				<h3>Datos curiosos</h3>
 				<div class="otherContent">
 					<ul>
@@ -73,6 +78,9 @@
 					</ul>
 				</div>
 			</div>
+		</div>
+		<div class="datosCuriosos visible-xs">
+			<img onclick="UTILS.showModal();" src="{{ asset('bundles/odiseoconagra/images/infoBrand/datos_curiosos.png') }}">
 		</div>
 		<div class="social">
 			<ul>
@@ -84,4 +92,23 @@
 		</div>
 	</div>
 </div>
+
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content style="border: 0;">
+		<div class="otherData_m">
+			<h3>Datos curiosos</h3>
+			<div class="otherContent">
+				<ul>
+					<li>La evidencia más temprana de las palomitas de maíz se encontró en Perú y data de 4700 aC.</li>
+					<li>Los estadounidenses consumen unos 16 mil millones cuartos de este grano. Eso es 51 cuartos por hombre, mujer y niño.</li>  
+					<li>Las semillas de las palomitas pueden explotar hasta 3 pies en el aire. *</li>
+				</ul>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+
 {% endblock %}
