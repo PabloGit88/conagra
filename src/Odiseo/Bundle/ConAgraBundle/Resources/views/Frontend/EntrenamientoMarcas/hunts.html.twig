@@ -1,5 +1,10 @@
 {% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
  
+ {% block javascripts %}
+		 {{ parent() }}
+		<script type="text/javascript" src="{{ asset('bundles/odiseoconagra/js/utils.js') }}"></script>
+{% endblock %}
+ 
 {% block content %}
 <div class="entrenamiento_marcas">
 	<div class="mainTitleContent clearfix">
@@ -70,7 +75,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="otherData red">
+			<div class="otherData red hidden-xs">
 				<h3>Datos curiosos</h3>
 				<div class="otherContent">
 					<p>Los tomates enlatados Hunt’s son 100% naturales sin conservantes ni ingredientes artificiales. Hunt’s no contiene jarabe de maíz con alto contenido de fructosa.
@@ -79,6 +84,9 @@
 					</p>
 				</div>
 			</div>
+		</div>
+		<div class="datosCuriosos visible-xs">
+			<img onclick="UTILS.showModal();" src="{{ asset('bundles/odiseoconagra/images/infoBrand/datos_curiosos_hunts.png') }}">
 		</div>
 		<div class="social hide">
 			<ul>
@@ -89,6 +97,23 @@
 			</ul>
 		</div>
 	</div>
+</div>
+
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content style="border: 0;">
+		<div class="otherData_m red">
+			<h3>Datos curiosos</h3>
+			<div class="otherContent">
+				<p>Los tomates enlatados Hunt’s son 100% naturales sin conservantes ni ingredientes artificiales. Hunt’s no contiene jarabe de maíz con alto contenido de fructosa.
+					Todos los tomates Hunt’s son pelados a través del proceso llamado FlashSteam®, que utiliza el vapor del agua para retirar la piel. 
+					Los tomates Hunt’s son cosechados y en cuestión de 8 a 10 horas son enlatados garantizando no solo la frescura sino la autenticidad del sabor a tomate.
+				</p>
+			</div>
+		</div>
+    </div>
+  </div>
 </div>
 {% endblock %}
 

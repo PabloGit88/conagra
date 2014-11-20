@@ -1,5 +1,11 @@
 {% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
  
+  {% block javascripts %}
+		 {{ parent() }}
+		<script type="text/javascript" src="{{ asset('bundles/odiseoconagra/js/utils.js') }}"></script>
+{% endblock %}
+ 
+ 
 {% block content %}
 <div class="entrenamiento_marcas">
 	<div class="mainTitleContent clearfix">
@@ -55,7 +61,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="otherData red">
+			<div class="otherData red hidden-xs">
 				<h3>Datos curiosos</h3>
 				<div class="otherContent">
 					<ul>
@@ -65,6 +71,10 @@
 					</ul>
 				</div>
 			</div>
+		</div>
+		
+		<div class="datosCuriosos visible-xs">
+			<img onclick="UTILS.showModal();" src="{{ asset('bundles/odiseoconagra/images/infoBrand/datos_curiosos_peter_pan.png') }}">
 		</div>
 		<div class="social hide">
 			<ul>
@@ -76,4 +86,24 @@
 		</div>
 	</div>
 </div>
+
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content style="border: 0;">
+		<div class="otherData_m red">
+				<h3>Datos curiosos</h3>
+				<div class="otherContent">
+					<ul>
+						<li>La mantequilla de maní Peter Pan era originalmente empacada en envases de metal pero debido a la escases del mismo durante la Segunda Guerra Mundial tuvo que ser cambiado a envases plásticos. </li>
+						<li>En versiones anteriores del producto, Peter Pan fue descrita como una mujer en vez de un niño.</li>  
+						<li>Peter Pan y los personajes de Disney aparecieron por primera vez en la campaña de publicidad la mantequilla de mani en 1953. </li>
+					</ul>
+				</div>
+		</div>
+    </div>
+  </div>
+</div>
+
+
 {% endblock %}

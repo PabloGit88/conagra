@@ -1,5 +1,11 @@
 {% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
  
+ {% block javascripts %}
+		 {{ parent() }}
+		<script type="text/javascript" src="{{ asset('bundles/odiseoconagra/js/utils.js') }}"></script>
+{% endblock %}
+ 
+ 
 {% block content %}
 <div class="entrenamiento_marcas">
 	<div class="mainTitleContent clearfix">
@@ -76,7 +82,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="otherData red">
+			<div class="otherData red hidden-xs">
 				<h3>Datos curiosos</h3>
 				<div class="otherContent">
 					<p>¿Sabías Snack Pack hizo un cameo en la película Billy Madison? El personaje de Adam Sandler hace todo lo posible para enganchar un Snack Pack! 					
@@ -85,6 +91,9 @@
 					<a href="https://www.youtube.com/watch?v=ZExPoZGQ8gM" class="magnificPopup">Ver video</a>
 				</div>
 			</div>
+		</div>
+		<div class="datosCuriosos visible-xs">
+			<img onclick="UTILS.showModal();" src="{{ asset('bundles/odiseoconagra/images/infoBrand/datos_curiosos_snack_pack.png') }}">
 		</div>
 		<div class="social hide">
 			<ul>
@@ -95,5 +104,22 @@
 			</ul>
 		</div>
 	</div>
+</div>
+
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content style="border: 0;">
+		<div class="otherData_m red">
+			<h3>Datos curiosos</h3>
+			<div class="otherContent">
+				<p>¿Sabías Snack Pack hizo un cameo en la película Billy Madison? El personaje de Adam Sandler hace todo lo posible para enganchar un Snack Pack! 					
+				</p>
+				<br>
+				<a href="https://www.youtube.com/watch?v=ZExPoZGQ8gM" class="magnificPopup">Ver video</a>
+			</div>
+		</div>
+    </div>
+  </div>
 </div>
 {% endblock %}

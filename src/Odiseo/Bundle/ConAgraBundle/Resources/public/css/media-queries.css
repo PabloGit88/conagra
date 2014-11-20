@@ -158,4 +158,205 @@
 		
 	/* END Private label */
 	
+	/* Entrenamiento de marcas */
+	#content .entrenamiento_marcas .infoBrand .info .mainInfo
+	{
+   	 	width: 104%;
+   	 	padding: 0px 120px 45px 13px;	
+	}	
+	#content .infoBrand.act2 .info .mainInfo {
+		padding: 0px 120px 45px 13px;	
+	}
+	#content  .entrenamiento_marcas .infoBrand .tabs {
+		width: 64%;
+		float: right;
+		margin-right: 2%;
+		height: 30px;
+	}
+	#content  .entrenamiento_marcas .infoBrand .tabs ul {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		float: right;
+	}
+	#content .entrenamiento_marcas  .infoBrand .info .mainInfo p .description_to_hide{
+		display:none;
+	}
+	#content .entrenamiento_marcas  .infoBrand .social
+	{
+   	 	width: 100%;
+   	 	bottom: 55px;
+	}	
+	#content .entrenamiento_marcas  .infoBrand .social ul{
+		left:30%;
+		top:26px;
+	}
+	#content .entrenamiento_marcas {
+		padding-top: 30px;
+	}
+	#content .infoBrand .info > img.logo{
+		top:0;
+		left:0;
+	}
+	#content .infoBrand {
+		margin-bottom: 50px;
+	}
+	#content .infoBrand .info{
+		top: -53px;
+	}
+	.otherData_m {
+		float: left;
+		position: absolute;
+		margin-top: 15%;
+		left: 28%;
+		width: 95%;
+		background: url(../images/infoBrand/other_data_box.png) no-repeat;
+		margin-left: -85px;
+		color: #FFFFFF;
+		padding: 28px;
+		-webkit-filter: drop-shadow(0px 8px 7px rgba(0, 0, 0, 0.4));
+		filter: drop-shadow(0px 8px 7px rgba(0, 0, 0, 0.4));
+		-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=8, OffY=7,Color='#000000')";
+		filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=8, OffY=7, Color='#000000')";
+	}
+	.otherData_m.red {
+		background: url(../images/infoBrand/other_data_box_red.png) no-repeat;
+	}
+	.otherData_m.green {
+		background: url(../images/infoBrand/other_data_box_green.png) no-repeat;
+	}
+	 .otherData_m.yellow {
+		background: url(../images/infoBrand/other_data_box_yellow.png) no-repeat;
+	}
+	.otherData_m h3 {
+		font-family: 'hand_of_sean_demoregular';
+		font-size: 22px;
+		margin: 10px 0 5px 0;
+		padding-left: 55px;
+		height: 50px;
+		line-height: 38px;
+		background: url(../images/infoBrand/asterisk_blue.png) no-repeat;
+	}
+	.otherData_m.red h3 {
+		background: url(../images/infoBrand/asterisk_red.png) no-repeat;
+	}
+	.otherData_m.green h3 {
+		background: url(../images/infoBrand/asterisk_green.png) no-repeat;
+	}
+	.otherData_m.yellow h3 {
+		background: url(../images/infoBrand/asterisk_yellow.png) no-repeat;
+	}
+	.otherData_m a {
+		font-size: 14px;
+		padding-left: 25px;
+		text-decoration:none; 
+		color: #FFFFFF;
+		background: url(../images/infoBrand/star.png) no-repeat center left;
+	}
+	.otherData_m .otherContent {
+		margin-top: 10px;
+		font-family: 'Roboto', sans-serif;
+		line-height: 16px;
+		-webkit-box-shadow: 0px -18px 18px -16px rgba(50, 50, 50, 0.30);
+		-moz-box-shadow: 0px -18px 18px -16px rgba(50, 50, 50, 0.30);
+		box-shadow: 0px -18px 18px -16px rgba(50, 50, 50, 0.30);
+		padding-top: 20px;
+	}
+	.info .otherData_m .otherContent{
+		font-size: 13px;
+		line-height: 14px;
+	}
+	.otherData_m .otherContent{
+		font-size: 13px;
+		line-height: 14px;
+		overflow-y: auto;
+		overflow-x: hidden;
+		height: 214px;
+	}
+	 .otherData_m .otherContent p{
+		padding-left:23px;
+	}
+	.otherData_m .otherContent ul {
+		list-style: initial;
+		margin-left: 25px;
+		width: 82%;
+	}
+	.otherData_m .otherContent ul li {
+		margin-bottom: 10px;
+	}
+	#content .infoBrand .tabs {	
+			width: 64%;
+		/* float: right; */
+		margin-right: 0%;
+		height: 30px;
+		top: 57px;
+		left: 37%;
+		padding-top: -17px;
+		position: absolute;
+	}
+	#content .infoBrand .tabs ul li a.catalogo {
+		width: 63px !important;
+		background-size:contain !important;
+		background-position:bottom !important;
+	}
+	#content .infoBrand .tabs ul li a.infoMarca{
+		width: 60px !important;
+		background-size:contain !important;
+		background-position:bottom !important;
+	}
+	#content .infoBrand .tabs ul li a.manual {
+		width: 55px !important;
+		background-size:contain !important;
+		background-position:bottom !important;
+	}		
+	#content .infoBrand .info > img.logo {
+		position: absolute;
+		top: -5%;
+		left: 1%;
+		z-index: 999;
+		width: 31%;
+	}
+	#content .infoBrand .info .mainInfo {
+		padding: 0px 111px 36px 15px;
+		width: 99%; 
+	}
+	#content .infoBrand .info .mainInfo {
+		padding: 0px 111px 36px 15px;
+		width: 99%; 
+	}
+		#content .infoBrand .info .mainInfo .tabContent{
+		padding: 33px 5px 36px 0px;
+		width: 150%;; 
+	}
+	#content .infoBrand .info .mainInfo p {
+		font-family: 'Roboto', sans-serif;
+		font-size: 12px;
+	}
+	#content .infoBrand .datosCuriosos{
+		top: -85px;
+		position: relative;
+		width: 60%;
+		padding-right: 24px;
+		float: right;
+	}
+	#content .infoBrand .datosCuriosos img {
+		width: 100%;
+	}
+	#content .entrenamiento_marcas .mainTitleContent h1 {
+		font-size: 15px;
+	}
+	#content .entrenamiento_marcas .mainTitleContent  {
+		margin-bottom: 63px;
+	}
+	#content .mainTitleContent .backButton {
+		margin-right: 15px;
+		font-size: 11px;
+		color: #333333;
+		top: -15px;
+		width: 109px;
+		position: absolute;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+		right: -8%;
+	}
+	/* END Entrenamiento de marcas */
 }

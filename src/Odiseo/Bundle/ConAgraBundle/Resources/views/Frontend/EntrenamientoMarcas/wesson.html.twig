@@ -1,5 +1,11 @@
 {% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
  
+ {% block javascripts %}
+		 {{ parent() }}
+		<script type="text/javascript" src="{{ asset('bundles/odiseoconagra/js/utils.js') }}"></script>
+{% endblock %}
+ 
+ 
 {% block content %}
 <div class="entrenamiento_marcas">
 	<div class="mainTitleContent clearfix">
@@ -70,7 +76,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="otherData green">
+			<div class="otherData green hidden-xs">
 				<h3>Datos curiosos</h3>
 				<div class="otherContent">
 					<p>En 1991 Wesson introdujo el Aceite de Canola. La grasa proveniente de la semilla canola, no solo favorece la absorción de vitaminas A,D,E y K, sino que garantiza sus beneficios saludables. 
@@ -79,6 +85,9 @@
 					</p>
 				</div>
 			</div>
+		</div>
+		<div class="datosCuriosos visible-xs">
+			<img onclick="UTILS.showModal();" src="{{ asset('bundles/odiseoconagra/images/infoBrand/datos_curiosos_hunts.png') }}">
 		</div>
 		<div class="social hide">
 			<ul>
@@ -89,5 +98,20 @@
 			</ul>
 		</div>
 	</div>
+</div>
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content style="border: 0;">
+		<div class="otherData_m green">
+			<h3>Datos curiosos</h3>
+			<div class="otherContent">
+				<p>En 1991 Wesson introdujo el Aceite de Canola. La grasa proveniente de la semilla canola, no solo favorece la absorción de vitaminas A,D,E y K, sino que garantiza sus beneficios saludables. 
+				   En los últimos cinco años las ventas de aceite de canola aumentaron cerca de $2.000 millones de dólares en todo el mundo. 
+				   En el 2001, los más importantes chefs del 					
+				</p>
+			</div>
+		</div>
+    </div>
+  </div>
 </div>
 {% endblock %}

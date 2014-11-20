@@ -1,5 +1,10 @@
 {% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
  
+ {% block javascripts %}
+		 {{ parent() }}
+		<script type="text/javascript" src="{{ asset('bundles/odiseoconagra/js/utils.js') }}"></script>
+{% endblock %}
+ 
 {% block content %}
 <div class="entrenamiento_marcas">
 	<div class="mainTitleContent clearfix">
@@ -49,7 +54,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="otherData yellow">
+			<div class="otherData yellow hidden-xs">
 				<h3>Datos curiosos</h3>
 				<div class="otherContent">
 					<p>TIPS PARA USAR PAM®</p>
@@ -64,6 +69,9 @@
 				<img src="{{ asset('bundles/odiseoconagra/images/arrow_black_down.png') }}" class="arrowScroll">
 			</div>
 		</div>
+		<div class="datosCuriosos visible-xs">
+			<img onclick="UTILS.showModal();" src="{{ asset('bundles/odiseoconagra/images/infoBrand/datos_curiosos_pam.png') }}">
+		</div>
 		<div class="social hide">
 			<ul>
 				<li><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/wp-icon.png') }}"></a></li>
@@ -74,4 +82,25 @@
 		</div>
 	</div>
 </div>
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content style="border: 0;">
+		<div class="otherData_m yellow">
+			<h3>Datos curiosos</h3>
+			<div class="otherContent">
+				<p>TIPS PARA USAR PAM®</p>
+				<ul>
+					<li>PAM es bueno para cocinar bajo en grasas, con tan pocas calorías como 4cal por ½ segundo de spray.  </li>
+					<li>Para evitar que el queso y otros alimentos se peguen al utilizar un rallador, rocíe brevemente un poco de PAM.</li>  
+					<li>Antes de encender su parilla rocíe la misma con un poco de PAM y también los utensilios.</li>  
+					<li>Al cocinar pescados o cortes “al cartucho” o al horno rocíe un poco de PAM para realzar los sabores y que no se peguen a la bandeja o sartén.</li>  
+					<li>Al guardar las sobras, en envases plásticos rocíe el interior con un poco de PAM y luego coloque la comida, esto evitara que el recipiente se le adhieran los olores de la comida anterior.</li>
+				</ul>					
+			</div>
+			<img src="{{ asset('bundles/odiseoconagra/images/arrow_black_down.png') }}" class="arrowScroll">
+		</div>
+    </div>
+  </div>
+</div>
+
 {% endblock %}
