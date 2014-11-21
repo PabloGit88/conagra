@@ -358,6 +358,12 @@
 		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 		right: -8%;
 	}
+	
+	#content .entrenamiento_marcas,.planogramas .brands-container .brands li:last-child img{
+		margin-left:75%;
+	}
+	
+	
 	/* END Entrenamiento de marcas */
 	
 	/* Conagra Latam */
