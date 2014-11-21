@@ -101,6 +101,12 @@ div .generales{
  .planogramas.hunts.sugerido5 .img3{
  /*	height:50%;*/
  }
+ 
+ 
+ .planogramas.hunts.sugerido5 .img2{
+	position:relative;
+	top:-45px;
+ }
 
 .planogramas.hunts .generales .indicaciones ul li.dobleline {
 	background-position: 0% 22%;
@@ -133,6 +139,15 @@ div .generales{
 
 
 /* PETER PAN */
+
+
+.planogramas.peterpan .generales{
+	background-image: url("../images/planogramas/peterpan/peterpan_1_2.png"),  url("../images/planogramas/peterpan/peterpan_1_1.png");
+	background-repeat: no-repeat;
+	background-position: 66% 68%, 100% 68%;
+	height: 100%;
+
+}
 .planogramas.peterpan .generales .indicaciones ul li {
 	font-size: 16px;
 	padding-left: 25px;

@@ -211,7 +211,8 @@ img.marca_descripcion{
 	max-width: 80%;
 }
 #content .quien_es img.privateLabel {
-	max-width: 82%;
+	max-width: 76%;
+	margin-top: -20px;
 }
 
 .commercialFoodsBackground {
