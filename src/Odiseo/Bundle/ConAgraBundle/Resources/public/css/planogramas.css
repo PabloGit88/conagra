@@ -133,6 +133,15 @@ div .generales{
 
 
 /* PETER PAN */
+
+
+.planogramas.peterpan .generales{
+	background-image: url("../images/planogramas/peterpan/peterpan_1_2.png"),  url("../images/planogramas/peterpan/peterpan_1_1.png");
+	background-repeat: no-repeat;
+	background-position: 66% 68%, 100% 68%;
+	height: 100%;
+
+}
 .planogramas.peterpan .generales .indicaciones ul li {
 	font-size: 16px;
 	padding-left: 25px;
