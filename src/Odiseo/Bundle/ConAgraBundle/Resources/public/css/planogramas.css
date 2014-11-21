@@ -160,14 +160,17 @@ div .generales{
 	margin-left: 300px;
 	margin-bottom: 30px;
 }
+.planogramas.pam.sugerido3 .mainTitle {
+	margin: 0px 0 7px 0  !important;
+}
 .planogramas.pam .generales .images {
-	margin-top:7%;
+	margin-top:1%;
 }
 .planogramas.pam .generales .images .firstCol, .planogramas.pam .generales .images .secondCol{
 	padding: 0;
 }
 .planogramas.pam.sugerido3 .img1, .planogramas.pam.sugerido3 .img1 img  {
-	height: 85%;
+	height: 100%;
 }
 /* SWISSMISS */
 .planogramas.swissmiss .generales .indicaciones ul li {
