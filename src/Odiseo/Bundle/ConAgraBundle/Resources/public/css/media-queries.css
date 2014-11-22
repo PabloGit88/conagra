@@ -17,7 +17,9 @@
 	/* END Private label */
 	.planogramas.pam .generales .images {
 		margin-top:0%;
-	}	
+	}
+	
+		
 }
 
 
@@ -63,6 +65,12 @@
 	.planogramas.wesson .generales .contenido {
 		margin-top: 2% !important;
 	}
+	
+	#content .entrenamiento_marcas,.planogramas .brands-container img{
+		width: 130%;
+	}
+	
+	
 }
 /* Bootrstrap max SM (> 768 && <= 992) */
 @media only screen and (max-width : 992px)  
@@ -99,6 +107,11 @@
 		margin-top: 2% !important;
 	}
 	/* END Commercial Foods */
+	
+	#content .entrenamiento_marcas,.planogramas .brands-container img{
+		width: 145%;
+	}
+	
 }
 
 /* Bootrstrap max XS (<= 768) */ 
@@ -159,6 +172,10 @@
 	/* END Private label */
 	
 	/* Entrenamiento de marcas */
+	
+	#content .entrenamiento_marcas h1{
+	 	margin-bottom:30px;	
+	}
 	#content .entrenamiento_marcas .infoBrand .info .mainInfo
 	{
    	 	width: 104%;
@@ -365,6 +382,14 @@
 	 	margin-bottom:10% !important;;
  	}
 	
+	#content .entrenamiento_marcas,.planogramas .brands-container img{
+		width: 130%;
+	}
+	
+	
+	#content .entrenamiento_marcas,.planogramas .brands-container li:last-child img{
+		margin-left: 66%;
+	}
 	
 	
 	/* END Entrenamiento de marcas */
