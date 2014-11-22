@@ -19,7 +19,6 @@
 		margin-top:0%;
 	}
 	
-		
 	.planogramas.act2.sugerido2 .img1 img{
 		float:right;
 	}
@@ -71,6 +70,7 @@
 	.planogramas.wesson .generales .contenido {
 		margin-top: -1% !important;
 	}
+	
 	.planogramas.peterpan .generales {
 		background-position: 55% 68%, 100% 68% !important;
 	}
@@ -80,7 +80,6 @@
 	.planogramas.act2.sugerido2 .img2 img{
 		float:left;
 	}
-
 	
 	#content .entrenamiento_marcas,.planogramas .brands-container img{
 		width: 130%;
