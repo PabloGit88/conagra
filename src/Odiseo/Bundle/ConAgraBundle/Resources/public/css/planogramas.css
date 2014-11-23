@@ -144,6 +144,22 @@ div .generales{
 .planogramas.snackpack.sugerido3 .img1 img, .planogramas.snackpack.sugerido3 .img2 img  {
 	height:92%;
 }
+
+.planogramas.snackpack  {
+	background-image: url("../images/planogramas/snackpack/snackpack_1_0.png");
+	background-position: 94% 100%;
+	background-size: 34%;
+	background-repeat: no-repeat;
+}
+
+.planogramas.snackpack .logo{
+	margin-left: 0%;
+	margin-top: -5%;
+	position: absolute;
+	width: 55%;
+}
+
+
 /* PETER PAN */
 
 
