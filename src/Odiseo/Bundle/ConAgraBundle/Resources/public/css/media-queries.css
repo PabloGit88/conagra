@@ -81,7 +81,7 @@
 		float:left;
 	}
 	
-	#content .entrenamiento_marcas,.planogramas .brands-container img{
+	#content .entrenamiento_marcas .brands-container img, #content .planogramas .brands-container img{
 		width: 130%;
 	}
 	
@@ -123,7 +123,7 @@
 	}
 	/* END Commercial Foods */
 	
-	#content .entrenamiento_marcas,.planogramas .brands-container img{
+	#content .entrenamiento_marcas .brands-container img, #content .planogramas .brands-container img{
 		width: 145%;
 	}
 	
@@ -397,12 +397,12 @@
 	 	margin-bottom:10% !important;;
  	}
 	
-	#content .entrenamiento_marcas,.planogramas .brands-container img{
+	#content .entrenamiento_marcas .brands-container img, #content .planogramas .brands-container img{
 		width: 130%;
 	}
 	
 	
-	#content .entrenamiento_marcas,.planogramas .brands-container li:last-child img{
+	#content .entrenamiento_marcas  .brands-container li:last-child img, #content .planogramas .brands-container li:last-child img{
 		margin-left: 66%;
 	}
 	
