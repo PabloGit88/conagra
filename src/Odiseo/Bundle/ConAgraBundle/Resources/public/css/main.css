@@ -135,6 +135,11 @@ footer {
 	background-position: left center;
 }
 
+#content .entrenamiento_marcas .mainTitle {
+	margin: 0 0 20px 0;
+
+}
+
 #content .mainTitleContent .backButton {
 	font-family: 'Roboto', sans-serif;
 	margin-right: 15px;
