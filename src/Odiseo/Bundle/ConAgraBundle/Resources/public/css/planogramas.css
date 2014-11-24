@@ -35,6 +35,9 @@ div .generales{
 	float: left;
 	width: 70%;
 }
+.planogramas.act .indicaciones{
+		width: 100% !important;
+}
 .planogramas.wesson .indicaciones{
 	width: 90%;
 }
@@ -51,6 +54,9 @@ div .generales{
 	float: right;
 	width: 30%;
 }
+.planogramas.act .logo{
+	width: 100% !important;
+}
 
 .planogramas a
 {
@@ -65,6 +71,9 @@ div .generales{
 	font-family: 'Roboto', sans-serif;
 }
 /** ACT II **/
+.planogramas.act2.sugerido2 .mainTitle {
+	margin: 0px 0 14px 0 !important;
+}
 .planogramas.act2.sugerido2 .img1, .planogramas.act2.sugerido2 .img2{
 	height: 85%;
 }
@@ -78,7 +87,7 @@ div .generales{
 .act_background{
 	background-image: url("../images/planogramas/Act II/pochoclos.png");
 	background-repeat: no-repeat;
-	background-position: 100% 100%;
+	background-position: 91% 100%;
 }
 
 
