@@ -78,11 +78,11 @@ div .generales{
 	height: 85%;
 }
 
-.planogramas.act2.sugerido3 .img1, .planogramas.act2.sugerido4 .img2, .planogramas.act2.sugerido4 .secondDivImage, .planogramas.act2.sugerido5 .img1{
+.planogramas.act2.sugerido3 .img1, .planogramas.act2.sugerido5 .img1{
 	height: 85%;
 }
 .planogramas.act2.sugerido4 .img1{
-	margin-top: 100px;
+	margin-top: 114px;
 }
 .act_background{
 	background-image: url("../images/planogramas/Act II/pochoclos.png");

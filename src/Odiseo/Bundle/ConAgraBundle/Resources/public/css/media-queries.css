@@ -25,6 +25,12 @@
 	.planogramas.act2.sugerido2 .img2 img{
 		float:left;
 	}
+	.planogramas.act2.sugerido4 .firstDivImage img{
+		float:right;
+	}
+	.planogramas.act2.sugerido4 .secondDivImage img{
+		float:left;
+	}
 }
 
 
@@ -80,7 +86,12 @@
 	.planogramas.act2.sugerido2 .img2 img{
 		float:left;
 	}
-	
+	.planogramas.act2.sugerido4 .firstDivImage img{
+		float:right;
+	}
+	.planogramas.act2.sugerido4 .secondDivImage img{
+		float:left;
+	}	
 	#content .entrenamiento_marcas .brands-container img, #content .planogramas .brands-container img{
 		width: 130%;
 	}
@@ -421,7 +432,12 @@
 	.planogramas.act2.sugerido2 .img2 img{
 		float:none;
 	}	
-	
+	.planogramas.act2.sugerido4 .firstDivImage img{
+		float:none;
+	}
+	.planogramas.act2.sugerido4 .secondDivImage img{
+		float:none;
+	}		
 	/* END Conagra Latam */
 	
 	
