@@ -36,7 +36,8 @@ div .generales{
 	width: 70%;
 }
 .planogramas.act .indicaciones{
-		width: 100% !important;
+	width: 100% !important;
+	font-size: 14px;
 }
 .planogramas.wesson .indicaciones{
 	width: 90%;
@@ -49,12 +50,13 @@ div .generales{
 	
 }
 
-.planogramas.act .logo, .planogramas.hunts .logo
+.planogramas.hunts .logo
 {
 	float: right;
 	width: 30%;
 }
 .planogramas.act .logo{
+	margin-top: -8%;
 	width: 100% !important;
 }
 
@@ -87,7 +89,8 @@ div .generales{
 .act_background{
 	background-image: url("../images/planogramas/Act II/pochoclos.png");
 	background-repeat: no-repeat;
-	background-position: 91% 100%;
+	background-position: 82% 100%;
+	background-size: 27%;
 }
 
 
@@ -109,11 +112,6 @@ div .generales{
  /*	height:50%;*/
  }
  
- 
- .planogramas.hunts.sugerido5 .img2{
-	position:relative;
-	top:-45px;
- }
 
 .planogramas.hunts .generales .indicaciones ul li.dobleline {
 	background-position: 0% 22%;
@@ -127,14 +125,14 @@ div .generales{
 }
 .planogramas.wesson .generales .contenido
 {
-	margin-top: 2%;
-	margin-left: 25%;	
+	margin-top: 0%;
+	text-align: right;
 }
 
 .planogramas.wesson .generales .contenido .img
 {
-	float: left;
-	margin-left: 5%;	
+	margin-left: 3%;
+	display: inline-block;	
 }
 
 .planogramas.wesson.sugerido2 .img1{
@@ -154,7 +152,7 @@ div .generales{
 	height:92%;
 }
 
-.planogramas.snackpack  {
+.planogramas.snackpack.snackpack_background {
 	background-image: url("../images/planogramas/snackpack/snackpack_1_0.png");
 	background-position: 94% 100%;
 	background-size: 34%;
