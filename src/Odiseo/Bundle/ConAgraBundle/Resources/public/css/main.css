@@ -473,7 +473,14 @@ img.marca_descripcion{
 	max-height: 165px;
 	margin: 0;
 }
-
+#content .infoBrand.act2 .info .mainInfo .infoMarca .infoContent {
+	max-height: 204px;
+}
+#content .infoBrand .infoContent .catalogoContent.act2 a img{
+	padding-right:15px;
+	height: 97px;
+	margin-top:2px;	
+}
 #content .infoBrand .info .mainInfo .catalogo .infoContent {
 	/*height: 230px !important;*/
 	max-height: 230px;
