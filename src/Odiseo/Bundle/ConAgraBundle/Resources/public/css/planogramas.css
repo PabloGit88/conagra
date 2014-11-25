@@ -203,8 +203,7 @@ div .generales{
 	background: url(../images/planogramas/tilde.png) no-repeat 0% 19%;
 }
 .planogramas.pam .generales .indicaciones .logo{
-	margin-left: 300px;
-	margin-bottom: 30px;
+	float:right;
 }
 .planogramas.pam.sugerido3 .mainTitle {
 	margin: 0px 0 7px 0  !important;
@@ -213,9 +212,9 @@ div .generales{
 	margin-top:1%;
 }
 
-.planogramas.pam .generales img {
-	margin-top: -8%;
-	width: 30%;
+.planogramas.pam .generales .images img {
+	margin-top: -3%;
+	width: 34%;
 }
 
 .planogramas.pam .generales .images .firstCol, .planogramas.pam .generales .images .secondCol{
