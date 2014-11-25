@@ -212,6 +212,12 @@ div .generales{
 .planogramas.pam .generales .images {
 	margin-top:1%;
 }
+
+.planogramas.pam .generales img {
+	margin-top: -8%;
+	width: 30%;
+}
+
 .planogramas.pam .generales .images .firstCol, .planogramas.pam .generales .images .secondCol{
 	padding: 0;
 }
