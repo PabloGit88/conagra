@@ -476,11 +476,25 @@ img.marca_descripcion{
 #content .infoBrand.act2 .info .mainInfo .infoMarca .infoContent {
 	max-height: 204px;
 }
+#content .infoBrand.act2 .catalogo h3{
+	margin-top: 5px;
+}
 #content .infoBrand .infoContent .catalogoContent.act2 a img{
 	padding-right:15px;
 	height: 97px;
-	margin-top:2px;	
+	margin-top:6px;	
 }
+#content .infoBrand .infoContent .catalogoContent.kroritos a img{
+	margin-right: 20px;
+	margin-top: 20px;
+}
+#content .infoBrand .infoContent .catalogoContent.tripack a img{
+	padding-right: 21px;
+	height: 97px;
+	margin-top: 6px;
+}
+
+
 #content .infoBrand .info .mainInfo .catalogo .infoContent {
 	/*height: 230px !important;*/
 	max-height: 230px;
