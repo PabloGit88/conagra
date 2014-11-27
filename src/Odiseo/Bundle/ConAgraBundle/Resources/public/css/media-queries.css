@@ -228,6 +228,14 @@
 		display:none;
 	}
 	
+	#content .quien_es .mainTitle{
+		margin : 15px 0 10px 0;
+		font-size: 15px;
+	}
+	#content .quien_es .timelineContainer {
+		margin-top: 0;
+		height: 60vh;
+	}
 	#content .quien_es.commercial_foods{
 		display:none;
 	}

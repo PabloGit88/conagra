@@ -110,3 +110,21 @@ section .error{
 	margin: 0 0 0px 6px;
 	font-family: 'Roboto', sans-serif;
 }
+
+
+@media only screen and (max-width : 768px)  
+{ 
+
+	.tooltip-arrow{
+		display:none;
+	}
+	
+	.tooltip-inner {
+		max-width: 290px;
+		margin-left: 8%;
+		margin-top: 10%;
+	}
+	
+	
+}
+	
