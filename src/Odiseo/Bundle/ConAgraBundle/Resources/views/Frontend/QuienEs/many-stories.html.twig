@@ -4,30 +4,12 @@
 
     {{ parent() }}
     
+    <script type="text/javascript" src="{{ asset('bundles/odiseoconagra/js/timeline.js') }}"></script>
+    
     <script>
-	    var toolTiptemplate = '<div class="tooltip" style="margin-top:-42px;" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>';
-		var toolTipYear = '<h3>';
-		var toolTipYearEnd = '</h3><p>'
-		var toolTipEnd = '</p>';
-	
-		$('.circle').each(function()
-		{
-			var year = $(this).attr('id');
-			var text = $(this).data('text');
-			$(this).tooltip({ title: toolTipYear+year+toolTipYearEnd+text+toolTipEnd, template: toolTiptemplate , container:'body', html:true, trigger: 'manual'});
-			$(this).click(function (e) 
-			{
-				e.preventDefault();
-				var circle = this;
-				$('.circle').each(function()
-				{
-					if(this != circle)
-						$(this).tooltip('hide');
-				});
-					
-			    $(this).tooltip('show');
-			});
-		});
+	   
+
+		 TIME_LINE.init();
 
 		$('#many-stories').css('background', 'black');
 	</script>
