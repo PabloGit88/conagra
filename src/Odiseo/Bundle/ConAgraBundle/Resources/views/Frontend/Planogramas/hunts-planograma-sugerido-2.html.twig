@@ -2,10 +2,19 @@
  
 {% block content %}
 <div class="planogramas hunts sugerido2">
+	<a href="{{ path('odiseo_conagra_frontend_planogramas_index') }}" class="backButton pull-right">
+		<img src="{{ asset('bundles/odiseoconagra/images/volverInicioButton.png') }}">
+	</a>
 	<h1 class="mainTitle">Planograma Sugerido</h1>
 	<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'hunts-planograma-sugerido-3' }) }}">
 		<img src="{{ asset('bundles/odiseoconagra/images/planogramas/hunts/hunts_2.png') }}" alt="hunts"  class="center-block img-responsive img1">
 	</a>
+	
+	<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'hunts-indicaciones-generales' }) }}" class="pageButton previousButton"
+		data-toggle="popover" data-content="Planogramas sugeridos" data-placement="top" title="1/6" data-trigger="hover">
+	</a>
+	<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'hunts-planograma-sugerido-3' }) }}" class="pageButton nextButton" 
+		data-toggle="popover" data-content="Planogramas sugeridos" data-placement="top" title="3/6" data-trigger="hover">
+	</a>
 </div>
-{% include 'OdiseoConAgraBundle:Frontend:Planogramas/menu-hunts.html.twig' %}
 {% endblock %}

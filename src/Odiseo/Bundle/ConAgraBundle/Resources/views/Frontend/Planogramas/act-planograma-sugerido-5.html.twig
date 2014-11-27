@@ -2,8 +2,13 @@
  
 {% block content %}
 <div class="planogramas act2 sugerido5">
+	<a href="{{ path('odiseo_conagra_frontend_planogramas_index') }}" class="backButton pull-right">
+		<img src="{{ asset('bundles/odiseoconagra/images/volverInicioButton.png') }}">
+	</a>
 	<h1 class="mainTitle">Vertical</h1>
 	<img src="{{ asset('bundles/odiseoconagra/images/planogramas/Act II/actII_5.png') }}" alt="Act" class="img-responsive center-block img1">
+	<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'act-planograma-sugerido-4' }) }}" class="pageButton previousButton"
+		data-toggle="popover" data-content="Planogramas sugeridos" data-placement="top" title="4/5" data-trigger="hover">
+	</a>
 </div>
-{% include 'OdiseoConAgraBundle:Frontend:Planogramas/menu-act.html.twig' %}
 {% endblock %}

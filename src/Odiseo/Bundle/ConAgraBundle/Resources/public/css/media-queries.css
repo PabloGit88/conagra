@@ -31,9 +31,37 @@
 	.planogramas.act2.sugerido4 .secondDivImage img{
 		float:left;
 	}
+	.planogramas.peterpan.sugerido2 .img1 img{
+		float:right;
+	}
+	.planogramas.peterpan.sugerido2 .img2 img{
+		float:left;
+	}
+	.planogramas.pam.sugerido3 .mainTitle {
+		margin: 0px 0 19px 0 !important;
+	}
+	.planogramas.wesson.sugerido3 .img1 img{
+		float:right;
+	}
+	.planogramas.wesson.sugerido3 .img2 img{
+		float:left;
+	}	
+	.planogramas.snackpack.sugerido3 .img1 img{
+		float:right;
+	}
+	.planogramas.snackpack.sugerido3 .img2 img{
+		float:left;
+	}
 	.act_background{
 		background-position: 82% 100%;
 		background-size: 27%;
+	}
+	.planogramas.snackpack.snackpack_background {
+		background-position: 100% 110% !important;
+		background-size: 45% !important;
+	}
+	header .navbar-nav > li.home {
+		width: 85px;
 	}
 }
 
@@ -96,12 +124,36 @@
 	.planogramas.act2.sugerido4 .secondDivImage img{
 		float:left;
 	}	
+	.planogramas.peterpan.sugerido2 .img1 img{
+		float:right;
+	}
+	.planogramas.peterpan.sugerido2 .img2 img{
+		float:left;
+	}
+	.planogramas.wesson.sugerido3 .img1 img{
+		float:right;
+	}
+	.planogramas.wesson.sugerido3 .img2 img{
+		float:left;
+	}	
+	.planogramas.snackpack.sugerido3 .img1 img{
+		float:right;
+	}
+	.planogramas.snackpack.sugerido3 .img2 img{
+		float:left;
+	}	
+	.planogramas.pam.sugerido3 .mainTitle {
+		margin: 0px 0 7px 0 !important;
+	}
 	#content .entrenamiento_marcas .brands-container img, #content .planogramas .brands-container img{
 		width: 130%;
 	}
 	.act_background {
 		background-position: 85% 100% !important;
 		background-size: 30%;
+	}
+	header .navbar-nav > li.home {
+		width: 55px;
 	}
 	
 	
@@ -145,7 +197,9 @@
 	#content .entrenamiento_marcas .brands-container img, #content .planogramas .brands-container img{
 		width: 145%;
 	}
-	
+	header .navbar-nav > li.home > a span {
+		padding: 0px 10px;
+	}
 }
 
 /* Bootrstrap max XS (<= 768) */ 
@@ -434,6 +488,14 @@
 		font-size:15px;
 		margin-top: 20px;
 	}
+
+	/* END Conagra Latam */
+	
+	
+	#content .entrenamiento_marcas .mainTitle {
+	margin: 0 0 30px 0;
+	}
+	
 	.planogramas.act2.sugerido2 .img1 img{
 		float:none;
 	}
@@ -446,13 +508,22 @@
 	.planogramas.act2.sugerido4 .secondDivImage img{
 		float:none;
 	}		
-	/* END Conagra Latam */
-	
-	
-	#content .entrenamiento_marcas .mainTitle {
-	margin: 0 0 30px 0;
+	.planogramas.peterpan.sugerido2 .img1 img{
+		float:none;
 	}
-	
-	
-	
+	.planogramas.peterpan.sugerido2 .img2 img{
+		float:none;
+	}	
+	.planogramas.wesson.sugerido3 .img1 img{
+		float:none;
+	}
+	.planogramas.wesson.sugerido3 .img2 img{
+		float:none;
+	}
+	.planogramas.snackpack.sugerido3 .img1 img{
+		float:none;
+	}
+	.planogramas.snackpack.sugerido3 .img2 img{
+		float:none;
+	}	
 }

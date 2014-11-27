@@ -90,11 +90,19 @@
             color: '#555',
             size: '5px',
         });
-    	$('.tooltip-inner').slimScroll({
-            height: 'auto',
-            color: '#555',
-            size: '5px',
-        });        
+    	$('.downClick').click(function(){
+    		$('.pam .otherContent').animate({scrollTop : 800},0);
+			$('.pam .otherContent a').addClass('upClick');
+			$('.pam .otherContent').removeClass('downClick');
+    		return false;
+    	});
+    	$('.upClick').click(function(){
+    		$('.pam .otherContent').animate({scrollTop : 0},800);
+  			$('.pam .otherContent').removeClass('upClick');
+  			$('.pam .otherContent a').addClass('downClick');
+    		return false;
+    	});
+    	$('.pageButton.nextButton, .pageButton.previousButton').popover({ trigger: "hover" }); 	        
     });
     
 })( jQuery );

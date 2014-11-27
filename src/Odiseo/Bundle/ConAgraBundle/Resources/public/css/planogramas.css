@@ -9,6 +9,15 @@
 	margin: 0 0 36px 0;
 }
 
+#content .planogramas.index .mainTitle {
+	margin: 0 0 65px 0;
+}
+
+#content .planogramas .brands-container .brands li a img{
+	margin-top: 8px;
+}
+
+
 .planogramas.hunt_background{
 	background-image: url("../images/planogramas/hunts/hunts_tomatoes.png");
 	background-repeat: no-repeat;
@@ -77,8 +86,8 @@ div .generales{
 .planogramas.act2.sugerido2 .mainTitle {
 	margin: 0px 0 14px 0 !important;
 }
-.planogramas.act2.sugerido2 .img1, .planogramas.act2.sugerido2 .img2{
-	height: 85%;
+.planogramas.act2.sugerido2 .img2{
+	max-width: 75%;
 }
 
 .planogramas.act2.sugerido3 .img1, .planogramas.act2.sugerido5 .img1{
@@ -139,24 +148,14 @@ div .generales{
 .planogramas.wesson.sugerido2 .img1{
 		height:85%;
 }
-.planogramas.wesson.sugerido3 .img1,.planogramas.wesson.sugerido3 .img2 {
-		height:92%;
-}
 /* SNACK PACK*/
-.planogramas.snackpack.sugerido3 .img1, .planogramas.snackpack.sugerido3 .img2{
-	height: 100%;
-}
 .planogramas.snackpack.sugerido3 .img2{
 	margin-top: -10px;
 }
-.planogramas.snackpack.sugerido3 .img1 img, .planogramas.snackpack.sugerido3 .img2 img  {
-	height:92%;
-}
-
 .planogramas.snackpack.snackpack_background {
 	background-image: url("../images/planogramas/snackpack/snackpack_1_0.png");
-	background-position: 94% 100%;
-	background-size: 34%;
+	background-position: 100% 100%;
+	background-size: 42%;
 	background-repeat: no-repeat;
 }
 
@@ -205,7 +204,7 @@ div .generales{
 	float:right;
 }
 .planogramas.pam.sugerido3 .mainTitle {
-	margin: 0px 0 7px 0  !important;
+	margin: 0px 0 7px 0;
 }
 .planogramas.pam .generales .images {
 	margin-top:1%;
@@ -241,7 +240,7 @@ div .generales{
 }
 
 /* next and previous button*/
-.planogramas.act .generales a.previousButton{
+.planogramas a.previousButton{
 	background-image: url("../images/sprite.png");
 	background-repeat: no-repeat;
 	background-position: 5% 100%;
@@ -251,7 +250,7 @@ div .generales{
 	top: 87%;
 	left: 0%;
 }
-.planogramas.act .generales a.nextButton{
+.planogramas a.nextButton{
 	background-image: url("../images/sprite.png");
 	background-repeat: no-repeat;
 	background-position: 94% 100%;
@@ -259,16 +258,52 @@ div .generales{
 	height: 37px;
 	position: absolute;
 	top: 87%;
-	left: 89%;
+	left: 93%;
 }
-.planogramas.act .generales a.previousButton:hover{
+.planogramas a.previousButton:hover{
 	background-position: 5% 0%;
 }
-.planogramas.act .generales a.nextButton:hover{
+.planogramas a.nextButton:hover{
 	background-position: 94% 0%;
 }
+.planogramas .popover.fade{
+	width: 186px;
+	opacity: 0.9;
+	padding:0;
+	border-radius: 7px;
+	background: none;
+	border: none;
+}
+.planogramas .popover.top > .arrow {
+	border-top-color: #8f9240 !important;
+	opacity: 0.8;
+}
+.planogramas .popover.top > .arrow:after{
+	border-top-color:#8f9240 !important;
+}
+.planogramas .popover-title{
+	float:left;
+	line-height: 30px;
+	padding: 4px 5px;
+	background-color: #8d903d;
+	border-color:none;
+	border-bottom:none;
+	border-radius:0;
+	color: #fff;
+	border-radius: 5px 0px 0px 5px;
+}
+.planogramas .popover-content{
+	float:left;
+	background-color: #8f9240;
+	opacity: 0.8;
+	color: #fff;
+	padding: 9px 6px;
+	border-bottom-right-radius: 6px;
+	border-top-right-radius: 6px;
+}
 
-.planogramas.act .backButton {
+
+.planogramas .backButton {
 	font-family: 'Roboto', sans-serif;
 	margin-right: 15px;
 	color: #333333;
@@ -280,7 +315,7 @@ div .generales{
 	text-decoration: none;
 }
 
-.planogramas.act  .backButton:hover {
+.planogramas .backButton:hover {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	filter: alpha(opacity=100);
 	-moz-opacity: 1;

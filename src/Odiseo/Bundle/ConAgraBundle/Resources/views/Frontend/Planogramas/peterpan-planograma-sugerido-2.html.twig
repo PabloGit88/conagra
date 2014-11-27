@@ -2,14 +2,22 @@
  
 {% block content %}
 <div class="planogramas peterpan sugerido2">
+	<a href="{{ path('odiseo_conagra_frontend_planogramas_index') }}" class="backButton pull-right">
+		<img src="{{ asset('bundles/odiseoconagra/images/volverInicioButton.png') }}">
+	</a>
 	<h1 class="mainTitle">Planograma Sugerido (Vertical)</h1>
 	<div class="row">
 		<a href="#">
-			<div class="img1 col-md-12">
-			<img src="{{ asset('bundles/odiseoconagra/images/planogramas/peterpan/peterpan_2.png') }}" alt="peterpan"  class="img-responsive center-block">
+			<div class="img1 col-md-6 col-sm-6 col-xs-12">
+				<img src="{{ asset('bundles/odiseoconagra/images/planogramas/peterpan/peterpan_2_1.png') }}" alt="peterpan" class="img-responsive center-block">
+			</div>
+			<div class="img2 col-md-6 col-sm-6 col-xs-12">
+				<img src="{{ asset('bundles/odiseoconagra/images/planogramas/peterpan/peterpan_2_2.png') }}" alt="peterpan" class="img-responsive img2 center-block">
 			</div>
 		</a>
 	</div>
+	<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'peterpan-indicaciones-generales' }) }}" class="pageButton previousButton"
+		data-toggle="popover" data-content="Planogramas sugeridos" data-placement="top" title="1/2" data-trigger="hover">
+	</a>
 </div>
-{% include 'OdiseoConAgraBundle:Frontend:Planogramas/menu-peterpan.html.twig' %}
 {% endblock %}

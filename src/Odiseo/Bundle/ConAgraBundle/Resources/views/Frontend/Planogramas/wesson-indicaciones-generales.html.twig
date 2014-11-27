@@ -2,6 +2,9 @@
  
 {% block content %}
 <div class="planogramas wesson">
+	<a href="{{ path('odiseo_conagra_frontend_planogramas_index') }}" class="backButton pull-right">
+		<img src="{{ asset('bundles/odiseoconagra/images/volverInicioButton.png') }}">
+	</a>
 	<h1 class="mainTitle">Wesson</h1>
 	<div class="generales clearfix">
 		<div class="indicaciones  row">
@@ -38,7 +41,8 @@
 			</div>
 		</div>
 	</div>
-	
+	<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'wesson-planograma-sugerido-2' }) }}" class="pageButton nextButton" 
+		data-toggle="popover" data-content="Planogramas sugeridos" data-placement="top" title="2/3" data-trigger="hover">
+	</a>	
 </div>
-{% include 'OdiseoConAgraBundle:Frontend:Planogramas/menu-wesson.html.twig' %}
 {% endblock %}
