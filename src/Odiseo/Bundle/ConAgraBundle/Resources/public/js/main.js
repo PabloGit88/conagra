@@ -57,6 +57,28 @@
     	//Modal video
     	$('.magnificPopup').magnificPopup({type:'iframe'});
     	
+    	// zoom gallery 
+    	$('.zoom-gallery').magnificPopup({
+    		delegate: 'a',
+    		type: 'image',
+    		closeOnContentClick: false,
+    		closeBtnInside: false,
+    		image: {
+    			verticalFit: true
+    		},
+    		gallery: {
+    			enabled: true
+    		},
+    		zoom: {
+    			enabled: true,
+    			duration: 300, // don't foget to change the duration also in CSS
+    			opener: function(element) {
+    				return element.find('img');
+    			}
+    		}
+    		
+    	});
+    	
     	//Scrolls
     	$('.infoContent').slimScroll({
             height: 'auto',
@@ -68,6 +90,11 @@
             color: '#555',
             size: '5px',
         });
+    	$('.tooltip-inner').slimScroll({
+            height: 'auto',
+            color: '#555',
+            size: '5px',
+        });        
     });
     
 })( jQuery );
