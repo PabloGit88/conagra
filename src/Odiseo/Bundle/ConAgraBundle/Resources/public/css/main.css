@@ -688,7 +688,7 @@ img.marca_descripcion{
 }
 
 #content .quien_es .timelineContainer {
-	margin-top: 50px;
+	margin-top: 15%;
 	overflow-x: hidden;
 	-webkit-overflow-scrolling: touch;
 }

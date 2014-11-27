@@ -31,7 +31,7 @@ var TIME_LINE = (function($){
 								  "1986" : { "year": "1986",	"head" : "ConAgra acquires Del Monte" , "story": "ConAgra acquires the Del Monte frozen food business. " ,	"style_number" : TITLE_AND_TEXT },
 								  "1988" : { "year": "1988",	"head" : ["Healthy Choice®", "ConAgra acquires Lamb Weston®"] , "story": ["The first Healthy Choice products, frozen dinners, are introduced." , "ConAgra and Golden Valley Microwave Foods each acquire 50 percent of the leading U.S. frozen potato processor, Lamb Weston."] ,	"style_number" : IMAGE_TITLE_AND_TEXT },
 								  "1989" : { "year": "1989",	"head" : ["Omaha headquarters opens", "ConAgra acquires Swift Independent Packing Co."]  ,	"style_number" : ONLY_TWO_TITLE },
-								  "1990" : { "year": "1990",	"head" : ["ConAgra acquires Beatrice Foods", "Banquet launches line of kids’ meals under Kid Cuisine® name" ], "story": "ConAgra purchases Beatrice Foods, ConAgra’s largest acquisition, bringing to the company such brand favorites as Hunt’s®, La Choy®, Orville Redenbacher’s®, Snack Pack®, Wesson®, Swiss Miss® and Reddi-wip®." ,	"style_number" : LARGE_TEXT },
+								  "1990" : { "year": "1990",	"head" : ["ConAgra acquires Beatrice Foods", "Banquet launches line of kids’ meals under Kid Cuisine® name" ], "story": ["ConAgra purchases Beatrice Foods", "ConAgra’s largest acquisition, bringing to the company such brand favorites as Hunt’s®, La Choy®, Orville Redenbacher’s®, Snack Pack®, Wesson®, Swiss Miss® and Reddi-wip®." ],	"style_number" : LARGE_TEXT },
 								  "1991" : { "year": "1991",	"head" : "ConAgra merges with Golden Valley Microwave Foods" , "story": "Golden Valley Microwave Foods merges with ConAgra and brings with it ACT II®, America’s best-selling microwave popcorn." ,	"style_number" : IMAGE_TITLE_AND_TEXT },
 								  "1994" : { "year": "1994",	"head" : "ConAgra turns 75" , "story": "" ,	"style_number" : ONLY_TITLE },
 								  "2009" : { "year": "2009",	"head" : "ConAgra Foods introduces new face behind the brands" , "story": "ConAgra Foods unveils a new identity with logo and “Food you love” tagline." ,	"style_number" : IMAGE_TITLE_AND_TEXT },
@@ -122,20 +122,21 @@ var TIME_LINE = (function($){
 				var htmlForTooltip = null;
 				var id = $(this).attr('id');
 				var yearObject =  prv_year_description[id];
+				var textYearSelector = "#text_" + id;
 				htmlForTooltip = htmlStringBuilder(yearObject);
 				$(this).tooltip({ title: htmlForTooltip, template: toolTiptemplate , container:'body', html:true, trigger: 'manual'});
 				$(this).hover(function (e) 
 				{
 					e.preventDefault();
-					var circle = this;
 				    $(this).tooltip('show');
+				    $(textYearSelector).css('fill' , '#969d15');
 				},
 				
 				function (e) 
 				{
 					e.preventDefault();
-					var circle = this;
 				    $(this).tooltip('hide');
+				    $(textYearSelector).css('fill' , 'black');
 				}
 				
 				);
