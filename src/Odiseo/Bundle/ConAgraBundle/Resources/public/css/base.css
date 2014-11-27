@@ -38,27 +38,75 @@ section .error{
 
 .tooltip-inner {
 	background-color: #FFFFFF;
-	max-width: 260px;
-	height: 125px;
+	max-width: 350px;
 	box-shadow: 0px 3px 0px rgba(200, 187, 187, 1);
 }
 
 .tooltip-inner p {
 	text-align: left;
-	margin: 0 0 0 10px;
+	margin: 0 0 0  20%;
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
-	overflow-y: scroll;
-	height: 70px;
-	padding-right: 20px;
 	color: #878787;
 }
+
+
+.tooltip-inner .tooltip-img {
+	float: left;
+	margin-right: 5%;
+}
+
+.tooltip-inner .tooltip-info p {
+}
+
+.tooltip-inner .tooltip-info.onlyTitle  p {
+	margin: 0 ;
+}
+
+
+.tooltip-inner .tooltip-info.onlyTitle  h3 {
+	margin: 0;
+}
+
+
+.tooltip-inner .tooltip-info.onlyTitleText  p {
+	margin: 0 ;
+}
+
+
+.tooltip-inner .tooltip-info.onlyTitleText  h3 {
+	margin: 0;
+}
+
+
+.tooltip-inner .tooltip-info.largText  p {
+	margin: 0 ;
+}
+
+
+.tooltip-inner .tooltip-info.largText  h3 {
+	margin: 0;
+}
+
+.tooltip-inner .tooltip-info.onlyTwoTitle  p {
+	margin: 0 ;
+}
+
+
+.tooltip-inner .tooltip-info.onlyTwoTitle  h3 {
+	margin: 0;
+}
+
+.tooltip-inner .tooltip-info  h3.image-title  {
+	margin: 0 0 14px 8px;
+}
+
 
 .tooltip-inner h3 {
 	color: #508934;
 	font-size: 18px;
 	text-align: left;
 	font-weight: bold;
-	margin: 10px 0 10px 6px;
+	margin: 0 0 0px 6px;
 	font-family: 'Roboto', sans-serif;
 }
