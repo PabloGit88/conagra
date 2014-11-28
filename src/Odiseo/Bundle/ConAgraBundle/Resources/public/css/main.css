@@ -785,3 +785,9 @@ top:0%;
 #content .quien_es .timeline .circle {
 	cursor: pointer;
 }
+
+#content .entrenamiento_marcas .infoBrand.pam .upClick img {
+	ms-transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
+	transform: rotate(177deg);
+}

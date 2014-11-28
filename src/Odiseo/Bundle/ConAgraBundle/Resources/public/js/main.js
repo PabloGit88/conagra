@@ -90,18 +90,44 @@
             color: '#555',
             size: '5px',
         });
+        //button scroll
     	$('.downClick').click(function(){
-    		$('.pam .otherContent').animate({scrollTop : 800},0);
-			$('.pam .otherContent a').addClass('upClick');
-			$('.pam .otherContent').removeClass('downClick');
-    		return false;
+    		
+    		var divHeight = $('.pam .otherData .otherContent').height();
+			var scrollHeight = $(document).height();
+			var scrollPosition = divHeight + $('.pam .otherData .otherContent').scrollTop();
+			//alert(scrollHeight); alert(scrollPosition); alert(divHeight)
+			// 719 354 180
+			if(scrollPosition > divHeight){
+			//	alert(scrollHeight); alert(scrollPosition); alert(divHeight);
+				$('.pam .otherData .otherContent').animate({scrollTop : 0},800);
+	  			$('a').removeClass('upClick').addClass('downClick');
+			}else{
+	    		$('.pam .otherData .otherContent').animate({scrollTop : divHeight},600);
+				$('a').removeClass('downClick').addClass('upClick');				
+			}
+
     	});
+    	
     	$('.upClick').click(function(){
-    		$('.pam .otherContent').animate({scrollTop : 0},800);
-  			$('.pam .otherContent').removeClass('upClick');
-  			$('.pam .otherContent a').addClass('downClick');
-    		return false;
+    		alert("aa");
+    		$('.pam .otherData .otherContent').animate({scrollTop : 0},800);
+  			$('a').removeClass('upClick').addClass('downClick');
     	});
+    /*	$(window).on("scroll", function() {
+    		var footerHeight = $('footer').height() + 500;
+    		var scrollHeight = $(document).height();
+    		var scrollPosition = $(window).height() + $(window).scrollTop() + footerHeight;
+    		if ((scrollHeight - scrollPosition) / scrollHeight <= 0) {
+    			var $change = false;
+    			$('.page').each(function(index){
+    				if($(this).css('display') == 'none' && $change == false){
+    					$(this).show();
+    					$change = true;
+    				}
+    			});
+    		}    	*/
+    	//popover
     	$('.pageButton.nextButton, .pageButton.previousButton').popover({ trigger: "hover" }); 	        
     });
     
