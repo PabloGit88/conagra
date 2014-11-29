@@ -188,11 +188,137 @@ footer {
 	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=10, OffY=10, Color='#000000')";
 }
 
-.marca_descripcion
+#content .conagra_latam .marca_descripcion .panama 
 {
+	width: 45%;
 	float:left;	
-	margin-top:-7%;
+	margin-top:-5%;
 }
+
+#content .conagra_latam .marca_descripcion .panama > img
+{
+	margin-top: 5%;
+}
+
+#content .conagra_latam .marca_descripcion .peru 
+{
+	width: 45%;
+	float:left;	
+	margin-top:-5%;
+}
+
+#content .conagra_latam .marca_descripcion .peru > img
+{
+	margin-top: 5%;
+}
+
+#content .conagra_latam .marca_descripcion .honduras 
+{
+	width: 45%;
+	float:left;	
+	margin-top:-5%;
+}
+
+#content .conagra_latam .marca_descripcion .honduras > img
+{
+	margin-top: 5%;
+}
+
+
+#content .conagra_latam .marca_descripcion .elsalvador 
+{
+	width: 45%;
+	float:left;	
+	margin-top:-5%;
+}
+
+#content .conagra_latam .marca_descripcion .elsalvador > img
+{
+	margin-top: 5%;
+}
+
+#content .conagra_latam .marca_descripcion .belice 
+{
+	width: 45%;
+	float:left;	
+	margin-top:-5%;
+}
+
+#content .conagra_latam .marca_descripcion .belice > img
+{
+	margin-top: 5%;
+}
+
+
+
+#content .conagra_latam .marca_descripcion .paraguay
+{
+	position: relative;
+	width: 84%;
+}
+
+#content .conagra_latam .marca_descripcion .paraguay > img
+{
+	position: absolute;
+	top: 20%;
+	right: -30%;
+	width: 29%;
+}
+
+#content .conagra_latam .marca_descripcion .ecuador
+{
+	width: 45%;
+	float:left;	
+	margin-top:-5%;
+}
+
+#content .conagra_latam .marca_descripcion .ecuador > img
+{
+	margin-top: 5%;
+}
+
+
+#content .conagra_latam .marca_descripcion .nicaragua
+{
+	width: 45%;
+	float:left;	
+	margin-top:-5%;
+}
+
+#content .conagra_latam .marca_descripcion .nicaragua > img
+{
+	margin-top: 0%;
+	width:60%;
+}
+
+
+#content .conagra_latam  .arrows 
+{
+	width: 15%;
+}
+
+#content .conagra_latam .marca_descripcion .brasil 
+{
+	width: 45%;
+	float:left;	
+	margin-top:-5%;
+	position: absolute;
+	height: 100%;
+}
+
+#content .conagra_latam .marca_descripcion .brasil > p
+{
+	margin-top: 0%;
+	height: 60%;
+	overflow: auto;
+}
+
+#content .conagra_latam .marca_descripcion .brasil > img
+{
+	margin-top: 5%;
+}
+
+
 
 .latam_mapa{
 	float:right;	
