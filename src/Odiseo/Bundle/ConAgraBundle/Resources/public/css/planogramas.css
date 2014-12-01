@@ -231,8 +231,8 @@ div .generales{
 .planogramas.pam .generales .images .firstCol, .planogramas.pam .generales .images .secondCol{
 	padding: 0;
 }
-.planogramas.pam.sugerido3 .img1, .planogramas.pam.sugerido3 .img1 img  {
-	height: 100%;
+.planogramas.pam.sugerido3 .img1 img  {
+	width: 25%;
 }
 /* SWISSMISS */
 .planogramas.swissmiss .generales .indicaciones ul li {
