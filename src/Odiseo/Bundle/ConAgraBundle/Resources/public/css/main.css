@@ -249,20 +249,16 @@ footer {
 	margin-top: 5%;
 }
 
-
-
 #content .conagra_latam .marca_descripcion .paraguay
 {
-	position: relative;
-	width: 84%;
+	width: 45%;
+	float:left;	
+	margin-top:-5%;
 }
 
 #content .conagra_latam .marca_descripcion .paraguay > img
 {
-	position: absolute;
-	top: 20%;
-	right: -30%;
-	width: 29%;
+	margin-top: 5%;
 }
 
 #content .conagra_latam .marca_descripcion .ecuador
@@ -295,6 +291,7 @@ footer {
 #content .conagra_latam  .arrows 
 {
 	width: 15%;
+	margin-top:4%;
 }
 
 #content .conagra_latam .marca_descripcion .brasil 
@@ -309,7 +306,7 @@ footer {
 #content .conagra_latam .marca_descripcion .brasil > p
 {
 	margin-top: 0%;
-	height: 60%;
+	max-height: 60%;
 	overflow: auto;
 }
 
@@ -318,6 +315,71 @@ footer {
 	margin-top: 5%;
 }
 
+#content .conagra_latam .marca_descripcion .colombia 
+{
+	width: 45%;
+	float:left;	
+	margin-top:-5%;
+	position: absolute;
+}
+
+#content .conagra_latam .marca_descripcion .colombia > p
+{
+	margin-top: 0%;
+	max-height: 60%;
+	overflow: auto;
+}
+
+#content .conagra_latam .marca_descripcion .colombia > img
+{
+	margin-top: 5%;
+}
+
+
+#content .conagra_latam .marca_descripcion .costarica 
+{
+	width: 45%;
+	float:left;	
+	margin-top:-5%;
+	position: absolute;
+	height: 130%;
+}
+
+#content .conagra_latam .marca_descripcion .costarica > p
+{
+	margin-top: 0%;
+	max-height: 50%;
+	overflow: auto;
+}
+
+#content .conagra_latam .marca_descripcion .costarica > img
+{
+	margin-top: 0;
+	max-width: 57%;
+}
+
+
+#content .conagra_latam .marca_descripcion .guatemala 
+{
+	width: 45%;
+	float:left;	
+	margin-top:-5%;
+	position: absolute;
+	height: 120%;
+}
+
+#content .conagra_latam .marca_descripcion .guatemala > p
+{
+	margin-top: 0%;
+	max-height: 60%;
+	overflow: auto;
+}
+
+#content .conagra_latam .marca_descripcion .guatemala > img
+{
+	margin-top: 0;
+	max-width: 57%;
+}
 
 
 .latam_mapa{

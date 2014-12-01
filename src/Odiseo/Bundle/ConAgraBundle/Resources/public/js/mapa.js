@@ -1,5 +1,7 @@
 var MAPA = (function($){
 	
+	var DEFAULT_COUNTRY_TO_PAINT = "brasil-path";
+	
 	function getIdSelector(event){
 		var idSelector = event.currentTarget.id;
 		if (idSelector != null && idSelector.indexOf("-path") >= 0)
@@ -19,7 +21,9 @@ var MAPA = (function($){
 			if ( !hasToPaint(idSelector) )
 				return ;
 			$(idSelector).css('fill','url(#linearGradient24)');
+			console.log($(idSelector));
 			var idToolTip = idSelector.replace("-path","-tooltip");
+			console.log(idToolTip);
 			$(idToolTip).css('visibility', 'visible');
 		}
 	}
@@ -44,6 +48,17 @@ var MAPA = (function($){
 			var idSelectorActiveCountry = "#"+ activeCountry + "-path";
 			unPaint( idSelectorActiveCountry);
 		}
+		
+		privateRequestAjaxInformation(clickedCountry)
+		
+	}
+	
+	
+	function paintDefaultCountry(){
+		$('#brasil-path').css('fill','url(#linearGradient24)');
+		$('#brasil-tooltip').css('visibility', 'visible');
+		$('#activeCountry').html('brasil');
+		
 	}
 	
 	function privateInit(){
@@ -94,9 +109,29 @@ var MAPA = (function($){
 						onClickAction(evt);
 				});
 		});
+		 paintDefaultCountry()
+		
 	}
+	
+	function privateRequestAjaxInformation(pais)
+	{
+		$.ajax({
+			  url: "http://dev.conagra.com/app_dev.php/secure/conagra-latam/country",
+			  type:"get", //send it through get method
+			  data:{ country : pais} ,
+			  success: function(response) {
+			    $('.marca_descripcion').html(response);
+			  },
+			  error: function(xhr) {
+			    //Do Something to handle error
+			  }
+			});
+		
+	}
+	
+	
 	return {	
-		init : privateInit
+		init : privateInit,
 	};
 
 })(jQuery);
