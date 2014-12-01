@@ -7,7 +7,7 @@ var TIME_LINE = (function($){
 	var  TITLE_AND_TEXT = 4;
 	var  ONLY_TWO_TITLE = 5;
 	
-	var IMG_PATH_PREFIX = "/bundles/odiseoconagra/images/quienesconagra/timeline/";
+	var IMG_PATH_PREFIX = $('.timelineContainer').data('timelineImgPathPrefix');
 	
 	var prv_year_description = { "1861" : { "year": "1861",	"head" : "Van Camp’s®" , "story": "Gilbert C. Van Camp, once a tinsmith, begins Manufacturing canned pork and beans." ,	"style_number" : IMAGE_TITLE_AND_TEXT	   },
 								 "1867" : { "year": "1867",	"head" : "Nebraska becomes 37th state" , "story": "Nebraska becomes a state with flour milling as its leading industry." ,	"style_number" : TITLE_AND_TEXT	   },
