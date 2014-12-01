@@ -1,3 +1,7 @@
 odiseo_conagra_frontend_index:
     path:     /
     defaults: { _controller: OdiseoConAgraBundle:Frontend/Intro:index }
+    
+odiseo_conagra_frontend_distribuitors:
+    path:     /distributorsForCountry
+    defaults: { _controller: OdiseoConAgraBundle:Frontend/Intro:retriveDistributorsForCountry}

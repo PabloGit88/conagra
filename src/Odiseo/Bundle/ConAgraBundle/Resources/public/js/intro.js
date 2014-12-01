@@ -34,5 +34,38 @@
 			}
     			
     	});
+    	
+    	$('#fos_user_registration_form_country').change(function() {
+    		
+    		retrieveDistributorsForCountry($(this).val());
+    	
+    	});
+    	
      });
+    
+    
+	function retrieveDistributorsForCountry(pais)
+	{
+		var distributorsCombo =   $('#fos_user_registration_form_distributor');
+		$.ajax({
+			  url: "http://dev.conagra.com/app_dev.php/distributorsForCountry",
+			  type:"get", //send it through get method
+			  data:{ country : pais} ,
+			  success: function(response) {
+				  distributorsCombo.empty();
+				  $.each(response.distributors, function(index, value) {
+					  distributorsCombo.append(
+				          $('<option></option>').val(index).html(value)
+				      );
+				  });
+			  },
+			  error: function(xhr) {
+			  }
+			});
+	}
+    
+    
+    
+    
+    
 })( jQuery );

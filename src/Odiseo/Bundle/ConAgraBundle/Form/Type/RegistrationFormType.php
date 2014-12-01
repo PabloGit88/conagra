@@ -12,12 +12,34 @@ class RegistrationFormType extends BaseType
 		// add your custom field$country
 		$builder->add('country', 'choice', array('choices' => array(
 				'-1' => 'País',
-				'Estados Unidos' => 'Estados Unidos', 
-				'Argentina' => 'Argentina'
+				'Colombia' => 'Colombia', 
+				'Venezuela' => 'Venezuela',
+				'Ecuador' => 'Ecuador',
+				'Peru' => 'Peru',
+				'Bolivia' => 'Bolivia',
+				'Costa Rica' => 'Costa Rica',
+				'Honduras' => 'Honduras',
+				'Nicaragua' => 'Nicaragua',
+				'Panama' => 'Panama',
+				'Belize' => 'Belize',
+				'El Salvador' => 'El Salvador',
+				'Guatemala' => 'Guatemala',
+				'Estados Unidos' => 'Estados Unidos',
+				'Argentina' => 'Argentina',
+				'Chile' => 'Chile',
+				'Brazil' => 'Brazil',
+				'Suriname' => 'Suriname',
+				'Guyana' => 'Guyana',
+				'Uruguay' => 'Uruguay',
+				'Paraguay' => 'Paraguay',
 		),  
 		'label' => 'Pais', 'required'  => true));
 		
-		$builder->add('distributor', 'text', array( 'label' => 'Distribuidor', 'required' => true));
+		$builder->add('distributor', 'choice', array('choices' => array(
+				'-1' => 'Distribuidor', 
+		),  
+		'label' => 'Distribuidor', 'required'  => true));
+		
 		$builder->add('fullName', 'text', array( 'label' => 'Nombre', 'required' => true));
 		//email
 		
