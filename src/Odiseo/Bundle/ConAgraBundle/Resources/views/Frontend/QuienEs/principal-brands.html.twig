@@ -6,7 +6,7 @@
 {% endblock %}
  
 {% block content %}
-<div class="quien_es">
+<div class="quien_es principal-brands">
 	<h1 class="mainTitle">Our Principal Brands by Category</h1>
 	<div class="row hidden-xs">
 		<div class="col-md-1 hidden-sm hidden-xs col-lg-1"></div>
@@ -123,6 +123,11 @@
 		</div>
 		<div class="col-xs-5"></div>
 	</div>
-	
+	<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'quick-facts' }) }}" class="pageButton previousButton"
+		data-toggle="popover" data-content="Quick Facts" data-placement="top" title="2/5" data-trigger="hover">
+	</a>
+	<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'private-label' }) }}" class="pageButton nextButton" 
+		data-toggle="popover" data-content="Private Label" data-placement="top" title="4/5" data-trigger="hover">
+	</a>	
 </div>
 {% endblock %}

@@ -5,6 +5,10 @@
 	<div class="quien_es commercial_foods">
 		<h1 class="mainTitle">Commercial Foods</h1>
 		<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/commercial_foods.png') }}" alt="commercial-foods" class="img-responsive center-block commercialFoods">
+		
+		<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'private-label' }) }}" class="pageButton previousButton"
+			data-toggle="popover" data-content="Private Label" data-placement="top" title="4/5" data-trigger="hover">
+		</a>	
 	</div>
 	
 	<div class="commercial_foods_mobile">
@@ -25,7 +29,6 @@
 				<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/commercial_foods_m5.png') }}" alt="commercial-foods" class="img-responsive center-block commercialFoods">
 			</div>
 	</div>
-	
 </div>
 <img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/commercial_background.png') }}" alt="commercial background" class="commercialFoodsBackground">
 {% endblock %}
