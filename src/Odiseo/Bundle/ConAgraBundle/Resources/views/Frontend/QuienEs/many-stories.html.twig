@@ -13,9 +13,9 @@
 {% endblock %}
  
 {% block content %}
-<div class="quien_es">
+<div class="quien_es many-stories">
 	<h1 class="mainTitle">One Company. Many Stories</h1>
-	<div class="timelineContainer">
+	<div class="timelineContainer" data-timeline-img-path-prefix="{{ asset('bundles/odiseoconagra/images/quienesconagra/timeline/') }}">
 		{% include 'OdiseoConAgraBundle:Frontend:QuienEs/timeline-svg.html.twig' %}
 		
 	
@@ -24,7 +24,10 @@
 		<a href="#" class="left"><img src="{{ asset('bundles/odiseoconagra/images/arrow_black.png') }}"></a>
 		<a href="#"><img src="{{ asset('bundles/odiseoconagra/images/arrow_black.png') }}"></a>
 	</div>
-
+	
+	<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'quick-facts' }) }}" class="pageButton nextButton" 
+		data-toggle="popover" data-content="Quick Facts" data-placement="top" title="2/5" data-trigger="hover">
+	</a>
 </div>
 
 {% endblock %}

@@ -1,7 +1,7 @@
 {% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
  
 {% block content %}
-<div class="quien_es">
+<div class="quien_es quick-facts">
 	<h1 class="mainTitle">Quicks facts</h1>
 	<div class="row" style="margin-top:-2%;">
 		<div class="col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-8 col-xs-offset-2">
@@ -15,5 +15,12 @@
 			</a>
 		</div>
 	</div>
+
+	<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'many-stories' }) }}" class="pageButton previousButton"
+		data-toggle="popover" data-content="Many Stories" data-placement="top" title="1/5" data-trigger="hover">
+	</a>
+	<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'principal-brands' }) }}" class="pageButton nextButton" 
+		data-toggle="popover" data-content="Principal Brands" data-placement="top" title="3/5" data-trigger="hover">
+	</a>
 </div>
 {% endblock %}

@@ -979,3 +979,72 @@ top:0%;
 	-webkit-transform: rotate(7deg);
 	transform: rotate(177deg);
 }
+
+/* next and previous button*/
+.quien_es a.previousButton{
+	background-image: url("../images/sprite.png");
+	background-repeat: no-repeat;
+	background-position: 5% 100%;
+	width: 68px;
+	height: 37px;
+	position: absolute;
+	top: 87%;
+	left: 0%;
+}
+.quien_es a.nextButton{
+	background-image: url("../images/sprite.png");
+	background-repeat: no-repeat;
+	background-position: 94% 100%;
+	width: 68px;
+	height: 37px;
+	position: absolute;
+	top: 87%;
+	left: 90%;
+}
+.quien_es a.previousButton:hover{
+	background-position: 5% 0%;
+}
+.quien_es a.nextButton:hover{
+	background-position: 94% 0%;
+}
+.quien_es .popover.fade{
+	width: auto;
+	opacity: 0.9;
+	padding:0;
+	border-radius: 7px;
+	background: none;
+	border: none;
+}/*
+.quien_es.many-stories .popover.fade{
+	width: 116px;
+}
+.quien_es.quick-facts .popover.fade{
+	width: auto;
+}*/
+.quien_es .popover.top > .arrow {
+	border-top-color: #8f9240 !important;
+	opacity: 0.8;
+}
+.quien_es .popover.top > .arrow:after{
+	border-top-color:#8f9240 !important;
+}
+.quien_es .popover-title{
+	float:left;
+	line-height: 30px;
+	padding: 4px 5px;
+	background-color: #8d903d;
+	border-color:none;
+	border-bottom:none;
+	border-radius:0;
+	color: #fff;
+	border-radius: 5px 0px 0px 5px;
+}
+.quien_es .popover-content{
+	float:left;
+	background-color: #8f9240;
+	opacity: 0.8;
+	color: #fff;
+	padding: 9px 6px;
+	border-bottom-right-radius: 6px;
+	border-top-right-radius: 6px;
+}
