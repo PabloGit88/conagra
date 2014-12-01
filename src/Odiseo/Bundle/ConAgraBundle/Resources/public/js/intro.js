@@ -37,18 +37,28 @@
     	
     	$('#fos_user_registration_form_country').change(function() {
     		
+    		if ($(this).val() == '-1'){
+    			 $('#fos_user_registration_form_distributor').empty();
+    			 $('#fos_user_registration_form_distributor').prop( "disabled", true );
+    			 $('#fos_user_registration_form_distributor').append(
+				          $('<option></option>').val('-1').html("Distribuidor")
+				      );
+    			 return;
+    		}
     		retrieveDistributorsForCountry($(this).val());
     	
     	});
     	
+    	 $('#fos_user_registration_form_distributor').prop( "disabled", true );
      });
     
+	var IMG_PATH_PREFIX = $('.timelineContainer').data('timelineImgPathPrefix');
     
 	function retrieveDistributorsForCountry(pais)
 	{
-		var distributorsCombo =   $('#fos_user_registration_form_distributor');
+		var distributorsCombo	 =   $('#fos_user_registration_form_distributor');
 		$.ajax({
-			  url: "http://dev.conagra.com/app_dev.php/distributorsForCountry",
+			  url: distributorsCombo.data('countryInformationUrl'),
 			  type:"get", //send it through get method
 			  data:{ country : pais} ,
 			  success: function(response) {
@@ -58,14 +68,12 @@
 				          $('<option></option>').val(index).html(value)
 				      );
 				  });
+				  $('#fos_user_registration_form_distributor').prop( "disabled", false );
 			  },
 			  error: function(xhr) {
 			  }
 			});
 	}
-    
-    
-    
     
     
 })( jQuery );
