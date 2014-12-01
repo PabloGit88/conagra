@@ -2,10 +2,12 @@
  
 {% block content %}
 <div class="planogramas snackpack sugerido3">
-	<a href="{{ path('odiseo_conagra_frontend_planogramas_index') }}" class="backButton pull-right">
-		<img src="{{ asset('bundles/odiseoconagra/images/volverInicioButton.png') }}">
-	</a>
-	<h1 class="mainTitle">Planograma Sugerido Bloque Completo</h1>
+	<div class="title clearfix">
+		<h1 class="mainTitle">Planograma Sugerido Bloque Completo</h1>
+		<a href="{{ path('odiseo_conagra_frontend_planogramas_index') }}" class="backButton pull-right">
+			<img src="{{ asset('bundles/odiseoconagra/images/volverInicioButton.png') }}">
+		</a>
+	</div>
 	<div class="row">
 		<div class="img1 col-md-6 col-sm-6 col-xs-12">
 			<img src="{{ asset('bundles/odiseoconagra/images/planogramas/snackpack/snackpack_3_1.png') }}" alt="snackpack"  class="img-responsive center-block">
