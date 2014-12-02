@@ -1,11 +1,12 @@
 {% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
  
 {% block content %}
-<div class="planogramas peterpan sugerido2">
-	<a href="{{ path('odiseo_conagra_frontend_planogramas_index') }}" class="backButton pull-right">
-		<img src="{{ asset('bundles/odiseoconagra/images/volverInicioButton.png') }}">
-	</a>
-	<h1 class="mainTitle">Planograma Sugerido (Vertical)</h1>
+	<div class="title clearfix">
+		<h1 class="mainTitle">Planograma Sugerido (Vertical)</h1>
+		<a href="{{ path('odiseo_conagra_frontend_planogramas_index') }}" class="backButton pull-right">
+			<img src="{{ asset('bundles/odiseoconagra/images/volverInicioButton.png') }}">
+		</a>
+	</div>
 	<div class="row">
 		<a href="#">
 			<div class="img1 col-md-6 col-sm-6 col-xs-12">

@@ -2,10 +2,17 @@
  
 {% block content %}
 <div class="planogramas act act_background">
-	<a href="{{ path('odiseo_conagra_frontend_planogramas_index') }}" class="backButton pull-right">
-		<img src="{{ asset('bundles/odiseoconagra/images/volverInicioButton.png') }}">
-	</a>
-	<h1 class="mainTitle">Act II</h1>
+	<div class="visible-xs">
+		<div class="logo_m">
+			<img src="{{ asset('bundles/odiseoconagra/images/planogramas/Act II/act2_logo.png') }}" alt="act2"  class="img-responsive logo-image center-block">
+		</div>
+	</div>
+	<div class="title clearfix">
+		<h1 class="mainTitle">ACT II</h1>
+		<a href="{{ path('odiseo_conagra_frontend_planogramas_index') }}" class="backButton pull-right">
+			<img src="{{ asset('bundles/odiseoconagra/images/volverInicioButton.png') }}">
+		</a>
+	</div>
 	<div class="generales clearfix">
 		<div class="indicaciones row">
 			<div class="col-md-8 col-sm-8 col-xs-12">
@@ -17,16 +24,22 @@
 				 	la mayoría de los casos dos bandejas pueden ser colocadas una encima por frente y así no</br>
 				 	desperdiciar el espacio. </br>
 	
-					A continuación nuestra recomendación de planimetría en base a 6,4 y 2 frentes horizontal y </br>
+					A continuación nuestra recomendación de planimetría en base a 6,4 y 2 frentes horizontal y
 					vertical. 
 			 	</p>
 			</div>
-			<div class="col-md-4 col-sm-4 col-xs-12">
+			<div class="col-md-4 col-sm-4 hidden-xs">
 				<div class="logo">
 					<img src="{{ asset('bundles/odiseoconagra/images/planogramas/Act II/act2_logo.png') }}" alt="act2"  class="img-responsive logo-image pull-left">
 				</div>
 			</div>
 		</div>
+	<div class="sugerido visible-xs">
+		<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'act-planograma-sugerido-2' }) }}">
+			<img src="{{ asset('bundles/odiseoconagra/images/planogramas/loupe.png') }}">
+			<h1 class="planoTitle">Planogramas Sugeridos</h1>
+		</a>
+	</div> 
 	</div>	
 	<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'act-planograma-sugerido-2' }) }}" class="pageButton nextButton" 
 		data-toggle="popover" data-content="Planogramas sugeridos" data-placement="top" title="2/5" data-trigger="hover">

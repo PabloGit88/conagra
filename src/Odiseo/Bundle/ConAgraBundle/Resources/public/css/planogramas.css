@@ -3,10 +3,15 @@
 /*	overflow:auto;
 	overflow-x:hidden;*/
 }
-
 #content .planogramas .mainTitle
 {
 	margin: 0 0 36px 0;
+	float:left;
+}
+
+#content .planogramas.index .mainTitle
+{
+	float:none;
 }
 
 #content .planogramas.index .mainTitle {
@@ -86,15 +91,20 @@ div .generales{
 .planogramas.act2.sugerido2 .mainTitle {
 	margin: 0px 0 14px 0 !important;
 }
-.planogramas.act2.sugerido2 .img2{
-	max-width: 75%;
+.planogramas.act2.sugerido2 .img1 img {
+	width: 73%;
 }
-
+.planogramas.act2.sugerido2 .img2 img{
+	width: 57%;
+}
 .planogramas.act2.sugerido3 .img1, .planogramas.act2.sugerido5 .img1{
 	height: 85%;
 }
 .planogramas.act2.sugerido4 .img1{
 	margin-top: 114px;
+}
+.planogramas.act2.sugerido4 .firstDivImage img,.planogramas.act2.sugerido4 .secondDivImage img {
+	width:75%;
 }
 .act_background{
 	background-image: url("../images/planogramas/Act II/pochoclos.png");
@@ -147,6 +157,9 @@ div .generales{
 
 .planogramas.wesson.sugerido2 .img1{
 		height:85%;
+}
+.planogramas.wesson.sugerido3 .img1 img,.planogramas.wesson.sugerido3 .img2 img {
+	width:72%;
 }
 /* SNACK PACK*/
 .planogramas.snackpack.sugerido3 .img2{
@@ -218,8 +231,8 @@ div .generales{
 .planogramas.pam .generales .images .firstCol, .planogramas.pam .generales .images .secondCol{
 	padding: 0;
 }
-.planogramas.pam.sugerido3 .img1, .planogramas.pam.sugerido3 .img1 img  {
-	height: 100%;
+.planogramas.pam.sugerido3 .img1 img  {
+	width: 25%;
 }
 /* SWISSMISS */
 .planogramas.swissmiss .generales .indicaciones ul li {
@@ -232,11 +245,10 @@ div .generales{
 	margin: 0px 0 15px 0 !important;
 }
 .planogramas.swissmiss .image{
-	height: 100%;
 	margin-top: -5px;
 }
 .planogramas.swissmiss .image img{
-	height: 94%;
+	width:82%;
 }
 
 /* next and previous button*/

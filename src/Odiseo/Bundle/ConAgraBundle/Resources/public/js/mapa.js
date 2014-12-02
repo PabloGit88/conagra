@@ -97,7 +97,6 @@ var MAPA = (function($){
 						paint(idSelector);
 						
 				});
-				
 				$( this ).mouseout(function(evt) {
 						var idToolTip = evt.currentTarget.id;
 						var idSelector = "#" + idToolTip.replace("-tooltip","-path");
