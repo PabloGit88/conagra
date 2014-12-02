@@ -311,6 +311,11 @@
 		top:0;
 		left:0;
 	}
+	
+	#content .infoBrand.pam .info > img.logo {
+		left: 10px;
+	}
+	
 	#content .infoBrand {
 		margin-bottom: 50px;
 	}
@@ -359,7 +364,7 @@
 	.otherData_m.yellow h3 {
 		background: url(../images/infoBrand/asterisk_yellow.png) no-repeat;
 	}
-	.otherData_m a {
+	.otherData_m a.asterisk {
 		font-size: 14px;
 		padding-left: 25px;
 		text-decoration:none; 
@@ -384,7 +389,7 @@
 		line-height: 14px;
 		overflow-y: auto;
 		overflow-x: hidden;
-		height: 214px;
+		height: 215px;
 	}
 	 .otherData_m .otherContent p{
 		padding-left:23px;
@@ -503,7 +508,7 @@
 	#content .entrenamiento_marcas .mainTitle {
 	margin: 0 0 30px 0;
 	}
-	
+ /* planogramas */	
 	.planogramas.act2.sugerido2 .img1 img{
 		float:none;
 	}
@@ -534,4 +539,55 @@
 	.planogramas.snackpack.sugerido3 .img2 img{
 		float:none;
 	}	
+	.planogramas .generales{
+		margin: 0px auto;
+	}
+	.navbar-brand > img {
+		width: 75%;
+	}
+	#content {	
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+	/* act2 */
+	.act_background {
+		background-image:none !important;
+	}
+	.planogramas .sugerido{
+		float:left;
+		height: 28px;
+	}
+	.planogramas .sugerido a img{
+		float:left;
+		width:14%;
+	}
+	.planogramas .planoTitle {
+		font-family: 'hand_of_sean_demoregular';
+		margin: 0 0 80px 0;
+		font-size: 16px;
+		padding-left: 10px;
+		float:left;
+	}	
+	.planogramas.act .indicaciones {
+		font-size: 12px !important;
+	}
+	.planogramas.act .logo_m{
+		width: 42%;
+		margin-bottom: 12px;
+		margin-left: 77px;
+	}
+	.planogramas a.previousButton {
+		float: left;
+		position:relative !important;
+		top:0 !important;
+		left:0 !important;
+		margin-left:15px;
+	}
+	.planogramas a.nextButton {
+		float: right;
+		position:relative !important;
+		top:0 !important;
+		left:0 !important;
+		margin-right:15px;
+	}
 }

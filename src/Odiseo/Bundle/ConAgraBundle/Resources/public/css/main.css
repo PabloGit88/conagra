@@ -188,6 +188,12 @@ footer {
 	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=10, OffY=10, Color='#000000')";
 }
 
+#content .conagra_latam .saleTracker {
+	position: absolute;
+	bottom: 0;
+	left: 50%;	
+}
+
 #content .conagra_latam .marca_descripcion .panama 
 {
 	width: 45%;
@@ -781,9 +787,10 @@ img.marca_descripcion{
 	background: url(../images/infoBrand/other_data_box_yellow.png) no-repeat;
 }
 
-#content .infoBrand .info .otherData .arrowScroll {
+#content .infoBrand .info .otherData .arrowScroll,
+.otherData_m .arrowScroll {
 	position: absolute;
-	bottom: 13px;
+	bottom: 8px;
 	left: 50%;
 	margin-left: -14px;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
@@ -974,7 +981,7 @@ top:0%;
 	cursor: pointer;
 }
 
-#content .entrenamiento_marcas .infoBrand.pam .upClick img {
+.upClick img {
 	ms-transform: rotate(7deg);
 	-webkit-transform: rotate(7deg);
 	transform: rotate(177deg);
