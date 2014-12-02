@@ -91,20 +91,23 @@
             size: '5px',
         });
         //button scroll
-    	$('.downClick').click(function(){
+    	$('.otherData .downClick, .otherData_m .downClick').click(function(e)
+    	{
+    		e.preventDefault();
     		
-    		var divHeight = $('.pam .otherData .otherContent').height();
+    		var otherContent = $(this).parent('.scrollContent').find('.otherContent');
+    		var divHeight = otherContent.height();
 			var scrollHeight = $(document).height();
-			var scrollPosition = divHeight + $('.pam .otherData .otherContent').scrollTop();
+			var scrollPosition = divHeight + otherContent.scrollTop();
 			//alert(scrollHeight); alert(scrollPosition); alert(divHeight)
 			// 719 354 180
 			if(scrollPosition > divHeight){
 			//	alert(scrollHeight); alert(scrollPosition); alert(divHeight);
-				$('.pam .otherData .otherContent').animate({scrollTop : 0},800);
-	  			$('a').removeClass('upClick').addClass('downClick');
+				otherContent.animate({scrollTop : 0}, 800);
+	  			$(this).removeClass('upClick').addClass('downClick');
 			}else{
-	    		$('.pam .otherData .otherContent').animate({scrollTop : divHeight},600);
-				$('a').removeClass('downClick').addClass('upClick');				
+				otherContent.animate({scrollTop : divHeight}, 600);
+				$(this).removeClass('downClick').addClass('upClick');				
 			}
 
     	});
