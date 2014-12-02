@@ -197,8 +197,7 @@ div .generales{
 	background: url(../images/planogramas/tilde.png) no-repeat center left;
 }
 .planogramas.peterpan .generales .indicaciones .logo{
-	margin-left: 300px;
-	margin-bottom: 30px;
+	float:right;
 }
 .planogramas.peterpan .generales .images {
 	margin-top:14%;
@@ -239,7 +238,7 @@ div .generales{
 	font-size: 16px;
 	padding-left: 25px;
 	line-height: 30px;
-	background: url(../images/planogramas/tilde.png) no-repeat 0% 19%;
+	background: url(../images/planogramas/tilde.png) no-repeat 0% 15%;
 }
 .planogramas.swissmiss .mainTitle {
 	margin: 0px 0 15px 0 !important;

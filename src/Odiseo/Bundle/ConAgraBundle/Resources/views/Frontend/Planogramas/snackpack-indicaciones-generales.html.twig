@@ -2,6 +2,11 @@
  
 {% block content %}
 <div class="planogramas snackpack snackpack_background">
+	<div class="visible-xs">
+		<div class="logo_m">
+			<img src="{{ asset('bundles/odiseoconagra/images/planogramas/snackpack/snackpack_1_logo.png') }}" alt="snackpack"  class="img-responsive logo-image center-block">
+		</div>
+	</div>
 	<div class="title clearfix">
 		<h1 class="mainTitle">Snack Pack</h1>
 		<a href="{{ path('odiseo_conagra_frontend_planogramas_index') }}" class="backButton pull-right">
@@ -10,21 +15,27 @@
 	</div>
 	<div class="generales clearfix">
 		<div class="indicaciones row">
-			<div class="col-md-9">
+			<div class="col-md-9 col-sm-9 col-xs-12">
 			 	<p>
 					<strong>Snack Pack</strong> ingresa al hogar por los solicitud de infantiles como complemento dentro en la lonchera, sin embargo logra captar un publico  adulto por su conveniencia y sabor. 
 					<br><br>
 					<strong>Snack Pack</strong> no requiere refrigeración, su ubicación ideal es de gelatinas y pudines, o cerca de las galletas. Sin embargo  hay mercados que lo colocan dentro de zonas refrigeradas. 
 		 			<br><br>
-					Adjunto planimetría recomendada para Snack Pack, tanto para espacios verticales (estantes) y espacios horizontales (sobre neveras). 
+					<div class="hidden-xs">Adjunto planimetría recomendada para Snack Pack, tanto para espacios verticales (estantes) y espacios horizontales (sobre neveras).</div> 
 			 	</p>
 		 	</div>
-			<div class="col-md-3">
+			<div class="col-md-3 col-sm-3 hidden-xs">
 				<div class="logo">
 					<img src="{{ asset('bundles/odiseoconagra/images/planogramas/snackpack/snackpack_1_logo.png') }}" alt="SNACKPACK"  class="img-responsive pull-right">
 				</div>
 			</div>
 		</div>
+		<div class="sugerido visible-xs">
+			<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'snackpack-planograma-sugerido-2' }) }}">
+				<img src="{{ asset('bundles/odiseoconagra/images/planogramas/loupe.png') }}">
+				<h1 class="planoTitle">Planogramas Sugeridos</h1>
+			</a>
+		</div> 
 	</div>	
 	<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'snackpack-planograma-sugerido-2' }) }}" class="pageButton nextButton" 
 		data-toggle="popover" data-content="Planogramas sugeridos" data-placement="top" title="2/3" data-trigger="hover">

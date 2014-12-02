@@ -2,6 +2,11 @@
  
 {% block content %}
 <div class="planogramas wesson">
+	<div class="visible-xs">
+		<div class="logo_m">
+			<img src="{{ asset('bundles/odiseoconagra/images/planogramas/wesson/wesson_1_logo.png') }}" alt="wesson"  class="img-responsive logo-image center-block">
+		</div>
+	</div>
 	<div class="title clearfix">
 		<h1 class="mainTitle">Wesson</h1>
 		<a href="{{ path('odiseo_conagra_frontend_planogramas_index') }}" class="backButton pull-right">
@@ -18,14 +23,14 @@
 			 	
 			 	</p>
 			</div>
-			<div class="col-md-4 col-sm-4 col-xs-12">
+			<div class="col-md-4 col-sm-4 hidden-xs">
 				<div class="logo">
 					<img src="{{ asset('bundles/odiseoconagra/images/planogramas/wesson/wesson_1_logo.png') }}" alt="WESSON"  class="img-responsive logo-image">
 				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-12 col-sm-12 col-xs-12">
+			<div class="col-md-12 col-sm-12 hidden-xs">
 				<div class="contenido center-block">
 					<div class="img">
 						<img src="{{ asset('bundles/odiseoconagra/images/planogramas/wesson/wesson_1_1.png') }}" class="img-responsive logo-image">
@@ -42,6 +47,12 @@
 				</div>
 			</div>
 		</div>
+		<div class="sugerido visible-xs">
+			<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'wesson-planograma-sugerido-2' }) }}">
+				<img src="{{ asset('bundles/odiseoconagra/images/planogramas/loupe.png') }}">
+				<h1 class="planoTitle">Planogramas Sugeridos</h1>
+			</a>
+		</div> 
 	</div>
 	<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'wesson-planograma-sugerido-2' }) }}" class="pageButton nextButton" 
 		data-toggle="popover" data-content="Planogramas sugeridos" data-placement="top" title="2/3" data-trigger="hover">

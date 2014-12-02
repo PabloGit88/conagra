@@ -2,6 +2,11 @@
  
 {% block content %}
 <div class="planogramas hunts hunt_background">
+	<div class="visible-xs">
+		<div class="logo_m">
+			<img src="{{ asset('bundles/odiseoconagra/images/planogramas/hunts/hunts_logo.png') }}" alt="hunts"  class="img-responsive logo-image center-block">
+		</div>
+	</div>
 	<div class="title clearfix">
 		<h1 class="mainTitle">Indicaciones Generales</h1>
 		<a href="{{ path('odiseo_conagra_frontend_planogramas_index') }}" class="backButton pull-right">
@@ -20,15 +25,23 @@
 		 		colocación del producto.
 		 	</p>
 		</div>
-		<div class="logo">
+		<div class="logo hidden-xs"">
 			<img src="{{ asset('bundles/odiseoconagra/images/planogramas/hunts/hunts_logo.png') }}" alt="HUNTS"  class="img-responsive logo-image">
 		</div>
+	
+		<div class="hidden-xs">
+			<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'hunts-planograma-sugerido-2' }) }}"> <h1 class="mainTitle">Planometría recomendada para Hunt's</h1></a>
+		</div> 
+		
+		<div class="sugerido visible-xs">
+			<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'hunts-planograma-sugerido-2' }) }}">
+				<img src="{{ asset('bundles/odiseoconagra/images/planogramas/loupe.png') }}">
+				<h1 class="planoTitle">Planometría recomendada para Hunt's</h1>
+			</a>
+		</div> 	
 	</div>
-	
-	<div>
-		<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'hunts-planograma-sugerido-2' }) }}"> <h1 class="mainTitle">Planometría recomendada para Hunt's</h1></a>
-	</div> 
-	
+
+		
 	<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'hunts-planograma-sugerido-2' }) }}" class="pageButton nextButton" 
 		data-toggle="popover" data-content="Planogramas sugeridos" data-placement="top" title="2/6" data-trigger="hover">
 	</a>	
