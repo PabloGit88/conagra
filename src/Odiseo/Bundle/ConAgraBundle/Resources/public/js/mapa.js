@@ -114,12 +114,22 @@ var MAPA = (function($){
 	
 	function privateRequestAjaxInformation(pais)
 	{
+		var countryUrl = $('.latam_mapa').data('countryUrl');
+		
 		$.ajax({
-			  url: "http://dev.conagra.com/app_dev.php/secure/conagra-latam/country",
+			  url: countryUrl,
 			  type:"get", //send it through get method
 			  data:{ country : pais} ,
 			  success: function(response) {
 			    $('.marca_descripcion').html(response);
+			    $('#content .conagra_latam .marca_descripcion .guatemala > p,'+ 
+			    '#content .conagra_latam .marca_descripcion .colombia > p,'+
+			    '#content .conagra_latam .marca_descripcion .brasil > p,'+
+			    '#content .conagra_latam .marca_descripcion .paraguay > p').slimScroll({
+		            height: '280px',
+		            color: '#555',
+		            size: '5px',
+		        });
 			  },
 			  error: function(xhr) {
 			    //Do Something to handle error

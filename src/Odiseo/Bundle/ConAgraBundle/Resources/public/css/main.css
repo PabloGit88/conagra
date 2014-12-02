@@ -265,6 +265,7 @@ footer {
 #content .conagra_latam .marca_descripcion .paraguay > img
 {
 	margin-top: 5%;
+	max-width: 20%;
 }
 
 #content .conagra_latam .marca_descripcion .ecuador
@@ -311,9 +312,6 @@ footer {
 
 #content .conagra_latam .marca_descripcion .brasil > p
 {
-	margin-top: 0%;
-	max-height: 60%;
-	overflow: auto;
 }
 
 #content .conagra_latam .marca_descripcion .brasil > img
@@ -339,6 +337,7 @@ footer {
 #content .conagra_latam .marca_descripcion .colombia > img
 {
 	margin-top: 5%;
+	width: 45%;
 }
 
 
@@ -391,7 +390,7 @@ footer {
 .latam_mapa{
 	float:right;	
 	margin-top:-12%;
-	margin-right:25%;
+	margin-right:15%;
 }
 
 img.marca_descripcion{

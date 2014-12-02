@@ -90,6 +90,12 @@
             color: '#555',
             size: '5px',
         });
+        $('#content .conagra_latam .marca_descripcion .brasil > p').slimScroll({
+            height: '300px',
+            color: '#555',
+            size: '5px',
+        });
+        
         //button scroll
     	$('.otherData .downClick, .otherData_m .downClick').click(function(e)
     	{
