@@ -25,12 +25,29 @@
 			
 		{% endblock %}
 	</div>
+	<div class="modal">
+		{% block modal %}
+			
+		{% endblock %}
+	</div>
 	
-	<!-- <a href="#" class="saleTracker"><img src="{{ asset('bundles/odiseoconagra/images/sales-tracker.png') }}"></a> -->
 <div class="latam_mapa" data-country-url="{{ path('odiseo_conagra_frontend_conagra_latam_country_information') }}">
 
+<select id="mobile_combo" class="custom_select_mobile visible-xs center-block" onchange="MAPA.showBrandDescription(this);">
+	<option value="brasil">Brasil </option>
+	<option value="belice">Belice </option>
+	<option value="colombia">Colombia </option>
+	<option value="costarica">Costa Rica</option>
+	<option value="ecuador">Ecuador </option>
+	<option value="elsalvador">El Salvador </option>
+	<option value="guatemala">Guatemala</option>
+	<option value="nicaragua">Nicaragua</option>
+	<option value="panama">Panama</option>
+	<option value="paraguay">Paraguay</option>
+	<option value="peru">Peru</option>
+</select>
 
-<svg   width="120%" height="50%" viewBox="0 0 445 650" preserveAspectRatio="xMinYMin meet" xmlns="http://www.w3.org/2000/svg" id="svg2" 
+<svg    viewBox="0 0 445 650" preserveAspectRatio="xMinYMin meet" xmlns="http://www.w3.org/2000/svg" id="svg2" 
        version="1.1">
  <metadata id="metadata8">image/svg+xml</metadata>
  <defs>
@@ -652,10 +669,18 @@
   svg>
 
 
-<p style="visibility:hidden;" id="activeCountry"></p>
-
-
+<p style="display:none;" id="activeCountry"></p>
 </div>
+<div class="visible-xs actions-container">
+		<ul class="actions row">
+				<li>
+					<a href="#" class="btn btn-borderer">Nuevo ingreso / registro</a>
+				</li>
+				<li>
+					<a href="#" class="btn btn-borderer">Login</a>
+				</li>
+		</ul>
+	</div>
 </div>
 
 

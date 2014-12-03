@@ -648,4 +648,58 @@
 		left:0 !important;
 		margin-right:15px;
 	}
+
+	/* LATAM MAPA */
+	.latam_mapa{
+		margin-top:-14%;
+		margin-right: 0;
+	}
+	
+	.latam_mapa .custom_select_mobile{
+		background: url(../images/conagralatam/select_mobile.png) no-repeat;
+		background-size: cover;
+		width: 100%;
+		position:absolute;
+		height: 57px;
+		-webkit-appearance: none;
+		background-position: right center;
+		border: 0;
+		top:13%;
+	}
+	
+	footer{
+		display:none;
+	}
+	
+	#content .conagra_latam .actions-container {
+		position: fixed;
+		bottom: 0;
+		margin-left: -5%;
+		padding-left: 7%;
+		background-color: rgba(197, 197, 197, 1);
+		width: 100%;
+		height: 14%;
+		opacity: 0.6;
+	}
+	
+	#content .conagra_latam .actions-container ul
+	{
+		margin-top: 5%;
+	}
+	
+	#content .conagra_latam  .actions a,
+	a:hover {
+		color:black;
+		border-color:black;
+		font-size: 5vw;
+	}
+	
+	#content .conagra_latam  .actions li{
+		display:inline;
+	}
+
+	#content .conagra_latam .latam_mapa #svg2{
+		width:100%;
+	}
+		/* END LATAM */
 }

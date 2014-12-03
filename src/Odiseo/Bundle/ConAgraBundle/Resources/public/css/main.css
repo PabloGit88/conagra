@@ -201,6 +201,10 @@ footer {
 	margin-top:-5%;
 }
 
+	#content .conagra_latam .latam_mapa #svg2{
+		width:120%;
+	}
+
 #content .conagra_latam .marca_descripcion .panama > img
 {
 	margin-top: 5%;
@@ -390,7 +394,7 @@ footer {
 .latam_mapa{
 	float:right;	
 	margin-top:-12%;
-	margin-right:15%;
+	margin-right:25%;
 }
 
 img.marca_descripcion{

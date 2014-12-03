@@ -49,7 +49,7 @@ var MAPA = (function($){
 			unPaint( idSelectorActiveCountry);
 		}
 		
-		privateRequestAjaxInformation(clickedCountry)
+		privateRequestAjaxInformation(clickedCountry , populateMarcaDescription)
 		
 	}
 	
@@ -108,11 +108,23 @@ var MAPA = (function($){
 						onClickAction(evt);
 				});
 		});
-		 paintDefaultCountry()
-		
+		 paintDefaultCountry();
 	}
 	
-	function privateRequestAjaxInformation(pais)
+	function populateMarcaDescription(response) {
+	    $('.marca_descripcion').html(response);
+	       $('#content .conagra_latam .marca_descripcion .guatemala > p,'+ 
+			    '#content .conagra_latam .marca_descripcion .colombia > p,'+
+			    '#content .conagra_latam .marca_descripcion .brasil > p,'+
+			    '#content .conagra_latam .marca_descripcion .paraguay > p').slimScroll({
+		            height: '280px',
+		            color: '#555',
+		            size: '5px',
+		        });
+	 }
+	
+	
+	function privateRequestAjaxInformation(pais, successFunction)
 	{
 		var countryUrl = $('.latam_mapa').data('countryUrl');
 		
@@ -121,15 +133,7 @@ var MAPA = (function($){
 			  type:"get", //send it through get method
 			  data:{ country : pais} ,
 			  success: function(response) {
-			    $('.marca_descripcion').html(response);
-			    $('#content .conagra_latam .marca_descripcion .guatemala > p,'+ 
-			    '#content .conagra_latam .marca_descripcion .colombia > p,'+
-			    '#content .conagra_latam .marca_descripcion .brasil > p,'+
-			    '#content .conagra_latam .marca_descripcion .paraguay > p').slimScroll({
-		            height: '280px',
-		            color: '#555',
-		            size: '5px',
-		        });
+				  successFunction(response);
 			  },
 			  error: function(xhr) {
 			    //Do Something to handle error
@@ -137,10 +141,35 @@ var MAPA = (function($){
 			});
 		
 	}
+
+	function showModalWithBrandInformation(response){
+		$('.modal-content').html(response);
+		$('.modal').on('hidden.bs.modal', function (e) {
+			  // do something...
+		})
+		$('.modal').modal('show');
+	}
+	 
+	function privateShowBrandDescription(element){
+		
+		privateRequestAjaxInformation(element.value, showModalWithBrandInformation);
+		var activeCountry = $('#activeCountry').html();
+		var clickedCountry = element.value;
+		if (activeCountry != "") {
+			$('#activeCountry').html("");
+			var idSelectorActiveCountry = "#"+ activeCountry + "-path";
+			unPaint( idSelectorActiveCountry);
+			var idSelectorClickedCountry = "#"+ clickedCountry + "-path";
+			paint(idSelectorClickedCountry);
+			$('#activeCountry').html(clickedCountry);
+		}
+
+	}
 	
 	
 	return {	
 		init : privateInit,
+		showBrandDescription : privateShowBrandDescription
 	};
 
 })(jQuery);
