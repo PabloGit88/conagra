@@ -6,6 +6,7 @@ var TIME_LINE = (function($){
 	var  LARGE_TEXT = 3;
 	var  TITLE_AND_TEXT = 4;
 	var  ONLY_TWO_TITLE = 5;
+	var  LARGE_TEXT_AND_IMAGE = 6;
 	
 	var IMG_PATH_PREFIX = $('.timelineContainer').data('timelineImgPathPrefix');
 	
@@ -15,7 +16,7 @@ var TIME_LINE = (function($){
 								 "1899" : { "year": "1899",	"head" : "Wesson®" , "story": "Chemist David Wesson introduces a new method for processing cottonseed oil. Wesson’s vacuum and high temperature process revolutionizes the cooking oil industry." ,	"style_number" : TITLE_AND_TEXT },
 								 "1905" : { "year": "1905",	"head" : "Hebrew National®" , "story": "The Hebrew National Kosher Sausage Factory begins processing kosher meats for New York." ,	"style_number" : IMAGE_TITLE_AND_TEXT },
 								 "1919" : { "year": "1919",	"head" : "Nebraska Consolidated Mills (NCM) is incorporated." , "story": "" ,	"style_number" : ONLY_TITLE },
-								 "1920" : { "year": "1920",	"head" : ["La Choy®" , "Peter Pan®"] , "story": [ "Ilhan New and Wally Smith start selling  canned bean sprouts at a grocery store in Detroit under the La Choy brand.", "Peter Pan peanut butter begins production." ],	"style_number" : LARGE_TEXT },
+								 "1920" : { "year": "1920",	"head" : ["La Choy®" , "Peter Pan®"] , "story": [ "Ilhan New and Wally Smith start selling  canned bean sprouts at a grocery store in Detroit under the La Choy brand.", "Peter Pan peanut butter begins production." ],	"style_number" : LARGE_TEXT_AND_IMAGE },
 								 "1926" : { "year": "1926",	"head" : "DAVID® Seeds" , "story": "David Der Herbedian begins roasting sunflower seeds." ,	"style_number" : TITLE_AND_TEXT },
 								 "1929" : { "year": "1929",	"head" : "Chef Boyardee®" , "story": "Customers ask Hector Boiardi, an Italian immigrant and Cleveland restaurant chef, for his pasta sauce so they can eat it at home. The Chef Boyardee brand is born." ,	"style_number" : IMAGE_TITLE_AND_TEXT },
 								 "1937" : { "year": "1937",	"head" : "Parkay ® margarine is introduced" , "story": "" ,	"style_number" : IMAGE_AND_TITLE },
@@ -34,20 +35,19 @@ var TIME_LINE = (function($){
 								  "1990" : { "year": "1990",	"head" : ["ConAgra acquires Beatrice Foods", "Banquet launches line of kids’ meals under Kid Cuisine® name" ], "story": ["ConAgra purchases Beatrice Foods", "ConAgra’s largest acquisition, bringing to the company such brand favorites as Hunt’s®, La Choy®, Orville Redenbacher’s®, Snack Pack®, Wesson®, Swiss Miss® and Reddi-wip®." ],	"style_number" : LARGE_TEXT },
 								  "1991" : { "year": "1991",	"head" : "ConAgra merges with Golden Valley Microwave Foods" , "story": "Golden Valley Microwave Foods merges with ConAgra and brings with it ACT II®, America’s best-selling microwave popcorn." ,	"style_number" : IMAGE_TITLE_AND_TEXT },
 								  "1994" : { "year": "1994",	"head" : "ConAgra turns 75" , "story": "" ,	"style_number" : ONLY_TITLE },
-								  "2009" : { "year": "2009",	"head" : "ConAgra Foods introduces new face behind the brands" , "story": "ConAgra Foods unveils a new identity with logo and “Food you love” tagline." ,	"style_number" : TITLE_AND_TEXT },
-								  "2010" : { "year": "2010",	"head" : "Hunt’s® reaches $500 million in net sales" , "story": "" ,	"style_number" : IMAGE_AND_TITLE },
+								  "2009" : { "year": "2009",	"head" : "ConAgra Foods introduces new face behind the brands" , "story": "ConAgra Foods unveils a new identity with logo and “Food you love” tagline." ,	"style_number" : IMAGE_TITLE_AND_TEXT },
+								  "2010" : { "year": "2010",	"head" : "Hunt’s® reaches $500 million in net sales" , "story": "" ,	"style_number" : ONLY_TITLE },
 	};
 	
 	
 	var toolTiptemplate = '<div class="tooltip" style="margin-top:-42px;" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>';		
-	
 	var templateImageTitleText = $('<div class="wrapper"><div class="tooltip-img"><img src=""></div><div class="tooltip-info"><p class="year"></p><h3></h3><p class="story"></p></div></div>');
 	var templateOnlyTitle = $('<div class="wrapper"><div class="tooltip-info onlyTitle"><p class="year"></p><h3></h3></div></div>');
 	var templateTitleText = $('<div class="wrapper"><div class="tooltip-info onlyTitleText"><p class="year"></p><h3></h3><p></p></div></div>');
-	var templateTitleText = $('<div class="wrapper"><div class="tooltip-info largText"><p class="year"></p><h3></h3><p></p></br><h3></h3><p></p></div></div>');
+	var templateLargeText = $('<div class="wrapper"><div class="tooltip-info largText"><p class="year"></p><h3></h3><p></p></br><h3></h3><p></p></div></div>');
 	var templateOnlyTwoTitle = $('<div class="wrapper"><div class="tooltip-info onlyTwoTitle"><p class="year"></p><h3></h3></br><h3></h3></div></div>');
 	var templateImageTitle = $('<div class="wrapper"><div class="tooltip-img"><img src=""></div><div class="tooltip-info"><p class="year"></p><h3 class="image-title"></h3></div></div>');
-	
+	var templateLargeTextWitImage = $('<div class="wrapper"><div class="tooltip-img-down"><img src=""></div><div class="tooltip-info largText"><p class="year"></p><h3></h3><p></p></br><h3></h3><p></p></div></div>');
 	
 	function buildTooltipImageTitleText( year,  title,  text ){
 		var src = IMG_PATH_PREFIX + year + '.jpg';
@@ -73,14 +73,24 @@ var TIME_LINE = (function($){
 	}
 	
 	function buildTooltipLargeText( year, title, text){
-		templateTitleText.find('.year').html(year);
-		templateTitleText.find('h3:nth-child(2)').html(title[0]);
-		templateTitleText.find('p:nth-child(3)').html(text[0]);
-		templateTitleText.find('h3:nth-child(5)').html(title[1]);
-		templateTitleText.find('p:nth-child(6)').html(text[1]);
-		return templateTitleText.html();
+		templateLargeText.find('.year').html(year);
+		templateLargeText.find('h3:nth-child(2)').html(title[0]);
+		templateLargeText.find('p:nth-child(3)').html(text[0]);
+		templateLargeText.find('h3:nth-child(5)').html(title[1]);
+		templateLargeText.find('p:nth-child(6)').html(text[1]);
+		return templateLargeText.html();
 	}
 	
+	function buildTooltipLargeTextAndImage( year, title, text){
+		var src = IMG_PATH_PREFIX + year + '.jpg';
+		templateLargeTextWitImage.find('img').attr("src",src);
+		templateLargeTextWitImage.find('.year').html(year);
+		templateLargeTextWitImage.find('h3:nth-child(2)').html(title[0]);
+		templateLargeTextWitImage.find('p:nth-child(3)').html(text[0]);
+		templateLargeTextWitImage.find('h3:nth-child(5)').html(title[1]);
+		templateLargeTextWitImage.find('p:nth-child(6)').html(text[1]);
+		return templateLargeTextWitImage.html();
+	}
 	
 	function buildTooltipOnlyTwoTitle( year, title){
 		templateOnlyTwoTitle.find('.year').html(year);
@@ -112,6 +122,8 @@ var TIME_LINE = (function($){
 				return buildTooltipTitleText(yearObject.year, yearObject.head, yearObject.story);
 			case ONLY_TWO_TITLE:
 				return buildTooltipOnlyTwoTitle(yearObject.year, yearObject.head);
+			case LARGE_TEXT_AND_IMAGE:
+				return buildTooltipLargeTextAndImage(yearObject.year, yearObject.head, yearObject.story);
 		}
 	}
 	

@@ -56,6 +56,13 @@ section .error{
 	margin-right: 5%;
 }
 
+.tooltip-inner .tooltip-img-down {
+	float: left;
+	margin-right: 5%;
+	margin-top:30%;
+}
+
+
 .tooltip-inner .tooltip-info p {
 }
 
