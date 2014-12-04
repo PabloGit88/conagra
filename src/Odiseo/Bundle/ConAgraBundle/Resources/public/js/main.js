@@ -120,7 +120,7 @@
     		var divHeight = $('.cuadroPromociones').height();    		
 			var scrollHeight = $('.cuadroPromociones').scrollTop();			
 			var scrollPosition = divHeight + $('.cuadroPromociones').scrollTop();
-			$('.cuadroPromociones').animate({scrollTop : scrollHeight+100}, 400);
+			$('.cuadroPromociones').animate({scrollTop : scrollHeight+150}, 450);
     	 });
     	$('.promociones .upClick.promo').click(function(e)
     	{
@@ -128,7 +128,7 @@
     		var divHeight = $('.cuadroPromociones').height();    	    		
 			var scrollHeight = $('.cuadroPromociones').scrollTop();    				
 			var scrollPosition = divHeight + $('.cuadroPromociones').scrollTop();  
-			$('.cuadroPromociones').animate({scrollTop : scrollHeight-100}, 400);
+			$('.cuadroPromociones').animate({scrollTop : scrollHeight-150}, 450);
     	 });
     	//popover
     	$('.pageButton.nextButton, .pageButton.previousButton').popover({ trigger: "hover" }); 	        
