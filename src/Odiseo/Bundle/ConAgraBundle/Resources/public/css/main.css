@@ -1058,3 +1058,26 @@ top:0%;
 	border-bottom-right-radius: 6px;
 	border-top-right-radius: 6px;
 }
+/* promociones */
+.promociones{
+	height:100%
+}
+.promociones .mainTitle{
+	margin:0 !important;
+}
+.promociones .contenido{
+	height:100%;
+}
+.promociones .cuadroPromociones{
+	height: 70%;
+	overflow: auto;
+	/*background-image: url("../images/promociones/cuadro_promociones.png");
+	background-repeat: no-repeat;*/
+}
+.promociones .bottonScroll{
+	margin-left: 47%;
+	margin-top: 17px;
+}
+.promociones .degrade{
+	
+}
