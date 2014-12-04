@@ -1069,7 +1069,7 @@ top:0%;
 	height:100%;
 }
 .promociones .cuadroPromociones{
-	height: 70%;
+	height: 480px;
 	overflow: auto;
 	/*background-image: url("../images/promociones/cuadro_promociones.png");
 	background-repeat: no-repeat;*/

@@ -155,6 +155,14 @@
 	header .navbar-nav > li.home {
 		width: 55px;
 	}
+    /*promo*/
+    .promociones .slimScrollDiv{
+    	height: 369px !important;
+    }
+	.promociones .cuadroPromociones {
+		height: 369px !important;
+		overflow: auto;
+	}
 	
 	
 }
