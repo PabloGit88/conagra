@@ -2,23 +2,8 @@
  
 {% block content %}
 <div class="quien_es privateLabel">
-	<h1 class="mainTitle">Private Label</h1>
+	<h1 class="mainTitle">Marca Privada</h1>
 
-	<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'commercial-foods' }) }}">
-		<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/private_brands.png') }}" alt="private brands"  class="img-responsive privateLabel content-image center-block">
-	</a>
-
-	<div>
-			<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'commercial-foods' }) }}">
-				<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/private_brands_m.png') }}" alt="private brands" >
-			</a>
-	</div>	
-
-	<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'principal-brands' }) }}" class="pageButton previousButton"
-		data-toggle="popover" data-content="Principal Brands" data-placement="top" title="3/5" data-trigger="hover">
-	</a>
-	<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'commercial-foods' }) }}" class="pageButton nextButton" 
-		data-toggle="popover" data-content="Commercial Foods" data-placement="top" title="5/5" data-trigger="hover">
-	</a>
+	<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/private_brands.png') }}" alt="private brands"  class="img-responsive privateLabel center-block">
 </div>
 {% endblock %}

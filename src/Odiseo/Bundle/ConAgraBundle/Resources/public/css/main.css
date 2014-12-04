@@ -402,15 +402,11 @@ img.marca_descripcion{
 }
 
 #content .quien_es {
-
+	height: 100%;
 }
 
 #content .quien_es .mainTitle {
 	margin: 0 0 30px 0;
-}
-
-#content .quien_es.privateLabel .mainTitle {
-	margin: 0 0 0 0;
 }
 
 #content .quien_es .boxes {
@@ -422,9 +418,14 @@ img.marca_descripcion{
 #content .quien_es img.commercialFoods {
 	max-width: 80%;
 }
-#content .quien_es img.privateLabel {
-	max-width: 76%;
-	margin-top: -20px;
+#content .quien_es.privateLabel img.privateLabel {
+	max-height: 85%;
+}
+
+#content .quien_es.ourPurpose img,
+#content .quien_es.quienEsConagra img,
+#content .quien_es.operationsReport img {
+	max-height: 100%;
 }
 
 .commercialFoodsBackground {
@@ -1057,4 +1058,27 @@ top:0%;
 	padding: 9px 6px;
 	border-bottom-right-radius: 6px;
 	border-top-right-radius: 6px;
+}
+/* promociones */
+.promociones{
+	height:100%
+}
+.promociones .mainTitle{
+	margin:0 !important;
+}
+.promociones .contenido{
+	height:100%;
+}
+.promociones .cuadroPromociones{
+	height: 480px;
+	overflow: auto;
+	/*background-image: url("../images/promociones/cuadro_promociones.png");
+	background-repeat: no-repeat;*/
+}
+.promociones .bottonScroll{
+	margin-left: 47%;
+	margin-top: 17px;
+}
+.promociones .degrade{
+	
 }
