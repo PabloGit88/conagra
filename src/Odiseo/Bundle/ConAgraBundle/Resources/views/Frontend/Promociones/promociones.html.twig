@@ -1,0 +1,23 @@
+{% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
+ 
+{% block main %}
+<div id="content">
+	<div class="promociones">
+		<h1 class="mainTitle">Quick Facts</h1>
+		<div class="contenido">
+			<div class="cuadroPromociones">
+				<img src="{{ asset('bundles/odiseoconagra/images/promociones/cuadro_promociones.png') }}" alt="promociones" class="img-responsive center-block promo">
+			</div>
+
+			<div class="bottonScroll center-block">
+				<div class="degrade">
+				</div>
+				<div class="arrows">
+					<a href="#" class="downClick promo"><img src="{{ asset('bundles/odiseoconagra/images/arrow_black_down.png') }}" class="arrowScroll"></a>	
+					<a href="#" class="upClick promo"><img src="{{ asset('bundles/odiseoconagra/images/arrow_black_down.png') }}" class="arrowScroll"></a>	
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+{% endblock %}
