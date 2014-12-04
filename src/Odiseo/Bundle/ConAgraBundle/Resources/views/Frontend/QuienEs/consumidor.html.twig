@@ -1,0 +1,14 @@
+{% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
+ 
+{% block content %}
+<div class="quien_es marcaConsumo">
+	<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/consumidor.png') }}" alt="our-purpose"  class="img-responsive center-block">
+
+	<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'marca-de-consumo' }) }}" class="pageButton previousButton"
+		data-toggle="popover" data-content="M. de consumo" data-placement="top" title="1/3" data-trigger="hover">
+	</a>
+	<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'many-stories' }) }}" class="pageButton nextButton" 
+		data-toggle="popover" data-content="M. de consumo" data-placement="top" title="3/3" data-trigger="hover">
+	</a>
+</div>
+{% endblock %}

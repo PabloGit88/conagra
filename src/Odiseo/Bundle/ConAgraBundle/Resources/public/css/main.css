@@ -424,7 +424,8 @@ img.marca_descripcion{
 
 #content .quien_es.ourPurpose img,
 #content .quien_es.quienEsConagra img,
-#content .quien_es.operationsReport img {
+#content .quien_es.operationsReport img,
+#content .quien_es.marcaConsumo img {
 	max-height: 100%;
 }
 
