@@ -429,9 +429,12 @@ img.marca_descripcion{
 
 #content .quien_es.ourPurpose img,
 #content .quien_es.quienEsConagra img,
-#content .quien_es.operationsReport img,
-#content .quien_es.marcaConsumo img {
+#content .quien_es.operationsReport img {
 	max-height: 100%;
+}
+
+#content .quien_es.marcaConsumo img {
+max-height: 90%;
 }
 
 #content .quien_es.clasesDeMarcas {

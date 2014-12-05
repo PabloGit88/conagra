@@ -14,6 +14,12 @@
  
 {% block content %}
 <div class="quien_es many-stories">
+	<div class="mainTitleContent clearfix">
+		<h1 class="mainTitle pull-left"></h1>
+		<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'clases-de-marcas' }) }}" class="backButton pull-right">
+			<img src="{{ asset('bundles/odiseoconagra/images/volverInicioButton.png') }}">
+		</a>
+	</div>
 	<div class="timelineContainer" data-timeline-img-path-prefix="{{ asset('bundles/odiseoconagra/images/quienesconagra/timeline/') }}">
 		{% include 'OdiseoConAgraBundle:Frontend:QuienEs/timeline-svg.html.twig' %}\
 	</div>
