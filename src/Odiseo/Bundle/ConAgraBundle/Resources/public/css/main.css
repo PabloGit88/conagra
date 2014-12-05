@@ -192,6 +192,11 @@ footer {
 	position: absolute;
 	bottom: 0;
 	left: 50%;	
+	color:black;
+	padding-left: 30px;
+	border: none;
+	background: url(../images/conagralatam/circle_arrow.png) no-repeat left  center;	
+
 }
 
 #content .conagra_latam .marca_descripcion .panama 
@@ -427,6 +432,17 @@ img.marca_descripcion{
 #content .quien_es.operationsReport img,
 #content .quien_es.marcaConsumo img {
 	max-height: 100%;
+}
+
+#content .quien_es.clasesDeMarcas {
+	display: table;
+	width: 100%;	
+}
+
+#content .quien_es.clasesDeMarcas .brands-container {
+	display: table-cell;
+	vertical-align: middle;
+	padding-bottom: 80px;
 }
 
 .commercialFoodsBackground {
