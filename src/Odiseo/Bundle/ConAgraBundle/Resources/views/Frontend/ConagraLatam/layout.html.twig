@@ -18,7 +18,7 @@
  
 {% block content %}
 
-<div class="conagra_latam">
+<div class="conagra_latam" data-mapa-img-path-prefix="{{ asset('bundles/odiseoconagra/images/conagralatam/') }}">
 	<h1 class="mainTitle">ConAgra Latam</h1>
 	<div class="marca_descripcion hidden-xs">
 		{% block marca_descrition_content %}
@@ -47,6 +47,17 @@
 	<option value="peru">Peru</option>
 </select>
 
+
+<a href="#" id="tt_ecuador"  style="display:none" class="btn btn-borderer saleTracker hidden-xs" >Sales Tracker</a>
+<a href="#" id="tt_peru" style="display:none"  class="btn btn-borderer saleTracker hidden-xs" >Sales Tracker</a>
+<a href="#" id="tt_colombia" style="display:none" class="btn btn-borderer saleTracker hidden-xs" >Sales Tracker</a>
+<a href="#" id="tt_costarica" style="display:none" class="btn btn-borderer saleTracker hidden-xs" >Sales Tracker</a>
+<a href="#" id="tt_nicaragua"  style="display:none" class="btn btn-borderer saleTracker hidden-xs" >Sales Tracker</a>
+<a href="#" id="tt_honduras"  style="display:none" class="btn btn-borderer saleTracker hidden-xs" >Sales Tracker</a>	
+<a href="#" id="tt_panama"  style="display:none" class="btn btn-borderer saleTracker hidden-xs" >Sales Tracker</a>		
+<a href="#" id="tt_elsalvador"  style="display:none" class="btn btn-borderer saleTracker hidden-xs" >Sales Tracker</a>		
+<a href="#" id="tt_guatemala"  style="display:none" class="btn btn-borderer saleTracker hidden-xs" >Sales Tracker</a>					
+					
 <svg    viewBox="0 0 445 650" preserveAspectRatio="xMinYMin meet" xmlns="http://www.w3.org/2000/svg" id="svg2" 
        version="1.1">
  <metadata id="metadata8">image/svg+xml</metadata>
@@ -674,10 +685,10 @@
 <div class="visible-xs actions-container">
 		<ul class="actions row">
 				<li>
-					<a href="#" class="btn btn-borderer">Nuevo ingreso / registro</a>
+					<a href="#" class="btn btn-borderer">Sales Tracker</a>
 				</li>
 				<li>
-					<a href="#" class="btn btn-borderer">Login</a>
+					<a href="#" class="btn btn-borderer">Conocé otras regiones</a>
 				</li>
 		</ul>
 	</div>

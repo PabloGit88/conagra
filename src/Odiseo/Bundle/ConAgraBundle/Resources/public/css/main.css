@@ -192,6 +192,11 @@ footer {
 	position: absolute;
 	bottom: 0;
 	left: 50%;	
+	color:black;
+	padding-left: 30px;
+	border: none;
+	background: url(../images/conagralatam/circle_arrow.png) no-repeat left  center;	
+
 }
 
 #content .conagra_latam .marca_descripcion .panama 
