@@ -448,6 +448,21 @@ max-height: 90%;
 	padding-bottom: 80px;
 }
 
+#content .quien_es.marcaConsumo img {
+max-height: 90%;
+}
+
+#content .quien_es.clasesDeMarcas {
+	display: table;
+	width: 100%;	
+}
+
+#content .quien_es.clasesDeMarcas .brands-container {
+	display: table-cell;
+	vertical-align: middle;
+	padding-bottom: 80px;
+}
+
 .commercialFoodsBackground {
 	position: fixed;
 	bottom: 30px;
