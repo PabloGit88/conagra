@@ -2,6 +2,10 @@
  
 {% block content %}
 <div class="quien_es clasesDeMarcas">
+	
+	  <a  style="position:absolute; right:0;"href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'our-purpose' }) }}" class="backButton pull-right">
+		<img src="{{ asset('bundles/odiseoconagra/images/volverInicioButton.png') }}">
+	</a>
 	<div class="brands-container">
 		<ul class="brands">
 			<li><a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'marca-de-consumo' }) }}"><img   src="{{ asset('bundles/odiseoconagra/images/quienesconagra/marca-de-consumo.png') }}"></a></li>
@@ -9,5 +13,10 @@
 			<li><a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'commercial-foods' }) }}"><img  src="{{ asset('bundles/odiseoconagra/images/quienesconagra/comercial.png') }}"></a></li>
 		</ul>
 	</div>
+	
+		
+	<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'operations-report' }) }}" class="pageButton previousButton"
+		data-toggle="popover" data-content="Reporte de Operaciones" data-placement="top" title="3/4" data-trigger="hover">
+	</a>
 </div>
 {% endblock %} 
