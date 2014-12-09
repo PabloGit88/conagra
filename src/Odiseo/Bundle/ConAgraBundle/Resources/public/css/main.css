@@ -423,8 +423,44 @@ img.marca_descripcion{
 #content .quien_es img.commercialFoods {
 	max-width: 80%;
 }
-#content .quien_es.privateLabel img.privateLabel {
-	max-height: 85%;
+#content .quien_es.privateLabel .privateLabelContent {
+	height: 85%;
+}
+
+#content .quien_es.privateLabel .privateLabelContent .box1 {
+	position: absolute;
+	max-width: 40%;
+	left: 4%;
+	z-index: 3;
+}
+
+#content .quien_es.privateLabel .privateLabelContent .box1 p {
+	position: absolute;
+	width: 73%;
+	top: 28%;
+	left: 6%;
+	font-size: 1.2vw;
+}
+
+#content .quien_es.privateLabel .privateLabelContent .box2 {
+	max-width: 40%;
+	position: absolute;
+	left: 39%;
+	z-index: 2;
+}
+
+#content .quien_es.privateLabel .privateLabelContent .box2 p {
+	position: absolute;
+	width: 77%;
+	top: 15%;
+	left: 13%;
+	font-size: 1.2vw;
+}
+
+#content .quien_es.privateLabel .privateLabelContent .background {
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
 }
 
 #content .quien_es.ourPurpose img,
