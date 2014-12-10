@@ -1175,7 +1175,7 @@ top:0%;
 .promociones .promo-mobile .brands{
 	text-align:center;
 	margin-top: 25px;
-	height: 10%;
+	height: 9%;
 }
 .promociones .promo-mobile .brands span{
 	color:#7d7d7d;
@@ -1183,7 +1183,8 @@ top:0%;
 	font-weight: bold;
 }
 .promociones .promo-mobile .marcas{
-	height:90%;
+	height: 82%;
+	margin-top: 6%;
 }
 .promociones .promo-mobile .tables{
 	height:100%;
@@ -1196,7 +1197,7 @@ top:0%;
 	height:100%;
 }
 .promociones .promo-mobile .marca{
-	height: 12.85%;
+	height: 14.5%;
 	background-color: #f1f1f1;
 	border-bottom:2px solid #e7e7e7;
 	padding-top: 9px;

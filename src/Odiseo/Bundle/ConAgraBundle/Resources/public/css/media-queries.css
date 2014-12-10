@@ -725,6 +725,9 @@
 	.promociones .promo-mobile{
 		margin-left: 13px;
 	}
+	.promociones .promo-mobile .marcas {
+		margin-top: 1%;
+	}
 }
 @media only screen and (min-height : 568px)  { /*iphone5*/
 	.promociones .promo-mobile{
@@ -733,6 +736,9 @@
 	.promociones .carousel-control.right {
 		top: 5%;
 		right: 10%;
+	}
+	.promociones .promo-mobile .marcas{
+		margin-top: 6%;
 	}
 }
 @media only screen and (min-height : 640px)  { /*samsung 4*/
@@ -744,5 +750,8 @@
 	}
 	.promociones .carousel-control.right {
 		top: 6%;
+	}
+	.promociones .promo-mobile .marcas{
+		margin-top: 6%;
 	}
 }
