@@ -712,3 +712,37 @@
 	}
 		/* END LATAM */
 }
+
+@media only screen and (min-height : 480px)  { /*iphone 4*/
+	.promociones .carousel-control.right {
+		top: 5%;
+		right: 20%;
+	}
+	.promociones .carousel-control.left {
+		left: -12%;
+		top: 5%;
+	}
+	.promociones .promo-mobile{
+		margin-left: 13px;
+	}
+}
+@media only screen and (min-height : 568px)  { /*iphone5*/
+	.promociones .promo-mobile{
+		margin-left: 0px;
+	}	
+	.promociones .carousel-control.right {
+		top: 5%;
+		right: 10%;
+	}
+}
+@media only screen and (min-height : 640px)  { /*samsung 4*/
+	.promociones .promo-mobile{
+		margin-left: 0px;
+	}	
+	.promociones .carousel-control.left {
+		top: 6%;
+	}
+	.promociones .carousel-control.right {
+		top: 6%;
+	}
+}

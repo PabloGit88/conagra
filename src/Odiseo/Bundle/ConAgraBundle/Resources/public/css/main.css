@@ -1187,6 +1187,7 @@ top:0%;
 }
 .promociones .promo-mobile .tables{
 	height:100%;
+	padding:0;
 }
 .promociones .promo-mobile .table{
 	height:100%;
@@ -1213,15 +1214,15 @@ top:0%;
 	background:none !important;
 	background-image:none !important;
 	height: 20px;
-	left: -8%;
-	top: 5%;
+	left: -12%;
+	top: 6%;
 }
 .promociones .carousel-control.right{
 	background:none !important;
 	background-image:none !important;
 	height: 20px;
-	top: 5%;
-	right: 15%;
+	top: 6%;
+	right: 13%;
 	z-index: 9999;
 }
 .promociones .carousel-control{
