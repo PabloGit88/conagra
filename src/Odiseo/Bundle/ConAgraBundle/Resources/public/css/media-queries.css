@@ -696,7 +696,7 @@
 	}
 	
 	#content .conagra_latam  .actions a,
-	a:hover {
+	#content .conagra_latam  .actions a:hover {
 		color:black;
 		border-color:black;
 		font-size: 4vw;

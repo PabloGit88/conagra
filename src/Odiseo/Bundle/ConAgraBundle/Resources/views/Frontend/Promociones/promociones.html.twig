@@ -1,21 +1,66 @@
 {% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
  
 {% block main %}
-<div id="content">
+<div id="content" class="promocionesContent">
 	<div class="promociones">
-		<h1 class="mainTitle">Quick Facts</h1>
+		<h1 class="mainTitle">Promociones</h1>
 		<div class="contenido">
-			<div class="cuadroPromociones">
-				<img src="{{ asset('bundles/odiseoconagra/images/promociones/cuadro_promociones.png') }}" alt="promociones" class="img-responsive center-block promo">
-			</div>	
-			<div class="degrade">
-			</div>
-			<div class="bottonScroll center-block">
-				<div class="arrows">
-					<a href="#" class="downClick promo"><img src="{{ asset('bundles/odiseoconagra/images/arrow_black_down.png') }}" class="arrowScroll"></a>	
-					<a href="#" class="upClick promo"><img src="{{ asset('bundles/odiseoconagra/images/arrow_black_down.png') }}" class="arrowScroll"></a>	
+			<div class="promo-desktop hidden-xs">
+				<div class="cuadroPromociones">
+					<img src="{{ asset('bundles/odiseoconagra/images/promociones/cuadro_promociones.png') }}" alt="promociones" class="img-responsive center-block promo">
+				</div>
+				<div class="bottonScroll center-block hidden-xs">
+					<div class="arrows">
+						<a href="#" class="downClick promo"><img src="{{ asset('bundles/odiseoconagra/images/arrow_black_down.png') }}" class="arrowScroll"></a>	
+						<a href="#" class="upClick promo"><img src="{{ asset('bundles/odiseoconagra/images/arrow_black_down.png') }}" class="arrowScroll"></a>	
+					</div>
 				</div>
 			</div>
+			<!-- mobile -->
+			<div class="promo-mobile row visible-xs">
+				<div class="colIzq col-xs-5">
+					<div class="brands"><span>BRAND</span></div>
+					<div class="marcas">
+						<div class="marca act2"><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/promociones/act2.png') }}" class="img-responsive center-block" ></a></div>
+						<div class="marca hunts"><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/promociones/hunts.png') }}" class="img-responsive center-block" ></a></div>
+						<div class="marca wesson"><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/promociones/wesson.png') }}" class="img-responsive center-block" ></a></div>
+						<div class="marca snackpack"><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/promociones/snackpack.png') }}" class="img-responsive center-block" ></a></div>
+						<div class="marca pam"><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/promociones/pam.png') }}" class="img-responsive center-block" ></a></div>
+						<div class="marca peterpan"><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/promociones/peterpan.png') }}" class="img-responsive center-block" ></a></div>
+						<div class="marca lachoy"><a href="#"><img src="{{ asset('bundles/odiseoconagra/images/promociones/lachoy.png') }}" class="img-responsive center-block" ></a></div>
+					</div>
+				</div>
+				<div class="tables col-xs-7">
+					  <!-- Controls -->
+					  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left"></span>
+					  </a>
+					  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right"></span>
+					  </a>
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+					 
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner">
+					   	<div class="table item active">
+					  		<img src="{{ asset('bundles/odiseoconagra/images/promociones/2015_01.png') }}" class="img-responsive">
+					    </div>
+					    <div class="table item">
+					      <img src="{{ asset('bundles/odiseoconagra/images/promociones/2015_02.png') }}" class="img-responsive">
+					    </div>
+					    <div class="table item">
+					      <img src="{{ asset('bundles/odiseoconagra/images/promociones/2016_01.png') }}" class="img-responsive">
+					    </div>
+					    <div class="table item">
+					      <img src="{{ asset('bundles/odiseoconagra/images/promociones/2016_02.png') }}" class="img-responsive">
+					    </div>
+					  </div>
+					 
+
+					</div> <!-- Carousel -->
+				</div>
+			</div>
+			<!-- endmobile -->
 		</div>
 	</div>
 </div>
