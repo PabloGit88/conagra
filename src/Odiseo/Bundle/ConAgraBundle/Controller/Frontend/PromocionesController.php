@@ -9,7 +9,7 @@ class PromocionesController extends Controller
 	
     public function indexAction()
     {
-        return $this->render('OdiseoConAgraBundle:Frontend/Promociones:index.html.twig');
+        return $this->render('OdiseoConAgraBundle:Frontend/Promociones:promociones.html.twig');
     }
 	
     public function showPageAction($page)

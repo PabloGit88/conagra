@@ -711,6 +711,11 @@
 		width:100%;
 	}
 		/* END LATAM */
+	/*promo*/
+	.promociones .carousel-control.right {
+		top: 5%;
+		right: 52%;
+	}
 }
 
 @media only screen and (min-height : 480px)  { /*iphone 4*/
