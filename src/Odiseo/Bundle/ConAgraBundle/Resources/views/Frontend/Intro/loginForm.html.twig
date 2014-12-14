@@ -6,22 +6,22 @@
 <form class="form" action="{{ path("fos_user_security_check") }}" method="post">
 		<div class="row form-group">
 			<div class="col-xs-12 col-sm-12">
-				<input type="text" class="form-control" name="_username" id="register_mail" placeholder="Mail"
+				<input type="text" class="form-control" name="_username" id="register_mail" placeholder="{{ 'login_email' | trans |  raw }}"
 					data-rule-required="true"
 				>
 			</div> 
 		</div>
 		<div class="row form-group">
 			<div class="col-xs-12 col-sm-12">
-				<input type="password" class="form-control" name="_password" id="register_password" placeholder="Contraseña"
+				<input type="password" class="form-control" name="_password" id="register_password" placeholder="{{ 'login_password' | trans |  raw }}"
 					data-rule-required="true"
 				>
 			</div>     
 		</div>
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 buttons">
-				<a href="{{ path('odiseo_conagra_frontend_index') }}" class="btn btn-default cancelButton">Cancelar</a>
-				<button  type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans({}, 'FOSUserBundle') }}"  class="btn btn-danger submitButton">Ingresar</button>
+				<a href="{{ path('odiseo_conagra_frontend_index') }}" class="btn btn-default cancelButton">{{ 'login_cancel' | trans |  raw }}</a>
+				<button  type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans({}, 'FOSUserBundle') }}"  class="btn btn-danger submitButton">{{ 'login_login' | trans |  raw }}</button>
 			</div>
 		</div>
 </form>

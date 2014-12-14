@@ -7,7 +7,7 @@ Odiseo\Bundle\ConAgraBundle\Entity\LanguageToken:
             type: integer
             id: true
             generator:
-                strategy: AUTO
+                strategy: none
     fields:
        token:
             column: token

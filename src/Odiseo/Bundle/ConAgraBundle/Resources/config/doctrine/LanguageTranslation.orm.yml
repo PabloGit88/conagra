@@ -7,7 +7,7 @@ Odiseo\Bundle\ConAgraBundle\Entity\LanguageTranslation:
          type: integer
          id: true
          generator:
-              strategy: AUTO
+              strategy: none
     manyToOne:
          language:
              targetEntity: Odiseo\Bundle\ConAgraBundle\Entity\Language

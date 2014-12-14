@@ -1,0 +1,22 @@
+USE conagra;
+
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (1,1,'messages','Who we are',1);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (2,2,'messages','QUIÉN ES <strong>CONAGRA</strong>',1);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (3,2,'messages','ENTRENAMIENTO <strong>DE MARCAS</strong>',2);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (4,1,'messages','Brands training',2);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (5,1,'messages','ConAgra Latam',3);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (6,2,'messages','CONAGRA <strong>LATAM</strong>',3);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (7,1,'messages','Planograms',4);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (8,2,'messages','PLANOGRAMAS',4);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (9,1,'messages','Promos',5);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (10,2,'messages','PROMOCIONES',5);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (11,1,'messages','ConAgra Information Platform',6);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (12,2,'messages','Plataforma de Información ConAgra',6);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (13,1,'messages','EMAIL',7);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (14,2,'messages','Mail',7);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (15,1,'messages','PASSWORD',8);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (16,2,'messages','Contraseña',8);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (17,1,'messages','Cancel',9);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (18,2,'messages','Cancelar',9);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (19,1,'messages','Log in',10);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (20,2,'messages','Ingresar',10);
