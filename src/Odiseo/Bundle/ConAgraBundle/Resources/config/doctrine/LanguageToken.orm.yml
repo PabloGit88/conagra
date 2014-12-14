@@ -1,0 +1,16 @@
+Odiseo\Bundle\ConAgraBundle\Entity\LanguageToken:
+    repositoryClass: Odiseo\Bundle\ConAgraBundle\Repository\LanguageTokenRepository
+    type: entity
+    table: language_token
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+       token:
+            column: token
+            type: string
+            unique: true
+            length: 200

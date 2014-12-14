@@ -433,6 +433,18 @@ img.marca_descripcion{
 	max-height: 100%;
 }
 
+#content .quien_es.ourPurpose .img-container{
+	background: url(../images/quienesconagra/our_purpose.png) no-repeat;
+	size : cover;
+	background-size: contain;
+	max-width: 70%;
+	height: 100%;
+	background-position-x: 50%;
+	
+}
+
+
+
 #content .quien_es.marcaConsumo img {
 max-height: 90%;
 }
@@ -450,7 +462,7 @@ max-height: 90%;
 
 #content .quien_es.marcaConsumo img {
 max-height: 90%;
-}
+	}
 
 #content .quien_es.clasesDeMarcas {
 	display: table;

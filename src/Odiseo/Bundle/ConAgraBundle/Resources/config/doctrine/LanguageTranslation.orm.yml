@@ -1,0 +1,28 @@
+Odiseo\Bundle\ConAgraBundle\Entity\LanguageTranslation:
+    repositoryClass: Odiseo\Bundle\ConAgraBundle\Repository\LanguageTranslationRepository
+    type: entity
+    table: language_translation
+    id:
+       id:
+         type: integer
+         id: true
+         generator:
+              strategy: AUTO
+    manyToOne:
+         language:
+             targetEntity: Odiseo\Bundle\ConAgraBundle\Entity\Language
+             fetch: EAGER
+         languageToken:
+             targetEntity: Odiseo\Bundle\ConAgraBundle\Entity\LanguageToken
+             fetch: EAGER    
+    fields:
+       catalogue:
+            column: catalogue
+            type: string
+            length: 200
+       translation:
+            column: translation
+            type: text
+
+            
+            

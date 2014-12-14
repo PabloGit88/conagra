@@ -34,3 +34,11 @@ services:
         scope: request # needed as we have the request as a dependency here
         tags:
             - { name: knp_menu.menu, alias: backend_main_menu } # The alias is what is used to retrieve the menu
+
+    translation.loader.db:
+        class: Odiseo\Bundle\ConAgraBundle\Services\DbPhrasesLoader
+        arguments: [@doctrine.orm.entity_manager]
+        tags:
+           - { name: translation.loader, alias: db}            
+            
+            
