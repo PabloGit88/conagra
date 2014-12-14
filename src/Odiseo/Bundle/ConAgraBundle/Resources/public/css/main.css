@@ -423,8 +423,44 @@ img.marca_descripcion{
 #content .quien_es img.commercialFoods {
 	max-width: 80%;
 }
-#content .quien_es.privateLabel img.privateLabel {
-	max-height: 85%;
+#content .quien_es.privateLabel .privateLabelContent {
+	height: 85%;
+}
+
+#content .quien_es.privateLabel .privateLabelContent .box1 {
+	position: absolute;
+	max-width: 40%;
+	left: 4%;
+	z-index: 3;
+}
+
+#content .quien_es.privateLabel .privateLabelContent .box1 p {
+	position: absolute;
+	width: 73%;
+	top: 28%;
+	left: 6%;
+	font-size: 1.2vw;
+}
+
+#content .quien_es.privateLabel .privateLabelContent .box2 {
+	max-width: 40%;
+	position: absolute;
+	left: 39%;
+	z-index: 2;
+}
+
+#content .quien_es.privateLabel .privateLabelContent .box2 p {
+	position: absolute;
+	width: 77%;
+	top: 15%;
+	left: 13%;
+	font-size: 1.2vw;
+}
+
+#content .quien_es.privateLabel .privateLabelContent .background {
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
 }
 
 #content .quien_es.ourPurpose img,
@@ -515,128 +551,140 @@ max-height: 90%;
 	display: block;
 }
 
-#content .infoBrand .tabs ul li a.infoMarca{
+#content .infoBrand .tabs ul li a.infoMarca {
 	width: 130px;
-	background: url(../images/infoBrand/tab_blue_info.png) no-repeat;
+	background: url(../images/infoBrand/tab_blue.png) no-repeat;
+	background-position: 0 0;
 }
 
 #content .infoBrand .tabs ul li a.infoMarca:hover,
 #content .infoBrand .tabs ul li a.infoMarca.active {
-	background: url(../images/infoBrand/tab_blue_info_selected.png) no-repeat;
+	background-position: 0 -61px;
 }
 	
 #content .infoBrand .tabs ul li a.catalogo {
 	width: 135px;
-	background: url(../images/infoBrand/tab_blue_catalogo.png) no-repeat;
+	background: url(../images/infoBrand/tab_blue.png) no-repeat;
+	background-position: -130px 0;
 }
 
 #content .infoBrand .tabs ul li a.catalogo:hover,
 #content .infoBrand .tabs ul li a.catalogo.active {
-	background: url(../images/infoBrand/tab_blue_catalogo_selected.png) no-repeat;
+	background-position: -130px -61px;
 }
 
 #content .infoBrand .tabs ul li a.manual {
 	width: 119px;
-	background: url(../images/infoBrand/tab_blue_manual.png) no-repeat;
+	background: url(../images/infoBrand/tab_blue.png) no-repeat;
+	background-position: -265px 0;
 }
 
 #content .infoBrand .tabs ul li a.manual:hover,
 #content .infoBrand .tabs ul li a.manual.active {
-	background: url(../images/infoBrand/tab_blue_manual_selected.png) no-repeat;
+	background-position: -265px -61px;
 }
+
 /* GREEN */
-#content .infoBrand .tabs ul li a.infoMarca.green{
-	width: 130px;
-	background: url(../images/infoBrand/tab_green_info.png) no-repeat;
+#content .infoBrand .tabs ul li a.infoMarca.green {
+	width: 131px;
+	background: url(../images/infoBrand/tab_green.png) no-repeat;
+	background-position: 0 0;
 }
 
 #content .infoBrand .tabs ul li a.infoMarca.green:hover,
 #content .infoBrand .tabs ul li a.infoMarca.green.active {
-	background: url(../images/infoBrand/tab_green_info_selected.png) no-repeat;
+	background-position: 0 -61px;
 }
 	
 #content .infoBrand .tabs ul li a.catalogo.green {
 	width: 135px;
-	background: url(../images/infoBrand/tab_green_catalogo.png) no-repeat;
+	background: url(../images/infoBrand/tab_green.png) no-repeat;
+	background-position: -131px 0;
 }
 
 #content .infoBrand .tabs ul li a.catalogo.green:hover,
 #content .infoBrand .tabs ul li a.catalogo.green.active {
-	background: url(../images/infoBrand/tab_green_catalogo_selected.png) no-repeat;
+	background-position: -131px -61px;
 }
 
 #content .infoBrand .tabs ul li a.manual.green {
 	width: 119px;
-	background: url(../images/infoBrand/tab_green_manual.png) no-repeat;
+	background: url(../images/infoBrand/tab_green.png) no-repeat;
+	background-position: -266px 0;
 }
 
 #content .infoBrand .tabs ul li a.manual.green:hover,
 #content .infoBrand .tabs ul li a.manual.green.active {
-	background: url(../images/infoBrand/tab_green_manual_selected.png) no-repeat;
+	background-position: -266px -61px;
 }
 
 /**/
 /* YELLOW */
-#content .infoBrand .tabs ul li a.infoMarca.yellow{
-	width: 130px;
-	background: url(../images/infoBrand/tab_yellow_info.png) no-repeat;
+#content .infoBrand .tabs ul li a.infoMarca.yellow {
+	width: 131px;
+	background: url(../images/infoBrand/tab_yellow.png) no-repeat;
+	background-position: 0 0;
 }
 
 #content .infoBrand .tabs ul li a.infoMarca.yellow:hover,
 #content .infoBrand .tabs ul li a.infoMarca.yellow.active {
-	background: url(../images/infoBrand/tab_yellow_info_selected.png) no-repeat;
+	background-position: 0 -61px;
 }
 	
 #content .infoBrand .tabs ul li a.catalogo.yellow {
 	width: 135px;
-	background: url(../images/infoBrand/tab_yellow_catalogo.png) no-repeat;
+	background: url(../images/infoBrand/tab_yellow.png) no-repeat;
+	background-position: -131px 0;
 }
 
 #content .infoBrand .tabs ul li a.catalogo.yellow:hover,
 #content .infoBrand .tabs ul li a.catalogo.yellow.active {
-	background: url(../images/infoBrand/tab_yellow_catalogo_selected.png) no-repeat;
+	background-position: -131px -61px;
 }
 
 #content .infoBrand .tabs ul li a.manual.yellow {
 	width: 119px;
-	background: url(../images/infoBrand/tab_yellow_manual.png) no-repeat;
+	background: url(../images/infoBrand/tab_yellow.png) no-repeat;
+	background-position: -266px 0;
 }
 
 #content .infoBrand .tabs ul li a.manual.yellow:hover,
 #content .infoBrand .tabs ul li a.manual.yellow.active {
-	background: url(../images/infoBrand/tab_yellow_manual_selected.png) no-repeat;
+	background-position: -266px -61px;
 }
 
-/**/
 /* RED */
-#content .infoBrand .tabs ul li a.infoMarca.red{
-	width: 130px;
-	background: url(../images/infoBrand/tab_red_info.png) no-repeat;
+#content .infoBrand .tabs ul li a.infoMarca.red {
+	width: 131px;
+	background: url(../images/infoBrand/tab_red.png) no-repeat;
+	background-position: 0 0;
 }
 
 #content .infoBrand .tabs ul li a.infoMarca.red:hover,
 #content .infoBrand .tabs ul li a.infoMarca.red.active {
-	background: url(../images/infoBrand/tab_red_info_selected.png) no-repeat;
+	background-position: 0 -61px;
 }
 	
 #content .infoBrand .tabs ul li a.catalogo.red {
 	width: 135px;
-	background: url(../images/infoBrand/tab_red_catalogo.png) no-repeat;
+	background: url(../images/infoBrand/tab_red.png) no-repeat;
+	background-position: -131px 0;
 }
 
 #content .infoBrand .tabs ul li a.catalogo.red:hover,
 #content .infoBrand .tabs ul li a.catalogo.red.active {
-	background: url(../images/infoBrand/tab_red_catalogo_selected.png) no-repeat;
+	background-position: -131px -61px;
 }
 
 #content .infoBrand .tabs ul li a.manual.red {
 	width: 119px;
-	background: url(../images/infoBrand/tab_red_manual.png) no-repeat;
+	background: url(../images/infoBrand/tab_red.png) no-repeat;
+	background-position: -266px 0;
 }
 
 #content .infoBrand .tabs ul li a.manual.red:hover,
 #content .infoBrand .tabs ul li a.manual.red.active {
-	background: url(../images/infoBrand/tab_red_manual_selected.png) no-repeat;
+	background-position: -266px -61px;
 }
 
 /**/
@@ -1110,11 +1158,15 @@ top:0%;
 .promociones{
 	height:100%
 }
+#content.promocionesContent{
+	width: 100%;
+	left: 0;
+}
 .promociones .mainTitle{
 	margin:0 !important;
 }
 .promociones .contenido{
-	height:100%;
+	height:85%;
 	position:relative;
 }
 .promociones .cuadroPromociones{
@@ -1134,4 +1186,71 @@ top:0%;
 	background-repeat: no-repeat;height: 20px;
 	background-size: cover;
 	width: 96%;
+}
+
+
+.promociones .promo-mobile{
+	margin-top: 13px;
+	height:100%;
+}
+.promociones .promo-mobile .colIzq{
+	height:100%;
+}
+.promociones .promo-mobile .brands{
+	text-align:center;
+	margin-top: 25px;
+	height: 9%;
+}
+.promociones .promo-mobile .brands span{
+	color:#7d7d7d;
+	font-size: 15px;
+	font-weight: bold;
+}
+.promociones .promo-mobile .marcas{
+	height: 82%;
+	margin-top: 6%;
+}
+.promociones .promo-mobile .tables{
+	height:100%;
+	padding:0;
+}
+.promociones .promo-mobile .table{
+	height:100%;
+}
+.promociones .promo-mobile .table img{
+	height:100%;
+}
+.promociones .promo-mobile .marca{
+	height: 14.5%;
+	background-color: #f1f1f1;
+	border-bottom:2px solid #e7e7e7;
+	padding-top: 9px;
+}
+.promociones .promo-mobile .marca img{
+	height:100%;
+}
+.promociones .carousel{
+	height:100%;
+}
+.promociones .carousel-inner{
+	height:100%;
+}
+.promociones .carousel-control.left{
+	background:none !important;
+	background-image:none !important;
+	height: 20px;
+	left: -12%;
+	top: 6%;
+}
+.promociones .carousel-control.right{
+	background:none !important;
+	background-image:none !important;
+	height: 20px;
+	top: 6%;
+	right: 13%;
+	z-index: 9999;
+}
+.promociones .carousel-control{
+	text-shadow:0 !important;
+	color:#0B0A0A !important;
 }

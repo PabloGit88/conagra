@@ -99,7 +99,7 @@
             height: '480px',
             color: '#555',
             size: '5px',
-        });       
+        });      
         //button scroll
     	$('.otherData .downClick, .otherData_m .downClick').click(function(e)
     	{

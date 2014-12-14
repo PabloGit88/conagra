@@ -696,7 +696,7 @@
 	}
 	
 	#content .conagra_latam  .actions a,
-	a:hover {
+	#content .conagra_latam  .actions a:hover {
 		color:black;
 		border-color:black;
 		font-size: 4vw;
@@ -711,4 +711,52 @@
 		width:100%;
 	}
 		/* END LATAM */
+	/*promo*/
+	.promociones .carousel-control.right {
+		top: 5%;
+		right: 52%;
+	}
+}
+
+@media only screen and (min-height : 480px)  { /*iphone 4*/
+	.promociones .carousel-control.right {
+		top: 5%;
+		right: 20%;
+	}
+	.promociones .carousel-control.left {
+		left: -12%;
+		top: 5%;
+	}
+	.promociones .promo-mobile{
+		margin-left: 13px;
+	}
+	.promociones .promo-mobile .marcas {
+		margin-top: 1%;
+	}
+}
+@media only screen and (min-height : 568px)  { /*iphone5*/
+	.promociones .promo-mobile{
+		margin-left: 0px;
+	}	
+	.promociones .carousel-control.right {
+		top: 5%;
+		right: 10%;
+	}
+	.promociones .promo-mobile .marcas{
+		margin-top: 6%;
+	}
+}
+@media only screen and (min-height : 640px)  { /*samsung 4*/
+	.promociones .promo-mobile{
+		margin-left: 0px;
+	}	
+	.promociones .carousel-control.left {
+		top: 6%;
+	}
+	.promociones .carousel-control.right {
+		top: 6%;
+	}
+	.promociones .promo-mobile .marcas{
+		margin-top: 6%;
+	}
 }
