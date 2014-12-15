@@ -213,7 +213,13 @@
 /* Bootrstrap max XS (<= 768) */ 
 @media only screen and (max-width : 768px)  
 { 
-
+	
+	header .logout {
+		position: absolute;
+		top: 10px;
+		left:0;
+	}
+	
 	#content {
 		width: 90%;
 		left: 5%;
@@ -735,6 +741,8 @@
 	}
 }
 @media only screen and (min-height : 568px)  { /*iphone5*/
+	
+	
 	.promociones .promo-mobile{
 		margin-left: 0px;
 	}	
@@ -747,6 +755,7 @@
 	}
 }
 @media only screen and (min-height : 640px)  { /*samsung 4*/
+	
 	.promociones .promo-mobile{
 		margin-left: 0px;
 	}	

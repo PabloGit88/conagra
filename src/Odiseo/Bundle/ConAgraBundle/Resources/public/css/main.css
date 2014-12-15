@@ -109,6 +109,16 @@ header .navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
 	color: #FFFFFF;
 }
 
+header .logout {
+	position: relative;
+	float: right;
+	right: 10%;
+	top: 10px;
+}
+
+header .logout a {
+}
+
 footer {
 	position: fixed;
 	bottom: 0;

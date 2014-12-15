@@ -42,7 +42,12 @@
 		        			<span class="icon-bar"></span>
 		        			<span class="icon-bar"></span>
 		      			</button>
-		      			<a class="navbar-brand" href="http://www.conagrafoods.com" target="_blank"><img src="{{ asset('bundles/odiseoconagra/images/logo_conagra.png') }}"></a>
+		      					<a class="navbar-brand" href="http://www.conagrafoods.com" target="_blank"><img src="{{ asset('bundles/odiseoconagra/images/logo_conagra.png') }}"></a>
+	    			</div>
+	    			<div class="logout"> 
+	    				<span> {{ app.user.fullname}}  &nbsp; &nbsp; &nbsp; &nbsp;   </span>
+	    				
+	    				<a href="{{ path('fos_user_security_logout') }}"> Salir </a>
 	    			</div>
 	
 					{% block menu %}
@@ -60,6 +65,10 @@
 	      				</ul>
 	    			</div><!-- /.navbar-collapse -->
 	    			{% endblock %}
+	    			
+	    		
+	    			
+	    			
 				</nav>
     		</header>
     		{% endblock %}
