@@ -1,5 +1,12 @@
 USE conagra;
 
+insert into `language_token`(`id`,`token`) values (23,'brands_info_act2');
+insert into `language_token`(`id`,`token`) values (24,'brands_info_hunt');
+insert into `language_token`(`id`,`token`) values (27,'brands_info_pam');
+insert into `language_token`(`id`,`token`) values (29,'brands_info_peterpan');
+insert into `language_token`(`id`,`token`) values (28,'brands_info_snackpack');
+insert into `language_token`(`id`,`token`) values (26,'brands_info_swissmiss');
+insert into `language_token`(`id`,`token`) values (25,'brands_info_wesson');
 insert into `language_token`(`id`,`token`) values (11,'conagra_latam_belice');
 insert into `language_token`(`id`,`token`) values (21,'conagra_latam_brasil');
 insert into `language_token`(`id`,`token`) values (17,'conagra_latam_colombia');

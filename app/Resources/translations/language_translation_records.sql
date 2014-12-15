@@ -1,14 +1,14 @@
 USE conagra;
 
-insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (1,1,'messages','Who we are',1);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (1,1,'messages','WHO WE ARE',1);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (2,2,'messages','QUIÉN ES <strong>CONAGRA</strong>',1);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (3,2,'messages','ENTRENAMIENTO <strong>DE MARCAS</strong>',2);
-insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (4,1,'messages','Brands training',2);
-insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (5,1,'messages','ConAgra Latam',3);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (4,1,'messages','BRANDS TRAINING',2);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (5,1,'messages','CONAGRA <strong>LATAM</strong>',3);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (6,2,'messages','CONAGRA <strong>LATAM</strong>',3);
-insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (7,1,'messages','Planograms',4);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (7,1,'messages','PLANOGRAMS',4);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (8,2,'messages','PLANOGRAMAS',4);
-insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (9,1,'messages','Promos',5);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (9,1,'messages','PROMOS',5);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (10,2,'messages','PROMOCIONES',5);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (11,1,'messages','ConAgra Information Platform',6);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (12,2,'messages','Plataforma de Información ConAgra',6);
@@ -188,3 +188,55 @@ This company has become in a solid and vigorous subsidiary, which has even  tran
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (44,2,'messages','Son la principal distribuidora en Panamá de productos de consumo masivo, alimentos y bebidas, perfumes y cosméticos: productos automotrices y licores, toda convirtiéndose en líderes de su categoría. </br></br>
 			Son el proveedor por excelencia de sus clientes al ofrecerles productos de alta calidad a precios competitivos dentro de cada una de sus divisiones. De tal forma, realiza constantemente un esfuerzo especial para anticipar las necesidades de sus clientes, y así, ofrecerles excelentes productos de acuerdo a los requisitos más exigentes del mercado.  </br></br>
 			De hecho, esta empresa se ha convertido en una sólida y pujante filial, la cual inclusive ha traspasado fronteras, pues Agencias Feduro inicio en septiembre de 2003 operaciones de distribución exclusiva en Costa Rica.  </br></br>',22);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (45,1,'messages','In 1981, Golden Valley Microwave Foods created ACT 1, refrigerated popcorn that was sold through vending machines. In 1984, a revolutionary bag that allowed grains to explode in any microwave is developed. This innovative product was called ACT II and became part of ConAgra Foods Inc. In 1991.</br></br>
+Nowadays, ACT II is the leader microwave popcorn brand, sold in more than 50 countries, in many cases 1st or 2nd in its category. Regarding snacks, it is second in fastest growth, with an average of more than 7.5% in the last five years!*',23);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (46,2,'messages','En 1981, Golden Valley Microwave Foods creó la marca ACT I,  unas palomitas refrigeradas que se vendían a través de máquinas expendedoras. Y en 1984, se desarrolla una revolucionaria bolsa que permitiría a los granos estallar en cualquier microondas. Este novedoso producto se llamaría ACT II, y paso a ser parte del portafolio de ConAgra Foods Inc. en 1991.',23);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (47,1,'messages','In 1888, Joseph and William Hunt brothers opened a little business by their father´s ranch, where they commercialized fruits and vegetables from the area which they learned to grow from their mother.</br></br>
+
+Soon, in 1890, the brothers found out that their ambition had overcame their facilities, so they moved to a bigger building in Santa Rosa, California; where Hunt´s Brothers Packing Company was being founded. Nowadays, Hunt´s ® is the only American brand that has tomatoes product in the seven canned segments: chopped, sliced, smashed, stewed, sauce, pasta and mashed.',24);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (48,2,'messages','En 1888, los hermanos Joseph y William Hunt abren un pequeño negocio a la par del rancho de su padre en donde comercializaban las frutas y verduras de la zona, y que aprendieron a cultivar de su madre.
+						<br><br> 
+						Pronto, en 1890, los hermanos encontraron que sus ambiciones habían superado sus instalaciones, y, se mudaron a un edificio más grande en Santa Rosa,
+						California., donde Hunt’s Brothers Packing Company estaba siendo fundada. Hoy, Hunt''s® es la única marca americana en tener productos de tomate en los
+						siete segmentos de enlatados: -cortados; en cubitos tomates enteros, aplastado, estofado, salsa, pasta y puré. ',24);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (49,1,'messages','Wesson was originally a Southern Oil Company commercial brand and it was named after his creator David Wesson (1861 – 1934), a food chemist who in 1899 developed a new procedure that allowed producing the first edible vegetal oil in the world.</br></br>',25);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (50,2,'messages','Wesson era originalmente una marca comercial de la Southern Oil Company, y fue nombrada por su creador David Wesson (1861-1934), un químico de alimentos que en 1899 desarrolló un nuevo procedimiento que permitió desarrollar el primer aceite comestible vegetal del mundo.',25);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (51,1,'messages','It is one of the most delicious cocoa powder in the world and it is produced by ConAgra Foods. Originally, during the fifties, the company sold hot chocolate as a beverage for airline passengers. Due to its increased popularity it was later introduced into supermarkets and convenience stores.</br></br>',26);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (52,2,'messages','Es el nombre de uno de los chocolates en polvos más deliciosos de todo el mundo y producido por ConAgra Foods. 
+						   Originalmente, en la década de 1950, la compañía vendía su chocolate caliente como una bebida para los pasajeros de líneas aéreas. Debido a rápida popularidad que empezó a tener el delicioso chocolate caliente la bebida se empezó a vender en  supermercados y tiendas de conveniencia.
+						   <br><br>
+						   Swiss Miss tiene un amplio portafolio de modificadores de leche polvo que incluye: chocolate de leche, con malva, de dieta y sabores más indulgentes como: 
+						   trufa de chocolate, vainilla francesa, chocolate oscuro, chocolate con menta, chocolate con caramelo. En adición la compañía también ha desarrollado unos 
+						   deliciosos pudines refrigerados con el delicioso sabor chocolate caliente.',26);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (53,1,'messages','PAM® was introduced in 1961 by Leon Rubin who along with Arthur Meyerhoff started Gibraltar Industries, to commercialize spray products. Pam is an acronym for Arthur Meyerhoff Products.</br></br>
+
+This innovative product, that makes part of ConAgra Foods since 2000, contains a unique mix of oils, being the canola oil its main ingredient. The spray allows to scatter the whole recipient, pan or grill creating a nonstick layer making cooking with PAM ® easy, healthy and easier to clean.',27);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (54,2,'messages','PAM® fue introducido en 1961 por Leon Rubin quien, con Arthur Meyerhoff, comenzó Gibraltar Industries para comercializar productos en aerosol.
+							El nombre PAM es un acrónimo de Producto de Arthur Meyerhoff.  
+							<br><br>
+							Este innovador producto, que forma parte de ConAgra Foods desde el 2000, utiliza una mezcla única de aceites, siendo el principal ingrediente el de canola. 
+							El ser un aerosol le permite esparcirse por todo el recipiente, sartén o parilla creando una capa antiadherente haciendo que el cocinar con PAM® sea fácil, saludable y simplemente más fácil para limpiar. 			
+						',27);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (55,1,'messages','<span class=”bold”>Snack Pack ®¡a pudding for the whole family!</span>
+Snack Pack was introduced in 1968 as unrefrigerated and stable puddings of one portion, presented in an aluminum can. In 1984 it starts being commercialized in plastic cups, being the first brand in its category that presents it that way. In 1990 it begins being sold in transparent plastic packages. Its soft and creamy texture, with the possibility of enjoying in any time and place, makes it an attractive and sweet pleasure.</br></br>
+It is available in: regular flavors, flavor layers, fat and sugar free. It still maintains its 1 portion per packing presentation. Snack Pack is a healthy sweet because it is made with real nonfat milk, does not contain preservers and high fructose corn syrup.',28);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (56,2,'messages','Snack Pack se introdujo en 1968 como pudines no refrigerados y estables para el almacenamiento en presentación de una sola porción en lata de aluminio. 
+						Fue hasta 1984 en donde se empieza a comercializar en vasos plásticos, siendo la primera marca de la categoría en presentarlo así, y en envases plásticos 
+						transparentes a partir de 1990. 
+						Su textura suave y cremosa, junto con la posibilidad de ser disfrutado en cualquier momento y lugar, lo convierte en un atractivo y dulce placer.
+						<br>   
+						Está disponible en las variedades: sabores regulares,  capas de sabores, libre de grasa y libres de azúcar. Manteniendo su presentación de 1 sola porción por envase,
+					    Snack Pack, es un dulce saludable porque está hecho con verdadera leche sin grasa, no utiliza conservantes, y nunca ha contenido el jarabe de maíz de alta fructosa. 					
+						',28);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (57,1,'messages','Peter Pan is a peanut butter brand produced by ConAgra Foods that carries the name of J.M. Barrie´s character, and since August 2007 Disney´s version of Peter Pan became the official brand´s mascot.
+There is something magical in the Peter Pan peanut butter´s healthy flavor that parents and children can´t resist. Its flavor is delicious and pure, and emanates fun and flavor bringing out the inner child we all carry within.</br></br>
+Peter Pan´s peanut butter is sold in diverse varieties: crunchy, creamy, toasted honey, fat reduced creamy, fat reduced crunchy and sugar reduced creamy.',29);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (58,2,'messages','Peter Pan es una marca de mantequilla de maní producida por ConAgra Foods y que lleva el nombre del personaje de J.M. 
+						Barrie y que desde finales de agosto de 2007, la versión del personaje de Peter Pan de Disney se convertiría en la mascota oficial de la marca.
+						<br><br>
+						Hay algo mágico en el sabor saludable, de la mantequilla de mani Peter Pan Peanut que tanto los niños como los padres no pueden resistirse. Su sabor es delicioso y puro y emana: 
+						sabor y diversión exaltando al niño interior que todos llevamos dentro. 
+						<br><br>
+						La mantequilla de maní Peter Pan se vende en diversas variedades: crujiente, cremoso, miel tostada, cremosa reducida en grasas, crunchy reducido en grasas y
+						 cremosa con azúcar reducida. 										
+						',29);
