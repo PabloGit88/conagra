@@ -2,6 +2,7 @@ var MAPA = (function($){
 	
 	
 	var IMG_PATH_PREFIX = $('.conagra_latam').data('mapaImgPathPrefix');
+	var LOCALE = $('.conagra_latam').data('locale');
 	
 	var DEFAULT_COUNTRY_TO_PAINT = "brasil-path";
 	var  ADDRESS_TEL = 0;
@@ -21,38 +22,52 @@ var MAPA = (function($){
 	};
 	
 	
-
 	//for all toolTip. Generic template of Bootstrap.
 	var toolTiptemplate = '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner mapa"></div></div>';
 	
 	//for salestracker tooltips
-	var templateAddressTelToolTip = $('<div class="wrapper"><div class="tooltip-info addressTel"><p class="adress"><span class="tag bold">Dirección: </span><span class="data"> </span></p><p class="tel"><span class="tag bold">Teléfono:</span><span class="data"></span></p></div></div>');
-	var templateAddressTelVideoToolTip = $('<div class="wrapper"><div class="tooltip-info addressTelVideo"><p class="adress"><span class="tag bold">Dirección: </span><span class="data"> </span></p><p class="tel"><span class="tag bold">Teléfono:</span><span class="data"></span></p><div><img src=""><p>Conozca más desde <span> <a href="#">aquí</a> </span></p></div></div></div>');
-	var templateAddressTelManagerEmail= $('<div class="wrapper"><div class="tooltip-info addressTelManagerEmail"><p class="adress"><span class="tag bold">Dirección: </span><span class="data"> </span></p><p class="tel"><span class="tag bold">Teléfono:</span><span class="data"></span></p> <p class="manager"><span class="tag bold">Manager:</span><span class="data"></span></p><p class="email"><span class"tag bold"></span><span class="data"></span></p></div></div>');
+	var templateAddressTelToolTip_es = $('<div class="wrapper"><div class="tooltip-info addressTel"><p class="adress"><span class="tag bold">Dirección: </span><span class="data"> </span></p><p class="tel"><span class="tag bold">Teléfono:</span><span class="data"></span></p></div></div>');
+	var templateAddressTelVideoToolTip_es = $('<div class="wrapper"><div class="tooltip-info addressTelVideo"><p class="adress"><span class="tag bold">Dirección: </span><span class="data"> </span></p><p class="tel"><span class="tag bold">Teléfono:</span><span class="data"></span></p><div><img src=""><p>Conozca más desde <span> <a href="#">aquí</a> </span></p></div></div></div>');
+	var templateAddressTelManagerEmail_es= $('<div class="wrapper"><div class="tooltip-info addressTelManagerEmail"><p class="adress"><span class="tag bold">Dirección: </span><span class="data"> </span></p><p class="tel"><span class="tag bold">Teléfono:</span><span class="data"></span></p> <p class="manager"><span class="tag bold">Manager:</span><span class="data"></span></p><p class="email"><span class"tag bold"></span><span class="data"></span></p></div></div>');
+	
+	
+	var templateAddressTelToolTip_en = $('<div class="wrapper"><div class="tooltip-info addressTel"><p class="adress"><span class="tag bold">Address: </span><span class="data"> </span></p><p class="tel"><span class="tag bold">Phone:</span><span class="data"></span></p></div></div>');
+	var templateAddressTelVideoToolTip_en = $('<div class="wrapper"><div class="tooltip-info addressTelVideo"><p class="adress"><span class="tag bold">Address: </span><span class="data"> </span></p><p class="tel"><span class="tag bold">Phone:</span><span class="data"></span></p><div><img src=""><p>More about <span> <a href="#">here</a> </span></p></div></div></div>');
+	var templateAddressTelManagerEmail_en= $('<div class="wrapper"><div class="tooltip-info addressTelManagerEmail"><p class="adress"><span class="tag bold">Address: </span><span class="data"> </span></p><p class="tel"><span class="tag bold">Phone:</span><span class="data"></span></p> <p class="manager"><span class="tag bold">Manager:</span><span class="data"></span></p><p class="email"><span class"tag bold"></span><span class="data"></span></p></div></div>');
+	
 	
 	//tooltips builders
 	function buildAddressTelToolTip( address,  tel){
-		templateAddressTelToolTip.find('.adress .data').html(address);
-		templateAddressTelToolTip.find('.tel .data').html(tel);
-		return templateAddressTelToolTip.html();
+		varString = "templateAddressTelToolTip_" + LOCALE;
+		console.log(varString);
+		var template = eval(varString);
+		template.find('.adress .data').html(address);
+		template.find('.tel .data').html(tel);
+		return template.html();
 	}
 	
 	function buildAddressTelVideoToolTip( address,  tel,  link ){
 		var src = IMG_PATH_PREFIX + "youtube.png";
-		console.log(src);
-		templateAddressTelVideoToolTip.find('img').attr("src",src);
-		templateAddressTelVideoToolTip.find('.adress .data').html(address);
-		templateAddressTelVideoToolTip.find('.tel .data').html(tel);
-		templateAddressTelVideoToolTip.find('a').attr('href' , link);
-		return templateAddressTelVideoToolTip.html();
+		varString = "templateAddressTelVideoToolTip_" + LOCALE;
+		console.log(varString);
+		var template = eval(varString);
+		template.find('img').attr("src",src);
+		template.find('.adress .data').html(address);
+		template.find('.tel .data').html(tel);
+		template.find('a').attr('href' , link);
+		return template.html();
 	}
 	
 	function buildAddressTelManagerEmail( address,  tel,  manager, email ){
-		templateAddressTelManagerEmail.find('.adress .data').html(address);
-		templateAddressTelManagerEmail.find('.tel .data').html(tel);
-		templateAddressTelManagerEmail.find('.manager .data').html(manager);
-		templateAddressTelManagerEmail.find('.email .data').html(email);
-		return templateAddressTelManagerEmail.html();
+		var src = IMG_PATH_PREFIX + "youtube.png";
+		varString = "templateAddressTelManagerEmail_" + LOCALE;
+		console.log(varString);
+		var template = eval(varString);
+		template.find('.adress .data').html(address);
+		template.find('.tel .data').html(tel);
+		template.find('.manager .data').html(manager);
+		template.find('.email .data').html(email);
+		return template.html();
 	}
 	
 	
