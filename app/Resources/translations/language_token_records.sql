@@ -1,5 +1,17 @@
 USE conagra;
 
+insert into `language_token`(`id`,`token`) values (11,'conagra_latam_belice');
+insert into `language_token`(`id`,`token`) values (21,'conagra_latam_brasil');
+insert into `language_token`(`id`,`token`) values (17,'conagra_latam_colombia');
+insert into `language_token`(`id`,`token`) values (16,'conagra_latam_costarica');
+insert into `language_token`(`id`,`token`) values (19,'conagra_latam_ecuador');
+insert into `language_token`(`id`,`token`) values (13,'conagra_latam_elsalvador');
+insert into `language_token`(`id`,`token`) values (12,'conagra_latam_guatemala');
+insert into `language_token`(`id`,`token`) values (14,'conagra_latam_honduras');
+insert into `language_token`(`id`,`token`) values (15,'conagra_latam_nicaragua');
+insert into `language_token`(`id`,`token`) values (22,'conagra_latam_panama');
+insert into `language_token`(`id`,`token`) values (20,'conagra_latam_paraguay');
+insert into `language_token`(`id`,`token`) values (18,'conagra_latam_peru');
 insert into `language_token`(`id`,`token`) values (9,'login_cancel');
 insert into `language_token`(`id`,`token`) values (6,'login_conagra_information_platform');
 insert into `language_token`(`id`,`token`) values (7,'login_email');
