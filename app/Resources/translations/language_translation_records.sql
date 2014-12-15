@@ -89,7 +89,9 @@ insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,
 		
 			www.contesa.com.ni',15);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (31,1,'messages','In 1932 the company is born as a wine, liquor and food distributor, founded by don Manuel Constenla Meijide, an Spanish citizen. Located around the most important commercial area of the time: San Jose central market. Its founder´s vision allowed direct contact with several distribution channels, know their needs and satisfy them with a various supply of high quality national and imported products.</br></br>
-In 1970, it becomes the leader in consumer products distribution and expands its</br></br>',16);
+In 1970, it becomes the leader in consumer products distribution and expands its operations creating a new distribution center in the capital and 6 local distribution centers inland. In addition, it prepares an executive professional team to continue working in their strategic vision..</br></br>
+In 2009 the new executive board inaugurates a new world-class distribution center in Novapark business park, where also other companies from the group are located, demonstrating its capacity, robustness and professionalism, which allows them to continue being the leader company in distribution and service in Costa Rica..</br></br>
+www.ciamesa.com ',16);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (32,2,'messages','En el año 1932 nace la empresa como distribuidor de productos alimenticios vinos y licores, fundada por don Manuel Constenla Meijide, ciudadano de origen Español. Ubicada en los alrededores del Mercado Central de San José, zona de mayor importancia comercial en la Costa Rica de esa época. La visión de su fundador le facilitó tener contacto directo con los diferentes canales de distribución, conocer sus necesidades y satisfacerlos con un amplio surtido de productos nacionales e importados de alta calidad.
 		</br></br>
 		En el año 1970, toma el liderazgo del mercado en la distribución de productos de consumo masivo y expande sus operaciones con un nuevo centro de distribución en la capital y 6 centros de distribución regionales en el interior del país, paralelamente con su visión estratégica prepara un equipo profesional de ejecutivos para que den continuidad a la empresa.
@@ -191,9 +193,9 @@ insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (45,1,'messages','In 1981, Golden Valley Microwave Foods created ACT 1, refrigerated popcorn that was sold through vending machines. In 1984, a revolutionary bag that allowed grains to explode in any microwave is developed. This innovative product was called ACT II and became part of ConAgra Foods Inc. In 1991.</br></br>
 Nowadays, ACT II is the leader microwave popcorn brand, sold in more than 50 countries, in many cases 1st or 2nd in its category. Regarding snacks, it is second in fastest growth, with an average of more than 7.5% in the last five years!*',23);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (46,2,'messages','En 1981, Golden Valley Microwave Foods creó la marca ACT I,  unas palomitas refrigeradas que se vendían a través de máquinas expendedoras. Y en 1984, se desarrolla una revolucionaria bolsa que permitiría a los granos estallar en cualquier microondas. Este novedoso producto se llamaría ACT II, y paso a ser parte del portafolio de ConAgra Foods Inc. en 1991.',23);
-insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (47,1,'messages','In 1888, Joseph and William Hunt brothers opened a little business by their father´s ranch, where they commercialized fruits and vegetables from the area which they learned to grow from their mother.</br></br>
-
-Soon, in 1890, the brothers found out that their ambition had overcame their facilities, so they moved to a bigger building in Santa Rosa, California; where Hunt´s Brothers Packing Company was being founded. Nowadays, Hunt´s ® is the only American brand that has tomatoes product in the seven canned segments: chopped, sliced, smashed, stewed, sauce, pasta and mashed.',24);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (47,1,'messages','In 1888, Joseph and William Hunt brothers opened a little business by their father´s ranch, where they commercialized fruits and vegetables from the area which they learned to grow from their mother.
+<br><br>
+Soon, in 1890, the brothers found out that their ambition had overcame their facilities, so they moved to a bigger building in Santa Rosa, California; where Hunt´s Brothers Packing Company was being founded. Nowadays, Hunt´s ® is the only American brand that has tomatoes product in the seven canned segments: chopped, sliced, smashed, stewed, sauce, pasta and mashed',24);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (48,2,'messages','En 1888, los hermanos Joseph y William Hunt abren un pequeño negocio a la par del rancho de su padre en donde comercializaban las frutas y verduras de la zona, y que aprendieron a cultivar de su madre.
 						<br><br> 
 						Pronto, en 1890, los hermanos encontraron que sus ambiciones habían superado sus instalaciones, y, se mudaron a un edificio más grande en Santa Rosa,
@@ -240,3 +242,60 @@ insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,
 						La mantequilla de maní Peter Pan se vende en diversas variedades: crujiente, cremoso, miel tostada, cremosa reducida en grasas, crunchy reducido en grasas y
 						 cremosa con azúcar reducida. 										
 						',29);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (59,1,'messages','<li>La evidencia más temprana de las palomitas de maíz se encontró en Perú y data de 4700 aC.</li>
+						<li>Los estadounidenses consumen unos 16 mil millones cuartos de este grano. Eso es 51 cuartos por hombre, mujer y niño.</li>  
+						<li>Las semillas de las palomitas pueden explotar hasta 3 pies en el aire. *</li>',30);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (60,2,'messages','<li>La evidencia más temprana de las palomitas de maíz se encontró en Perú y data de 4700 aC.</li>
+						<li>Los estadounidenses consumen unos 16 mil millones cuartos de este grano. Eso es 51 cuartos por hombre, mujer y niño.</li>  
+						<li>Las semillas de las palomitas pueden explotar hasta 3 pies en el aire. *</li>',30);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (61,1,'messages','Hunt´s canned tomatoes are 100% natural, without artificial preservers and ingredients. Hunt’s does not contain corn syrup with high fructose quantities. All Hunt´s tomatoes are peeled using FlashSteam ®  process, that uses water steam to remove the skin. Hunt´s tomatoes are harvested and in matter of 8 to 10 hours are canned ensuring not only their freshness but also keeping authentic tomato flavor. ',31);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (62,2,'messages','Los tomates enlatados Hunt’s son 100% naturales sin conservantes ni ingredientes artificiales. Hunt’s no contiene jarabe de maíz con alto contenido de fructosa.',31);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (63,1,'messages','
+In 1991 Wesson introduced Canola oil. The fat from the canola seed not only favors vitamins A, D, E and K absorption, it also ensures its healthy benefits. In the last five years canola oil sales increased in around $ 2.000 million dollars around the world.<br>
+In 2001, the most important American Tasting Institute chefs recognized Wesson with the Golden Medal Award for its great flavor.<br>
+Wesson´s Canola oil contains naturally two essential fatty acids: Omega 3 (W3) that has reduces cholesterol blood levels and Omega 6 (W6) that offers a great cholesterol decrease, considerably impacting on the cardiovascular system health.<br>',32);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (64,2,'messages','
+En 1991 Wesson introdujo el Aceite de Canola. La grasa proveniente de la semilla canola, no solo favorece la absorción de vitaminas
+A,D,E y K, sino que garantiza sus beneficios saludables.
+<br>
+En los últimos cinco años las ventas de aceite de canola aumentaron cerca de $2.000 millones de dólares en todo el mundo.
+<br>
+En el 2001, los más importantes chefs del American Tasting Institute reconocieron a Wesson con el Premio Medalla de Oro por su gran
+sabor.
+<br>
+El Aceite de Canola Wesson contiene de forma natural dos ácidos grasos esenciales como son el Omega 3 (W3) que tiene efectos de
+reducción sobre los niveles de colesterol en la sangre y Omega 6 (W6) que ofrece una gran reducción sobre el colesterol lo que tiene un
+papel fundamental en la salud del sistema cardiovascular.',32);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (65,1,'messages','<p>TIPS for using PAM®</p>
+				<ul>
+					<li>PAM is good if you seek low fat meals, it contains as few calories as 4cal each ½ spray second. </li>
+					<li>To avoid cheese and other foods sticking when using a grater, spray briefly some PAM.</li>  
+					<li>Before you start your barbecue spray the grill and the cookware with some PAM.</li>  
+					<li>When cooking fishes or in the oven spray some PAM to enhance flavors and to avoid food sticking into the pan or the tray.</li>  
+					<li>When putting away leftovers in plastic bags, spray its interior with some PAM before introducing the food, this will avoid it mixing with previous meals flavors.</li>
+				</ul>		',33);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (66,2,'messages','			<p>TIPS PARA USAR PAM®</p>
+					<ul>
+						<li>PAM es bueno para cocinar bajo en grasas, con tan pocas calorías como 4cal por ½ segundo de spray.  </li>
+						<li>Para evitar que el queso y otros alimentos se peguen al utilizar un rallador, rocíe brevemente un poco de PAM.</li>  
+						<li>Antes de encender su parilla rocíe la misma con un poco de PAM y también los utensilios.</li>  
+						<li>Al cocinar pescados o cortes “al cartucho” o al horno rocíe un poco de PAM para realzar los sabores y que no se peguen a la bandeja o sartén.</li>  
+						<li>Al guardar las sobras, en envases plásticos rocíe el interior con un poco de PAM y luego coloque la comida, esto evitara que el recipiente se le adhieran los olores de la comida anterior.</li>
+					</ul>',33);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (67,1,'messages','		<p>Did you know that Snack Pack appears in Billy Madison movie? Adam Sandler´s character does all he can to get a Snack Pack!</p>
+					<br>
+					<a href="https://www.youtube.com/watch?v=ZExPoZGQ8gM" class="magnificPopup">Watch video</a>',34);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (68,2,'messages','<p>¿Sabías Snack Pack hizo un cameo en la película Billy Madison? El personaje de Adam Sandler hace todo lo posible para enganchar un Snack Pack! 					
+					</p>
+					<br>
+					<a href="https://www.youtube.com/watch?v=ZExPoZGQ8gM" class="magnificPopup">Ver video</a>',34);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (69,1,'messages','			<ul>
+						<li>Peter Pan´s peanut butter was originally packed in metal packages but due to its shortage during World War II it was switched for plastic packages. </li>
+						<li>In old versions of the product, Peter Pan was a girl instead of a boy.</li>  
+						<li>Peter Pan and Disney´s characters first appeared during 1953 peanut butter advertising campaign.</li>
+					</ul>',35);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (70,2,'messages','		<ul>
+						<li>La mantequilla de maní Peter Pan era originalmente empacada en envases de metal pero debido a la escases del mismo durante la Segunda Guerra Mundial tuvo que ser cambiado a envases plásticos. </li>
+						<li>En versiones anteriores del producto, Peter Pan fue descrita como una mujer en vez de un niño.</li>  
+						<li>Peter Pan y los personajes de Disney aparecieron por primera vez en la campaña de publicidad la mantequilla de mani en 1953. </li>
+					</ul>',35);
