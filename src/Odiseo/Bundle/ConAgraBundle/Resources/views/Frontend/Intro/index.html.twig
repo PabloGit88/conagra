@@ -3,8 +3,8 @@
 {% block content %}
 <div class="welcome">
 	<img src="{{ asset('bundles/odiseoconagra/images/logo_conagra_white.png') }}" class="logo center-block">
-	<h2>Bienvenido</h2>
-	<h4>Plataforma de Información ConAgra</h4>
+	<h2>{{ 'welcome' | trans |  raw }}</h2>
+	<h4>{{ 'conagra_information_platform' | trans |  raw }}</h4>
 	<ul class="actions">
 		<li>
 			<a href="{{ path('fos_user_registration_register') }}" class="btn btn-borderer">Nuevo ingreso / registro</a>

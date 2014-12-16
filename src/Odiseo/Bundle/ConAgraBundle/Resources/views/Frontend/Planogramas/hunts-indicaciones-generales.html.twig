@@ -8,7 +8,7 @@
 		</div>
 	</div>
 	<div class="title clearfix">
-		<h1 class="mainTitle">Indicaciones Generales</h1>
+		<h1 class="mainTitle">{{ 'general_observations_hunts' | trans |  raw }}</h1>
 		<a href="{{ path('odiseo_conagra_frontend_planogramas_index') }}" class="backButton pull-right">
 			<img src="{{ asset('bundles/odiseoconagra/images/volverInicioButton.png') }}">
 		</a>
@@ -16,13 +16,7 @@
 	<div class="generales clearfix">
 		<div class="indicaciones">
 		 	<p>
-		 		Hunt's es la única marca de productos a base de tomates con presencia en las <span class="bordo">4 principales </br>
-		 		categorías:</span> <span class="bold">Condimentos, en Trozos, Ingredientes y Salsas Pasteras</span> lo cual nos da una </br>
-		 		ventaja competitiva.</br>
-		 		</br>
-		 		La mayoría del tiempo las categorías se encuentran en ubicaciones cercanas, pero separadas</br>
-		 		lo cual debe ser analizada  por el mercaderista par encontrar una solución estratégica para la</br>
-		 		colocación del producto.
+				{{ 'planograms_generals_hunts' | trans |  raw }}
 		 	</p>
 		</div>
 		<div class="logo hidden-xs"">
@@ -30,20 +24,20 @@
 		</div>
 	
 		<div class="hidden-xs">
-			<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'hunts-planograma-sugerido-2' }) }}"> <h1 class="mainTitle">Planometría recomendada para Hunt's</h1></a>
+			<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'hunts-planograma-sugerido-2' }) }}"> <h1 class="mainTitle">{{ 'recommended_planimetry_hunts' | trans |  raw }}</h1></a>
 		</div> 
 		
 		<div class="sugerido visible-xs">
 			<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'hunts-planograma-sugerido-2' }) }}">
 				<img src="{{ asset('bundles/odiseoconagra/images/planogramas/loupe.png') }}">
-				<h1 class="planoTitle">Planometría recomendada para Hunt's</h1>
+				<h1 class="planoTitle">{{ 'recommended_planimetry_hunts' | trans |  raw }}</h1>
 			</a>
 		</div> 	
 	</div>
 
 		
 	<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'hunts-planograma-sugerido-2' }) }}" class="pageButton nextButton" 
-		data-toggle="popover" data-content="Planogramas sugeridos" data-placement="top" title="2/6" data-trigger="hover">
+		data-toggle="popover" data-content="{{ 'planograms_suggested' | trans |  raw }}" data-placement="top" title="2/6" data-trigger="hover">
 	</a>	
 	
 </div>

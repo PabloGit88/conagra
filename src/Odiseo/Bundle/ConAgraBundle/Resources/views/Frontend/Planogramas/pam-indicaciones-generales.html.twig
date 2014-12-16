@@ -17,11 +17,7 @@
 		<div class="indicaciones row">
 			<div class="col-md-8 col-sm-8 col-xs-12">
 			 	<p>
-					<ul>
-						<li>PAM es el aceite en aerosol con mayor variedad de sabores liderando esta categoría.</li>
-						<li>Nuestra recomendación es que el producto se coloque en horizontales, con 2 caras por clase.</li>  
-						<li>Lograr exhibiciones secundarias en zonas de: mezcla para dulces y panes, pasillo de barbacoa y área de huevos o arepas, tortillas y desayunos.</li>
-					</ul>
+						{{ 'planograms_generals_pam' | trans |  raw }}
 				</p>
 			</div>
 			<div class="col-md-4 col-sm-4 hidden-xs">
@@ -52,7 +48,7 @@
 		</div> 		
 	</div>	
 	<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'pam-planograma-sugerido-2' }) }}" class="pageButton nextButton" 
-		data-toggle="popover" data-content="Planogramas sugeridos" data-placement="top" title="2/3" data-trigger="hover">
+		data-toggle="popover" data-content="{{ 'planograms_suggested' | trans |  raw }}" data-placement="top" title="2/3" data-trigger="hover">
 	</a>
 </div>
 {% endblock %}

@@ -17,11 +17,7 @@
 		<div class="indicaciones row">
 			<div class="col-md-9 col-sm-9 col-xs-12">
 			 	<p>
-					<strong>Snack Pack</strong> ingresa al hogar por los solicitud de infantiles como complemento dentro en la lonchera, sin embargo logra captar un publico  adulto por su conveniencia y sabor. 
-					<br><br>
-					<strong>Snack Pack</strong> no requiere refrigeración, su ubicación ideal es de gelatinas y pudines, o cerca de las galletas. Sin embargo  hay mercados que lo colocan dentro de zonas refrigeradas. 
-		 			<br><br>
-					<div class="hidden-xs">Adjunto planimetría recomendada para Snack Pack, tanto para espacios verticales (estantes) y espacios horizontales (sobre neveras).</div> 
+			 			{{ 'planograms_generals_snackpack' | trans |  raw }}
 			 	</p>
 		 	</div>
 			<div class="col-md-3 col-sm-3 hidden-xs">
@@ -33,12 +29,12 @@
 		<div class="sugerido visible-xs">
 			<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'snackpack-planograma-sugerido-2' }) }}">
 				<img src="{{ asset('bundles/odiseoconagra/images/planogramas/loupe.png') }}">
-				<h1 class="planoTitle">Planogramas Sugeridos</h1>
+				<h1 class="planoTitle">{{ 'planograms_suggested' | trans |  raw }}</h1>
 			</a>
 		</div> 
 	</div>	
 	<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'snackpack-planograma-sugerido-2' }) }}" class="pageButton nextButton" 
-		data-toggle="popover" data-content="Planogramas sugeridos" data-placement="top" title="2/3" data-trigger="hover">
+		data-toggle="popover" data-content="{{ 'planograms_suggested' | trans |  raw }}" data-placement="top" title="2/3" data-trigger="hover">
 	</a>
 </div>
 {% endblock %}

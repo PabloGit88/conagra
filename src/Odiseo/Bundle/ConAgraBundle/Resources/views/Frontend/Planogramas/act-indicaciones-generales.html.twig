@@ -17,15 +17,7 @@
 		<div class="indicaciones row">
 			<div class="col-md-8 col-sm-8 col-xs-12">
 			 	<p>	 		
-			 		Act II es la <span class="bordo"> marca líder en palomitas de maíz para microondas</span>, por lo que debemos tener y </br>
-			 		cuidar de los mejores espacios dentro de la categoría de “Snacks” o pasabocas.  </br> </br>
-	
-					Las charolas están diseñadas en base un tamaño genérico global de estantería, por ende, en
-				 	la mayoría de los casos dos bandejas pueden ser colocadas una encima por frente y así no
-				 	desperdiciar el espacio. </br>
-	
-					A continuación nuestra recomendación de planimetría en base a 6,4 y 2 frentes horizontal y
-					vertical. 
+			 		{{ 'planograms_generals_act2' | trans |  raw }}
 			 	</p>
 			</div>
 			<div class="col-md-4 col-sm-4 hidden-xs">
@@ -37,12 +29,12 @@
 		<div class="sugerido visible-xs">
 			<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'act-planograma-sugerido-2' }) }}">
 				<img src="{{ asset('bundles/odiseoconagra/images/planogramas/loupe.png') }}">
-				<h1 class="planoTitle">Planogramas Sugeridos</h1>
+				<h1 class="planoTitle">	{{ 'planograms_suggested' | trans |  raw }}</h1>
 			</a>
 		</div> 
 	</div>	
 	<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'act-planograma-sugerido-2' }) }}" class="pageButton nextButton" 
-		data-toggle="popover" data-content="Planogramas sugeridos" data-placement="top" title="2/5" data-trigger="hover">
+		data-toggle="popover" data-content="{{ 'planograms_suggested' | trans |  raw }}" data-placement="top" title="2/5" data-trigger="hover">
 	</a>
 </div>
 {% endblock %}

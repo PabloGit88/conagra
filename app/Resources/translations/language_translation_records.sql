@@ -1,5 +1,6 @@
 USE conagra;
 
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (0,null,'','',null);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (1,1,'messages','WHO WE ARE',1);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (2,2,'messages','QUIÉN ES <strong>CONAGRA</strong>',1);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (3,2,'messages','ENTRENAMIENTO <strong>DE MARCAS</strong>',2);
@@ -299,3 +300,75 @@ insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,
 						<li>En versiones anteriores del producto, Peter Pan fue descrita como una mujer en vez de un niño.</li>  
 						<li>Peter Pan y los personajes de Disney aparecieron por primera vez en la campaña de publicidad la mantequilla de mani en 1953. </li>
 					</ul>',35);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (71,1,'messages','Welcome',36);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (72,2,'messages','Bienvenido',36);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (73,1,'messages','Act II is the <span class="bordo"> leader brand in microwave popcorn </span>, therefore we must have and take care of the best spaces in the snacks category.<br><br>
+
+The trays are designed in a generic global shelf size, therefore, in most cases a tray can be placed above the other to avoid wasting space. Below our planimetry recommendation based on 6,4 and 2 fronts horizontal and vertical.',37);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (74,2,'messages','Act II es la <span class="bordo"> marca líder en palomitas de maíz para microondas</span>, por lo que debemos tener y </br>
+			 		cuidar de los mejores espacios dentro de la categoría de “Snacks” o pasabocas.  </br> </br>
+	
+					Las charolas están diseñadas en base un tamaño genérico global de estantería, por ende, en
+				 	la mayoría de los casos dos bandejas pueden ser colocadas una encima por frente y así no
+				 	desperdiciar el espacio. </br>
+	
+					A continuación nuestra recomendación de planimetría en base a 6,4 y 2 frentes horizontal y
+					vertical. ',37);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (75,1,'messages','Hunt''s is the only tomato based products brand with presence in the <span class="bordo">4 main categories </span>: seasonings, chopped, ingredients and pasta sauces which gives us a competitive advantage.<br><br>
+
+Most of the time categories are located in close locations, but separated, which must be analyzed by the seller in order to find an strategic solution for the product placement.<br><br>
+
+Recommended planimetry for Hunt’s',38);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (76,2,'messages','Hunt''s es la única marca de productos a base de tomates con presencia en las <span class="bordo">4 principales </br>
+		 		categorías:</span> <span class="bold">Condimentos, en Trozos, Ingredientes y Salsas Pasteras</span> lo cual nos da una </br>
+		 		ventaja competitiva.</br>
+		 		</br>
+		 		La mayoría del tiempo las categorías se encuentran en ubicaciones cercanas, pero separadas</br>
+		 		lo cual debe ser analizada  por el mercaderista par encontrar una solución estratégica para la</br>
+		 		colocación del producto.',38);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (77,1,'messages','Since 1899, Wesson has developed high quality products and are pioneers in several kind of oils that are commercialized today as canola and vegetal oil.<br><br>',39);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (78,2,'messages','	Wesson  desde 1899 ha desarrollado productos de alta calidad y pioneros en varios de los tipos de aceites que hoy se comercialización como la Canola y el aceite comestible vegetal.',39);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (79,1,'messages','<ul><li>Place the product vertically. If possible, next to Nestlé (looking for the same proportion) and amongst other cocoa powders. </li>
+						<li>Place it vertically, two fronts, boards 2 and 3 to achieve more presence of the product in front of the consumers.</li>  
+						<li>Look for an additional location for diet and no sugar versions if the store has a healthy section.</li>
+					</ul>',40);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (80,2,'messages','	<ul>
+						<li>Ubicar el producto verticalmente .Si existe , preferiblemente junto  a Nestlé (procurando la misma proporción) y entre otros chocolates en polvo. </li>
+						<li>Colocarlo en vertical dos frentes tablillas  2 y 3 para lograr más presencia del producto hacia los consumidores.</li>  
+						<li>Buscar ubicación adicional para las versiones de dieta y sin azúcar añadida si aplica al mercado con sección “saludable”.</li>
+					</ul>',40);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (81,1,'messages','		<ul>
+						<li>PAM is the oil spray with most variety of flavors, leader in this category.</li>
+						<li>Our recommendation is that the product is located horizontally, two per type.</li>  
+						<li>Look for secondary exhibition in areas: breads and sweet mixes, barbecue, eggs, tortillas and breakfast.</li>
+					</ul>',41);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (82,2,'messages','<ul><li>PAM es el aceite en aerosol con mayor variedad de sabores liderando esta categoría.</li>
+						<li>Nuestra recomendación es que el producto se coloque en horizontales, con 2 caras por clase.</li>  
+						<li>Lograr exhibiciones secundarias en zonas de: mezcla para dulces y panes, pasillo de barbacoa y área de huevos o arepas, tortillas y desayunos.</li>
+					</ul>',41);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (83,1,'messages','<strong>Snack Pack</strong> gets into people´s houses by children request as a complement in lunchboxes, however adults also buy it for its convenience and flavor.<br><br>',42);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (84,2,'messages','<strong>Snack Pack</strong> ingresa al hogar por los solicitud de infantiles como complemento dentro en la lonchera, sin embargo logra captar un publico  adulto por su conveniencia y sabor. 
+					<br><br>
+					<strong>Snack Pack</strong> no requiere refrigeración, su ubicación ideal es de gelatinas y pudines, o cerca de las galletas. Sin embargo  hay mercados que lo colocan dentro de zonas refrigeradas. 
+		 			<br><br>
+					<div class="hidden-xs">Adjunto planimetría recomendada para Snack Pack, tanto para espacios verticales (estantes) y espacios horizontales (sobre neveras).</div> 
+',42);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (85,1,'messages','<ul>
+<li>Display in blocks according to peanut butter type.</li>
+<li>Minimum 2 fronts by main flavor, 3 boards participation.</li>  
+<li>Complementary presentation 1 or 2 fronts along 3 boards.</li>
+</ul>',43);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (86,2,'messages','<ul>
+<li>Exhibir en bloques según el tipo de mantequilla de maní.</li><li>2 frente mínimo  por los sabores principales, participación en 3 tablillas.</li>  
+						<li>Presentaciones complementarias 1 o 2 frentes a lo largo de 3 tablillas.</li>
+					</ul>',43);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (87,1,'messages','Planograms',44);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (88,2,'messages','Planogramas',44);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (89,1,'messages','Suggested Planograms',45);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (90,2,'messages','Planogramas sugeridos',45);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (91,1,'messages','General Observations',46);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (92,2,'messages','Indicaciones Generales',46);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (93,1,'messages','Recommended planimetry for Hunt’s',47);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (94,2,'messages','Planometría recomendada para Hunts.',47);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (95,1,'messages','Peter Pan. Varieties.',48);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (96,2,'messages','Peter Pan. Variedades.',48);

@@ -17,10 +17,7 @@
 		<div class="indicaciones  row">
 			<div class="col-md-8 col-sm-8 col-xs-12">
 			 	<p>
-					Wesson  desde 1899 ha desarrollado productos de alta calidad y pioneros en varios de los tipos de aceites que hoy se comercialización como la Canola y el aceite comestible vegetal.
-					<br><br>				
-					A continuación nuestra recomendación para la planimetría  ideal para Wesson, donde la exhibición preferible es la vertical en bloque cuadrado. 
-			 	
+				 	{{ 'planograms_generals_wesson' | trans |  raw }}
 			 	</p>
 			</div>
 			<div class="col-md-4 col-sm-4 hidden-xs">
@@ -50,12 +47,12 @@
 		<div class="sugerido visible-xs">
 			<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'wesson-planograma-sugerido-2' }) }}">
 				<img src="{{ asset('bundles/odiseoconagra/images/planogramas/loupe.png') }}">
-				<h1 class="planoTitle">Planogramas Sugeridos</h1>
+				<h1 class="planoTitle">{{ 'planograms_suggested' | trans |  raw }}</h1>
 			</a>
 		</div> 
 	</div>
 	<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'wesson-planograma-sugerido-2' }) }}" class="pageButton nextButton" 
-		data-toggle="popover" data-content="Planogramas sugeridos" data-placement="top" title="2/3" data-trigger="hover">
+		data-toggle="popover" data-content="{{ 'planograms_suggested' | trans |  raw }}" data-placement="top" title="2/3" data-trigger="hover">
 	</a>	
 </div>
 {% endblock %}
