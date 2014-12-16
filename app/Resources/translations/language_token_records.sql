@@ -7,6 +7,7 @@ insert into `language_token`(`id`,`token`) values (29,'brands_info_peterpan');
 insert into `language_token`(`id`,`token`) values (28,'brands_info_snackpack');
 insert into `language_token`(`id`,`token`) values (26,'brands_info_swissmiss');
 insert into `language_token`(`id`,`token`) values (25,'brands_info_wesson');
+insert into `language_token`(`id`,`token`) values (52,'conagra_brand_types');
 insert into `language_token`(`id`,`token`) values (6,'conagra_information_platform');
 insert into `language_token`(`id`,`token`) values (11,'conagra_latam_belice');
 insert into `language_token`(`id`,`token`) values (21,'conagra_latam_brasil');
@@ -20,6 +21,9 @@ insert into `language_token`(`id`,`token`) values (15,'conagra_latam_nicaragua')
 insert into `language_token`(`id`,`token`) values (22,'conagra_latam_panama');
 insert into `language_token`(`id`,`token`) values (20,'conagra_latam_paraguay');
 insert into `language_token`(`id`,`token`) values (18,'conagra_latam_peru');
+insert into `language_token`(`id`,`token`) values (51,'conagra_operations_reports');
+insert into `language_token`(`id`,`token`) values (50,'conagra_our_purpose');
+insert into `language_token`(`id`,`token`) values (49,'conagra_who_is');
 insert into `language_token`(`id`,`token`) values (30,'curious_facts_act2');
 insert into `language_token`(`id`,`token`) values (31,'curious_facts_hunts');
 insert into `language_token`(`id`,`token`) values (33,'curious_facts_pam');
