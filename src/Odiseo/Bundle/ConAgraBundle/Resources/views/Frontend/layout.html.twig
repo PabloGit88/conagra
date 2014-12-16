@@ -47,7 +47,7 @@
 	    			<div class="logout"> 
 	    				<span> {{ app.user.fullname}}  &nbsp; &nbsp; &nbsp; &nbsp;   </span>
 	    				
-	    				<a href="{{ path('fos_user_security_logout') }}"> Salir </a>
+	    				<a href="{{ path('fos_user_security_logout') }}"> {{ 'logout' | trans | raw }}</a>
 	    			</div>
 	
 					{% block menu %}

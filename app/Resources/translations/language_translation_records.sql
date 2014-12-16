@@ -372,7 +372,7 @@ insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (94,2,'messages','Planometría recomendada para Hunts.',47);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (95,1,'messages','Peter Pan. Varieties.',48);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (96,2,'messages','Peter Pan. Variedades.',48);
-insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (97,1,'messages','Who is Conagra',49);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (97,1,'messages','What  is Conagra',49);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (98,2,'messages','Quién es Conagra',49);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (99,1,'messages','Our purpose',50);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (100,2,'messages','Nuestro propósito',50);
@@ -380,3 +380,14 @@ insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (102,2,'messages','Reporte de Operaciones',51);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (103,1,'messages','Brand Types',52);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (104,2,'messages','Clases de marcas',52);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (105,1,'messages','Logout',53);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (106,2,'messages','Salir',53);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (107,1,'messages','We make the food you love, every day, in an extraordinary way.',54);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (108,2,'messages','Hacemos la comida que te encanta, todos los días, de manera extraordinaria ',54);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (109,1,'messages','
+In ConAgra Foods, we believe in great food´s power. Every day food, that makes your day better. We make meals that do more than satisfying your hunger – makes you worry less and wish more. That´s what we do here in ConAgra Foods: We make food, every day´s food, in an extraordinary way.<br><br>
+It is the food you love, from the most famous brands, from Hunt´s ® and ACT II ® to Wesson ® and Peter Pan ®. Our commercial and private label brands can be found in restaurants and shelves across the whole continent in sauces, fittings, appetizers, seasoning mixes and more.',55);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (110,2,'messages','			 	En ConAgra Foods, creemos en el poder de la buena comida. Alimentos de diario, que haga mejor de su día a día. Hacemos comida que hace más que satisfacer su hambre - le de menos de que preocuparse y más para desear. Eso es lo que hacemos aquí en ConAgra Foods: Hacemos comida - comida de todos los días - de manera extraordinaria.
+				<br><br>
+				Es la comida que te encanta, y  de las marcas que usted conoce mejor, desde Hunt''s®  y ACT II® hasta Wesson® y Peter Pan®. Y además de nuestras marcas comerciales y de etiqueta privada pueden encontrarse desde en restaurantes y estanterías  a lo largo de todo el continente ya sea en salsas, guarniciones, aperitivos, mezclas de condimentos y más.
+',55);
