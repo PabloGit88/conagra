@@ -114,6 +114,7 @@ header .logout {
 	float: right;
 	right: 10%;
 	top: 10px;
+	z-index:100;
 }
 
 header .logout a {
