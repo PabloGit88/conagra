@@ -1,10 +1,10 @@
 html, body {
-    margin: 0;
-    padding: 0;
-    height:100%;
-    width: 100%;
-    font-family: 'Lato', sans-serif;
-    text-rendering: optimizeLegibility;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	font-family: 'Lato', sans-serif;
+	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -14,36 +14,36 @@ body {
 	background-position: bottom center;
 }
 
-.wrapper {	
+.wrapper {
 	height: 100%;
 	position: relative;
 }
 
 header .navbar-default {
 	background: none;
-	border: none;	
+	border: none;
 }
 
 header .navbar .navbar-brand {
 	padding: 38px 0;
-	height: auto;	
-} 
-
-header .navbar-nav {
-	float: right;	
+	height: auto;
 }
 
-header .navbar-nav > li {
+header .navbar-nav {
+	float: right;
+}
+
+header .navbar-nav>li {
 	display: table;
 	width: 130px;
 	height: 169px;
 }
 
-header .navbar-nav > li.home {
+header .navbar-nav>li.home {
 	width: 70px;
 }
 
-header .navbar-nav > li > a {	
+header .navbar-nav>li>a {
 	display: table-cell;
 	height: 100%;
 	vertical-align: middle;
@@ -51,33 +51,29 @@ header .navbar-nav > li > a {
 	padding: 0;
 }
 
-header .navbar-default .navbar-nav>.active>a, 
-header .navbar-default .navbar-nav>.active>a:hover, 
-header .navbar-default .navbar-nav>.active>a:focus {
+header .navbar-default .navbar-nav>.active>a, header .navbar-default .navbar-nav>.active>a:hover,
+	header .navbar-default .navbar-nav>.active>a:focus {
 	background: none;
 }
 
-header .navbar-nav > li > a span {
+header .navbar-nav>li>a span {
 	display: block;
 	display: table-cell;
 	height: 42px;
 	padding: 0 15px;
 	border-left: 1px solid #333333;
 	vertical-align: middle;
-	color:#555;
+	color: #555;
 }
 
-header .navbar-default .navbar-nav>.active>a span, 
-header .navbar-default .navbar-nav>.active>a:hover span, 
-header .navbar-default .navbar-nav>.active>a:focus span {
+header .navbar-default .navbar-nav>.active>a span, header .navbar-default .navbar-nav>.active>a:hover span,
+	header .navbar-default .navbar-nav>.active>a:focus span {
 	border-left: 1px solid #cf3232;
 	color: #cf3232;
-	
 }
 
-header .navbar-default .navbar-nav>li.dropdown:hover>a span, 
-header .navbar-default .navbar-nav>li.dropdown:hover>a:hover span, 
-header .navbar-default .navbar-nav>li.dropdown:hover>a:focus span {
+header .navbar-default .navbar-nav>li.dropdown:hover>a span, header .navbar-default .navbar-nav>li.dropdown:hover>a:hover span,
+	header .navbar-default .navbar-nav>li.dropdown:hover>a:focus span {
 	background: #b3ba30;
 	color: #FFFFFF;
 	padding: 10px 15px;
@@ -85,11 +81,11 @@ header .navbar-default .navbar-nav>li.dropdown:hover>a:focus span {
 	border: none;
 }
 
-header .navbar-default .navbar-nav > li.dropdown:hover > .dropdown-menu {
+header .navbar-default .navbar-nav>li.dropdown:hover>.dropdown-menu {
 	display: block;
 }
 
-header .navbar-default .navbar-nav > li > .dropdown-menu {
+header .navbar-default .navbar-nav>li>.dropdown-menu {
 	top: 67%;
 	background: #b3ba30;
 	border: none;
@@ -97,14 +93,14 @@ header .navbar-default .navbar-nav > li > .dropdown-menu {
 	padding: 0;
 }
 
-header .navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+header .navbar-default .navbar-nav>li>.dropdown-menu>li>a {
 	line-height: 40px;
 	padding: 0 20px;
 	color: #FFFFFF;
 }
 
-header .navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover, 
-header .navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+header .navbar-default .navbar-nav>li>.dropdown-menu>li>a:hover, header .navbar-default .navbar-nav>li>.dropdown-menu>li>a:focus
+	{
 	background: #969d15;
 	color: #FFFFFF;
 }
@@ -114,22 +110,23 @@ header .logout {
 	float: right;
 	right: 10%;
 	top: 10px;
-	z-index:100;
+	z-index: 100;
 }
 
 header .logout a {
+	
 }
 
 footer {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	left:0;
+	left: 0;
 }
 
 .content-image {
-	height:100%;
-    width: 100%;
+	height: 100%;
+	width: 100%;
 }
 
 #content {
@@ -152,12 +149,13 @@ footer {
 
 #content .entrenamiento_marcas .mainTitle {
 	margin: 0 0 20px 0;
-
 }
+
 #content .entrenamiento_marcas.index .mainTitle {
 	margin: 0 0 65px 0;
 }
-#content .entrenamiento_marcas .brands-container .brands li a img{
+
+#content .entrenamiento_marcas .brands-container .brands li a img {
 	margin-top: 8px;
 }
 
@@ -166,7 +164,7 @@ footer {
 	margin-right: 15px;
 	color: #333333;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-	filter: alpha(opacity=80);
+	filter: alpha(opacity = 80);
 	-moz-opacity: 0.8;
 	-khtml-opacity: 0.8;
 	opacity: 0.8;
@@ -175,13 +173,14 @@ footer {
 
 #content .mainTitleContent .backButton:hover {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	filter: alpha(opacity=100);
+	filter: alpha(opacity = 100);
 	-moz-opacity: 1;
 	-khtml-opacity: 1;
 	opacity: 1;
 }
 
 #content .brands-container {
+	
 }
 
 #content .brands-container ul.brands {
@@ -192,228 +191,196 @@ footer {
 	display: inline-block;
 	margin-right: 20px;
 	margin-bottom: 20px;
-	
 	-webkit-filter: drop-shadow(10px 10px 14px rgba(0, 0, 0, 0.7));
-	filter: drop-shadow(10px 10px 14px 0px rgba(0, 0, 0, 0.32)); /*url(shadow.svg#drop-shadow);*/
-	-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=10, OffY=10,Color='#000000')";
-	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=10, OffY=10, Color='#000000')";
+	filter: drop-shadow(10px 10px 14px 0px rgba(0, 0, 0, 0.32));
+	/*url(shadow.svg#drop-shadow);*/
+	-ms-filter:
+		"progid:DXImageTransform.Microsoft.Dropshadow(OffX=10, OffY=10,Color='#000000')";
+	filter:
+		"progid:DXImageTransform.Microsoft.Dropshadow(OffX=10, OffY=10, Color='#000000')";
 }
 
 #content .conagra_latam .saleTracker {
 	position: absolute;
 	bottom: 0;
-	left: 50%;	
-	color:black;
+	left: 50%;
+	color: black;
 	padding-left: 30px;
 	border: none;
-	background: url(../images/conagralatam/circle_arrow.png) no-repeat left  center;	
-
+	background: url(../images/conagralatam/circle_arrow.png) no-repeat left
+		center;
 }
 
-#content .conagra_latam .marca_descripcion .panama 
-{
+#content .conagra_latam .marca_descripcion .panama {
 	width: 45%;
-	float:left;	
-	margin-top:-5%;
+	float: left;
+	margin-top: -5%;
 }
 
-	#content .conagra_latam .latam_mapa #svg2{
-		width:120%;
-	}
+#content .conagra_latam .latam_mapa #svg2 {
+	width: 120%;
+}
 
-#content .conagra_latam .marca_descripcion .panama > img
-{
+#content .conagra_latam .marca_descripcion .panama>img {
 	margin-top: 5%;
 }
 
-#content .conagra_latam .marca_descripcion .peru 
-{
+#content .conagra_latam .marca_descripcion .peru {
 	width: 45%;
-	float:left;	
-	margin-top:-5%;
+	float: left;
+	margin-top: -5%;
 }
 
-#content .conagra_latam .marca_descripcion .peru > img
-{
+#content .conagra_latam .marca_descripcion .peru>img {
 	margin-top: 5%;
 }
 
-#content .conagra_latam .marca_descripcion .honduras 
-{
+#content .conagra_latam .marca_descripcion .honduras {
 	width: 45%;
-	float:left;	
-	margin-top:-5%;
+	float: left;
+	margin-top: -5%;
 }
 
-#content .conagra_latam .marca_descripcion .honduras > img
-{
+#content .conagra_latam .marca_descripcion .honduras>img {
 	margin-top: 5%;
 }
 
-
-#content .conagra_latam .marca_descripcion .elsalvador 
-{
+#content .conagra_latam .marca_descripcion .elsalvador {
 	width: 45%;
-	float:left;	
-	margin-top:-5%;
+	float: left;
+	margin-top: -5%;
 }
 
-#content .conagra_latam .marca_descripcion .elsalvador > img
-{
+#content .conagra_latam .marca_descripcion .elsalvador>img {
 	margin-top: 5%;
 }
 
-#content .conagra_latam .marca_descripcion .belice 
-{
+#content .conagra_latam .marca_descripcion .belice {
 	width: 45%;
-	float:left;	
-	margin-top:-5%;
+	float: left;
+	margin-top: -5%;
 }
 
-#content .conagra_latam .marca_descripcion .belice > img
-{
+#content .conagra_latam .marca_descripcion .belice>img {
 	margin-top: 5%;
 }
 
-#content .conagra_latam .marca_descripcion .paraguay
-{
+#content .conagra_latam .marca_descripcion .paraguay {
 	width: 45%;
-	float:left;	
-	margin-top:-5%;
+	float: left;
+	margin-top: -5%;
 }
 
-#content .conagra_latam .marca_descripcion .paraguay > img
-{
+#content .conagra_latam .marca_descripcion .paraguay>img {
 	margin-top: 5%;
 	max-width: 20%;
 }
 
-#content .conagra_latam .marca_descripcion .ecuador
-{
+#content .conagra_latam .marca_descripcion .ecuador {
 	width: 45%;
-	float:left;	
-	margin-top:-5%;
+	float: left;
+	margin-top: -5%;
 }
 
-#content .conagra_latam .marca_descripcion .ecuador > img
-{
+#content .conagra_latam .marca_descripcion .ecuador>img {
 	margin-top: 5%;
 }
 
-
-#content .conagra_latam .marca_descripcion .nicaragua
-{
+#content .conagra_latam .marca_descripcion .nicaragua {
 	width: 45%;
-	float:left;	
-	margin-top:-5%;
+	float: left;
+	margin-top: -5%;
 }
 
-#content .conagra_latam .marca_descripcion .nicaragua > img
-{
+#content .conagra_latam .marca_descripcion .nicaragua>img {
 	margin-top: 0%;
-	width:60%;
+	width: 60%;
 }
 
-
-#content .conagra_latam  .arrows 
-{
+#content .conagra_latam  .arrows {
 	width: 15%;
-	margin-top:4%;
+	margin-top: 4%;
 }
 
-#content .conagra_latam .marca_descripcion .brasil 
-{
+#content .conagra_latam .marca_descripcion .brasil {
 	width: 45%;
-	float:left;	
-	margin-top:-5%;
+	float: left;
+	margin-top: -5%;
 	position: absolute;
 	height: 100%;
 }
 
-#content .conagra_latam .marca_descripcion .brasil > p
-{
+#content .conagra_latam .marca_descripcion .brasil>p {
+	
 }
 
-#content .conagra_latam .marca_descripcion .brasil > img
-{
+#content .conagra_latam .marca_descripcion .brasil>img {
 	margin-top: 5%;
 }
 
-#content .conagra_latam .marca_descripcion .colombia 
-{
+#content .conagra_latam .marca_descripcion .colombia {
 	width: 45%;
-	float:left;	
-	margin-top:-5%;
+	float: left;
+	margin-top: -5%;
 	position: absolute;
 }
 
-#content .conagra_latam .marca_descripcion .colombia > p
-{
+#content .conagra_latam .marca_descripcion .colombia>p {
 	margin-top: 0%;
 	max-height: 60%;
 	overflow: auto;
 }
 
-#content .conagra_latam .marca_descripcion .colombia > img
-{
+#content .conagra_latam .marca_descripcion .colombia>img {
 	margin-top: 5%;
 	width: 45%;
 }
 
-
-#content .conagra_latam .marca_descripcion .costarica 
-{
+#content .conagra_latam .marca_descripcion .costarica {
 	width: 45%;
-	float:left;	
-	margin-top:-5%;
+	float: left;
+	margin-top: -5%;
 	position: absolute;
 	height: 130%;
 }
 
-#content .conagra_latam .marca_descripcion .costarica > p
-{
+#content .conagra_latam .marca_descripcion .costarica>p {
 	margin-top: 0%;
 	max-height: 50%;
 	overflow: auto;
 }
 
-#content .conagra_latam .marca_descripcion .costarica > img
-{
+#content .conagra_latam .marca_descripcion .costarica>img {
 	margin-top: 0;
 	max-width: 57%;
 }
 
-
-#content .conagra_latam .marca_descripcion .guatemala 
-{
+#content .conagra_latam .marca_descripcion .guatemala {
 	width: 45%;
-	float:left;	
-	margin-top:-5%;
+	float: left;
+	margin-top: -5%;
 	position: absolute;
 	height: 120%;
 }
 
-#content .conagra_latam .marca_descripcion .guatemala > p
-{
+#content .conagra_latam .marca_descripcion .guatemala>p {
 	margin-top: 0%;
 	max-height: 60%;
 	overflow: auto;
 }
 
-#content .conagra_latam .marca_descripcion .guatemala > img
-{
+#content .conagra_latam .marca_descripcion .guatemala>img {
 	margin-top: 0;
 	max-width: 57%;
 }
 
-
-.latam_mapa{
-	float:right;	
-	margin-top:-12%;
-	margin-right:25%;
+.latam_mapa {
+	float: right;
+	margin-top: -12%;
+	margin-right: 25%;
 }
 
-img.marca_descripcion{
+img.marca_descripcion {
 	
 }
 
@@ -430,10 +397,10 @@ img.marca_descripcion{
 	margin-bottom: 30px;
 }
 
-
 #content .quien_es img.commercialFoods {
 	max-width: 80%;
 }
+
 #content .quien_es.privateLabel .privateLabelContent {
 	height: 85%;
 }
@@ -474,31 +441,27 @@ img.marca_descripcion{
 	z-index: 1;
 }
 
-#content .quien_es.ourPurpose img,
-#content .quien_es.quienEsConagra img,
-#content .quien_es.operationsReport img {
+#content .quien_es.ourPurpose img, #content .quien_es.quienEsConagra img,
+	#content .quien_es.operationsReport img {
 	max-height: 100%;
 }
 
-#content .quien_es.ourPurpose .img-container{
+#content .quien_es.ourPurpose .img-container {
 	background: url(../images/quienesconagra/our_purpose.png) no-repeat;
-	size : cover;
+	size: cover;
 	background-size: contain;
 	max-width: 70%;
 	height: 100%;
 	background-position-x: 50%;
-	
 }
 
-
-
 #content .quien_es.marcaConsumo img {
-max-height: 90%;
+	max-height: 90%;
 }
 
 #content .quien_es.clasesDeMarcas {
 	display: table;
-	width: 100%;	
+	width: 100%;
 }
 
 #content .quien_es.clasesDeMarcas .brands-container {
@@ -508,12 +471,12 @@ max-height: 90%;
 }
 
 #content .quien_es.marcaConsumo img {
-max-height: 90%;
-	}
+	max-height: 90%;
+}
 
 #content .quien_es.clasesDeMarcas {
 	display: table;
-	width: 100%;	
+	width: 100%;
 }
 
 #content .quien_es.clasesDeMarcas .brands-container {
@@ -568,19 +531,19 @@ max-height: 90%;
 	background-position: 0 0;
 }
 
-#content .infoBrand .tabs ul li a.infoMarca:hover,
-#content .infoBrand .tabs ul li a.infoMarca.active {
+#content .infoBrand .tabs ul li a.infoMarca:hover, #content .infoBrand .tabs ul li a.infoMarca.active
+	{
 	background-position: 0 -61px;
 }
-	
+
 #content .infoBrand .tabs ul li a.catalogo {
 	width: 135px;
 	background: url(../images/infoBrand/tab_blue.png) no-repeat;
 	background-position: -130px 0;
 }
 
-#content .infoBrand .tabs ul li a.catalogo:hover,
-#content .infoBrand .tabs ul li a.catalogo.active {
+#content .infoBrand .tabs ul li a.catalogo:hover, #content .infoBrand .tabs ul li a.catalogo.active
+	{
 	background-position: -130px -61px;
 }
 
@@ -590,8 +553,8 @@ max-height: 90%;
 	background-position: -265px 0;
 }
 
-#content .infoBrand .tabs ul li a.manual:hover,
-#content .infoBrand .tabs ul li a.manual.active {
+#content .infoBrand .tabs ul li a.manual:hover, #content .infoBrand .tabs ul li a.manual.active
+	{
 	background-position: -265px -61px;
 }
 
@@ -602,19 +565,19 @@ max-height: 90%;
 	background-position: 0 0;
 }
 
-#content .infoBrand .tabs ul li a.infoMarca.green:hover,
-#content .infoBrand .tabs ul li a.infoMarca.green.active {
+#content .infoBrand .tabs ul li a.infoMarca.green:hover, #content .infoBrand .tabs ul li a.infoMarca.green.active
+	{
 	background-position: 0 -61px;
 }
-	
+
 #content .infoBrand .tabs ul li a.catalogo.green {
 	width: 135px;
 	background: url(../images/infoBrand/tab_green.png) no-repeat;
 	background-position: -131px 0;
 }
 
-#content .infoBrand .tabs ul li a.catalogo.green:hover,
-#content .infoBrand .tabs ul li a.catalogo.green.active {
+#content .infoBrand .tabs ul li a.catalogo.green:hover, #content .infoBrand .tabs ul li a.catalogo.green.active
+	{
 	background-position: -131px -61px;
 }
 
@@ -624,8 +587,8 @@ max-height: 90%;
 	background-position: -266px 0;
 }
 
-#content .infoBrand .tabs ul li a.manual.green:hover,
-#content .infoBrand .tabs ul li a.manual.green.active {
+#content .infoBrand .tabs ul li a.manual.green:hover, #content .infoBrand .tabs ul li a.manual.green.active
+	{
 	background-position: -266px -61px;
 }
 
@@ -637,19 +600,19 @@ max-height: 90%;
 	background-position: 0 0;
 }
 
-#content .infoBrand .tabs ul li a.infoMarca.yellow:hover,
-#content .infoBrand .tabs ul li a.infoMarca.yellow.active {
+#content .infoBrand .tabs ul li a.infoMarca.yellow:hover, #content .infoBrand .tabs ul li a.infoMarca.yellow.active
+	{
 	background-position: 0 -61px;
 }
-	
+
 #content .infoBrand .tabs ul li a.catalogo.yellow {
 	width: 135px;
 	background: url(../images/infoBrand/tab_yellow.png) no-repeat;
 	background-position: -131px 0;
 }
 
-#content .infoBrand .tabs ul li a.catalogo.yellow:hover,
-#content .infoBrand .tabs ul li a.catalogo.yellow.active {
+#content .infoBrand .tabs ul li a.catalogo.yellow:hover, #content .infoBrand .tabs ul li a.catalogo.yellow.active
+	{
 	background-position: -131px -61px;
 }
 
@@ -659,8 +622,8 @@ max-height: 90%;
 	background-position: -266px 0;
 }
 
-#content .infoBrand .tabs ul li a.manual.yellow:hover,
-#content .infoBrand .tabs ul li a.manual.yellow.active {
+#content .infoBrand .tabs ul li a.manual.yellow:hover, #content .infoBrand .tabs ul li a.manual.yellow.active
+	{
 	background-position: -266px -61px;
 }
 
@@ -671,19 +634,19 @@ max-height: 90%;
 	background-position: 0 0;
 }
 
-#content .infoBrand .tabs ul li a.infoMarca.red:hover,
-#content .infoBrand .tabs ul li a.infoMarca.red.active {
+#content .infoBrand .tabs ul li a.infoMarca.red:hover, #content .infoBrand .tabs ul li a.infoMarca.red.active
+	{
 	background-position: 0 -61px;
 }
-	
+
 #content .infoBrand .tabs ul li a.catalogo.red {
 	width: 135px;
 	background: url(../images/infoBrand/tab_red.png) no-repeat;
 	background-position: -131px 0;
 }
 
-#content .infoBrand .tabs ul li a.catalogo.red:hover,
-#content .infoBrand .tabs ul li a.catalogo.red.active {
+#content .infoBrand .tabs ul li a.catalogo.red:hover, #content .infoBrand .tabs ul li a.catalogo.red.active
+	{
 	background-position: -131px -61px;
 }
 
@@ -693,8 +656,8 @@ max-height: 90%;
 	background-position: -266px 0;
 }
 
-#content .infoBrand .tabs ul li a.manual.red:hover,
-#content .infoBrand .tabs ul li a.manual.red.active {
+#content .infoBrand .tabs ul li a.manual.red:hover, #content .infoBrand .tabs ul li a.manual.red.active
+	{
 	background-position: -266px -61px;
 }
 
@@ -704,20 +667,21 @@ max-height: 90%;
 	position: relative;
 }
 
-#content .infoBrand .info > img.logo {
+#content .infoBrand .info>img.logo {
 	position: absolute;
 	top: -48px;
 	left: 20px;
 	z-index: 999;
 }
-#content .infoBrand.wesson .info > img.logo {
+
+#content .infoBrand.wesson .info>img.logo {
 	top: -19px;
 }
-#content .infoBrand.pam .info > img.logo {
+
+#content .infoBrand.pam .info>img.logo {
 	top: -27px;
 	left: 38px;
 }
-
 
 #content .infoBrand .info .mainInfo {
 	position: relative;
@@ -729,8 +693,10 @@ max-height: 90%;
 	background-size: cover;
 	-webkit-filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.4));
 	filter: drop-shadow(0px 8px 7px rgba(0, 0, 0, 0.4));
-	-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=8, OffY=7,Color='#000000')";
-	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=8, OffY=7, Color='#000000')";
+	-ms-filter:
+		"progid:DXImageTransform.Microsoft.Dropshadow(OffX=8, OffY=7,Color='#000000')";
+	filter:
+		"progid:DXImageTransform.Microsoft.Dropshadow(OffX=8, OffY=7, Color='#000000')";
 }
 
 #content .infoBrand.act2 .info .mainInfo {
@@ -738,21 +704,30 @@ max-height: 90%;
 }
 
 #content .infoBrand.swissmiss .info .mainInfo {
-	background: url(../images/infoBrand/info_swissmiss_background.png) no-repeat;
+	background: url(../images/infoBrand/info_swissmiss_background.png)
+		no-repeat;
 	width: 78%;
 }
+
 #content .infoBrand.pam .info .mainInfo {
 	background: url(../images/infoBrand/info_pam_background.png) no-repeat;
 }
+
 #content .infoBrand.peterpan .info .mainInfo {
-	background: url(../images/infoBrand/info_peterpan_background.png) no-repeat;
+	background: url(../images/infoBrand/info_peterpan_background.png)
+		no-repeat;
 }
+
 #content .infoBrand.snackpack .info .mainInfo {
-	background: url(../images/infoBrand/info_snackpack_background.png) no-repeat;
+	background: url(../images/infoBrand/info_snackpack_background.png)
+		no-repeat;
 }
+
 #content .infoBrand.wesson .info .mainInfo {
-	background: url(../images/infoBrand/info_wesson_background.png) no-repeat;
+	background: url(../images/infoBrand/info_wesson_background.png)
+		no-repeat;
 }
+
 #content .infoBrand.hunts .info .mainInfo {
 	background: url(../images/infoBrand/info_hunts_background.png) no-repeat;
 }
@@ -762,20 +737,23 @@ max-height: 90%;
 	font-size: 18px;
 	color: #0070bd;
 }
-#content .infoBrand .info .mainInfo.green h3{
+
+#content .infoBrand .info .mainInfo.green h3 {
 	font-family: 'hand_of_sean_demoregular';
 	font-size: 18px;
 	color: #5d9f4e;
 	margin-top: 0px;
 	margin-bottom: 10px;
 }
-#content .infoBrand .info .mainInfo.red h3{
+
+#content .infoBrand .info .mainInfo.red h3 {
 	font-family: 'hand_of_sean_demoregular';
 	font-size: 18px;
 	color: #cb2432;
 	margin-top: 0px;
 	margin-bottom: 30px;
 }
+
 #content .infoBrand .info .mainInfo.red h4 {
 	font-size: 16px;
 	font-weight: bold;
@@ -787,27 +765,31 @@ max-height: 90%;
 	max-height: 165px;
 	margin: 0;
 }
+
 #content .infoBrand.act2 .info .mainInfo .infoMarca .infoContent {
 	max-height: 204px;
 }
-#content .infoBrand.act2 .catalogo h3{
+
+#content .infoBrand.act2 .catalogo h3 {
 	margin-top: 5px;
 }
-#content .infoBrand .infoContent .catalogoContent.act2 a img{
-	padding-right:15px;
-	height: 97px;
-	margin-top:6px;	
-}
-#content .infoBrand .infoContent .catalogoContent.kroritos a img{
-	margin-right: 20px;
-	margin-top: 20px;
-}
-#content .infoBrand .infoContent .catalogoContent.tripack a img{
-	padding-right: 21px;
+
+#content .infoBrand .infoContent .catalogoContent.act2 a img {
+	padding-right: 15px;
 	height: 97px;
 	margin-top: 6px;
 }
 
+#content .infoBrand .infoContent .catalogoContent.kroritos a img {
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+#content .infoBrand .infoContent .catalogoContent.tripack a img {
+	padding-right: 21px;
+	height: 97px;
+	margin-top: 6px;
+}
 
 #content .infoBrand .info .mainInfo .catalogo .infoContent {
 	/*height: 230px !important;*/
@@ -815,7 +797,7 @@ max-height: 90%;
 	min-height: 220px;
 }
 
-#content .infoBrand .info .mainInfo .catalogo .catalogoMenu {	
+#content .infoBrand .info .mainInfo .catalogo .catalogoMenu {
 	position: absolute;
 	top: 15px;
 	right: 90px;
@@ -833,15 +815,17 @@ max-height: 90%;
 }
 
 #content .infoBrand.hunts .info .mainInfo .catalogo .catalogoMenu li a,
-#content .infoBrand.wesson .info .mainInfo .catalogo .catalogoMenu li a {
+	#content .infoBrand.wesson .info .mainInfo .catalogo .catalogoMenu li a
+	{
 	color: #63aa5d;
 }
 
-#content .infoBrand .info .mainInfo .catalogo .catalogoMenu li a.active {
+#content .infoBrand .info .mainInfo .catalogo .catalogoMenu li a.active
+	{
 	text-decoration: underline;
 }
 
-#content .infoBrand.wesson .info .mainInfo .catalogo .slimScrollDiv{
+#content .infoBrand.wesson .info .mainInfo .catalogo .slimScrollDiv {
 	height: 230px !important;
 }
 
@@ -884,31 +868,36 @@ max-height: 90%;
 	padding: 28px;
 	-webkit-filter: drop-shadow(0px 8px 7px rgba(0, 0, 0, 0.4));
 	filter: drop-shadow(0px 8px 7px rgba(0, 0, 0, 0.4));
-	-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=8, OffY=7,Color='#000000')";
-	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=8, OffY=7, Color='#000000')";
+	-ms-filter:
+		"progid:DXImageTransform.Microsoft.Dropshadow(OffX=8, OffY=7,Color='#000000')";
+	filter:
+		"progid:DXImageTransform.Microsoft.Dropshadow(OffX=8, OffY=7, Color='#000000')";
 }
+
 #content .infoBrand .info .otherData.red {
 	background: url(../images/infoBrand/other_data_box_red.png) no-repeat;
 }
+
 #content .infoBrand .info .otherData.green {
 	background: url(../images/infoBrand/other_data_box_green.png) no-repeat;
 }
+
 #content .infoBrand .info .otherData.yellow {
 	background: url(../images/infoBrand/other_data_box_yellow.png) no-repeat;
 }
 
-#content .infoBrand .info .otherData .arrowScroll,
-.otherData_m .arrowScroll {
+#content .infoBrand .info .otherData .arrowScroll, .otherData_m .arrowScroll
+	{
 	position: absolute;
 	bottom: 8px;
 	left: 50%;
 	margin-left: -14px;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-	filter: alpha(opacity=20);
+	filter: alpha(opacity = 20);
 	-moz-opacity: 0.2;
 	-khtml-opacity: 0.2;
 	opacity: 0.2;
-}	
+}
 
 #content .infoBrand .info .otherData h3 {
 	font-family: 'hand_of_sean_demoregular';
@@ -919,22 +908,27 @@ max-height: 90%;
 	line-height: 38px;
 	background: url(../images/infoBrand/asterisk_blue.png) no-repeat;
 }
+
 #content .infoBrand .info .otherData.red h3 {
 	background: url(../images/infoBrand/asterisk_red.png) no-repeat;
 }
+
 #content .infoBrand .info .otherData.green h3 {
 	background: url(../images/infoBrand/asterisk_green.png) no-repeat;
 }
+
 #content .infoBrand .info .otherData.yellow h3 {
 	background: url(../images/infoBrand/asterisk_yellow.png) no-repeat;
 }
-#content .infoBrand.wesson .info .mainInfo.green .catalogo h3{
+
+#content .infoBrand.wesson .info .mainInfo.green .catalogo h3 {
 	margin: 0;
 }
+
 #content .infoBrand.snackpack .info .otherData a {
 	font-size: 14px;
 	padding-left: 25px;
-	text-decoration:none; 
+	text-decoration: none;
 	color: #FFFFFF;
 	background: url(../images/infoBrand/star.png) no-repeat center left;
 }
@@ -948,19 +942,22 @@ max-height: 90%;
 	box-shadow: 0px -18px 18px -16px rgba(50, 50, 50, 0.30);
 	padding-top: 20px;
 }
-#content .infoBrand.peterpan .info .otherData .otherContent{
+
+#content .infoBrand.peterpan .info .otherData .otherContent {
 	font-size: 13px;
 	line-height: 14px;
 }
-#content .infoBrand.pam .info .otherData .otherContent{
+
+#content .infoBrand.pam .info .otherData .otherContent {
 	font-size: 13px;
 	line-height: 14px;
 	overflow-y: auto;
 	overflow-x: hidden;
 	height: 214px;
 }
-#content .infoBrand.pam .info .otherData .otherContent p{
-	padding-left:23px;
+
+#content .infoBrand.pam .info .otherData .otherContent p {
+	padding-left: 23px;
 }
 
 #content .infoBrand .info .otherData .otherContent ul {
@@ -988,7 +985,7 @@ max-height: 90%;
 	float: left;
 	margin-right: 6px;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-	filter: alpha(opacity=60);
+	filter: alpha(opacity = 60);
 	-moz-opacity: 0.6;
 	-khtml-opacity: 0.6;
 	opacity: 0.6;
@@ -996,7 +993,7 @@ max-height: 90%;
 
 #content .infoBrand .social ul li:hover {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	filter: alpha(opacity=100);
+	filter: alpha(opacity = 100);
 	-moz-opacity: 1;
 	-khtml-opacity: 1;
 	opacity: 1;
@@ -1009,7 +1006,7 @@ max-height: 90%;
 }
 
 #content .quien_es .timeline {
-
+	
 }
 
 #content .quien_es .timelineArrows {
@@ -1028,21 +1025,18 @@ max-height: 90%;
 	transform: rotate(180deg);
 }
 
-#content .quien_es .circlemenu
-{
+#content .quien_es .circlemenu {
 	
 }
 
-.circlemenu{
-
-width: 100%;
-overflow:hidden;
-position: absolute;
-top:0%;
-
+.circlemenu {
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0%;
 }
 
-.circlemenu ul{
+.circlemenu ul {
 	margin: 0;
 	padding: 0;
 	font: bold 14px Verdana;
@@ -1050,40 +1044,41 @@ top:0%;
 	text-align: center; /* "left", "center", or "right" align menu */
 }
 
-.circlemenu li{
+.circlemenu li {
 	display: inline;
 	margin: 0;
 }
 
-.circlemenu li a{
-	display:inline-block;
-	text-align:center;
+.circlemenu li a {
+	display: inline-block;
+	text-align: center;
 	text-decoration: none;
 	color: white;
-	background:#918786;
+	background: #918786;
 	margin: 0;
-	margin-right:5px; /*right spacing between each link */
-	width:10px;
-	height:10px;
-	border-radius: 400px; /*really large border radius to create round borders*/
+	margin-right: 5px; /*right spacing between each link */
+	width: 10px;
+	height: 10px;
+	border-radius: 400px;
+	/*really large border radius to create round borders*/
 	-moz-border-radius: 400px;
 	-webkit-border-radius: 400px;
 }
 
-.circlemenu a span{
-	position:relative;
-	top:40%;
+.circlemenu a span {
+	position: relative;
+	top: 40%;
 }
 
-.circlemenu li a:visited{
+.circlemenu li a:visited {
 	color: white;
 }
 
-.circlemenu a:hover{
+.circlemenu a:hover {
 	background: #e9e9e9;
 }
 
-.circlemenu a:active{
+.circlemenu a:active {
 	background: black;
 }
 
@@ -1098,7 +1093,7 @@ top:0%;
 }
 
 /* next and previous button*/
-.quien_es a.previousButton{
+.quien_es a.previousButton {
 	background-image: url("../images/sprite.png");
 	background-repeat: no-repeat;
 	background-position: 5% 100%;
@@ -1108,7 +1103,8 @@ top:0%;
 	top: 87%;
 	left: 0%;
 }
-.quien_es a.nextButton{
+
+.quien_es a.nextButton {
 	background-image: url("../images/sprite.png");
 	background-repeat: no-repeat;
 	background-position: 94% 100%;
@@ -1118,46 +1114,52 @@ top:0%;
 	top: 87%;
 	left: 90%;
 }
-.quien_es a.previousButton:hover{
+
+.quien_es a.previousButton:hover {
 	background-position: 5% 0%;
 }
-.quien_es a.nextButton:hover{
+
+.quien_es a.nextButton:hover {
 	background-position: 94% 0%;
 }
-.quien_es .popover.fade{
+
+.quien_es .popover.fade {
 	width: auto;
 	opacity: 0.9;
-	padding:0;
+	padding: 0;
 	border-radius: 7px;
 	background: none;
 	border: none;
-}/*
+} /*
 .quien_es.many-stories .popover.fade{
 	width: 116px;
 }
 .quien_es.quick-facts .popover.fade{
 	width: auto;
 }*/
-.quien_es .popover.top > .arrow {
+.quien_es .popover.top>.arrow {
 	border-top-color: #8f9240 !important;
 	opacity: 0.8;
 }
-.quien_es .popover.top > .arrow:after{
-	border-top-color:#8f9240 !important;
+
+.quien_es .popover.top>.arrow:after {
+	border-top-color: #8f9240 !important;
 }
-.quien_es .popover-title{
-	float:left;
+
+.quien_es .popover-title {
+	float: left;
 	line-height: 30px;
 	padding: 4px 5px;
 	background-color: #8d903d;
-	border-color:none;
-	border-bottom:none;
-	border-radius:0;
+	border-color: none;
+	border-bottom: none;
+	border-radius: 0;
 	color: #fff;
 	border-radius: 5px 0px 0px 5px;
 }
-.quien_es .popover-content{
-	float:left;
+
+.quien_es .popover-content {
+	float: left;
 	background-color: #8f9240;
 	opacity: 0.8;
 	color: #fff;
@@ -1166,142 +1168,163 @@ top:0%;
 	border-top-right-radius: 6px;
 }
 /* promociones */
-.promociones{
-	height:100%
+.promociones {
+	height: 100%
 }
-#content.promocionesContent{
+
+#content.promocionesContent {
 	width: 100%;
 	left: 0;
 }
-.promociones .mainTitle{
-	margin:0 !important;
+
+.promociones .mainTitle {
+	margin: 0 !important;
 }
-.promociones .contenido{
-	height:85%;
-	position:relative;
+
+.promociones .contenido {
+	height: 85%;
+	position: relative;
 }
-.promociones .cuadroPromociones{
+
+.promociones .cuadroPromociones {
 	height: 480px;
 	overflow: auto;
 	/*background-image: url("../images/promociones/cuadro_promociones.png");
 	background-repeat: no-repeat;*/
 }
-.promociones .bottonScroll{
+
+.promociones .bottonScroll {
 	margin-left: 47%;
 	margin-top: 17px;
 }
-.promociones .degrade{
-	position:absolute;
-	bottom:5%;
+
+.promociones .degrade {
+	position: absolute;
+	bottom: 5%;
 	background-image: url("../images/promociones/degrade.png");
-	background-repeat: no-repeat;height: 20px;
+	background-repeat: no-repeat;
+	height: 20px;
 	background-size: cover;
 	width: 96%;
 }
 
-
-.promociones .promo-mobile{
+.promociones .promo-mobile {
 	margin-top: 13px;
-	height:100%;
+	height: 100%;
 }
-.promociones .promo-mobile .colIzq{
-	height:100%;
+
+.promociones .promo-mobile .colIzq {
+	height: 100%;
 }
-.promociones .promo-mobile .brands{
-	text-align:center;
+
+.promociones .promo-mobile .brands {
+	text-align: center;
 	margin-top: 25px;
 	height: 9%;
 }
-.promociones .promo-mobile .brands span{
-	color:#7d7d7d;
+
+.promociones .promo-mobile .brands span {
+	color: #7d7d7d;
 	font-size: 15px;
 	font-weight: bold;
 }
-.promociones .promo-mobile .marcas{
+
+.promociones .promo-mobile .marcas {
 	height: 82%;
 	margin-top: 6%;
 }
-.promociones .promo-mobile .tables{
-	height:100%;
-	padding:0;
+
+.promociones .promo-mobile .tables {
+	height: 100%;
+	padding: 0;
 }
-.promociones .promo-mobile .table{
-	height:100%;
+
+.promociones .promo-mobile .table {
+	height: 100%;
 }
-.promociones .promo-mobile .table img{
-	height:100%;
+
+.promociones .promo-mobile .table img {
+	height: 100%;
 }
-.promociones .promo-mobile .marca{
+
+.promociones .promo-mobile .marca {
 	height: 14.5%;
 	background-color: #f1f1f1;
-	border-bottom:2px solid #e7e7e7;
+	border-bottom: 2px solid #e7e7e7;
 	padding-top: 9px;
 }
-.promociones .promo-mobile .marca img{
-	height:100%;
+
+.promociones .promo-mobile .marca img {
+	height: 100%;
 }
-.promociones .carousel{
-	height:100%;
+
+.promociones .carousel {
+	height: 100%;
 }
-.promociones .carousel-inner{
-	height:100%;
+
+.promociones .carousel-inner {
+	height: 100%;
 }
-.promociones .carousel-control.left{
-	background:none !important;
-	background-image:none !important;
+
+.promociones .carousel-control.left {
+	background: none !important;
+	background-image: none !important;
 	height: 20px;
 	left: -12%;
 	top: 6%;
 }
-.promociones .carousel-control.right{
-	background:none !important;
-	background-image:none !important;
+
+.promociones .carousel-control.right {
+	background: none !important;
+	background-image: none !important;
 	height: 20px;
 	top: 6%;
 	right: 13%;
 	z-index: 9999;
 }
-.promociones .carousel-control{
-	text-shadow:0 !important;
-	color:#0B0A0A !important;
+
+.promociones .carousel-control {
+	text-shadow: 0 !important;
+	color: #0B0A0A !important;
 }
 
-.customDiv_foreground{
-	
+.customDiv_foreground {
 	/* margin: 0 auto; */
 	/* transform: rotate(7deg); */
 	/* -ms-transform: rotate(7deg); */
 	/* -webkit-transform: rotate(7deg); */
-	position: relative;
+	position: absolute;
 	width: 59%;
 	height: 75%;
 	background-color: white;
 	left: 20%;
 	border-radius: 35px;
+ 	background: white url("../images/big_fruit.png") no-repeat;
+	background-position: 100% 4vh;
+	background-size: 41%;
+	
 }
 
-.customDiv_foreground p:nth-child(1){
+.customDiv_foreground p:nth-child(1) {
 	position: absolute;
 	top: 7%;
 	left: 4%;
 }
 
-.customDiv_foreground p:nth-child(3){
+.customDiv_foreground p:nth-child(3) {
 	top: 42%;
 	position: absolute;
 	left: 4%;
 	font-size: 1vmax;
 }
 
-
-.customDiv_foreground h3{
+.customDiv_foreground h3 {
 	position: absolute;
 	font-family: 'hand_of_sean_demoregular';
 	font-size: 18px;
 	top: 15%;
 	left: 4%;
 }
-
 
 .customDiv_green_1 {
 	position: absolute;
@@ -1317,10 +1340,9 @@ top:0%;
 	height: 86%;
 	background-color: rgb(149, 155, 45);
 	border-radius: 35px;
-
 }
 
-.customDiv_green_2{
+.customDiv_green_2 {
 	position: absolute;
 	/* margin: 0 auto; */
 	z-index: -2;
