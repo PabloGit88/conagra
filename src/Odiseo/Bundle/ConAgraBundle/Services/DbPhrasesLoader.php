@@ -14,18 +14,21 @@ class DbPhrasesLoader implements LoaderInterface{
 	/**
 	 * @param EntityManager $entityManager
 	 */
-	public function __construct(EntityManager $entityManager){
+	public function __construct(EntityManager $entityManager)
+	{
 		$this->translationRepository = $entityManager->getRepository("OdiseoConAgraBundle:LanguageTranslation");
 		$this->languageRepository = $entityManager->getRepository("OdiseoConAgraBundle:Language");
 	}
 	
-	function load($resource, $locale, $domain = 'messages'){
+	function load($resource, $locale, $domain = 'messages')
+	{
 		//Load on the db for the specified local
 		$language = $this->languageRepository->findOneByLocale($locale);
 		$translations = $this->translationRepository->getTranslations($language, $domain);
 		$catalogue = new MessageCatalogue($locale);
 	
-		foreach($translations as $translation){
+		foreach($translations as $translation)
+		{
 			$catalogue->set($translation->getLanguageToken()->getToken(), $translation->getTranslation(), $domain);
 		}
 		return $catalogue;

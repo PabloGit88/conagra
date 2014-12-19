@@ -88,14 +88,17 @@ sylius_resource:
 lunetics_locale:
   strict_mode: true # defaults to false
   allowed_locales:
-    - en
     - es
+    - en
+    - pt
   guessing_order:
     - query
+    - router
     - session
     - cookie
     - browser
-    - router
   switcher:
+    use_controller: true
+    use_referrer: true   
     template: OdiseoConAgraBundle:Frontend:switcher_language.html.twig
     show_current_locale: true
