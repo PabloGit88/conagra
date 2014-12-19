@@ -474,6 +474,27 @@ img.marca_descripcion {
 	background-position-x: 50%;
 }
 
+#content .quien_es.ourPurpose .customDiv_foreground {
+	width: 55%;
+}
+
+#content .quien_es.ourPurpose .customDiv_foreground .text {
+	position: absolute;
+	top: 30%;
+	left: 4%;
+	font-family: 'hand_of_sean_demoregular';
+	font-size: 18px;
+	color: #a3a2a2;
+	width: 85%;
+}
+
+#content .quien_es.ourPurpose .customDiv_foreground .products {
+	position: relative;
+	bottom: -60%;
+	max-width: 110%;
+	left: -5%;
+}
+
 #content .quien_es.marcaConsumo img {
 	max-height: 90%;
 }
@@ -489,6 +510,32 @@ img.marca_descripcion {
 	padding-bottom: 80px;
 }
 
+#content .quien_es.clasesDeMarcas .brands li {
+	background: url(../images/quienesconagra/menu_background.png) no-repeat;
+	-webkit-filter: none;
+	width: 237px;
+	height: 141px;
+}
+
+#content .quien_es.clasesDeMarcas .brands li a {
+	font-family: 'hand_of_sean_demoregular';
+	font-size: 24px;
+	color: #5c5c5c;
+	margin: 40px 0 0 -15px;
+	display: inline-flex;
+	max-width: 70%;
+}
+
+#content .quien_es.clasesDeMarcas .brands li:last-child a {
+	position: relative;
+	top: 16px;
+}
+
+#content .quien_es.clasesDeMarcas .brands li a:hover {
+	color: #8c8f35;
+	text-decoration: none;
+}
+
 #content .quien_es.marcaConsumo img {
 	max-height: 90%;
 }
@@ -496,12 +543,6 @@ img.marca_descripcion {
 #content .quien_es.clasesDeMarcas {
 	display: table;
 	width: 100%;
-}
-
-#content .quien_es.clasesDeMarcas .brands-container {
-	display: table-cell;
-	vertical-align: middle;
-	padding-bottom: 80px;
 }
 
 .commercialFoodsBackground {

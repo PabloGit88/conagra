@@ -3,8 +3,20 @@
 {% block content %}
 <div class="quien_es ourPurpose">
 
-	<div class="img-container center-block">
+	<div class="customDiv_foreground"> 
+		<div>
+			 <p class="mainTitle"> {{ 'conagra_our_purpose' | trans | raw }} </p> 
+			 <p class="text">
+			 	{{ 'conagra_our_purpose_text' | trans | raw }} 
+			 </p>
+		</div>
+		<div class="customDiv_green_1">
+		</div> 
+		<div class="customDiv_green_2">
+		</div>
+		<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/our_purpose.png') }}" class="img-responsive products">
 	</div>
+	
 	<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'quien-es-conagra' }) }}" class="pageButton nextButton" 
 		data-toggle="popover" data-content="{{'conagra_who_is' | trans | raw }}" data-placement="top" title="2/4" data-trigger="hover">
 	</a>
