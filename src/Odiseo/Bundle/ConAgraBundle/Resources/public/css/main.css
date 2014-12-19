@@ -226,6 +226,10 @@ footer {
 		center;
 }
 
+#content .conagra_latam .marca_descripcion .slimScrollDiv {
+	padding-right: 20px;
+}
+
 #content .conagra_latam .marca_descripcion .panama {
 	width: 45%;
 	float: left;
@@ -322,7 +326,7 @@ footer {
 	float: left;
 	margin-top: -5%;
 	position: absolute;
-	height: 100%;
+	height: 85%;
 }
 
 #content .conagra_latam .marca_descripcion .brasil>p {
@@ -356,7 +360,7 @@ footer {
 	float: left;
 	margin-top: -5%;
 	position: absolute;
-	height: 130%;
+	height: 90%;
 }
 
 #content .conagra_latam .marca_descripcion .costarica>p {

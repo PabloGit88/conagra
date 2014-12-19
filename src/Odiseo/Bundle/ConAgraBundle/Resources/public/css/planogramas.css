@@ -40,6 +40,7 @@ div .generales{
 	font-family: 'Roboto', sans-serif;
 	float: none;
 	width: 100%;
+	font-size:16px;
 }
 
 .planogramas.act .indicaciones,.planogramas.hunts .indicaciones{

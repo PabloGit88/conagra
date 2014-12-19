@@ -7,6 +7,10 @@
 			display:none;
 	}
 	
+	#content .quien_es img.commercialFoods {
+		max-width: 100%;
+	}
+	
 	/* END Commercial Foods */
 	
 	/* Private label */
@@ -162,6 +166,7 @@
 	.promociones .cuadroPromociones {
 		height: 369px !important;
 		overflow: auto;
+		margin-top: 15px;
 	}
 	
 	
