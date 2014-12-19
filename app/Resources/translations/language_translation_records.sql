@@ -398,12 +398,12 @@ insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (113,3,'messages','SENHA',8);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (114,3,'messages','Cancelar',9);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (115,3,'messages','Aceitar',10);
-insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (116,3,'messages','¿Quem é ConAgra?',1);
-insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (117,3,'messages','ConAgra Latam',3);
-insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (118,3,'messages','Treinamento das marcas',2);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (116,3,'messages','QUEM É CONAGRA',1);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (117,3,'messages','CONAGRA LATAM',3);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (118,3,'messages','TRAINAMENTO DAS a',2);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (119,3,'messages','PLANOGRAMAS',4);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (120,3,'messages','Promoções',5);
-insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (121,3,'messages','QUEM É CONAGRA',49);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (121,3,'messages','¿Quem é ConAgra?',49);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (122,3,'messages','Nossa finalidade',50);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (123,3,'messages','Fazemos a comida que você gosta, todos os dias, de forma extraordinária.',54);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (124,3,'messages','Na ConAgra Foods, acreditamos no poder comida de qualidade. Alimentos de todos os dias, que fazem os dias melhores. Elaboramos comida que faz más que satisfazer sua fome - lhe da menos para preocupar-se y más para desejar. E isso o que fazemos aqui na ConAgra Foods: Fazemos comida - comida de todos os dias - de forma extraordinária.
@@ -543,7 +543,7 @@ Segue nossa recomendação para a planimétrica ideal para Wesson, onde a exibi�
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (160,3,'messages','Planimétrica recomendada para Hunt’s',47);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (161,3,'messages','Sair',53);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (162,3,'messages','Sair',53);
-insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (163,3,'messages','promotions',5);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (163,3,'messages','PROMOÇÕES',5);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (164,3,'messages','bem-vindo',36);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (165,3,'messages','Planogramas',44);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (166,3,'messages','Planogramas sugeridos',45);
