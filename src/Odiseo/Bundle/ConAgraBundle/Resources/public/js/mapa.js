@@ -36,6 +36,9 @@ var MAPA = (function($){
 	var templateAddressTelManagerEmail_en= $('<div class="wrapper"><div class="tooltip-info addressTelManagerEmail"><p class="adress"><span class="tag bold">Address: </span><span class="data"> </span></p><p class="tel"><span class="tag bold">Phone:</span><span class="data"></span></p> <p class="manager"><span class="tag bold">Manager:</span><span class="data"></span></p><p class="email"><span class"tag bold"></span><span class="data"></span></p></div></div>');
 	
 	
+	
+	
+	
 	//tooltips builders
 	function buildAddressTelToolTip( address,  tel){
 		varString = "templateAddressTelToolTip_" + LOCALE;
