@@ -25,6 +25,7 @@ class AppKernel extends Kernel
         	new Sylius\Bundle\ResourceBundle\SyliusResourceBundle(),
         	new Gecko\BackendBundle\GeckoBackendBundle(),
             new Odiseo\Bundle\ConAgraBundle\OdiseoConAgraBundle(),
+        	new Lunetics\LocaleBundle\LuneticsLocaleBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

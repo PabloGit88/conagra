@@ -84,3 +84,18 @@ sylius_resource:
             driver: doctrine/orm
             classes:
                 model: Odiseo\Bundle\ConAgraBundle\Entity\User
+                
+lunetics_locale:
+  strict_mode: true # defaults to false
+  allowed_locales:
+    - en
+    - es
+  guessing_order:
+    - query
+    - session
+    - cookie
+    - browser
+    - router
+  switcher:
+    template: OdiseoConAgraBundle:Frontend:switcher_language.html.twig
+    show_current_locale: true

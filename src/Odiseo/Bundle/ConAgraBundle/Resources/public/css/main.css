@@ -106,15 +106,26 @@ header .navbar-default .navbar-nav>li>.dropdown-menu>li>a:hover, header .navbar-
 }
 
 header .logout {
-	position: relative;
-	float: right;
-	right: 10%;
+	position: absolute;
+	right: 0%;
 	top: 10px;
 	z-index: 100;
 }
 
-header .logout a {
-	
+header .logout .locale_chooser {
+	display: inline-block;
+	border-right: 1px solid #000000;
+	padding-right: 20px;
+	margin-right: 20px;
+}
+
+header .logout .locale_chooser li {
+	display: inline;
+	margin-left: 10px;
+}
+
+header .logout .locale_chooser li.locale_current a {
+	color: #000000;
 }
 
 footer {
@@ -159,9 +170,12 @@ footer {
 	margin-top: 8px;
 }
 
-#content .mainTitleContent .backButton {
+#content .backButton {
+	background: url('../images/volverInicioButton.png') no-repeat center top;
 	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
 	margin-right: 15px;
+	padding-top: 30px;
 	color: #333333;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 	filter: alpha(opacity = 80);
@@ -169,9 +183,10 @@ footer {
 	-khtml-opacity: 0.8;
 	opacity: 0.8;
 	text-decoration: none;
+	text-align: center;
 }
 
-#content .mainTitleContent .backButton:hover {
+#content .backButton:hover {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	filter: alpha(opacity = 100);
 	-moz-opacity: 1;
@@ -1124,12 +1139,13 @@ img.marca_descripcion {
 }
 
 .quien_es .popover.fade {
-	width: auto;
+	width: 220px;
 	opacity: 0.9;
 	padding: 0;
 	border-radius: 7px;
 	background: none;
 	border: none;
+	box-shadow: none;
 } /*
 .quien_es.many-stories .popover.fade{
 	width: 116px;
