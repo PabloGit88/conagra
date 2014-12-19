@@ -49,6 +49,7 @@ header .navbar-nav>li>a {
 	vertical-align: middle;
 	color: #333333;
 	padding: 0;
+	text-transform: uppercase;
 }
 
 header .navbar-default .navbar-nav>.active>a, header .navbar-default .navbar-nav>.active>a:hover,
