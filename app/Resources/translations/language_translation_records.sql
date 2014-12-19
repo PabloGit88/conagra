@@ -1,6 +1,6 @@
-USE conagra;
+USE conagralatam;
 
-insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (0,null,'','',null);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (0,null,'','',52);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (1,1,'messages','WHO WE ARE',1);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (2,2,'messages','QUIÉN ES <strong>CONAGRA</strong>',1);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (3,2,'messages','ENTRENAMIENTO <strong>DE MARCAS</strong>',2);
@@ -9,7 +9,6 @@ insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (6,2,'messages','CONAGRA <strong>LATAM</strong>',3);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (7,1,'messages','PLANOGRAMS',4);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (8,2,'messages','PLANOGRAMAS',4);
-insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (9,1,'messages','PROMOS',5);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (10,2,'messages','PROMOCIONES',5);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (11,1,'messages','ConAgra Information Platform',6);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (12,2,'messages','Plataforma de Información ConAgra',6);
@@ -202,8 +201,11 @@ insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,
 						Pronto, en 1890, los hermanos encontraron que sus ambiciones habían superado sus instalaciones, y, se mudaron a un edificio más grande en Santa Rosa,
 						California., donde Hunt’s Brothers Packing Company estaba siendo fundada. Hoy, Hunt''s® es la única marca americana en tener productos de tomate en los
 						siete segmentos de enlatados: -cortados; en cubitos tomates enteros, aplastado, estofado, salsa, pasta y puré. ',24);
-insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (49,1,'messages','Wesson was originally a Southern Oil Company commercial brand and it was named after his creator David Wesson (1861 – 1934), a food chemist who in 1899 developed a new procedure that allowed producing the first edible vegetal oil in the world.</br></br>',25);
-insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (50,2,'messages','Wesson era originalmente una marca comercial de la Southern Oil Company, y fue nombrada por su creador David Wesson (1861-1934), un químico de alimentos que en 1899 desarrolló un nuevo procedimiento que permitió desarrollar el primer aceite comestible vegetal del mundo.',25);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (49,1,'messages','Wesson was originally a Southern Oil Company commercial brand and it was named after his creator David Wesson (1861 – 1934), a food chemist who in 1899 developed a new procedure that allowed producing the first edible vegetal oil in the world.</br></br>
+
+All Wesson oils: canola, vegetal, corn and Best Blend go through a 24 step purification process that keeps them free of impurities and particles that cause bad taste and flavor. This can be appreciated in its clarity. <br><br>
+In the USDA (U.S. Department of Agriculture) dietetic guidelines it is recommended that most fats in a balanced diet must come from polyunsaturated fat and monounsaturated fatty acid sources, like fish, nuts and vegetable oils, for example Wesson canola oil.',25);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (50,2,'messages','Wesson era originalmente una marca comercial de la Southern Oil Company, y fue nombrada por su creador David Wesson (1861-1934), un químico de alimentos que en 1899 desarrolló un nuevo procedimiento que permitió desarrollar el primer aceite comestible vegetal del mundo. ',25);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (51,1,'messages','It is one of the most delicious cocoa powder in the world and it is produced by ConAgra Foods. Originally, during the fifties, the company sold hot chocolate as a beverage for airline passengers. Due to its increased popularity it was later introduced into supermarkets and convenience stores.</br></br>',26);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (52,2,'messages','Es el nombre de uno de los chocolates en polvos más deliciosos de todo el mundo y producido por ConAgra Foods. 
 						   Originalmente, en la década de 1950, la compañía vendía su chocolate caliente como una bebida para los pasajeros de líneas aéreas. Debido a rápida popularidad que empezó a tener el delicioso chocolate caliente la bebida se empezó a vender en  supermercados y tiendas de conveniencia.
@@ -275,14 +277,14 @@ insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,
 					<li>When cooking fishes or in the oven spray some PAM to enhance flavors and to avoid food sticking into the pan or the tray.</li>  
 					<li>When putting away leftovers in plastic bags, spray its interior with some PAM before introducing the food, this will avoid it mixing with previous meals flavors.</li>
 				</ul>		',33);
-insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (66,2,'messages','			<p>TIPS PARA USAR PAM®</p>
-					<ul>
-						<li>PAM es bueno para cocinar bajo en grasas, con tan pocas calorías como 4cal por ½ segundo de spray.  </li>
-						<li>Para evitar que el queso y otros alimentos se peguen al utilizar un rallador, rocíe brevemente un poco de PAM.</li>  
-						<li>Antes de encender su parilla rocíe la misma con un poco de PAM y también los utensilios.</li>  
-						<li>Al cocinar pescados o cortes “al cartucho” o al horno rocíe un poco de PAM para realzar los sabores y que no se peguen a la bandeja o sartén.</li>  
-						<li>Al guardar las sobras, en envases plásticos rocíe el interior con un poco de PAM y luego coloque la comida, esto evitara que el recipiente se le adhieran los olores de la comida anterior.</li>
-					</ul>',33);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (66,2,'messages','<p>TIPS for using PAM®</p>
+				<ul>
+					<li>PAM is good if you seek low fat meals, it contains as few calories as 4cal each ½ spray second. </li>
+					<li>To avoid cheese and other foods sticking when using a grater, spray briefly some PAM.</li>  
+					<li>Before you start your barbecue spray the grill and the cookware with some PAM.</li>  
+					<li>When cooking fishes or in the oven spray some PAM to enhance flavors and to avoid food sticking into the pan or the tray.</li>  
+					<li>When putting away leftovers in plastic bags, spray its interior with some PAM before introducing the food, this will avoid it mixing with previous meals flavors.</li>
+				</ul>',33);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (67,1,'messages','		<p>Did you know that Snack Pack appears in Billy Madison movie? Adam Sandler´s character does all he can to get a Snack Pack!</p>
 					<br>
 					<a href="https://www.youtube.com/watch?v=ZExPoZGQ8gM" class="magnificPopup">Watch video</a>',34);
@@ -391,3 +393,161 @@ insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,
 				<br><br>
 				Es la comida que te encanta, y  de las marcas que usted conoce mejor, desde Hunt''s®  y ACT II® hasta Wesson® y Peter Pan®. Y además de nuestras marcas comerciales y de etiqueta privada pueden encontrarse desde en restaurantes y estanterías  a lo largo de todo el continente ya sea en salsas, guarniciones, aperitivos, mezclas de condimentos y más.
 ',55);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (111,3,'messages','Plataforma de Informação ConAgra',6);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (112,3,'messages','EMAIL',7);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (113,3,'messages','SENHA',8);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (114,3,'messages','Cancelar',9);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (115,3,'messages','Aceitar',10);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (116,3,'messages','¿Quem é ConAgra?',1);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (117,3,'messages','ConAgra Latam',3);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (118,3,'messages','Treinamento das marcas',2);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (119,3,'messages','PLANOGRAMAS',4);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (120,3,'messages','Promoções',5);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (121,3,'messages','QUEM É CONAGRA',49);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (122,3,'messages','Nossa finalidade',50);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (123,3,'messages','Fazemos a comida que você gosta, todos os dias, de forma extraordinária.',54);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (124,3,'messages','Na ConAgra Foods, acreditamos no poder comida de qualidade. Alimentos de todos os dias, que fazem os dias melhores. Elaboramos comida que faz más que satisfazer sua fome - lhe da menos para preocupar-se y más para desejar. E isso o que fazemos aqui na ConAgra Foods: Fazemos comida - comida de todos os dias - de forma extraordinária.
+<br><br>
+E a comida que você gosta, e das marcas que você melhor conhece, desde Hunt''s®  e ACT II® ate Wesson® y Peter Pan®. As nossas marcas comerciais e de etiqueta privada podem ser achadas em restaurantes e gondolas  ao longo do continente, em salsas, guarnições, aperitivos, misturas de condimentos y mais. ',55);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (125,1,'messages','Our Major Consumer Brands',56);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (126,2,'messages','Nuestras Principales Marcas de Consumo',56);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (127,3,'messages','Nuestras Principales Marcas de Consumo',56);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (128,3,'messages','Em 1981, Golden Valley Microwave Foods criou a marca ACT I, pipocas refrigeradas que eram vendidas por de máquinas de venda. Em 1984, um revolucionário saco é desenvolvido, que permitiria aos grãos estourar em qualquer micro-ondas. Este novo produto seria chamado ACT II, e virou parte da carteira de ConAgra Foods Inc. em 1991. 
+Atualmente, ACT II é a marca líder de pipocas para micro-ondas, vendida em mais de 50 países, ocupando em muitos dos casos o 1 o 2 lugar da categoria. E em snacks, é a segunda categoria com maior crescimento, ¡com uma media de mais do 7.5% nos últimos cinco anos!* devem ter maior espaço.',23);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (129,3,'messages','<li>La evidencia más temprana de las palomitas de maíz se encontró en Perú y data de 4700 aC.</li>
+						<li>Los estadounidenses consumen unos 16 mil millones cuartos de este grano. Eso es 51 cuartos por hombre, mujer y niño.</li>  
+						<li>Las semillas de las palomitas pueden explotar hasta 3 pies en el aire. *</li>',30);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (130,3,'messages','Em 1888, os irmãos Joseph y William Hunt abrem um pequeno negocio no lado do rancho do pai deles, onde comercializavam frutas e vegetais da zona que aprenderam cultivar com a mãe. 
+<br><br>
+Em 1890, os irmãos acharam que as ambições deles tinham superado as instalações, e se mudaram para um prédio maior em Santa Rosa, California., onde Hunt’s Brothers Packing Company estava sendo fundada. Hoje, Hunt''s® é a única marca americana que tem produtos de tomate nos sete segmentos de enlatados: -cortados; em dados, tomates inteiros, esmagados, guisado, molho, pasta y puré.',24);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (131,3,'messages','Os tomates enlatados Hunt’s são 100% naturais sem conservantes nem ingredientes artificiais. Hunt’s não contem xarope de milho com alto conteúdo de frutose. Todos os tomates Hunt’s são descascados a través do processo chamado FlashSteam®, que utiliza o vapor da agua para retirar a pele. Os tomates Hunt’s são coletados e em questão de 8 a 10 horas são enlatados garantindo não só a frescura mas também a autenticidade do sabor a tomate.',31);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (132,3,'messages','Wesson era originalmente uma marca comercial da Southern Oil Company, e foi nomeada pelo seu criador David Wesson (1861-1934), um químico de alimentos que em 1899 desenvolveu um novo procedimento que permitiu fabricar o primeiro aceite comestível vegetal do mundo. <br><br>
+
+Todos os aceites da Wesson: Canola, Vegetal, Milho y Best Blend atravessam um  processo de 24 passos de purificação que os mantem livre de impurezas ou partículas que produzem mau cheiro e mau gosto. Uma diferença que se nota, pela claridade.  <br><br>
+
+Nas diretrizes dietéticas do USDA (Departamento de Agricultura dos E.U.) é recomendado que a maioria das gorduras de uma dieta equilibrada devem proceder de fontes de gorduras poli-insaturadas e ácidos gordos monoinsaturados, como pescado, nozes e aceites vegetais, como os que contem o aceite de canola Wesson.',25);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (133,3,'messages','Em 1991 Wesson introduziu o Aceite de Canola. A gordura da semente de canola, não só favorece a absorção de vitaminas A,D,E y K, também garante seus benefícios saudáveis. <br>
+Nos últimos cinco anos as vendas de aceite de canola aumentaram perto de $2.000 milhões de dólares no mundo inteiro. <br>
+No ano 2001, os mais importantes chefs do American Tasting Institute reconheceram a Wesson com o Premio Medalha de Ouro pelo excelente sabor. 
+O Aceite de Canola Wesson contem de forma natural dois ácidos gordos essenciais como o Omega 3 (W3) que tem efeitos de redução sobre os níveis de colesterol no sangue e Omega 6 (W6) que oferece uma grande redução sobre o colesterol, o que tem um papel fundamental na saúde do sistema cardiovascular.<br>',32);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (134,3,'messages','E o nome de um dos chocolates em pó mais deliciosos do mundo e produzido por ConAgra Foods. Originalmente, na década de 1950, a companhia vendia chocolate quente como uma bebida para os passageiros das linhas aéreas. Pela rápida popularidade que o delicioso chocolate quente começou ter, a bebida começou ser vendida em supermercados e lojas de conveniência. <br><br>
+
+Swiss Miss possui uma grande carteira de modificadores de leite em pó que inclui: chocolate de leite, com malva, de dieta e sabores mais clementes como: trufa de chocolate, baunilha francesa, chocolate escuro, chocolate com menta, chocolate com caramelo. A companhia também tem desenvolvido uns deliciosos pudins refrigerados com o delicioso sabor chocolate quente.',26);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (135,3,'messages','PAM® foi introduzido em 1961 por Leon Rubin, quem com Arthur Meyerhoff, começou Gibraltar Industries para comercializar produtos em aerossol. O nome PAM é um acrónimo de Produto de Arthur Meyerhoff. <br><br>
+
+Este inovador produto, que faz parte de ConAgra Foods desde o 2000, utiliza una mistura única de aceites, sendo o principal ingrediente o de canola. Ser um aerossol lhe permite se propagar pelo recipiente inteiro, panela ou churrasqueira criando uma capa antiaderente; fazendo o cozinhar com PAM® seja fácil, saudável e simplesmente mais fácil para limpar.',27);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (136,3,'messages','<p>TIPS PARA O USO DO PAM®</p>
+<ul>PAM é bom para cozinhar baixo em gorduras, com tão poucas calorias como 4cal por ½ segundo de spray.</ul>
+<ul>Para evitar que o queijo e outros alimentos fiquem colados quando um ralador é utilizado, orvalhe brevemente um pouco de PAM.</ul>
+<ul>Antes de acender a churrasqueira orvalhe-la com um pouco de PAM, e também os utensílios.</ul>
+<ul>Ao cozinhar pescados orvalhe um pouco de PAM para realçar os sabores e que no se colem na bandeja ou panela.</ul>
+<ul>Ao guardar as sobras em envases plásticos orvalhe o interior com um pouco de PAM y depois coloque aa comida, isso evitara que os cheiros da comida anterior se adiram no recipiente.</ul>',33);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (137,3,'messages','<span class=”bold”>Snack Pack ®¡o pudim disfrutado por toda a familia!</span>
+Snack Pack foi introduzido em 1968 como pudins não refrigerados e estáveis para o armazenamento em apresentação de uma só porção em lata de alumínio. Foi em 1984 que começou se comercializar em copos plásticos, sendo a primeira marca da categoria em presentar ló assim, e em embalagens plásticas transparentes a partir de 1990. A textura suave y cremosa, junto com a possibilidade de ser disfrutado em qualquer momento e lugar, o faz um atrativo y doce prazer.  <br><br>
+Está disponível nas variedades: sabores regulares, capas de sabores, livre de gordura y livres de açúcar. Mantendo a apresentação de 1 só porção por embalagem, Snack Pack, e um doce saudável porque está feito com verdadeira leite sem gordura, não utiliza conservantes, e nunca tem conteúdo o xarope de milho de alta frutose.',28);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (138,3,'messages','<p>¿Sabia que Snack Pack apareceu no filme Billy Madison? O personagem de Adam Sandler faz tudo o possível para pegar um Snack Pack!</p><br>',34);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (139,3,'messages','Peter Pan é uma marca de manteiga de amendoim produzida pela ConAgra Foods e que leva o nome do personagem de J.M. Barrie, que desde finais de agosto de 2007 a versão do personagem de Peter Pan de Disney se tornaria a mascota oficial da marca. <br><br>
+
+Tem algo mágico n sabor saudável, da manteiga de amendoim	Peter Pan Peanut que tanto crianças como pais não conseguem se resistir. O sabor é delicioso e puro e emana: sabor y diversão exaltando a criança interior que todos levamos dentro. 
+<br><br>
+A manteiga de amendoim Peter Pan é vendida em diversas variedades: crocante, cremoso, mel torrada, cremosa reduzida em gorduras, crunchy reduzido em gorduras e cremosa com açúcar reduzida.',29);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (140,3,'messages','<ul><li>A manteiga de amendoim Peter Pan era originalmente embalada em embalagens de metal mas pelo faltante do mesmo durante a Segunda Guerra Mundial foi mudado a embalagens plásticas.</li>
+<li>Em versões previas do produto, Peter Pan foi descrita como mulher em vez de criança.</li>
+<li>Peter Pan e os personagens de Disney apareceram pela primeira vez na campanha de publicidade da manteiga de amendoim em 1953.</li></ul>',35);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (141,3,'messages','SANTIAGO CASTILLO Limited foi criada em 1926 e hoje é o maior importador em Belize de  alimentos e produtos para a casa provenientes dos Estados Unidos e Europa. O grupo SanCas possui cinco lojas localizadas estrategicamente, além de vários centros de distribuição,  que permite a penetração no nível nacional completa tanto por varejo e  por atacado, incluindo a Zona Livre de Corozal na fronteira com México.<br><br>
+O grupo SanCas tem representado orgulhosamente a  ConAgra Foods durante mais de uma década e com sucesso colocar todas as prestigiosas marcas, Wesson, Hunts, Chef y Orville em particular.<br><br>
+O grupo SanCas considera aos provedores como sócios, e investe uma quantidade igual, o vendedor faz a promoção das marcas a través de: degustações, publicidades, feiras, gestão de plataforma y ofertas comerciais. Um sucesso que se traduz num  crescimento anual constante.<br><br>
+www.santiagocastillo.com/',11);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (142,3,'messages','Ninoshka, S.A. é uma empresa guatemalteca fundada em 1976 por investidores locais. <br><b>Inicio as operações distribuindo produtos para só um provedor. A maioria dos nossos provedores pertencem ao Five Hundred  Fortune Company, que tem confiado o desenvolvimento  das marcas para nossa organização e conta com um plantel executivo de alto nível e uma organização competitiva.<br><br>
+ Proporciona ao consumidor final, produtos de alta qualidade que satisfazem as necessidades primarias, a traves de uma excelente distribuição de produtos no nível nacional. <br><br>
+Na vanguarda tecnológica, de Recursos Humanos e comercial. <br><br>Com respeito, honestidade e confiança alcançamos o bem-estar dos nossos empregados, clientes y  provedores, a través de relações de trabalho de longo curso e mutuo beneficio. <br><br>
+www.ninoshka.com ',12);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (143,3,'messages','Cargill nos anos recentes tem incrementado a participação em alimentos de consumo massivo no Brasil reforçando as marcas, aquisições comerciais e sociedades estratégicas com outras companhias. O objetivo da Cargill é  se tornar um jogador relevante nas categorias que opera, levando ao consumidor as marcas e produtos que ele prefere.<br><br>
+ConAgra Foods é uma das maiores companhias de Norte America, as marcas deles estão presentes no 99% das casa dos Estados Unidos. A ganancia neta anual em 2013 foi aproximadamente $ 18 BI. <br><br>
+ ConAagra Foods e Cargill já tem uma sociedade solida e muito importante para ambas companhias: um exemplo recente é o do moagem de farinha de trigo em Norte América, www.ardentmills.com; através da sociedade as marcas Hunt´s e ACT II estão ingressando no mercado brasileiro.<br><br>
+Cargill distribuirá no Brasil a linha Hunt’s de condimentos: ketchup em duas versões – garrafa de 383g e pacote de  567g; mostarda amarela de 340g e pacotes de molho BBQ de  510g, e três versões de sabores - Original, Hickory e Mustard and Honey. <br><br>
+Os produtos serão produzidos na planta de ConAgra Foods na California, USA; y serao vendidos a partir de Outubro / 14 no Brasil inteiro. 
+Respeito da ACTII brand, Cargill venderá pipoca para micro-ondas nas seguintes versões: Sabor natural (pacote de 85g), manteiga aromatizada (pacote de 85g), manteiga aromatizada Light (pacote de  80,8g), manteiga aromatizada Extra (pacote de 85g) e pacotes em promo Lightweight 4 Paga 3 em sabores natural e manteiga. <br><br>
+Os produtos serão produzidos no Brazil pelo sócio da ConAgra Foods e as vendas começarão em Outubro de 2014 no estado de São Paulo, e para o resto a partir de Fevereiro 2015.<br><br>
+<span class=”bold> www.cargill.com.br</span>',21);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (144,3,'messages','CONGRUPO é uma companha orgulhosamente colombiana que desde 1992, tem sido criada para o desenvolvimento de marcas de consumo massivo baixo uma abordagem de visão global. Sendo o  mais eficiente comercializador de uma valiosa carteira de marcas, focalizado sempre em adicionar valor para nossos clientes e consumidores, oferecendo as melhores alternativas de consumo. <br>
+Atualmente cobre todo o território nacional, concentrados enm21 cidades, visitando mais de 1500 clientes diretamente, cobrindo as Grandes Superfícies, supermercados, mini mercados, drogarias, lojas de conveniência, lojas especializadas e instituições governamentais. <br><br>
+www.congrupo.com.co
+',17);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (145,3,'messages','No ano 1932 nasce a companhia como distribuidora de produtos alimentícios, vinhos e licores, fundada por Manuel Constenla Meijide, cidadão de origem Espanhol. Localizada no entorno do Mercado Central de San José, zona de maior importância comercial na Costa Rica daquela época. A visão  do fundador lhe facilitou ter contato direto com os diferentes canais de distribuição, conhecer as necessidades e satisfaze-los com uma grande variedade de produtos nacionais e importados de alta qualidade.<br><br>
+No ano 1970, toma a liderança do mercado na distribuição de produtos de consumo massivo e expande as operações com um novo centro de distribuição na capital y 6 centros de distribuição regionais no interior do país. Paralelamente com visão estratégica prepara um equipe professional de executivos para dar continuidade para a companhia.<br><br>
+O novo equipe gerencial, no ano 2009, abre um centro de distribuição de classe mundial no Parque Empresarial Novapark, donde também se encontram instaladas outras empresas del Grupo, demonstrando capacidade, solidez y profissionalismo, o que permite continuar sendo "a companhia líder em Distribuição e Serviço da Costa Rica".<br><br>
+
+www.ciamesa.com ',16);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (146,3,'messages','QUIFATEX S.A., foi fundada no 26 de maio de 1978 com administração e capital suíço.<br><br>
+Inicialmente representamos companhias internacionais de produtos químicos y colorantes para têxteis. 
+Posteriormente incluímos novas linhas de distintas áreas de comercialização: veterinária, matérias primas para a indústria  farmacêutica e alimentícia, maquinaria, produtos farmacêuticos, produtos de consumo e cuidado pessoal, agricultura, entre outros.
+www.quicorp.com/quifatex',19);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (147,3,'messages','Dizac S.A. de C.V. foi fundada no ano 1975 como importadora, distribuidora e representante de provedores estrangeiros na área de comestíveis, produtos de consumo e cosméticos, hoje conta com uma posição comercial altamente atrativa para empresas fabricantes e comercio no geral.
+Em Novembro de 1975, inicia as operações com 12 pessoas e 4 linhas de produtos de consumo.
+Atualmente  conta com mais de 300 pessoas e 10 linhas de produtos exclusivos.
+Conta com uma Rede de distribuição com cobertura nacional por Atacado, Supermercados, Via/Detalhe e contas fundamentais (farmácias, estoques, lojas de conveniência,  etc.), 
+Temos uma carteira nacional de 1300 clientes efetivos no nível por Atacado e Supermercados, e uma carteira global em lojas detalhistas de 19000 clientes no nível nacional.<br><br>
+www.dizac.com.sv ',13);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (148,3,'messages','Distribuidora Solís S.A. de CV (DISOL)<br><br>
+Fundada em 1968, tem levado os esforços dos dois irmãos Solís para tornar a Pulpería NAN em uma companhia de distribuição na Honduras inteira. 
+
+Disol é sócio estratégico de ConAgra Foods, importando mais de 10 marcas, alcançando posiciona-las como líderes dentro da categoria importados. <br>',14);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (149,3,'messages','Distribuidora Continente, S.A (CONTESA), Inicia operações em Setembro do 2000 em Managua Nicaragua, nascendo de Comercial Delta  y Ahlers, S.A, Companhias estabelecidas ha mais de 70 anos.<br><br>
+Atualmente conta com mais de 100 colaboradores, um estoque localizado na Zona Industrial mais  importante de Managua, e um novo moderno prédio de oficinas no centro da Cidade. A distribuição é realizada nacionalmente apoiados por um equipe de reparte próprio.<br><br>
+CONTESA se focaliza no valor acrescentado através, de um excelente serviço e uma atenção personalizada por parte de nossos representantes, comprazendo as expectativas dos nossos clientes, gerando satisfação total para eles e rentabilidade para a companhia.<br><br>
+
+www.contesa.com.ni
+',15);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (150,3,'messages','KMC International S.A.C. é uma companhia dirigida por um grupo familiar com 17 anos de experiência no negocio de importação e distribuição de diversas categorias de produtos de consumo massivo e institucionais. Levam ao mercado peruano marcas de reconhecimento internacional como as marcas d a ConAgra Foods. <br><br>
+A cobertura de distribuição inclui as principais do país, todo tipo de negocio incluso: cadeias de supermercados, hipermercados, por atacamento, distribuidores, lojas, bodegas e catering. <br><br>
+www.kmcint.com',18);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (151,3,'messages','Galerías Guaraní S.A foi constituída em Julio de 1965, pouco tempo depois  abre o Shopping Vendome, que conta com uma cadeia de exclusivas lojas localizadas em Asunción, a capital do Paraguai y Ciudad del Este, ponto limítrofe com Brasil e considerado uma das Cidades comerciais mais importantes do mundo. Esta loja de Ciudad del Este esta localizada no Shopping Vendome ,propriedade do grupo. Ambas  companhias fazem parte de um conglomerado, reconhecido como o GRUPO VENDOME dentro do Paraguai e no exterior.<br><br>
+Com mais de 45 anos de experiência e participação no mercado, é criada uma nova divisão dentro do Grupo, que é a Divisão Alimentos Massivos que tem 10 anos de existência, com um crescimento continuo.<br><br>
+Participando  nas principais cadeias de postos de gasolina e supermercados, onde temos uma excelente relação comercial.<br><br>
+O grande volume na nossa atenção personalizada, no canal Tradicional que compreende despensas, autosserviços, cantinas de universidades, colégios e canal de atacado.
+Com distribuicao horizontal também ao interior do país.<br><br>
+
+<span class=”bold>www.vendome.com.py<span>',20);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (152,3,'messages','E a principal distribuidora em Panamá de produtos de consumo massivo, alimentos e bebidas, perfumes e cosméticos: produtos automotrizes e licores, todas lideres em cada categoria. <br><br>
+E o  provedor por excelência dos clientes  oferecendo produtos de alta qualidade em preços competitivos dentro de cada uma das divisões. De esta forma, realiza constantemente um esforço especial para antecipar as necessidades dos clientes, e assim, oferecer-lhes excelentes produtos de acordo aos requisitos más exigentes do mercado.<br><br>
+De fato, esta companhia tem se tornado uma sólida y prospera subsidiara, a qual tem  traspassado fronteiras, pois Agencias Feduro começou em setembro do 2003 operações de distribuicao exclusiva na Costa Rica. <br><br>',22);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (153,3,'messages','Act II é  a   <span class="bordo"> marca líder empipoca para micro-ondas <span class="bordo"> , pelo que debemos ter e  cuidar dos melhores espaços dentro da categoria de “Snacks”. <br><br>
+
+As bandejas estão desenhadas na base de um tamanho genérico global de prateleira, então, na maioria dos casos duas bandejas podem ser colocadas uma acima pela frente e assim  não desperdiçar o espaço. <br><br>
+Segue nossa recomendação de planimétrica na base a 6,4 y 2 frentes horizontal e vertical.
+',37);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (154,3,'messages','Hunt''s é a única marca de produtos de tomates com presença nas <span class="bordo"> 4 principais </span>',38);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (155,3,'messages','<ul><li>PAM é o aceite em aerossol com maior variedade de sabores liderando esta categoria.</li>
+<li>Nossa recomendação é que o produto seja colocado em horizontais, com 2 caras por tipo.</li>
+<li>Conseguir exibições secundarias nas áreas de: mistura para doces e pães, corredor de barbecue e área de ovos ou arepas e tortilhas.</li>
+</ul>',41);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (156,3,'messages','
+<ul><li>Mostrar em blocos acorde ao tipo de manteiga de amendoim.</li>
+<li>2 frente mínimo para os  sabores principais, participação em 3 tabelas.</li>
+<li>Apresentações complementarias 1 ou 2 frentes ao longo de 3 tabelas.</li></ul>',43);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (157,3,'messages','<span class=”bold”>Snack Pack</span> entra na casa pedido pelas crianças como complemento dentro  da lancheira, contudo consegue capturar um publico adulto pela conveniência e sabor.<br><br> 
+
+<span class=”bold”>Snack Pack</span> não requere refrigeração, a localização ideal é gelatinas e pudins, ou perto dos biscoitos. Porém tem mercados que o posicionam  dentro de áreas refrigeradas. <br> <br>
+
+
+<div class="hidden-xs">Segue planimétrica recomendada para Snack Pack, tanto para espaços verticais (prateleiras) e espaços horizontais (sobre geladeiras).</div>',42);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (158,3,'messages','<ul> <li>Posicionar o produto verticalmente .Si existe , preferivelmente junto com Nestlé (procurando a mesma proporção) e entre outros chocolates em pó.</li>
+<li>Coloca-lo em vertical dois frentes tabelas 2 e 3 para alcançar maior presença do produto para os consumidores.</li>
+<li>Procurar localização adicional para as versões de dieta e sem açúcar adicionada se aplica ao mercado com seção “saudável”.</li>
+</ul>',40);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (159,3,'messages','
+Wesson desde 1899 tem desenvolvido produtos de alta qualidade e são pioneiros em vários dos tipos de aceites que são comercializados hoje como a Canola e o aceite comestível vegetal. <br><br>
+
+Segue nossa recomendação para a planimétrica ideal para Wesson, onde a exibição preferível é a vertical em bloco quadrado.',39);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (160,3,'messages','Planimétrica recomendada para Hunt’s',47);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (161,3,'messages','Sair',53);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (162,3,'messages','Sair',53);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (163,3,'messages','promotions',5);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (164,3,'messages','bem-vindo',36);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (165,3,'messages','Planogramas',44);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (166,3,'messages','Planogramas sugeridos',45);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (167,3,'messages','Indicações Gerais',46);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (168,3,'messages','Peter Pan. Variedades.',48);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (169,3,'messages','Reporte de Operaciones',51);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (170,3,'messages','Clases de marcas',52);

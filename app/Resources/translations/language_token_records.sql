@@ -1,4 +1,4 @@
-USE conagra;
+USE conagralatam;
 
 insert into `language_token`(`id`,`token`) values (23,'brands_info_act2');
 insert into `language_token`(`id`,`token`) values (24,'brands_info_hunts');
@@ -53,5 +53,6 @@ insert into `language_token`(`id`,`token`) values (45,'planograms_suggested');
 insert into `language_token`(`id`,`token`) values (47,'recommended_planimetry_hunts');
 insert into `language_token`(`id`,`token`) values (48,'varieties_peterpan');
 insert into `language_token`(`id`,`token`) values (36,'welcome');
+insert into `language_token`(`id`,`token`) values (56,'who_we_are_brands_consume');
 insert into `language_token`(`id`,`token`) values (55,'who_we_are_description');
 insert into `language_token`(`id`,`token`) values (54,'who_we_are_we_make_food');
