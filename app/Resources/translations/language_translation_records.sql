@@ -1,4 +1,4 @@
-USE conagra;
+USE conagralatam;
 
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (0,null,'','',52);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (1,1,'messages','WHO WE ARE',1);

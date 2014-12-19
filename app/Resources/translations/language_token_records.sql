@@ -1,4 +1,4 @@
-USE conagra;
+USE conagralatam;
 
 insert into `language_token`(`id`,`token`) values (23,'brands_info_act2');
 insert into `language_token`(`id`,`token`) values (24,'brands_info_hunts');
