@@ -1,4 +1,4 @@
-USE conagralatam;
+USE conagra;
 
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (0,null,'','',52);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (1,1,'messages','WHO WE ARE',1);
@@ -402,7 +402,7 @@ insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (117,3,'messages','CONAGRA LATAM',3);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (118,3,'messages','TRAINAMENTO DAS a',2);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (119,3,'messages','PLANOGRAMAS',4);
-insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (120,3,'messages','Promoções',5);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (120,1,'messages','PROMOS',5);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (121,3,'messages','¿Quem é ConAgra?',49);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (122,3,'messages','Nossa finalidade',50);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (123,3,'messages','Fazemos a comida que você gosta, todos os dias, de forma extraordinária.',54);
@@ -551,3 +551,49 @@ insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (168,3,'messages','Peter Pan. Variedades.',48);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (169,3,'messages','Reporte de Operaciones',51);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (170,3,'messages','Clases de marcas',52);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (171,1,'messages','We deliver daily food, in an extraordinary way.',57);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (172,2,'messages','Entregamos alimentos todos los días de manera extraordinaria',57);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (173,3,'messages','Nos entregamos alimentos de todos os dias de forma extraordinária.',57);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (174,1,'messages','Consumer Brand',58);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (175,2,'messages','Marca de consumo',58);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (176,1,'messages','Private brand',59);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (177,2,'messages','Marca Privada',59);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (178,1,'messages','Commercial',60);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (179,2,'messages','Comercial',60);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (180,3,'messages','Marca de Consumo',58);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (181,3,'messages','Marca Privada',59);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (182,3,'messages','Comercial',60);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (183,1,'messages','Back to home',61);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (184,2,'messages','Volver a inicio',61);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (185,3,'messages','Voltar ao topo',61);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (186,3,'messages','Nossas principais Marcas de Consumo',62);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (187,2,'messages','Nuestras Principales Marcas de Consumo',62);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (188,1,'messages','Our main Consumer Brands',62);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (189,1,'messages','Consumer Brand',63);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (190,2,'messages','M. de consumo',63);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (191,3,'messages','M. de consumo',63);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (192,1,'messages','Consumer',64);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (193,2,'messages','Consumidor',64);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (194,3,'messages','Consumidor',64);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (195,3,'messages','ConAgra Foods produz os alimentos favoritos da casa como Hunt’s, Act II, Wesson, Swiss Miss, La Choy, manteiga de amendoim Peter Pan, PAM, Snack Pack, Heatlhy Choice, Hunt’s BBQ, que podem ser achados em centos de casas de toda Latino América.',65);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (196,2,'messages','ConAgra Foods produce los alimentos favoritos del hogar como Hunt''s, Act II, Wesson, SwissMiss, La Choy,mantequilla de mani Peter Pan, PAM, Snack Pack, Healthy Choice,Hunt''s BBQ, que se encuentran en cientos de hogares de toda Latinoamérica.',65);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (197,1,'messages','ConAgra Foods produces your favorite foods like Hunt’s, Act II, Wesson, Swiss Miss, La Choy, peanut butter Peter Pan, PAM, Snack Pack, Healthy Choice, Hunt’s BBQ, that can be found in hundreds of homes across LatinAmerica.',65);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (198,2,'messages','<li>3 de estas marcas están entre los primeros lugares de su categoría a nivel de importados.</li>
+<li>20 marcas de consumo generan mas de $ 100 millones cada uno en ventas al por menor cada año.*</li>
+<li>Ofrecemos 165 comidas de marcas de consumo por $ 3 o menos.*</li>',66);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (199,2,'messages','*Data de ConAgra Foods U.S.',67);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (200,1,'messages','<li>3 of this brands are amongst the top companies in their category for imported products</li>
+<li>20 consumer brands that generate over $ 100 million each one in retail sales every year.*</li>
+<li>We offer 165 consumer brand foods for $ 3 or less.*</li>',66);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (201,3,'messages','<li>3 de estas marcas estão entre os primeiros lugares dentro da sua categoria a nivel de importados.</li>
+<li>20 marcas de consumo geram mais de $ 100 milhoes cada um em ventas por menor cada ano.*</li>
+<li>Oferecemos 165 comidas de marcas de consumo por $ 3 o menos.*</li>',66);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (202,3,'messages','*Data de ConAgra Foods U.S.',67);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (203,2,'messages','*Data de ConAgra Foods U.S.',67);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (204,1,'messages','*ConAgra Foods U.S. Data',67);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (205,2,'messages','ConAgra Foods es la compañía mas grande de alimentos de marca privada en América del Norte.',68);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (206,2,'messages','Hacemos desde galletas  dulces y saladas de marca privada, frutos secos, cereales, dulces y pastillas, pita chips, condimentos, pastas secas, pudines, cereal listo para comer, cereales calientes, barras alimenticias, mantequilla de maní, salsa para pasta, productos de panadería, masa refrigerada y productos para asar a plancha, entre muchos otros.',69);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (207,3,'messages','ConAgra Foods é a companhia mais grande de alimentos de marca privada na América do Norte.',68);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (208,3,'messages','Nos fazemos desde biscoitos doces e salgados de marca privada, frutos secos, cereais, doces e tabletes, pita chips, condimentos, pastas secas, pudins, cereal pronto para comer, cereais quentes, barras de cereais, manteiga  de amendoim, molho para pasta, produtos de padaria, massa refrigerada e produtos de assado, entre muitos outros.',69);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (209,1,'messages','ConAgra Foods is the biggest food private brand in North America.',68);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (210,1,'messages','We make from private brand sweet biscuits and crackers, dry fruit, cereals, candies and tablets, seasoners, dry pasta, puddings, ready to eat cereal, hot cereal, power bars, peanut butter, pasta sauce, bakery products, refrigerated dough and grilling products, amongst many others.',69);

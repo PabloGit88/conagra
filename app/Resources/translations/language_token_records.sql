@@ -1,5 +1,7 @@
-USE conagralatam;
+Select id, token from conagra.language_token
+USE conagra;
 
+insert into `language_token`(`id`,`token`) values (61,'back_to_home');
 insert into `language_token`(`id`,`token`) values (23,'brands_info_act2');
 insert into `language_token`(`id`,`token`) values (24,'brands_info_hunts');
 insert into `language_token`(`id`,`token`) values (27,'brands_info_pam');
@@ -8,6 +10,9 @@ insert into `language_token`(`id`,`token`) values (28,'brands_info_snackpack');
 insert into `language_token`(`id`,`token`) values (26,'brands_info_swissmiss');
 insert into `language_token`(`id`,`token`) values (25,'brands_info_wesson');
 insert into `language_token`(`id`,`token`) values (52,'conagra_brand_types');
+insert into `language_token`(`id`,`token`) values (60,'conagra_clase_marcas_comercial');
+insert into `language_token`(`id`,`token`) values (58,'conagra_clase_marcas_consumo');
+insert into `language_token`(`id`,`token`) values (59,'conagra_clase_marcas_private');
 insert into `language_token`(`id`,`token`) values (6,'conagra_information_platform');
 insert into `language_token`(`id`,`token`) values (11,'conagra_latam_belice');
 insert into `language_token`(`id`,`token`) values (21,'conagra_latam_brasil');
@@ -23,6 +28,7 @@ insert into `language_token`(`id`,`token`) values (20,'conagra_latam_paraguay');
 insert into `language_token`(`id`,`token`) values (18,'conagra_latam_peru');
 insert into `language_token`(`id`,`token`) values (51,'conagra_operations_reports');
 insert into `language_token`(`id`,`token`) values (50,'conagra_our_purpose');
+insert into `language_token`(`id`,`token`) values (57,'conagra_our_purpose_text');
 insert into `language_token`(`id`,`token`) values (49,'conagra_who_is');
 insert into `language_token`(`id`,`token`) values (30,'curious_facts_act2');
 insert into `language_token`(`id`,`token`) values (31,'curious_facts_hunts');
@@ -50,6 +56,14 @@ insert into `language_token`(`id`,`token`) values (42,'planograms_generals_snack
 insert into `language_token`(`id`,`token`) values (40,'planograms_generals_swissmiss');
 insert into `language_token`(`id`,`token`) values (39,'planograms_generals_wesson');
 insert into `language_token`(`id`,`token`) values (45,'planograms_suggested');
+insert into `language_token`(`id`,`token`) values (64,'quien_es_consumidor');
+insert into `language_token`(`id`,`token`) values (67,'quien_es_consumidor_asterisk');
+insert into `language_token`(`id`,`token`) values (65,'quien_es_consumidor_description');
+insert into `language_token`(`id`,`token`) values (66,'quien_es_consumidor_li');
+insert into `language_token`(`id`,`token`) values (62,'quien_es_marca_consumo');
+insert into `language_token`(`id`,`token`) values (63,'quien_es_marca_consumo_page');
+insert into `language_token`(`id`,`token`) values (68,'quien_es_private_box1');
+insert into `language_token`(`id`,`token`) values (69,'quien_es_private_box2');
 insert into `language_token`(`id`,`token`) values (47,'recommended_planimetry_hunts');
 insert into `language_token`(`id`,`token`) values (48,'varieties_peterpan');
 insert into `language_token`(`id`,`token`) values (36,'welcome');
