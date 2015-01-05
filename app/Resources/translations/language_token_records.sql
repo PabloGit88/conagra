@@ -1,4 +1,4 @@
-Select id, token from conagra.language_token
+﻿Select id, token from conagra.language_token
 USE conagra;
 
 insert into `language_token`(`id`,`token`) values (61,'back_to_home');
