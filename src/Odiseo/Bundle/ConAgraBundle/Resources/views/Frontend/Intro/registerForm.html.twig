@@ -31,8 +31,8 @@
 			<div class="hidden-xs col-sm-6">
 			</div>
 			<div class="col-xs-12 col-sm-6">
-				<a href="{{ path('odiseo_conagra_frontend_index') }}" class="btn btn-default cancelButton">Cancelar</a>
-				<button type="submit" class="btn btn-danger submitButton" value="{{ 'registration.submit'|trans({}, 'FOSUserBundle') }}">Ingresar</button>
+				<a href="{{ path('odiseo_conagra_frontend_index') }}" class="btn btn-default cancelButton">{{ 'login_cancel' | trans |  raw }}</a>
+				<button type="submit" class="btn btn-danger submitButton" value="{{ 'registration.submit'|trans({}, 'FOSUserBundle') }}">{{ 'login_login' | trans |  raw }}</button>
 			</div>
 		</div>
 </form>
