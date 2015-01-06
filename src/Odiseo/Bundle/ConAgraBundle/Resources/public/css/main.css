@@ -219,7 +219,7 @@ footer {
 #content .conagra_latam .saleTracker {
 	position: absolute;
 	bottom: 0;
-	left: 50%;
+	left: 82%;
 	color: black;
 	padding-left: 30px;
 	border: none;
@@ -393,6 +393,27 @@ footer {
 	margin-top: 0;
 	max-width: 57%;
 }
+
+
+#content .conagra_latam .latam_mapa .customSelect select{
+	background: transparent;
+	padding: 5px;
+	line-height: 1;
+	-webkit-appearance: none;
+	width: 100%;
+	font-size: 18px;
+ }
+
+#content .conagra_latam  .latam_mapa .customSelect {
+    overflow: hidden;
+	background: url(../images/conagralatam/arrow_black_up.png) no-repeat right 10px center;
+	bottom: 0;
+	left: 50%;
+	position: absolute;
+	background-size: 13%;
+	width: 13%;
+}
+
 
 .latam_mapa {
 	float: right;
