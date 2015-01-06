@@ -70,3 +70,4 @@ insert into `language_token`(`id`,`token`) values (36,'welcome');
 insert into `language_token`(`id`,`token`) values (56,'who_we_are_brands_consume');
 insert into `language_token`(`id`,`token`) values (55,'who_we_are_description');
 insert into `language_token`(`id`,`token`) values (54,'who_we_are_we_make_food');
+insert into `language_token`(`id`,`token`) values (70,'conagra_latam_see_country');
