@@ -480,7 +480,7 @@ img.marca_descripcion {
 #content .quien_es.privateLabel .privateLabelContent .background {
 	position: absolute;
 	bottom: 0;
-	z-index: 1;
+	z-index: 4;
 }
 
 #content .quien_es.ourPurpose img, #content .quien_es.quienEsConagra img,

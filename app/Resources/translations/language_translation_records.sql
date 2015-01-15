@@ -609,3 +609,9 @@ insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (220,1,'messages','Brand information',73);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (221,2,'messages','Información de la marca',73);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (222,3,'messages','Informação da marca',73);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (223,1,'messages','Private brand',74);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (224,2,'messages','Marca privada',74);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (225,3,'messages','Marca privada',74);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (226,1,'messages','Commercial foods',75);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (227,2,'messages','Marca comercial',75);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (228,3,'messages','Marca comercial',75);
