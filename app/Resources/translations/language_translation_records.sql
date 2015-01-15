@@ -277,14 +277,14 @@ insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,
 					<li>When cooking fishes or in the oven spray some PAM to enhance flavors and to avoid food sticking into the pan or the tray.</li>  
 					<li>When putting away leftovers in plastic bags, spray its interior with some PAM before introducing the food, this will avoid it mixing with previous meals flavors.</li>
 				</ul>		',33);
-insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (66,2,'messages','<p>TIPS for using PAM®</p>
-				<ul>
-					<li>PAM is good if you seek low fat meals, it contains as few calories as 4cal each ½ spray second. </li>
-					<li>To avoid cheese and other foods sticking when using a grater, spray briefly some PAM.</li>  
-					<li>Before you start your barbecue spray the grill and the cookware with some PAM.</li>  
-					<li>When cooking fishes or in the oven spray some PAM to enhance flavors and to avoid food sticking into the pan or the tray.</li>  
-					<li>When putting away leftovers in plastic bags, spray its interior with some PAM before introducing the food, this will avoid it mixing with previous meals flavors.</li>
-				</ul>',33);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (66,2,'messages','		<p>TIPS PARA USAR PAM®</p>
+					<ul>
+						<li>PAM es bueno para cocinar bajo en grasas, con tan pocas calorías como 4cal por ½ segundo de spray.  </li>
+						<li>Para evitar que el queso y otros alimentos se peguen al utilizar un rallador, rocíe brevemente un poco de PAM.</li>  
+						<li>Antes de encender su parilla rocíe la misma con un poco de PAM y también los utensilios.</li>  
+						<li>Al cocinar pescados o cortes “al cartucho” o al horno rocíe un poco de PAM para realzar los sabores y que no se peguen a la bandeja o sartén.</li>  
+						<li>Al guardar las sobras, en envases plásticos rocíe el interior con un poco de PAM y luego coloque la comida, esto evitara que el recipiente se le adhieran los olores de la comida anterior.</li>
+					</ul>',33);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (67,1,'messages','		<p>Did you know that Snack Pack appears in Billy Madison movie? Adam Sandler´s character does all he can to get a Snack Pack!</p>
 					<br>
 					<a href="https://www.youtube.com/watch?v=ZExPoZGQ8gM" class="magnificPopup">Watch video</a>',34);
@@ -600,3 +600,12 @@ insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (211,1,'messages','See Country',70);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (212,2,'messages','Ver País',70);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (213,3,'messages','Veja País',70);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (214,1,'messages','Brands training',71);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (215,2,'messages','Entrenamiento de marcas',71);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (216,3,'messages','Treinamento de marcas',71
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (217,1,'messages','Curious Facts',72);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (218,2,'messages','Datos Curiosos',72);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (219,3,'messages','Fatos curiosos',72);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (220,1,'messages','Brand information',73);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (221,2,'messages','Información de la marca',73);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (222,3,'messages','Informação da marca',73);

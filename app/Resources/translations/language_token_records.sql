@@ -71,3 +71,6 @@ insert into `language_token`(`id`,`token`) values (56,'who_we_are_brands_consume
 insert into `language_token`(`id`,`token`) values (55,'who_we_are_description');
 insert into `language_token`(`id`,`token`) values (54,'who_we_are_we_make_food');
 insert into `language_token`(`id`,`token`) values (70,'conagra_latam_see_country');
+insert into `language_token`(`id`,`token`) values (71,'brands_trainee_main_title');
+insert into `language_token`(`id`,`token`) values (72,'brands_trainee_curious_facts');
+insert into `language_token`(`id`,`token`) values (73,'brands_trainee_brand_information');

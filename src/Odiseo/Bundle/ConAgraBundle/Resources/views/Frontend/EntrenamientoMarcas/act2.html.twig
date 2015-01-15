@@ -8,7 +8,7 @@
 {% block content %}
 <div class="entrenamiento_marcas">
 	<div class="mainTitleContent clearfix">
-		<h1 class="mainTitle pull-left">Entrenamiento de marcas</h1>
+		<h1 class="mainTitle pull-left">{{ 'brands_trainee_main_title' | trans | raw }}</h1>
 		<a href="{{ path('odiseo_conagra_frontend_entrenamiento_marcas_index') }}" class="backButton pull-right">
 			{{ 'back_to_home' | trans | raw }}
 		</a>
@@ -25,7 +25,7 @@
 			<img src="{{ asset('bundles/odiseoconagra/images/marcas/solo/act2.png') }}" class="logo">
 			<div class="mainInfo">
 				<div class="tabContent infoMarca">
-					<h3>Información de la marca</h3>
+					<h3>{{ 'brands_trainee_brand_information' | trans | raw }}</h3>
 					<div class="infoContent">
 						<p>
 							{{ 'brands_info_act2' | trans | raw }}
@@ -82,7 +82,7 @@
 				</div>
 			</div>
 			<div class="otherData hidden-xs">
-				<h3>Datos curiosos</h3>
+				<h3>{{ 'brands_trainee_curious_facts' | trans | raw }}</h3>
 				<div class="otherContent">
 					<ul>
 						{{ 'curious_facts_act2' | trans | raw }}
@@ -109,7 +109,7 @@
   <div class="modal-dialog modal-sm">
     <div class="modal-content style="border: 0;">
 		<div class="otherData_m">
-			<h3>Datos curiosos</h3>
+			<h3>{{ 'brands_trainee_curious_facts' | trans | raw }}</h3>
 			<div class="otherContent">
 				<ul>
 						{{ 'curious_facts_act2' | trans | raw }}
