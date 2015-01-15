@@ -76,3 +76,4 @@ insert into `language_token`(`id`,`token`) values (72,'brands_trainee_curious_fa
 insert into `language_token`(`id`,`token`) values (73,'brands_trainee_brand_information');
 insert into `language_token`(`id`,`token`) values (74,'who_we_are_private_brand');
 insert into `language_token`(`id`,`token`) values (75,'who_we_are_commercial_foods');
+insert into `language_token`(`id`,`token`) values (76,'suggested_planogram_main_title');

@@ -3,7 +3,7 @@
 {% block content %}
 <div class="planogramas hunts sugerido5">
 	<div class="title clearfix">
-		<h1 class="mainTitle">Planogramas</h1>
+		<h1 class="mainTitle">{{ 'planograms' | trans |  raw }}</h1>
 		<a href="{{ path('odiseo_conagra_frontend_planogramas_index') }}" class="backButton pull-right">
 			{{ 'back_to_home' | trans | raw }}
 		</a>
@@ -28,6 +28,6 @@
 	</a>
 	<a href="{{ path('odiseo_conagra_frontend_planogramas_page', { 'page': 'hunts-planograma-sugerido-6' }) }}" class="pageButton nextButton" 
 		data-toggle="popover" data-content="{{ 'planograms_suggested' | trans |  raw }}" data-placement="top" title="6/6" data-trigger="hover">
-	</a>
+	</a>	
 </div>
 {% endblock %}

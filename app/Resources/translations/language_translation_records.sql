@@ -512,12 +512,19 @@ Com distribuicao horizontal também ao interior do país.<br><br>
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (152,3,'messages','E a principal distribuidora em Panamá de produtos de consumo massivo, alimentos e bebidas, perfumes e cosméticos: produtos automotrizes e licores, todas lideres em cada categoria. <br><br>
 E o  provedor por excelência dos clientes  oferecendo produtos de alta qualidade em preços competitivos dentro de cada uma das divisões. De esta forma, realiza constantemente um esforço especial para antecipar as necessidades dos clientes, e assim, oferecer-lhes excelentes produtos de acordo aos requisitos más exigentes do mercado.<br><br>
 De fato, esta companhia tem se tornado uma sólida y prospera subsidiara, a qual tem  traspassado fronteiras, pois Agencias Feduro começou em setembro do 2003 operações de distribuicao exclusiva na Costa Rica. <br><br>',22);
-insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (153,3,'messages','Act II é  a   <span class="bordo"> marca líder empipoca para micro-ondas <span class="bordo"> , pelo que debemos ter e  cuidar dos melhores espaços dentro da categoria de “Snacks”. <br><br>
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (153,3,'messages','Act II é  a   <span class="bordo"> marca líder empipoca para micro-ondas </span> , pelo que debemos ter e  cuidar dos melhores espaços dentro da categoria de “Snacks”. <br><br>
 
 As bandejas estão desenhadas na base de um tamanho genérico global de prateleira, então, na maioria dos casos duas bandejas podem ser colocadas uma acima pela frente e assim  não desperdiçar o espaço. <br><br>
 Segue nossa recomendação de planimétrica na base a 6,4 y 2 frentes horizontal e vertical.
 ',37);
-insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (154,3,'messages','Hunt''s é a única marca de produtos de tomates com presença nas <span class="bordo"> 4 principais </span>',38);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (154,3,'messages','Hunt’s é a única marca de produtos de tomates com presença nas <span class="bordo">4 principais 
+categorias</span>: <span class="bold"> Condimentos, em Pecas, Ingredientes y Molhos de Pasta</span>, o que prove uma  vantagem competitiva.<br><br>
+
+A maioria do tempo as categorias se encontram em localizações próximas, mas separadas
+o que deve ser analisado pelo comerciante para encontrar uma solução estratégica para o
+posicionamento do produto.<br><br>
+
+Planimétrica recomendada para Hunt’s',38);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (155,3,'messages','<ul><li>PAM é o aceite em aerossol com maior variedade de sabores liderando esta categoria.</li>
 <li>Nossa recomendação é que o produto seja colocado em horizontais, com 2 caras por tipo.</li>
 <li>Conseguir exibições secundarias nas áreas de: mistura para doces e pães, corredor de barbecue e área de ovos ou arepas e tortilhas.</li>
@@ -615,3 +622,6 @@ insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (226,1,'messages','Commercial foods',75);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (227,2,'messages','Marca comercial',75);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (228,3,'messages','Marca comercial',75);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (229,1,'messages','Suggested Planogram',76);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (230,2,'messages','Planograma Sugetido',76);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (231,3,'messages','Planograma Sugerido',76);
