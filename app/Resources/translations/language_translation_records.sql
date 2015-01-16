@@ -348,7 +348,7 @@ insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,
 						<li>Nuestra recomendación es que el producto se coloque en horizontales, con 2 caras por clase.</li>  
 						<li>Lograr exhibiciones secundarias en zonas de: mezcla para dulces y panes, pasillo de barbacoa y área de huevos o arepas, tortillas y desayunos.</li>
 					</ul>',41);
-insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (83,1,'messages','<strong>Snack Pack</strong> gets into people´s houses by children request as a complement in lunchboxes, however adults also buy it for its convenience and flavor.<br><br>',42);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (83,1,'messages','<strong>Snack Pack</strong> gets into people´s houses by children request as a complement in lunchboxes, however adults also buy it for its convenience and flavor.<br><br> <strong> Snack Pack </strong>does not require refrigeration, its ideal location is amongst jellies and puddings, or close to the biscuits. However some stores locate it inside refrigerated areas.<br><br> Below recommended planimetry for Snack Pack, for vertical spaces (shelves) and horizontal spaces (above fridges).',42);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (84,2,'messages','<strong>Snack Pack</strong> ingresa al hogar por los solicitud de infantiles como complemento dentro en la lonchera, sin embargo logra captar un publico  adulto por su conveniencia y sabor. 
 					<br><br>
 					<strong>Snack Pack</strong> no requiere refrigeración, su ubicación ideal es de gelatinas y pudines, o cerca de las galletas. Sin embargo  hay mercados que lo colocan dentro de zonas refrigeradas. 
@@ -533,9 +533,9 @@ insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,
 <ul><li>Mostrar em blocos acorde ao tipo de manteiga de amendoim.</li>
 <li>2 frente mínimo para os  sabores principais, participação em 3 tabelas.</li>
 <li>Apresentações complementarias 1 ou 2 frentes ao longo de 3 tabelas.</li></ul>',43);
-insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (157,3,'messages','<span class=”bold”>Snack Pack</span> entra na casa pedido pelas crianças como complemento dentro  da lancheira, contudo consegue capturar um publico adulto pela conveniência e sabor.<br><br> 
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (157,3,'messages','<strong>Snack Pack</strong> entra na casa pedido pelas crianças como complemento dentro  da lancheira, contudo consegue capturar um publico adulto pela conveniência e sabor.<br><br> 
 
-<span class=”bold”>Snack Pack</span> não requere refrigeração, a localização ideal é gelatinas e pudins, ou perto dos biscoitos. Porém tem mercados que o posicionam  dentro de áreas refrigeradas. <br> <br>
+<strong>Snack Pack</strong> não requere refrigeração, a localização ideal é gelatinas e pudins, ou perto dos biscoitos. Porém tem mercados que o posicionam  dentro de áreas refrigeradas. <br> <br>
 
 
 <div class="hidden-xs">Segue planimétrica recomendada para Snack Pack, tanto para espaços verticais (prateleiras) e espaços horizontais (sobre geladeiras).</div>',42);
@@ -625,3 +625,24 @@ insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (229,1,'messages','Suggested Planogram',76);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (230,2,'messages','Planograma Sugerido',76);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (231,3,'messages','Planograma Sugerido',76);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (232,1,'messages','Country',77);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (233,2,'messages','País',77);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (234,3,'messages','País',77);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (235,1,'messages','Distributor',78);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (236,2,'messages','Distribuidor',78);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (237,3,'messages','Distribuidor',78);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (238,1,'messages','Name',79);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (239,2,'messages','Nombre',79);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (240,3,'messages','Nome',79);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (241,1,'messages','Email',80);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (242,2,'messages','Email',80);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (243,3,'messages','E-mail',80);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (244,1,'messages','Create Password',81);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (245,2,'messages','Crear Contraseña',81);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (246,3,'messages','Criar Senha',81);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (247,1,'messages','Cancel',82);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (248,2,'messages','Cancelar',82);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (249,3,'messages','Cancelar',82);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (250,1,'messages','Sign In',83);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (251,2,'messages','Ingresar',83);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (252,3,'messages','Acessar',83);

@@ -6,7 +6,7 @@ services:
 services:
     conagra_user.registration.form.type:
         class: Odiseo\Bundle\ConAgraBundle\Form\Type\RegistrationFormType
-        arguments: [%fos_user.model.user.class%]
+        arguments: [@translator , %fos_user.model.user.class%]
         tags:
             - { name: form.type, alias: conagra_user_registration }
             
@@ -39,6 +39,5 @@ services:
         class: Odiseo\Bundle\ConAgraBundle\Services\DbPhrasesLoader
         arguments: [@doctrine.orm.entity_manager]
         tags:
-           - { name: translation.loader, alias: db}            
-            
-            
+           - { name: translation.loader, alias: db}     
+

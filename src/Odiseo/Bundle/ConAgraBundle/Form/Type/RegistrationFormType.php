@@ -3,15 +3,25 @@ namespace Odiseo\Bundle\ConAgraBundle\Form\Type;
 
 use Symfony\Component\Form\FormBuilderInterface;
 use FOS\UserBundle\Form\Type\RegistrationFormType as BaseType;
+use Symfony\Component\Translation\LoggingTranslator as Translator;
 
 class RegistrationFormType extends BaseType
 {
-	public function buildForm(FormBuilderInterface $builder, array $options)
+	private $traslator;
+	
+	public function __construct(Translator $traslator , $class)
+	{
+		$this->traslator = $traslator;
+		parent::__construct($class);
+	}
+	
+	public function buildForm(FormBuilderInterface $builder,   array $options)
 	{
 		//parent::buildForm($builder, $options);
 		// add your custom field$country
+		$countryLabel = $this->traslator->trans("signup_country");
 		$builder->add('country', 'choice', array('choices' => array(
-				'-1' => 'País',
+				'-1' => $countryLabel,
 				'Colombia' => 'Colombia', 
 				'Venezuela' => 'Venezuela',
 				'Ecuador' => 'Ecuador',
@@ -33,26 +43,27 @@ class RegistrationFormType extends BaseType
 				'Uruguay' => 'Uruguay',
 				'Paraguay' => 'Paraguay',
 		),  
-		'label' => 'Pais', 'required'  => true));
+		'label' => $countryLabel, 'required'  => true, 'attr' => array('placeholder' => $countryLabel, 'class' => 'form-control', 'data-rule-required' => 'true')));
 		
-		$builder->add('distributor', 'choice', array('choices' => array(
-				'-1' => 'Distribuidor', 
-		),  
-		'label' => 'Distribuidor', 'required'  => true));
+		$distributorLabel = $this->traslator->trans("signup_distributor");
+		$builder->add('distributor', 'choice', array('choices' => array('-1' => $distributorLabel),  
+		'label' => $distributorLabel, 'attr' => array('placeholder' => $distributorLabel, 'class' => 'form-control')));
 		
-		$builder->add('fullName', 'text', array( 'label' => 'Nombre', 'required' => true));
+		$nameLabel = $this->traslator->trans("signup_name_placeholder");
+		$builder->add('fullName', 'text', array( 'label' => $nameLabel, 'required' => true, 'attr' => array('placeholder' => $nameLabel, 'class' => 'form-control', 'data-rule-required' => 'true')));
 		//email
-		
-		$builder->add('username', 'email', array( 'label' => 'Email', 'required' => true));
+		$emailLabel = $this->traslator->trans("signup_email_placeholder");
+		$builder->add('username', 'email', array( 'label' => $emailLabel, 'required' => true,  'attr' => array('placeholder' => $emailLabel, 'class' => 'form-control', 'data-rule-required' => 'true')));
 		$builder->add('position' ,'choice', array('choices' => array(
 				'Mercaderista' => 'Mercaderista',
 				'Supervisor' => 'Supervisor', 
 				'Gerente de Ventas' => 'Gerente de Ventas',
 				'Gerente de Marcas' => 'Gerente de Marca',  
 				'Ayudante General' => 'Ayudante General'
-		), 'label' => 'Cargo', 'required'  => true));
+		), 'label' => 'Cargo', 'required'  => true, 'attr' => array('class' => 'form-control', 'data-rule-required' => 'true')));
 		
-		$builder->add('plainPassword', 'password', array( 'label' => 'Crear Contraseña', 'required' => true));
+		$passwordLabel = $this->traslator->trans("signup_password_placeholder");
+		$builder->add('plainPassword', 'password', array( 'label' => $passwordLabel, 'required' => true,  'attr' => array('placeholder' => $passwordLabel, 'class' => 'form-control', 'data-rule-required' => 'true') ));
 		
 	}
 

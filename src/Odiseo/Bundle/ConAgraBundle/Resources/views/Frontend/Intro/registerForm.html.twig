@@ -1,19 +1,19 @@
 <form class="form" action="{{ path('fos_user_registration_register') }}"  {{ form_enctype(form) }} method="post">
        	<div class="row form-group">
            	<div class="col-xs-12 col-sm-6 customSelect">
-           		 {{ form_widget(form.country, {'attr': {'class': 'form-control', 'data-rule-required' : 'true', 'placeholder' : 'País'}  }) }}
+           		 {{ form_widget(form.country) }}
            	</div>
            	<div class="col-xs-12 col-sm-6">
-                 {{ form_widget(form.distributor, {'attr': {'class': 'form-control', 'data-country-information-url' :  path('odiseo_conagra_frontend_distribuitors')  , 'data-rule-required' : 'true', 'placeholder' : 'Distribuidor'}  }) }}
+                 {{ form_widget(form.distributor, {'attr': { 'data-country-information-url' :  path('odiseo_conagra_frontend_distribuitors')}  }) }}
            	</div>
        	</div>
 		<div class="row form-group">
 			<div class="col-xs-12 col-sm-6">
-				 {{ form_widget(form.fullName, {'attr': {'class': 'form-control', 'data-rule-required' : 'true', 'placeholder' : 'Nombre'}  }) }}
+				 {{ form_widget(form.fullName) }}
 			</div>
 			<div class="col-xs-12 col-sm-6">
 					
-				{{ form_widget(form.username, {'attr': {'class': 'form-control', 'data-rule-required' : 'true', 'placeholder' : 'Mail'}  }) }}
+				{{ form_widget(form.username) }}
 			</div>     
 		</div>
 		<div class="row form-group">
@@ -22,7 +22,7 @@
        		</div>
 			<div class="col-xs-12 col-sm-6">
 				
-				{{ form_widget(form.plainPassword, {'attr': {'class': 'form-control', 'data-rule-required' : 'true', 'placeholder' : 'Crear contraseña'}  }) }}
+				{{ form_widget(form.plainPassword) }}
 			</div>
 		{{ form_errors(form) }}     
 		{{ form_row(form._token) }}

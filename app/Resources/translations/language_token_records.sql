@@ -77,3 +77,11 @@ insert into `language_token`(`id`,`token`) values (73,'brands_trainee_brand_info
 insert into `language_token`(`id`,`token`) values (74,'who_we_are_private_brand');
 insert into `language_token`(`id`,`token`) values (75,'who_we_are_commercial_foods');
 insert into `language_token`(`id`,`token`) values (76,'suggested_planogram_main_title');
+insert into `language_token`(`id`,`token`) values (77,'signup_country');
+insert into `language_token`(`id`,`token`) values (78,'signup_distributor');
+insert into `language_token`(`id`,`token`) values (79,'signup_name_placeholder');
+insert into `language_token`(`id`,`token`) values (80,'signup_email_placeholder');
+insert into `language_token`(`id`,`token`) values (81,'signup_password_placeholder');
+insert into `language_token`(`id`,`token`) values (82,'signup_cancel');
+insert into `language_token`(`id`,`token`) values (83,'signup_enter');
+
