@@ -65,6 +65,7 @@ header .navbar-nav>li>a span {
 	border-left: 1px solid #333333;
 	vertical-align: middle;
 	color: #555;
+	font-weight:bold;
 }
 
 header .navbar-default .navbar-nav>.active>a span, header .navbar-default .navbar-nav>.active>a:hover span,
