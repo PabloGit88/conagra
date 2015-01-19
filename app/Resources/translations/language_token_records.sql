@@ -84,4 +84,7 @@ insert into `language_token`(`id`,`token`) values (80,'signup_email_placeholder'
 insert into `language_token`(`id`,`token`) values (81,'signup_password_placeholder');
 insert into `language_token`(`id`,`token`) values (82,'signup_cancel');
 insert into `language_token`(`id`,`token`) values (83,'signup_enter');
-
+insert into `language_token`(`id`,`token`) values (84,'planograms_shelf_layout');
+insert into `language_token`(`id`,`token`) values (85,'planograms_generales_for_products_hunts');	
+insert into `language_token`(`id`,`token`) values (86,'planograms_suggested_complete_block');
+insert into `language_token`(`id`,`token`) values (87,'planograms_horizontal');

@@ -646,3 +646,55 @@ insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (250,1,'messages','Sign In',83);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (251,2,'messages','Ingresar',83);
 insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (252,3,'messages','Acessar',83);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (253,1,'messages','Shelf Layout',84);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (254,2,'messages','Exhibición en Mueble',84);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (255,3,'messages','Exposição na gôndola',84);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (256,1,'messages','<strong>For canned products:</strong>
+		 		<br/>
+				<ul>
+					<li>Try to place the products in blocks or vertical blocks to highlight the red zone.</li>
+					<li>We should completely separate from local or popular brands.</li>  
+					<li class="dobleline" >Most demanded “original” flavor references should always be placed at the front of the block and to the left.</li>
+					<li>Diced tomatoes should have their own space.</li>
+				</ul>
+		 		<strong>Ketchup:</strong>
+		 		</br></br>		 		
+				<ul>
+					<li>Always to be placed with imported brands.</li>
+				</ul>		 ',85);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (257,2,'messages','<strong>Para productos en lata:</strong>
+		 		<br/>
+				<ul>
+					<li>Procurar colocar los productos en bloques o cuadros verticales, para destacar el llamado bloque rojo.</li>
+					<li>Separarnos por completo de marcas locales o reconocimiento popular.</li>  
+					<li class="dobleline" >Las referencias más buscadas o de sabores "originales" deben ser colocadas siempre al inicio del bloque y a la izquierda.</li>
+					<li>Los tomates en trozos o "Diced" deben tener un espacio propio.</li>
+				</ul>
+		 		<strong>Para o Ketchup:</strong>
+		 		</br></br>		 		
+				<ul>
+					<li>Colocar sempre junto com marcas importadas.</li>
+				</ul>		 ',85);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (258,3,'messages','<strong>Para produtos enlatados:</strong>
+		 		<br/>
+				<ul>
+					<li>Tentar colocar os produtos em blocos ou quadros verticais para destacar o bloco “vermelho”.</li>
+					<li>Devemos nos separar completamente de marcas locais ou populares.</li>  
+					<li class="dobleline" >As referências de sabores “originais” com maior demanda devem ser colocadas sempre no início do bloco e à esquerda.</li>
+					<li>Os tomates em cubos ou “Diced” devem ter um espaço próprio.</li>
+				</ul>
+		 		<strong>Para el Kétchup:</strong>
+		 		</br></br>		 		
+				<ul>
+					<li>Siempre colocarlo junto a marcas importadas.</li>
+				</ul>		 ',85);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (259,1,'messages','Suggested Planogram Complete Block',86);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (260,2,'messages','Planograma Sugerido Bloque Completo',86);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (261,3,'messages','Planograma Sugerido Bloco Completo',86);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (262,1,'messages','Horizontal Planogram',87);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (263,2,'messages','Planograma Horizontal',87);
+insert into `language_translation`(`id`,`language_id`,`catalogue`,`translation`,`languageToken_id`) values (264,3,'messages','Planograma Horizontal',87);
+				
+
+				
+				
