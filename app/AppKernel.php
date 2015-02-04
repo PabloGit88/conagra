@@ -22,6 +22,7 @@ class AppKernel extends Kernel
         	new JMS\SerializerBundle\JMSSerializerBundle($this),
         	new FOS\RestBundle\FOSRestBundle(),
         	new FOS\UserBundle\FOSUserBundle(),
+        	new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
         	new Sylius\Bundle\ResourceBundle\SyliusResourceBundle(),
         	new Gecko\BackendBundle\GeckoBackendBundle(),
             new Odiseo\Bundle\ConAgraBundle\OdiseoConAgraBundle(),
