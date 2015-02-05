@@ -38,6 +38,11 @@ class BackendMenuBuilder
         		'labelAttributes' => array('icon' => 'fa-user'),
         ))->setLabel("Usuarios");
         
+        $menu->addChild('trivia', array(
+        		'route' => 'odiseo_conagra_backend_trivia_index',
+        		'labelAttributes' => array('icon' => 'fa-question-circle'),
+        ))->setLabel("Evaluación");
+        
         return $menu;
     }
 }

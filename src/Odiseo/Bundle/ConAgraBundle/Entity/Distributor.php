@@ -2,14 +2,13 @@
 
 namespace Odiseo\Bundle\ConAgraBundle\Entity;
 
-class TriviaAnswer
+class Distributor
 {
 	protected $id;
 	protected $createdAt;
 	protected $updatedAt;
-	protected $title;
-	protected $position;
-	protected $question;
+	protected $name;
+	protected $country;
 	
 	public function __construct()
 	{
@@ -49,36 +48,25 @@ class TriviaAnswer
 		return $this->updatedAt;
 	}
 	
-	public function getTitle() 
+	public function getName() 
 	{
-		return $this->title;
+		return $this->name;
 	}
 	
-	public function setTitle($title)
+	public function setName($name)
 	{
-		$this->title = $title;
+		$this->name = $name;
 		return $this;
 	}
 	
-	public function setPosition($position)
+	public function getCountry()
 	{
-		$this->position = $position;
-		return $this;
+		return $this->country;
 	}
 	
-	public function getPosition()
+	public function setCountry($country)
 	{
-		return $this->position;
-	}
-	
-	public function getQuestion()
-	{
-		return $this->question;
-	}
-	
-	public function setQuestion($question)
-	{
-		$this->question = $question;
+		$this->country = $country;
 		return $this;
 	}
 }

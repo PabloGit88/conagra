@@ -84,6 +84,18 @@ sylius_resource:
             driver: doctrine/orm
             classes:
                 model: Odiseo\Bundle\ConAgraBundle\Entity\User
+        odiseo_conagra.country:
+            driver: doctrine/orm
+            classes:
+                model: Odiseo\Bundle\ConAgraBundle\Entity\Country
+        odiseo_conagra.trivia_question:
+            driver: doctrine/orm
+            classes:
+                model: Odiseo\Bundle\ConAgraBundle\Entity\TriviaQuestion
+        odiseo_conagra.trivia_answer:
+            driver: doctrine/orm
+            classes:
+                model: Odiseo\Bundle\ConAgraBundle\Entity\TriviaAnswer
                 
 lunetics_locale:
   strict_mode: true # defaults to false
@@ -102,3 +114,9 @@ lunetics_locale:
     use_referrer: true   
     template: OdiseoConAgraBundle:Frontend:switcher_language.html.twig
     show_current_locale: true
+    
+stof_doctrine_extensions:
+    default_locale: en_US
+    orm:
+        default:
+            sortable: true

@@ -55,7 +55,7 @@ class TriviaQuestion
 	
 	public function getTitle() 
 	{
-		return $this->fullName;
+		return $this->title;
 	}
 	
 	public function setTitle($title)

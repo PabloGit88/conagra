@@ -1,0 +1,34 @@
+odiseo_conagra_backend_trivia_index:
+    pattern: /
+    methods: [GET]
+    defaults:
+        _controller: odiseo_conagra.controller.trivia_question:indexAction
+        _sylius:
+            template: OdiseoConAgraBundle:Backend/Trivia:index.html.twig
+            paginate: 100
+            
+odiseo_conagra_backend_trivia_create_question:
+    pattern: /question/new
+    methods: [GET, POST]
+    defaults:
+        _controller: odiseo_conagra.controller.trivia_question:createQuestionAction
+        _sylius:
+            template: OdiseoConAgraBundle:Backend/Trivia:create_question.html.twig
+            redirect: odiseo_conagra_backend_trivia_index
+
+odiseo_conagra_backend_trivia_update_question:
+    pattern: /question/{id}/edit
+    methods: [GET, PUT, POST]
+    defaults:
+        _controller: odiseo_conagra.controller.trivia_question:updateQuestionAction
+        _sylius:
+            template: OdiseoConAgraBundle:Backend/Trivia:update_question.html.twig
+            redirect: odiseo_conagra_backend_trivia_index
+
+odiseo_conagra_backend_trivia_delete_question:
+    pattern: /question/{id}
+    methods: [DELETE]
+    defaults:
+        _controller: odiseo_conagra.controller.trivia_question:deleteQuestionAction
+        _sylius:
+            redirect: odiseo_conagra_backend_trivia_index

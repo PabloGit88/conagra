@@ -1,6 +1,6 @@
-Odiseo\Bundle\ConAgraBundle\Entity\TriviaQuestion:
+Odiseo\Bundle\ConAgraBundle\Entity\Distributor:
     type: entity
-    table: trivia_question
+    table: distributor
     id:
         id:
             type: integer
@@ -21,18 +21,10 @@ Odiseo\Bundle\ConAgraBundle\Entity\TriviaQuestion:
             gedmo:
               timestampable:
                 on: update  
-        title:
-            column: title
+        name:
+            column: name
             type: string
             length: 255
-        position:
-            type: integer
-            gedmo:
-                - sortablePosition
-    oneToMany:
-        answers:
-          targetEntity: Odiseo\Bundle\ConAgraBundle\Entity\TriviaAnswer
-          mappedBy: answer
     manyToOne:
         country:
           targetEntity: Odiseo\Bundle\ConAgraBundle\Entity\Country

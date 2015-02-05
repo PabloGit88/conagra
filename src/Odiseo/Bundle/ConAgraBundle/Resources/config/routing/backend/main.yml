@@ -6,6 +6,9 @@ odiseo_conagra_backend_user:
     resource: @OdiseoConAgraBundle/Resources/config/routing/backend/user.yml
     prefix: /users
 
+odiseo_conagra_backend_trivia:
+    resource: @OdiseoConAgraBundle/Resources/config/routing/backend/trivia.yml
+    prefix: /evaluacion
 
 #FosUserBundle Routes
 odiseo_conagra_backend_security:

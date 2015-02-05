@@ -15,10 +15,10 @@ class LoadTriviaData extends DataFixture
     		$question = new TriviaQuestion();
     		$question->setTitle($this->faker->text());
     		
-    		if(rand(0, 5) == 1)
+    		if(($countryIndex = rand(0, 10)) < 5)
     		{
-    			$countries = array('Colombia', 'Venezuela', 'Ecuador');
-    			$question->setCountry($countries[array_rand($countries, 1)]);		
+    			$country = $this->getReference('conagra_country_'.$countryIndex);
+    			$question->setCountry($country);		
     		}
     		
     		for ($j=0; $j<3; $j++)
@@ -38,6 +38,6 @@ class LoadTriviaData extends DataFixture
     
     public function getOrder()
     {
-    	return 2;
+    	return 10;
     }
 }

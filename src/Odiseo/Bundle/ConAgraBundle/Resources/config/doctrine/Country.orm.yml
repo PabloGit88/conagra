@@ -1,6 +1,6 @@
-Odiseo\Bundle\ConAgraBundle\Entity\TriviaAnswer:
+Odiseo\Bundle\ConAgraBundle\Entity\Country:
     type: entity
-    table: trivia_answer
+    table: country
     id:
         id:
             type: integer
@@ -21,20 +21,11 @@ Odiseo\Bundle\ConAgraBundle\Entity\TriviaAnswer:
             gedmo:
               timestampable:
                 on: update  
-        title:
-            column: title
+        name:
+            column: name
             type: string
             length: 255
-        position:
-            type: integer
-            gedmo:
-                - sortablePosition
-    manyToOne:
-        question:
-          targetEntity: Odiseo\Bundle\ConAgraBundle\Entity\TriviaQuestion
-          inversedBy: answers
-          gedmo:
-              - sortableGroup
-          joinColumn:
-              name: question_id
-              referencedColumnName: id
+        isoCode:
+            column: iso_code
+            type: string
+            length: 2

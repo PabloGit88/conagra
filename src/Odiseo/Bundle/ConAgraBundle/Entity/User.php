@@ -57,6 +57,7 @@ class User extends BaseUser
     public function getCountry() {
     	return $this->country;
     }
+    
     public function setCountry($country) {
     	$this->country = $country;
     	return $this;
