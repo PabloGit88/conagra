@@ -6,7 +6,7 @@ use Doctrine\Common\Persistence\ObjectManager;
 use Odiseo\Bundle\ConAgraBundle\Entity\Country;
 use Odiseo\Bundle\ConAgraBundle\Entity\Distributor;
 
-class LoadCountryData extends DataFixture
+class LoadCountriesAndDistrubutorsData extends DataFixture
 {
     public function load(ObjectManager $manager)
     {

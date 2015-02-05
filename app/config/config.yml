@@ -88,6 +88,10 @@ sylius_resource:
             driver: doctrine/orm
             classes:
                 model: Odiseo\Bundle\ConAgraBundle\Entity\Country
+        odiseo_conagra.distributor:
+            driver: doctrine/orm
+            classes:
+                model: Odiseo\Bundle\ConAgraBundle\Entity\Distributor
         odiseo_conagra.trivia_question:
             driver: doctrine/orm
             classes:

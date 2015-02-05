@@ -20,34 +20,20 @@ class RegistrationFormType extends BaseType
 		$translator = $this->container->get('translator.default');
 		
 		$countryLabel = $translator->trans("signup_country");
-		$builder->add('country', 'choice', array('choices' => array(
-				'-1' => $countryLabel,
-				'Colombia' => 'Colombia', 
-				'Venezuela' => 'Venezuela',
-				'Ecuador' => 'Ecuador',
-				'Peru' => 'Peru',
-				'Bolivia' => 'Bolivia',
-				'Costa Rica' => 'Costa Rica',
-				'Honduras' => 'Honduras',
-				'Nicaragua' => 'Nicaragua',
-				'Panama' => 'Panama',
-				'Belize' => 'Belize',
-				'El Salvador' => 'El Salvador',
-				'Guatemala' => 'Guatemala',
-				'Estados Unidos' => 'Estados Unidos',
-				'Argentina' => 'Argentina',
-				'Chile' => 'Chile',
-				'Brazil' => 'Brazil',
-				'Suriname' => 'Suriname',
-				'Guyana' => 'Guyana',
-				'Uruguay' => 'Uruguay',
-				'Paraguay' => 'Paraguay',
-		),  
-		'label' => $countryLabel, 'required'  => true, 'attr' => array('placeholder' => $countryLabel, 'class' => 'form-control', 'data-rule-required' => 'true')));
+		$builder->add('country', 'entity', array(
+			'placeholder' => $countryLabel,
+			'class' => 'OdiseoConAgraBundle:Country',
+    		'property' => 'name',
+			'label' => $countryLabel, 'required'  => true, 'attr' => array('placeholder' => $countryLabel, 'class' => 'form-control', 'data-rule-required' => 'true'
+		)));
 		
 		$distributorLabel = $translator->trans("signup_distributor");
-		$builder->add('distributor', 'choice', array('choices' => array('-1' => $distributorLabel),  
-		'label' => $distributorLabel, 'attr' => array('placeholder' => $distributorLabel, 'class' => 'form-control')));
+		$builder->add('distributor', 'entity', array(
+			'placeholder' => $distributorLabel,
+			'class' => 'OdiseoConAgraBundle:Distributor',
+			'property' => 'name',
+			'label' => $distributorLabel, 'attr' => array('placeholder' => $distributorLabel, 'class' => 'form-control'
+		)));
 		
 		$nameLabel = $translator->trans("signup_name_placeholder");
 		$builder->add('fullName', 'text', array( 'label' => $nameLabel, 'required' => true, 'attr' => array('placeholder' => $nameLabel, 'class' => 'form-control', 'data-rule-required' => 'true')));
