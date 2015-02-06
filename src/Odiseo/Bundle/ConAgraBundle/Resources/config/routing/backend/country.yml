@@ -1,0 +1,34 @@
+odiseo_conagra_backend_country_index:
+    pattern: /
+    methods: [GET]
+    defaults:
+        _controller: odiseo_conagra.controller.country:indexAction
+        _sylius:
+            template: OdiseoConAgraBundle:Backend/Country:index.html.twig
+            paginate: 100
+            
+odiseo_conagra_backend_country_create:
+    pattern: /new
+    methods: [GET, POST]
+    defaults:
+        _controller: odiseo_conagra.controller.country:createAction
+        _sylius:
+            template: OdiseoConAgraBundle:Backend/Country:create.html.twig
+            redirect: odiseo_conagra_backend_country_index
+
+odiseo_conagra_backend_country_update:
+    pattern: /{id}/edit
+    methods: [GET, PUT, POST]
+    defaults:
+        _controller: odiseo_conagra.controller.country:updateAction
+        _sylius:
+            template: OdiseoConAgraBundle:Backend/Country:update.html.twig
+            redirect: odiseo_conagra_backend_country_index
+
+odiseo_conagra_backend_country_delete:
+    pattern: /{id}
+    methods: [DELETE]
+    defaults:
+        _controller: odiseo_conagra.controller.country:deleteAction
+        _sylius:
+            redirect: odiseo_conagra_backend_country_index

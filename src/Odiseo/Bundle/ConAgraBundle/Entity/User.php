@@ -58,7 +58,7 @@ class User extends BaseUser
     	return $this->country;
     }
     
-    public function setCountry($country) {
+    public function setCountry(COuntry $country) {
     	$this->country = $country;
     	return $this;
     }
@@ -85,7 +85,7 @@ class User extends BaseUser
 		return $this->distributor;
 	}
 	
-	public function setDistributor($distributor) {
+	public function setDistributor(Distributor $distributor) {
 		$this->distributor = $distributor;
 		return $this;
 	}

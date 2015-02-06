@@ -2,6 +2,14 @@ odiseo_conagra_backend_dashboard:
     pattern: /
     defaults: { _controller: OdiseoConAgraBundle:Backend/Main:dashboard }
 
+odiseo_conagra_backend_country:
+    resource: @OdiseoConAgraBundle/Resources/config/routing/backend/country.yml
+    prefix: /countries
+
+odiseo_conagra_backend_distributor:
+    resource: @OdiseoConAgraBundle/Resources/config/routing/backend/distributor.yml
+    prefix: /distributors
+
 odiseo_conagra_backend_user:
     resource: @OdiseoConAgraBundle/Resources/config/routing/backend/user.yml
     prefix: /users
