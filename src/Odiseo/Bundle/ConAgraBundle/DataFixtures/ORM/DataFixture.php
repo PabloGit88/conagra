@@ -1,6 +1,6 @@
 <?php
 
-namespace Odiseo\Bundle\ChallengeBundle\DataFixtures\ORM;
+namespace Odiseo\Bundle\ConAgraBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
