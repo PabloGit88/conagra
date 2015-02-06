@@ -1,0 +1,44 @@
+{% macro list(translations) %}
+
+{% import 'SyliusResourceBundle:Macros:buttons.html.twig' as buttons %}
+{% import 'GeckoBackendBundle:Macros:alerts.html.twig' as alerts %}
+{% import 'GeckoBackendBundle:Macros:misc.html.twig' as misc %}
+
+{% if translations|length > 0 %}
+<div class="box">
+	<div class="box-body table-responsive no-padding">
+		<table class="table table-hover"><tbody>
+			<tr>
+				<th>ID</th>
+				<th>Lenguaje</th>
+				<th>Clave de traduccón</th>
+				<th>Traducción</th>
+				<th></th>
+			</tr>
+			{% for translation in translations %}
+	        <tr>
+				<td>{{ translation.id }}</td>
+				<td>{{ translation.language.name }}</td>
+				<td>{{ translation.languageToken.token }}</td>
+				<td>{{ translation.translation }}</td>
+				<td>		
+							
+					<div class="pull-right">
+	                    <form action="{{ path('odiseo_conagra_backend_translation_delete', {'id': translation.id}) }}" onsubmit="return confirm('Estas seguro?')" method="post" style="display: inline;">
+    						<input type="hidden" name="_method" value="DELETE">
+    						<button class="btn btn-danger">
+        						<i class="icon-trash"></i><span>Eliminar</span>
+    						</button>
+						</form>
+	                </div>
+				</td>
+			</tr>
+	        {% endfor %}
+		</tbody></table>
+	</div>
+</div>
+{% else %}
+{{ alerts.info('gecko.backend.no_results'|trans) }}
+{% endif %}
+
+{% endmacro %}

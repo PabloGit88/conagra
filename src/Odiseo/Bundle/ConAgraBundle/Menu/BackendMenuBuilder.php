@@ -33,6 +33,21 @@ class BackendMenuBuilder
         		'labelAttributes' => array('icon' => 'fa-dashboard'),
         ))->setLabel("Dashboard");
         
+        $menu->addChild('country', array(
+        		'route' => 'odiseo_conagra_backend_country_index',
+        		'labelAttributes' => array('icon' => 'fa-globe'),
+        ))->setLabel("Paises");
+        
+        $menu->addChild('distributor', array(
+        		'route' => 'odiseo_conagra_backend_distributor_index',
+        		'labelAttributes' => array('icon' => 'fa-truck'),
+        ))->setLabel("Distribuidores");
+        
+        $menu->addChild('translation', array(
+        		'route' => 'odiseo_conagra_backend_translation_index',
+        		'labelAttributes' => array('icon' => 'fa-language'),
+        ))->setLabel("Traducciones");
+        
         $menu->addChild('user', array(
         		'route' => 'odiseo_conagra_backend_user_index',
         		'labelAttributes' => array('icon' => 'fa-user'),

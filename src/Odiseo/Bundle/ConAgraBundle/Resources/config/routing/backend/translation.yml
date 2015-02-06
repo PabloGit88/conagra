@@ -1,0 +1,34 @@
+odiseo_conagra_backend_translation_index:
+    pattern: /
+    methods: [GET]
+    defaults:
+        _controller: odiseo_conagra.controller.translation:indexAction
+        _sylius:
+            template: OdiseoConAgraBundle:Backend/Translation:index.html.twig
+            paginate: 50
+            
+odiseo_conagra_backend_translation_create:
+    pattern: /new
+    methods: [GET, POST]
+    defaults:
+        _controller: odiseo_conagra.controller.translation:createAction
+        _sylius:
+            template: OdiseoConAgraBundle:Backend/Translation:create.html.twig
+            redirect: odiseo_conagra_backend_translation_index
+
+odiseo_conagra_backend_translation_update:
+    pattern: /{id}/edit
+    methods: [GET, PUT, POST]
+    defaults:
+        _controller: odiseo_conagra.controller.translation:updateAction
+        _sylius:
+            template: OdiseoConAgraBundle:Backend/Translation:update.html.twig
+            redirect: odiseo_conagra_backend_translation_index
+
+odiseo_conagra_backend_translation_delete:
+    pattern: /{id}
+    methods: [DELETE]
+    defaults:
+        _controller: odiseo_conagra.controller.translation:deleteAction
+        _sylius:
+            redirect: odiseo_conagra_backend_translation_index

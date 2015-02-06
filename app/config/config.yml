@@ -84,6 +84,10 @@ sylius_resource:
             driver: doctrine/orm
             classes:
                 model: Odiseo\Bundle\ConAgraBundle\Entity\User
+        odiseo_conagra.translation:
+            driver: doctrine/orm
+            classes:
+                model: Odiseo\Bundle\ConAgraBundle\Entity\LanguageTranslation
         odiseo_conagra.country:
             driver: doctrine/orm
             classes:
