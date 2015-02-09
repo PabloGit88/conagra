@@ -35,6 +35,16 @@ services:
         tags:
             - { name: knp_menu.menu, alias: backend_main_menu } # The alias is what is used to retrieve the menu
 
+    conagra.form.type.country:
+        class: Odiseo\Bundle\ConAgraBundle\Form\Type\CountryType
+        tags:
+            - { name: form.type, alias: odiseo_conagra_country }
+
+    conagra.form.type.distributor:
+        class: Odiseo\Bundle\ConAgraBundle\Form\Type\DistributorType
+        tags:
+            - { name: form.type, alias: odiseo_conagra_distributor }
+
     translation.loader.db:
         class: Odiseo\Bundle\ConAgraBundle\Services\DbPhrasesLoader
         arguments: [@doctrine.orm.entity_manager]

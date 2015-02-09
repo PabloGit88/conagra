@@ -64,7 +64,7 @@ class Distributor
 		return $this->country;
 	}
 	
-	public function setCountry($country)
+	public function setCountry(Country $country)
 	{
 		$this->country = $country;
 		return $this;

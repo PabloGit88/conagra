@@ -43,11 +43,14 @@ class BackendMenuBuilder
         		'labelAttributes' => array('icon' => 'fa-truck'),
         ))->setLabel("Distribuidores");
         
+<<<<<<< HEAD
         $menu->addChild('translation', array(
         		'route' => 'odiseo_conagra_backend_translation_index',
         		'labelAttributes' => array('icon' => 'fa-language'),
         ))->setLabel("Traducciones");
         
+=======
+>>>>>>> branch 'master' of https://github.com/PabloGit88/conagra.git
         $menu->addChild('user', array(
         		'route' => 'odiseo_conagra_backend_user_index',
         		'labelAttributes' => array('icon' => 'fa-user'),
