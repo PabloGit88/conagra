@@ -17,6 +17,14 @@
 
 {% block content %}
 
+<div class="page-header">
+    <div class="actions-menu">
+        {{ buttons.create(path('odiseo_conagra_backend_distributor_create'), ' Crear') }}
+    </div>
+</div>
+
+{% render(controller('gecko_backend.controller.form:filterAction', {'type': 'odiseo_conagra_translation_filter', 'template': 'OdiseoConAgraBundle:Backend/Translation:filterForm.html.twig'})) %}
+
 {{ pagination(translations) }}
 {{ list(translations)  }}
 {{ pagination(translations) }}

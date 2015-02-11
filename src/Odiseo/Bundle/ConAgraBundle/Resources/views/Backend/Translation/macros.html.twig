@@ -22,8 +22,8 @@
 				<td>{{ translation.languageToken.token }}</td>
 				<td>{{ translation.translation }}</td>
 				<td>		
-							
 					<div class="pull-right">
+						<a class="btn btn-primary" href="{{ path('odiseo_conagra_backend_translation_update', {'id': translation.id}) }}"><span>Editar</span></a>
 	                    <form action="{{ path('odiseo_conagra_backend_translation_delete', {'id': translation.id}) }}" onsubmit="return confirm('Estas seguro?')" method="post" style="display: inline;">
     						<input type="hidden" name="_method" value="DELETE">
     						<button class="btn btn-danger">

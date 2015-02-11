@@ -1,2 +1,6 @@
 parameters:
 services:
+    gecko_backend.controller.form:
+        class: Gecko\BackendBundle\Controller\FormController
+        calls:
+            - [setContainer, ["@service_container"]]

@@ -1,0 +1,19 @@
+{% form_theme form 'GeckoBackendBundle::filterForms.html.twig' %}
+
+<div class="row">		
+	<div class="col-md-12">
+		<div class="box box-primary">
+			<div class="box-header">
+				<h3 class="box-title">Filtros</h3>
+			</div><!-- /.box-header -->
+			<form method="get" action="{{ path('odiseo_conagra_backend_translation_index') }}" class="form-inline form-filter">
+				<div class="box-body">
+		    		{{ form_row(form.language, { 'attr': { 'class': 'form-control'}}) }}
+		    		{{ form_row(form.languageToken, { 'attr': { 'class': 'form-control'}}) }}
+		
+		    		<button type="submit" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-search"></i> {{ 'Filtrar'|trans }}</button>
+		    	</div>
+			</form>
+		</div>
+	</div>
+</div>

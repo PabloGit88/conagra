@@ -35,6 +35,11 @@ services:
         tags:
             - { name: knp_menu.menu, alias: backend_main_menu } # The alias is what is used to retrieve the menu
 
+    conagra.form.type.translation_filter:
+        class: Odiseo\Bundle\ConAgraBundle\Form\Type\Filter\TranslationFilterType
+        tags:
+            - { name: form.type, alias: odiseo_conagra_translation_filter }
+            
     conagra.form.type.country:
         class: Odiseo\Bundle\ConAgraBundle\Form\Type\CountryType
         tags:

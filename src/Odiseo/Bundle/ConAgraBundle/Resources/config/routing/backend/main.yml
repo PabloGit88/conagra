@@ -16,7 +16,7 @@ odiseo_conagra_backend_user:
 
 odiseo_conagra_backend_translation:
     resource: @OdiseoConAgraBundle/Resources/config/routing/backend/translation.yml
-    prefix: /evaluacion
+    prefix: /traducciones
     
 odiseo_conagra_backend_trivia:
     resource: @OdiseoConAgraBundle/Resources/config/routing/backend/trivia.yml

@@ -6,6 +6,7 @@ odiseo_conagra_backend_translation_index:
         _sylius:
             template: OdiseoConAgraBundle:Backend/Translation:index.html.twig
             paginate: 50
+            filterable: true
             
 odiseo_conagra_backend_translation_create:
     pattern: /new
