@@ -17,9 +17,6 @@ class TranslationFilterType extends AbstractType
     			'placeholder' => 'Lenguaje',
         		'label'    => 'Lenguaje'
         ))
-        ->add('languageToken', 'autocomplete', array(
-        		'class' => 'Odiseo\Bundle\ConAgraBundle\Entity\LanguageToken'
-        ))
         ;
     }
 
