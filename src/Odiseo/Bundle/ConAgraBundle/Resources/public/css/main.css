@@ -1481,7 +1481,7 @@ img.marca_descripcion {
 	text-align: center;
 }
 
-.customInfoBox .mainTitle {
+#content .customInfoBox .mainTitle {
 	margin: 30px;
 }
 
