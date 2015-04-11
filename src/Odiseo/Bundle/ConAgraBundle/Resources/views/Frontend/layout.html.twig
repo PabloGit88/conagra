@@ -20,6 +20,7 @@
 		{% stylesheets output='css/frontend.min.css' filter='cssrewrite'
 			'bundles/odiseoconagra/css/bootstrap.min.css'
 			'bundles/odiseoconagra/css/vendor/magnific-popup.css'
+			'bundles/odiseoconagra/css/vendor/hover-min.css'
 			'bundles/odiseoconagra/css/base.css'
 			'bundles/odiseoconagra/css/main.css'
 			'bundles/odiseoconagra/css/media-queries.css'
@@ -47,11 +48,12 @@
 		      			</button>
 		      					<a class="navbar-brand" href="http://www.conagrafoods.com" target="_blank"><img src="{{ asset('bundles/odiseoconagra/images/logo_conagra.png') }}"></a>
 	    			</div>
-	    			<div class="logout"> 
+	    			<div class="logout">
+	    				<span class="welcomeText">Bienvenido a nuestra mesa, </span>
+	    				<span class="username">{{ app.user.fullname}}</span> 
+	    				<span class="flag"><img src="{{ asset('bundles/odiseoconagra/images/flags/MX.jpg') }}"></span>	    				
+	    				<span class="exit"><a href="{{ path('fos_user_security_logout') }}"> {{ 'logout' | trans | raw }}</a></span>
 	    				{{ locale_switcher() }}
-	    				<span> {{ app.user.fullname}}  &nbsp; &nbsp; &nbsp; &nbsp;   </span>
-	    				
-	    				<a href="{{ path('fos_user_security_logout') }}"> {{ 'logout' | trans | raw }}</a>
 	    			</div>
 	
 					{% block menu %}

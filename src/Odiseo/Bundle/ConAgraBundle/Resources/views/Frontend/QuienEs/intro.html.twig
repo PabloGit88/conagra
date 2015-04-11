@@ -1,0 +1,20 @@
+{% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
+ 
+{% block menu %}{% endblock %}
+
+{% block content %}
+<div class="quienesconagra">
+	<div class="customInfoBox withoutRadiusTop withoutBorder3D" style="height: 75%;">
+		<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/intro_box_header.jpg') }}" class="headerImage img-responsive">
+		
+		<h2 class="mainTitle">¿Quién es ConAgra Foods?</h2>
+		
+		<p>Es una compañía norteamericana que produce y distribuye alimentos alrededor del  mundo. Fundada en 1919, como Nebraska Consolidated Mills cambia de nombre en 1971 a ConAgra, Inc. y a partir de año 2000  es mundialmente presentada como ConAgra Foods, Inc.</p> 
+		<p>ConAgra Foods es una compañías más grandes en alimentos empacados, es parte de las Fortune 500 Companies y se cotiza en la bolsa de valores como NYSE: CAG.</p>
+	</div>
+	
+	<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'intro' }) }}" class="arrowButton nextArrow hvr-rotate" 
+		data-toggle="popover" data-content="" data-placement="top" title="Siguiente" data-trigger="hover">
+	</a>
+</div>
+{% endblock %}

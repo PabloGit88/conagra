@@ -107,17 +107,41 @@ header .navbar-default .navbar-nav>li>.dropdown-menu>li>a:hover, header .navbar-
 }
 
 header .logout {
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
 	position: absolute;
 	right: 0%;
-	top: 10px;
+	top: 15px;
 	z-index: 100;
+}
+
+header .logout .welcomeText {
+	color: #a4a4a4;
+  	font-style: italic;
+}
+
+header .logout .username {
+	color: #404040;
+	margin-left: 5px;
+}
+
+header .logout .exit {
+	margin-right: 10px;
+}
+  
+header .logout .exit a {
+	color: #8d8d8d;
+	text-decoration: underline;
+}
+
+header .logout .flag {
+	margin: 0 10px;
 }
 
 header .logout .locale_chooser {
 	display: inline-block;
-	border-right: 1px solid #000000;
-	padding-right: 20px;
-	margin-right: 20px;
+	border-left: 1px solid #000000;
+	padding-left: 10px;
 }
 
 header .logout .locale_chooser li {
@@ -125,8 +149,14 @@ header .logout .locale_chooser li {
 	margin-left: 10px;
 }
 
-header .logout .locale_chooser li.locale_current a {
-	color: #000000;
+header .logout .locale_chooser li a {
+	color: #8c8c8c;
+}
+
+header .logout .locale_chooser li.locale_current a,
+header .logout .locale_chooser li a:hover {
+	color: #474747;
+	text-decoration: underline;
 }
 
 footer {
@@ -1414,6 +1444,62 @@ img.marca_descripcion {
 	background-position: 100% 4vh;
 	background-size: 41%;
 	
+}
+
+.customInfoBox {
+	position: absolute;
+	width: 76%;
+	height: 85%;
+	background-color: #FFFFFF;
+	left: 50%;
+	margin-left: -38%;
+  	border-radius: 15px;
+	border-bottom: 4px solid #bfbfbf;
+  	-webkit-border-radius: 15px;
+	-webkit-box-shadow: 0px 17px 30px 5px rgba(50, 50, 50, 0.30);
+  	-moz-box-shadow: 0px 17px 30px 5px rgba(50, 50, 50, 0.30);
+	box-shadow: 0px 17px 30px 5px rgba(50, 50, 50, 0.30);	
+}
+
+.customInfoBox.withoutRadiusTop {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.customInfoBox.withoutBorder3D {
+	border-bottom:0;
+}
+
+.customInfoBox .headerImage {
+	width: 100%;
+}
+
+.customInfoBox .title {
+	font-family: 'hand_of_sean_demoregular';
+	font-size: 24px;
+	color: #b6211d;
+	text-align: center;
+}
+
+.customInfoBox .mainTitle {
+	margin: 30px;
+}
+
+.customInfoBox p {
+	color: #3b3b3b;
+	padding: 0 30px;
+	font-size: 16px;
+}
+
+.arrowButton {
+	position: absolute;
+	background-image: url("../images/arrowButton.png");
+	background-repeat: no-repeat;
+	/*background-position: 94% 100%;*/
+	width: 88px;
+	height: 61px;
+	bottom: 5%;
+	right: 0;
 }
 
 .customDiv_foreground p:nth-child(1) {

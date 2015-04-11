@@ -1,3 +1,7 @@
+odiseo_conangra_frontend_welcome:
+    path:     /secure/welcome
+    defaults: { _controller: OdiseoConAgraBundle:Frontend/Home:welcome }
+    
 odiseo_conangra_frontend_home:
     path:     /secure/home
     defaults: { _controller: OdiseoConAgraBundle:Frontend/Home:showHome }

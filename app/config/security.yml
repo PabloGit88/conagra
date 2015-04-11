@@ -28,7 +28,7 @@ security:
                 provider: fos_userbundle
                 login_path: /login
                 check_path: /login_check
-                default_target_path: /secure/home
+                default_target_path: /secure/welcome
             logout:       true
             anonymous:    true
             context: user

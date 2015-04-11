@@ -1,0 +1,28 @@
+{% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
+ 
+{% block menu %}{% endblock %}
+
+{% block content %}
+<div class="welcome">
+	<div class="customInfoBox">
+		<img src="{{ asset('bundles/odiseoconagra/images/welcome_box_header.png') }}" class="headerImage img-responsive">
+		
+		<h1 class="title">
+			Bienvenido a la
+			<br>
+			Plataforma de Información ConAgra Foods
+		</h1>
+		
+		<p style="font-size:18px;margin-top:20px;" class="text-center">Hola, gracias por participar con nosotros.</p>
+		<p>
+			A continuación podrás experimentar la plataforma on line que ConAgra Foods a diseñado para ti. Aquí conocerás importante información de la compañía así como entender a detalle nuestros canales de distribución, las estrategias comerciales Globales y locales y el aprendizaje detallado de nuestras principales marcas en Centro y Sur America.
+			Durante no mas de una hora, al navegar por este modelo electrónico e interactivo de capacitación y entrenamiento, explicaremos a detalle lo que estamos diseñando para cada uno de los distribuidores  de ConAgra Foods.
+		</p>
+		<p>Te recordamos que al final del entrenamiento hay un breve cuestionario con 20 preguntas referente al mismo curso on line, recibirás una calificación y dependiendo de tu resultado que podrás cambiarlo por un incentivo.  Así que presta atención y ¡mucha suerte!.</p>
+	</div>
+	
+	<a href="{{ path('odiseo_conangra_frontend_home') }}" class="arrowButton nextArrow hvr-rotate" 
+		data-toggle="popover" data-content="" data-placement="top" title="Siguiente" data-trigger="hover">
+	</a>
+</div>
+{% endblock %}
