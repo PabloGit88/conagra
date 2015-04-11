@@ -2,7 +2,7 @@
 <div class="alert alert-danger">
 	{{ error|trans({}, 'FOSUserBundle') }}
 </div>
-{% endif %}
+{% endif %}	
 <form class="form" action="{{ path("fos_user_security_check") }}" method="post">
 		<div class="row form-group">
 			<div class="col-xs-12 col-sm-12">
@@ -18,6 +18,12 @@
 				>
 			</div>     
 		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12">
+				<a href="#" class="forgotPassword">¿Olvidó su contraseña?</a>
+			</div>     
+		</div>
+		
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 buttons">
 				<a href="{{ path('odiseo_conagra_frontend_index') }}" class="btn btn-default cancelButton">{{ 'login_cancel' | trans |  raw }}</a>

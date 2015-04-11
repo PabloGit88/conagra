@@ -35,7 +35,10 @@ class RegistrationFormType extends BaseType
 			'label' => $distributorLabel, 'attr' => array('placeholder' => $distributorLabel, 'class' => 'form-control'
 		)));
 		
+		$phoneLabel = $translator->trans("signup_phone_placeholder");
+		$builder->add('phone', 'text', array( 'label' => $phoneLabel, 'required' => true, 'attr' => array('placeholder' => $phoneLabel, 'class' => 'form-control', 'data-rule-required' => 'true')));
 		$nameLabel = $translator->trans("signup_name_placeholder");
+		
 		$builder->add('fullName', 'text', array( 'label' => $nameLabel, 'required' => true, 'attr' => array('placeholder' => $nameLabel, 'class' => 'form-control', 'data-rule-required' => 'true')));
 		//email
 		$emailLabel = $translator->trans("signup_email_placeholder");
@@ -46,7 +49,10 @@ class RegistrationFormType extends BaseType
 				'Gerente de Ventas' => 'Gerente de Ventas',
 				'Gerente de Marcas' => 'Gerente de Marca',  
 				'Ayudante General' => 'Ayudante General'
-		), 'label' => 'Cargo', 'required'  => true, 'attr' => array('class' => 'form-control', 'data-rule-required' => 'true')));
+		),
+  		'empty_data'  => null,
+        'empty_value' => 'Cargo',
+		'label' => 'Cargo', 'required'  => true, 'attr' => array('class' => 'form-control', 'data-rule-required' => 'true')));
 		
 		$passwordLabel = $translator->trans("signup_password_placeholder");
 		$builder->add('plainPassword', 'password', array( 'label' => $passwordLabel, 'required' => true,  'attr' => array('placeholder' => $passwordLabel, 'class' => 'form-control', 'data-rule-required' => 'true') ));

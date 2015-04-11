@@ -31,6 +31,11 @@ Odiseo\Bundle\ConAgraBundle\Entity\User:
             type: string
             length: 255
             nullable: true
+        phone:
+            column: phone
+            type: string
+            length: 255
+            nullable: true
     manyToOne:
         country:
           targetEntity: Odiseo\Bundle\ConAgraBundle\Entity\Country

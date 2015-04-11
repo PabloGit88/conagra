@@ -40,16 +40,24 @@ section .welcome .logo {
 
 section .welcome h2 {
 	font-weight: 300;
-	font-size: 40px;
-	color: #cccaa7;
+	font-size: 43px;
+	color: #cac28a;
 	text-align: center;
-	margin-top: 40px;
+	margin-top: 16px;
 }
 
 section .welcome h4 {
 	font-size: 22px;
 	text-align: center;
-	color: #FFFFFF;
+	color: #FFFFFF; 
+	text-shadow: 0px 4px 4px #000000;
+}
+
+section .welcome h4.form {
+	font-size: 22px;
+	text-align: center;
+	color: #FFFFFF; 
+	text-shadow: 0px 4px 5px #000000;
 }
 
 section .welcome ul.actions {
@@ -67,17 +75,40 @@ section .welcome ul.actions li {
 /** Register form **/
 section .registerForm {
 	width: 531px;
-	background-color: #f4f4f4;
+ 	background-color: #f8f8f8;
+ 	border-radius: 4px;
 	
 }
-
+section .registerForm { -webkit-box-shadow: 0px 3px 0px 0px rgba(191,191,191,1);
+-moz-box-shadow: 0px 3px 0px 0px rgba(191,191,191,1);
+box-shadow: 0px 3px 0px 0px rgba(191,191,191,1)
+;
+}
 section .registerForm form, section .loginForm form {
 	padding: 20px;
 }
 
 section .registerForm form input, section .registerForm form select, section .loginForm form input {
 	height: 40px;
+   color: #080808;
+   font-size:15px;
+   font-weight: bold;
+   border: 2px solid #dddddd;
+   background-color: #fefefe;
 }
+section .registerForm form input:placeholder, section .registerForm form select:placeholder, section .loginForm form input:placeholder {
+   color: #080808;
+   font-weight: bold;
+}
+
+section .registerForm form input::-webkit-input-placeholder,section .registerForm form select::-webkit-input-placeholder,section .loginForm form input::-webkit-input-placeholder {   color: #080808;
+   font-weight: bold; }
+section .registerForm form input::-moz-placeholder,section .registerForm form select::-moz-placeholder,section .loginForm form input::-moz-placeholder {    color: #080808;
+   font-weight: bold; } /* firefox 19+ */
+section .registerForm form input:-ms-input-placeholder,section .registerForm form select:-ms-input-placeholder,section .loginForm form input:-ms-input-placeholder {    color: #080808;
+   font-weight: bold; } /* ie */
+section .registerForm form input:-moz-placeholder,section .registerForm form select:-moz-placeholder,section .loginForm form input:-moz-placeholder {    color: #080808;
+   font-weight: bold; }
 
 section .registerForm form .customSelect select{
    background: transparent;
@@ -88,7 +119,9 @@ section .registerForm form .customSelect select{
 
 section .registerForm form .customSelect {
    overflow: hidden;
-   background: url(../images/arrow_select.png) no-repeat right 25px center;
+	background-image: url(../images/arrow_select.png), url(../images/bar.png);
+	background-position: right 25px center, 80% 50%;
+	background-repeat: no-repeat;
 }
    
 section .registerForm form .form-group, section .loginForm form .form-group {
@@ -99,10 +132,18 @@ section .registerForm form button, section .loginForm form button  {
 	margin:0;
 }
 
+section .registerForm form button.btn-danger, section .loginForm form button.btn-danger  {
+  background-color: #a01c1e;
+  border-color: #a01c1e;
+}
 section .registerForm form .cancelButton,section .loginForm form .cancelButton{
 	width: 91px;
 	height: 43px;
 	padding-top: 10px;
+	background-color: #e3e3e3;
+  	border-color: #e3e3e3;
+  	color: #797979;
+	
 }
 
 section .registerForm form .submitButton,section .loginForm form .submitButton {
@@ -116,10 +157,16 @@ section .loginForm {
 	width: 284px;
 	background-color: #f4f4f4;
 	margin-top:35px;
+ 	border-radius: 4px;
 	
 }
-section .loginForm form {
-	padding: 35px 23px 23px 23px;
+section .loginForm { -webkit-box-shadow: 0px 3px 0px 0px rgba(191,191,191,1);
+-moz-box-shadow: 0px 3px 0px 0px rgba(191,191,191,1);
+box-shadow: 0px 3px 0px 0px rgba(191,191,191,1)
+;
+}
+section .loginForm form { 
+	padding: 25px 23px 19px 24px;
 }
 section .loginForm form .buttons{
 	margin-top:10px;
@@ -127,6 +174,11 @@ section .loginForm form .buttons{
 section .loginForm .alert{
 	margin-bottom: -25px;
 	padding: 8px;
+}
+section .loginForm .forgotPassword{
+	text-decoration: underline;
+	color:#a73839 !important;
+	cursor:pointer;
 }
 /**/
 

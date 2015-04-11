@@ -3,18 +3,18 @@
            	<div class="col-xs-12 col-sm-6 customSelect">
            		 {{ form_widget(form.country) }}
            	</div>
-           	<div class="col-xs-12 col-sm-6">
-                 {{ form_widget(form.distributor, {'attr': { 'data-country-information-url' :  path('odiseo_conagra_frontend_distribuitors')}  }) }}
-           	</div>
-       	</div>
-		<div class="row form-group">
-			<div class="col-xs-12 col-sm-6">
-				 {{ form_widget(form.fullName) }}
-			</div>
 			<div class="col-xs-12 col-sm-6">
 					
 				{{ form_widget(form.username) }}
-			</div>     
+			</div>
+       	</div>
+		<div class="row form-group">
+           	<div class="col-xs-12 col-sm-6">
+                 {{ form_widget(form.distributor, {'attr': { 'data-country-information-url' :  path('odiseo_conagra_frontend_distribuitors')}  }) }}
+           	</div>  
+			<div class="col-xs-12 col-sm-6">
+				 {{ form_widget(form.phone) }}
+			</div>   
 		</div>
 		<div class="row form-group">
            	<div class="col-xs-12 col-sm-6 customSelect">
@@ -28,8 +28,9 @@
 		{{ form_row(form._token) }}
 		</div>
 		<div class="row">
-			<div class="hidden-xs col-sm-6">
-			</div>
+			<div class="col-xs-12 col-sm-6">
+				 {{ form_widget(form.fullName) }}
+			</div>   
 			<div class="col-xs-12 col-sm-6">
 				<a href="{{ path('odiseo_conagra_frontend_index') }}" class="btn btn-default cancelButton">{{ 'login_cancel' | trans |  raw }}</a>
 				<button type="submit" class="btn btn-danger submitButton" value="{{ 'registration.submit'|trans({}, 'FOSUserBundle') }}">{{ 'login_login' | trans |  raw }}</button>

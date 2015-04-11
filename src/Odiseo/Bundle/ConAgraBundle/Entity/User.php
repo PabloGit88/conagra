@@ -18,6 +18,7 @@ class User extends BaseUser
     protected $fullName;
     protected $position;
     protected $distributor;
+    protected $phone;
     
     public function __construct()
     {
@@ -87,6 +88,15 @@ class User extends BaseUser
 	
 	public function setDistributor(Distributor $distributor) {
 		$this->distributor = $distributor;
+		return $this;
+	}
+	
+	public function getPhone() {
+		return $this->phone;
+	}
+	
+	public function setPhone($phone) {
+		$this->phone = $phone;
 		return $this;
 	}
 	
