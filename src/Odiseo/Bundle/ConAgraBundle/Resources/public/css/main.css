@@ -1482,13 +1482,13 @@ img.marca_descripcion {
 }
 
 #content .customInfoBox .mainTitle {
-	margin: 30px;
+	margin: 20px 30px;
 }
 
 .customInfoBox p {
 	color: #3b3b3b;
 	padding: 0 30px;
-	font-size: 16px;
+	font-size: 13px;
 }
 
 .arrowButton {
