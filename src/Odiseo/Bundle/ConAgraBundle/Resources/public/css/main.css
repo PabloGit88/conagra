@@ -179,14 +179,25 @@ footer {
 	overflow: visible;
 }
 
-#content .mainTitle {
+.quienesconagra .mainTitle {
 	font-family: 'hand_of_sean_demoregular';
-	margin: 0 0 80px 0;
 	font-size: 22px;
 	padding-left: 40px;
 	background: url(../images/fruit.png) no-repeat;
 	background-size: contain;
 	background-position: left center;
+	margin-bottom:22px;
+}
+.quienesconagra .quienes_03 p {
+  color: #383838;
+  font-size: 16px;
+  font-weight: 500;
+}
+.quienesconagra .quienes_03 .categorias {
+	margin-top:5%;
+}
+.quienesconagra .quienes_03 .categorias > div {
+	padding:0;
 }
 
 #content .entrenamiento_marcas .mainTitle {
@@ -1482,18 +1493,18 @@ img.marca_descripcion {
 }
 
 #content .customInfoBox .mainTitle {
-	margin: 30px;
+	margin: 20px 30px;
 }
 
 .customInfoBox p {
 	color: #3b3b3b;
 	padding: 0 30px;
-	font-size: 16px;
+	font-size: 13px;
 }
 
-.arrowButton {
+.arrowButton.nextArrow {
 	position: absolute;
-	background-image: url("../images/arrowButton.png");
+	background-image: url("../images/arrowButtonRight.png");
 	background-repeat: no-repeat;
 	/*background-position: 94% 100%;*/
 	width: 88px;
@@ -1501,7 +1512,15 @@ img.marca_descripcion {
 	bottom: 5%;
 	right: 0;
 }
-
+.arrowButton.prevArrow{
+	position: absolute;
+	background-image: url("../images/arrowButtonLeft.png");
+	background-repeat: no-repeat;
+	/*background-position: 94% 100%;*/
+	width: 88px;
+	height: 61px;
+	bottom: 5%;
+}
 .customDiv_foreground p:nth-child(1) {
 	position: absolute;
 	top: 7%;

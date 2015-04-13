@@ -1,0 +1,42 @@
+{% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
+ 
+{% block menu %}{% endblock %}
+
+{% block content %}
+<div class="quienesconagra">
+	<div class="quienes_03">
+		<h2 class="mainTitle">¿Quién es ConAgra Foods?</h2>
+		
+		<p>Cuenta con una fuerza laboral de 36,000 colaboradores a nivel mundial. Su campus central se encuentra en Omaha, Nebraska, hay locaciones estratégicas: Naperville, Illinois, Kennewick, Washington, México, Panamá, Brasil, China, India y  Filipinas.</p> 
+		<p>La facturación anual es de 18 mil millones de dólares.</p>
+		<p>Las marcas de ConAgra Foods Inc, pueden encontrarse en el 97% de los hogares en los Estados Unidos. Las marcas de consumo de ConAgra Foods son No. 1 o No. 2 en su categoría, y a nivel de marca privada. ConAgra Foods es el mayor fabricante en América del Norte. Su marca de palomitas de maíz, ACT II, tiene una participación en el mercado por arriba del 50% en todos los países donde participa. </p>
+		<p>ConAgra Foods, Inc. se divide en: </p>
+	
+		<div class="row categorias">
+			<div class="col-xs-1">
+			</div>
+			<div class="col-xs-1">
+			</div>
+			<div class="col-xs-3">
+				<a href="#"><img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/marca_consumo.png') }}" class="img-responsive"></a>
+			</div>
+			<div class="col-xs-3">
+				<a href="#"><img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/marca_privada.png') }}" class="img-responsive"></a>
+			</div>
+			<div class="col-xs-3">
+				<a href="#"><img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/comercial.png') }}" class="img-responsive"></a>
+			</div>
+			<div class="col-xs-1">
+			</div>
+		</div>
+	</div>
+	
+	
+	<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': 'intro' }) }}" class="arrowButton prevArrow hvr-rotate" 
+		data-toggle="popover" data-content="" data-placement="top" title="Siguiente" data-trigger="hover">
+	</a>
+	<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': '04' }) }}" class="arrowButton nextArrow hvr-rotate" 
+		data-toggle="popover" data-content="" data-placement="top" title="Siguiente" data-trigger="hover">
+	</a>
+</div>
+{% endblock %}
