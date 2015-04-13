@@ -218,6 +218,9 @@
 /* Bootrstrap max XS (<= 768) */ 
 @media only screen and (max-width : 768px)  
 { 
+	.quienesconagra .quienes_06 .marcas .marca1 img,.quienesconagra .quienes_06 .marcas2 .marca1 img{
+		float:none;
+	}
 	
 	header .logout {
 		position: absolute;

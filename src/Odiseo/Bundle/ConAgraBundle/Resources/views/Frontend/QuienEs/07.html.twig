@@ -1,0 +1,27 @@
+{% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
+ 
+{% block menu %}{% endblock %}
+
+{% block content %}
+<div class="quienesconagra">
+	<div class="quienes_07">
+	    <h2 class="mainTitle">Marcas de Consumo</h2>
+	    		
+		<p>ConAgra Foods produce los alimentos favoritos del hogar como Hunt's, Act II, Wesson, SwissMiss, La Choy,mantequilla de mani Peter Pan, PAM, Snack Pack, Healthy Choice,Hunt's BBQ, que se encuentran en cientos de hogares de toda Latinoamérica.
+		3 de estas marcas están entre los primeros lugares de su categoría a nivel de importados.
+		20 marcas de consumo generan mas de $ 100 millones cada uno en ventas al por menor cada año.*</p> 
+	    <br>
+	    <p class="asterisk">* Data de ConAgra Foods U.S.</p>
+		<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/07_image.png') }}" class="img-responsive">
+
+	</div>
+	
+	
+	<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': '06' }) }}" class="arrowButton prevArrow hvr-rotate" 
+		data-toggle="popover" data-content="" data-placement="top" title="Siguiente" data-trigger="hover">
+	</a>
+	<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': '08' }) }}" class="arrowButton nextArrow hvr-rotate" 
+		data-toggle="popover" data-content="" data-placement="top" title="Siguiente" data-trigger="hover">
+	</a>
+</div>
+{% endblock %}

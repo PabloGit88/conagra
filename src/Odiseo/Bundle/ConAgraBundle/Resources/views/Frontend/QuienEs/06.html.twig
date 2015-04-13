@@ -1,0 +1,34 @@
+{% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
+ 
+{% block menu %}{% endblock %}
+
+{% block content %}
+<div class="quienesconagra">
+	<div class="quienes_06">
+	    <h2 class="mainTitle">Principales marcas de ConAgra Foods a nivel mundial:</h2>
+		<div class="row marcas">
+			<div class="col-sm-6 marca1">
+				<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/05_consumo1.png') }}" class="img-responsive">
+			</div>
+			<div class="col-sm-6 marca2">
+				<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/05_consumo2.png') }}" class="img-responsive">
+			</div>
+		</div>
+		<div class="row marcas2">
+			<div class="col-sm-6 marca1">
+				<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/05_consumo3.png') }}" class="img-responsive">
+			</div>
+			<div class="col-sm-6 marca2">
+			</div>
+		</div>
+	</div>
+	
+	
+	<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': '05' }) }}" class="arrowButton prevArrow hvr-rotate" 
+		data-toggle="popover" data-content="" data-placement="top" title="Siguiente" data-trigger="hover">
+	</a>
+	<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': '07' }) }}" class="arrowButton nextArrow hvr-rotate" 
+		data-toggle="popover" data-content="" data-placement="top" title="Siguiente" data-trigger="hover">
+	</a>
+</div>
+{% endblock %}

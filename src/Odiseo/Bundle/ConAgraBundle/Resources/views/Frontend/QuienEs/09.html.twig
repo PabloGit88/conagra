@@ -1,0 +1,43 @@
+{% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
+ 
+{% block menu %}{% endblock %}
+
+{% block content %}
+<div class="quienesconagra">
+	<div class="quienes_09">
+	    <h2 class="mainTitle">Marcas Comerciales</h2>
+	    <div class="marcasComerciales">
+	    	<div class="marca1">
+	    		<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/09_image1.png') }}" class="img-responsive">
+	    		<p>Branded and private brand foods sold to restaurant chains and foodservice distributors.</p>
+	    	</div>
+	    	<div class="marca2">
+	    		<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/09_image2.png') }}" class="img-responsive">
+	    		<p>ConAgra Foods Bakeries business makes griddle, biscuits, breads, oatmeal, muffins and cookies sold to foodservice distributors, quick-serve restaurants and casual dining chains.</p>
+	    	</div>
+	    	<div class="marca3">
+	    		<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/09_image3.png') }}" class="img-responsive">
+	    		<p>National leader in food ingredient sourcing and distribution with coverage in the 48 contiguous states and Hawaii.</p>
+	    	</div>
+	    	<div class="marca4">
+	    		<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/09_image4.png') }}" class="img-responsive">
+	    		<p>Leading producer of frozen potatoes and sweet potato products and other vegetables and appetizers.</p>
+	    	</div>
+	    	<div class="marca5">
+	    		<img src="{{ asset('bundles/odiseoconagra/images/quienesconagra/09_image5.png') }}" class="img-responsive">
+	    		<p>Creates value by selling a portfolio of flavors, seasoning blends and spices.</p>
+	    	</div>
+	    </div>
+		
+
+	</div>
+	
+	
+	<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': '08' }) }}" class="arrowButton prevArrow hvr-rotate" 
+		data-toggle="popover" data-content="" data-placement="top" title="Siguiente" data-trigger="hover">
+	</a>
+	<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': '10' }) }}" class="arrowButton nextArrow hvr-rotate" 
+		data-toggle="popover" data-content="" data-placement="top" title="Siguiente" data-trigger="hover">
+	</a>
+</div>
+{% endblock %}

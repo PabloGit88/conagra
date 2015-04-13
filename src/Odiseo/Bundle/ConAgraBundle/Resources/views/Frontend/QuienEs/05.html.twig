@@ -1,0 +1,19 @@
+{% extends 'OdiseoConAgraBundle:Frontend:layout.html.twig' %}
+ 
+{% block menu %}{% endblock %}
+
+{% block content %}
+<div class="quienesconagra">
+	<div class="quienes_05">
+	    <h2 class="mainTitle">Mix de Ventas</h2>
+	</div>
+	
+	
+	<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': '04' }) }}" class="arrowButton prevArrow hvr-rotate" 
+		data-toggle="popover" data-content="" data-placement="top" title="Siguiente" data-trigger="hover">
+	</a>
+	<a href="{{ path('odiseo_conagra_frontend_quien_es_page', { 'page': '06' }) }}" class="arrowButton nextArrow hvr-rotate" 
+		data-toggle="popover" data-content="" data-placement="top" title="Siguiente" data-trigger="hover">
+	</a>
+</div>
+{% endblock %}

@@ -200,6 +200,130 @@ footer {
 	padding:0;
 }
 
+.quienesconagra .quienes_03 .marca{
+  position: relative;
+}
+.quienesconagra .quienes_03 .marca a{
+  display:block;
+}	
+.quienesconagra .quienes_03 .marca img{
+  margin: 0 auto;
+}
+.quienesconagra .quienes_03 .marca span{
+  position: absolute;
+  bottom: 33%;
+  left: 0%;
+  font-size: 22px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.quienesconagra .quienes_03 .marca.consumo span{
+  position: absolute;
+  bottom: 22%;
+}
+.quienesconagra .quienes_03 .marca.privada span{
+  position: absolute;
+  bottom: 22%;
+}
+
+.quienesconagra .quienes_04{
+  margin-top:3%;
+}	
+.quienesconagra .quienes_04 .marca{
+  position: relative;
+}
+.quienesconagra .quienes_04 .marca a{
+  display:block;
+}	
+.quienesconagra .quienes_04 .marca img{
+  margin: 0 auto;
+}
+.quienesconagra .quienes_04 .marca span{
+  position: absolute;
+  bottom: 9%;
+  left: 0%;
+  font-size: 22px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}	
+.quienesconagra .quienes_06 .marcas > div{
+  padding:0;
+}
+.quienesconagra .quienes_06 .marcas2 > div{
+  padding:0;
+}
+.quienesconagra .quienes_06 .marcas .marca1 img,.quienesconagra .quienes_06 .marcas2 .marca1 img{
+	float:right;
+}
+.quienesconagra .quienes_06 .marcas2{
+	margin-top:1%;
+}
+
+.quienesconagra .quienes_07 p {
+  color: #383838;
+  font-size: 16px;
+  font-weight: 500;
+}
+.quienesconagra .quienes_07 p.asterisk {
+  font-size: 13px;
+  font-weight: 100;
+}
+.quienesconagra .quienes_07 img{
+  position: absolute;
+  bottom: 1%;
+  max-width: 75%;
+  left: 12%;
+}
+.quienesconagra .subTitle {
+	font-family: 'hand_of_sean_demoregular';
+	font-size:	19px;
+}
+.quienesconagra .quienes_08 p {
+  color: #383838;
+  font-size: 17px;
+  font-weight: 500;
+}
+.quienesconagra .quienes_08 img{
+  position: absolute;
+  bottom: 1%;
+  max-width: 80%;
+  left: 12%;
+}
+.quienesconagra .quienes_09 .marcasComerciales{
+  width:100%;
+}
+.quienesconagra .quienes_09 .marcasComerciales > div{
+  width: 16%;
+  margin-right: 4%;
+  float:left;
+  position:relative;
+}
+.quienesconagra .quienes_09 .marcasComerciales p{
+  position: absolute;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 0px 10px;
+}
+.quienesconagra .quienes_09 .marcasComerciales .marca1 p{
+  bottom: 28%;
+}	
+.quienesconagra .quienes_09 .marcasComerciales .marca2 p{
+  bottom: 0%;
+}	
+.quienesconagra .quienes_09 .marcasComerciales .marca3 p{
+  bottom: 19%;
+}		
+.quienesconagra .quienes_09 .marcasComerciales .marca4 p{
+  bottom: 28%;
+}		
+.quienesconagra .quienes_09 .marcasComerciales .marca5 p{
+  bottom: 28%;
+}			
 #content .entrenamiento_marcas .mainTitle {
 	margin: 0 0 20px 0;
 }
