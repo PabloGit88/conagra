@@ -73,6 +73,24 @@
 /* Bootrstrap max MD (> 992 && <= 1200) */
 @media only screen and (max-width : 1200px)  
 {
+	.quienesconagra .quienes_09 .marcasComerciales p{
+	  font-size: 12px;
+	}
+	.quienesconagra .quienes_09 .marcasComerciales .marca1 p{
+	  bottom: 25%;
+	}	
+	.quienesconagra .quienes_09 .marcasComerciales .marca2 p{
+	  bottom: -3%;
+	}	
+	.quienesconagra .quienes_09 .marcasComerciales .marca3 p{
+	  bottom: 16%;
+	}		
+	.quienesconagra .quienes_09 .marcasComerciales .marca4 p{
+	  bottom: 25%;
+	}		
+	.quienesconagra .quienes_09 .marcasComerciales .marca5 p{
+	  bottom: 25%;
+	}	
 	#content {
 		width: 940px;
 	}
@@ -174,6 +192,24 @@
 /* Bootrstrap max SM (> 768 && <= 992) */
 @media only screen and (max-width : 992px)  
 { 
+	.quienesconagra .quienes_09 .marcasComerciales p{
+	  font-size: 9px;
+	}
+	.quienesconagra .quienes_09 .marcasComerciales .marca1 p{
+	  bottom: 25%;
+	}	
+	.quienesconagra .quienes_09 .marcasComerciales .marca2 p{
+	  bottom: -3%;
+	}	
+	.quienesconagra .quienes_09 .marcasComerciales .marca3 p{
+	  bottom: 16%;
+	}		
+	.quienesconagra .quienes_09 .marcasComerciales .marca4 p{
+	  bottom: 25%;
+	}		
+	.quienesconagra .quienes_09 .marcasComerciales .marca5 p{
+	  bottom: 25%;
+	}	
 	header .navbar-nav > li {
 		width: 80px;
 		font-size: 10px;
@@ -221,7 +257,31 @@
 	.quienesconagra .quienes_06 .marcas .marca1 img,.quienesconagra .quienes_06 .marcas2 .marca1 img{
 		float:none;
 	}
-	
+	.quienesconagra .quienes_09 .marcasComerciales > div{
+	  width: 42%;
+	  margin-right: 4%;
+	  float:left;
+	  position:relative;
+	  margin-top:3%;
+	}
+	.quienesconagra .quienes_09 .marcasComerciales p{
+	  font-size: 11px;
+	}
+	.quienesconagra .quienes_09 .marcasComerciales .marca1 p{
+	  bottom: 26%;
+	}	
+	.quienesconagra .quienes_09 .marcasComerciales .marca2 p{
+	  bottom: -2%;
+	}	
+	.quienesconagra .quienes_09 .marcasComerciales .marca3 p{
+	  bottom: 17%;
+	}		
+	.quienesconagra .quienes_09 .marcasComerciales .marca4 p{
+	  bottom: 26%;
+	}		
+	.quienesconagra .quienes_09 .marcasComerciales .marca5 p{
+	  bottom: 26%;
+	}		
 	header .logout {
 		position: absolute;
 		top: 10px;
