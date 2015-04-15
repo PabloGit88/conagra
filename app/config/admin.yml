@@ -1,0 +1,8 @@
+easy_admin:
+    formats:
+        date:     'd/m/Y'
+        time:     'H:i'
+        datetime: 'd/m/Y H:i:s'
+    site_name: 'ConAgra Foods'
+    list_actions: ['edit', 'show']
+#    entities:

@@ -1,7 +1,10 @@
 odiseo_conagra:
-    resource: "@OdiseoConAgraBundle/Resources/config/main.yml"
+    resource: "@OdiseoConAgraBundle/Resources/config/routing/main.yml"
     prefix:   /
     
 fos_user_registration_confirmed:
-    path:    /register/confirmed
-    defaults: { _controller: OdiseoConAgraBundle:Frontend/Home:showHome }
+    pattern: /register/confirmed
+    defaults:
+        _controller: FrameworkBundle:Redirect:redirect
+        route: odiseo_conangra_frontend_welcome
+        permanent: true

@@ -5,8 +5,6 @@ use FOS\UserBundle\Form\Handler\RegistrationFormHandler as BaseHandler;
 
 class RegistrationFormHandler extends BaseHandler
 {
-	
-	
 	public function process($confirmation = false)
 	{
 		$user = $this->userManager->createUser();
@@ -23,9 +21,7 @@ class RegistrationFormHandler extends BaseHandler
 		return false;
 	}
 	
-	private function validateForm(){
-		
-		
-		
+	private function validateForm()
+	{	
 	}
 }

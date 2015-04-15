@@ -4,6 +4,7 @@ namespace Odiseo\Bundle\ConAgraBundle\DataFixtures\ORM;
 
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\Finder\Finder;
+use Odiseo\Bundle\ProjectBundle\DataFixtures\ORM\DataFixture;
 use Odiseo\Bundle\ConAgraBundle\Entity\User;
 
 class LoadUserData extends DataFixture

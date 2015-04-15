@@ -5,11 +5,11 @@ namespace Odiseo\Bundle\ConAgraBundle\Entity;
 class TriviaAnswer
 {
 	protected $id;
-	protected $createdAt;
-	protected $updatedAt;
 	protected $title;
 	protected $position;
 	protected $question;
+	protected $createdAt;
+	protected $updatedAt;
 	
 	public function __construct()
 	{

@@ -5,6 +5,7 @@ namespace Odiseo\Bundle\ConAgraBundle\DataFixtures\ORM;
 use Doctrine\Common\Persistence\ObjectManager;
 use Odiseo\Bundle\ConAgraBundle\Entity\Country;
 use Odiseo\Bundle\ConAgraBundle\Entity\Distributor;
+use Odiseo\Bundle\ProjectBundle\DataFixtures\ORM\DataFixture;
 
 class LoadCountriesAndDistrubutorsData extends DataFixture
 {

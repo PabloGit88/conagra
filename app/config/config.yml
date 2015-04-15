@@ -1,6 +1,9 @@
 imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
+    - { resource: odiseo.yml }
+    - { resource: admin.yml }
+    - { resource: @OdiseoProjectBundle/Resources/config/app/main.yml }
 
 framework:
     #esi:             ~
@@ -33,7 +36,7 @@ twig:
 assetic:
     debug:          "%kernel.debug%"
     use_controller: false
-    bundles:        [ GeckoBackendBundle, OdiseoConAgraBundle ]
+    bundles:        [ OdiseoBackendBundle, EasyAdminBundle, OdiseoConAgraBundle ]
     #java: /usr/bin/java
     filters:
         cssrewrite: ~
@@ -70,9 +73,6 @@ swiftmailer:
     
     
 fos_user:
-    db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
-    firewall_name: main
-    user_class: Odiseo\Bundle\ConAgraBundle\Entity\User
     registration:
         form:
             type: conagra_user_registration
@@ -80,14 +80,6 @@ fos_user:
             
 sylius_resource:
     resources:
-        odiseo_conagra.user:
-            driver: doctrine/orm
-            classes:
-                model: Odiseo\Bundle\ConAgraBundle\Entity\User
-        odiseo_conagra.translation:
-            driver: doctrine/orm
-            classes:
-                model: Odiseo\Bundle\ConAgraBundle\Entity\LanguageTranslation
         odiseo_conagra.country:
             driver: doctrine/orm
             classes:
@@ -106,23 +98,23 @@ sylius_resource:
                 model: Odiseo\Bundle\ConAgraBundle\Entity\TriviaAnswer
                 
 lunetics_locale:
-  strict_mode: true # defaults to false
-  allowed_locales:
-    - es
-    - en
-    - pt
-  guessing_order:
-    - query
-    - router
-    - session
-    - cookie
-    - browser
-  switcher:
-    use_controller: true
-    use_referrer: true   
-    template: OdiseoConAgraBundle:Frontend:switcher_language.html.twig
-    show_current_locale: true
-    
+    strict_mode: true # defaults to false
+    allowed_locales:
+        - es
+        - en
+        - pt
+    guessing_order:
+        - query
+        - router
+        - session
+        - cookie
+        - browser
+    switcher:
+        use_controller: true
+        use_referrer: true   
+        template: OdiseoConAgraBundle:Frontend:switcher_language.html.twig
+        show_current_locale: true
+        
 stof_doctrine_extensions:
     default_locale: en_US
     orm:

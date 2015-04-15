@@ -2,17 +2,17 @@
 
 namespace Odiseo\Bundle\ConAgraBundle\Entity;
 
-
 use Doctrine\Common\Collections\ArrayCollection;
+
 class TriviaQuestion
 {
 	protected $id;
-	protected $createdAt;
-	protected $updatedAt;
 	protected $title;
 	protected $country;
 	protected $position;
 	protected $answers;
+	protected $createdAt;
+	protected $updatedAt;
 	
 	public function __construct()
 	{

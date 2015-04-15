@@ -5,6 +5,7 @@ namespace Odiseo\Bundle\ConAgraBundle\DataFixtures\ORM;
 use Doctrine\Common\Persistence\ObjectManager;
 use Odiseo\Bundle\ConAgraBundle\Entity\TriviaQuestion;
 use Odiseo\Bundle\ConAgraBundle\Entity\TriviaAnswer;
+use Odiseo\Bundle\ProjectBundle\DataFixtures\ORM\DataFixture;
 
 class LoadTriviaData extends DataFixture
 {

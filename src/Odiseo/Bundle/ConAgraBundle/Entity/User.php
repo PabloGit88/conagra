@@ -3,7 +3,7 @@
 namespace Odiseo\Bundle\ConAgraBundle\Entity;
 
 use DateTime;
-use FOS\UserBundle\Entity\User as BaseUser;
+use Odiseo\Bundle\ProjectBundle\Entity\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -11,11 +11,8 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class User extends BaseUser
 {
-    protected $createdAt;
-    protected $updatedAt;
     protected $country;
     protected $province;
-    protected $fullName;
     protected $position;
     protected $distributor;
     protected $phone;
@@ -23,79 +20,64 @@ class User extends BaseUser
     public function __construct()
     {
     	parent::__construct();
-    	$this->createdAt = new DateTime('now');
-    }
-  
-    public function getCreatedAt()
-    {
-        return $this->createdAt;
     }
 
-    public function setUpdatedAt($updatedAt)
-    {
-        $this->updatedAt = $updatedAt;
-        return $this;
-    }
-
-    public function getUpdatedAt()
-    {
-        return $this->updatedAt;
-    }
- 
     public function __toString()
     {
     	return $this->getUsername();
     }
         
-    public function getProvince() {
+    public function getProvince() 
+    {
     	return $this->province;
     }
-    public function setProvince($province) {
+    
+    public function setProvince($province) 
+    {
     	$this->province = $province;
     	return $this;
     }
 	
-    public function getCountry() {
+    public function getCountry() 
+    {
     	return $this->country;
     }
     
-    public function setCountry(COuntry $country) {
+    public function setCountry(Country $country) 
+    {
     	$this->country = $country;
     	return $this;
     }
-    
-	public function getFullName() {
-		return $this->fullName;
-	}
 	
-	public function setFullName($fullName) {
-		$this->fullName = $fullName;
-		return $this;
-	}
-	
-	public function getPosition() {
+	public function getPosition() 
+	{
 		return $this->position;
 	}
 	
-	public function setPosition($position) {
+	public function setPosition($position) 
+	{
 		$this->position = $position;
 		return $this;
 	}
 	
-	public function getDistributor() {
+	public function getDistributor() 
+	{
 		return $this->distributor;
 	}
 	
-	public function setDistributor(Distributor $distributor) {
+	public function setDistributor(Distributor $distributor) 
+	{
 		$this->distributor = $distributor;
 		return $this;
 	}
 	
-	public function getPhone() {
+	public function getPhone() 
+	{
 		return $this->phone;
 	}
 	
-	public function setPhone($phone) {
+	public function setPhone($phone) 
+	{
 		$this->phone = $phone;
 		return $this;
 	}
@@ -113,6 +95,4 @@ class User extends BaseUser
     
     	return $this;
     }
-	
-
 }

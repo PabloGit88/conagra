@@ -1,31 +1,7 @@
 Odiseo\Bundle\ConAgraBundle\Entity\User:
     type: entity
-    table: fos_user
-    id:
-        id:
-            type: integer
-            id: true
-            generator:
-                strategy: AUTO
+    table: user
     fields:
-        createdAt:
-            column: created_at
-            type: datetime
-            gedmo:
-              timestampable:
-                on: create
-        updatedAt:
-            column: updated_at
-            type: datetime
-            nullable: true
-            gedmo:
-              timestampable:
-                on: update
-        fullName:
-            column: full_name
-            type: string
-            length: 255
-            nullable: true  
         position:
             column: position
             type: string

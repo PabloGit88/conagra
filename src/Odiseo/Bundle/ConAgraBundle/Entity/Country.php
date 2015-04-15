@@ -5,10 +5,10 @@ namespace Odiseo\Bundle\ConAgraBundle\Entity;
 class Country
 {
 	protected $id;
-	protected $createdAt;
-	protected $updatedAt;
 	protected $name;
 	protected $isoCode;
+	protected $createdAt;
+	protected $updatedAt;
 	
 	public function __construct()
 	{

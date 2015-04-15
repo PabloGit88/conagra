@@ -5,10 +5,10 @@ namespace Odiseo\Bundle\ConAgraBundle\Entity;
 class Distributor
 {
 	protected $id;
-	protected $createdAt;
-	protected $updatedAt;
 	protected $name;
 	protected $country;
+	protected $createdAt;
+	protected $updatedAt;
 	
 	public function __construct()
 	{
