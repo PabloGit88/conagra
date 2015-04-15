@@ -1987,12 +1987,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/odiseoteam/OdiseoBackendBundle.git",
-                "reference": "17fe0814e5e156c0b8bfc91711d5abf613599e3b"
+                "reference": "4a11780c38bdeaf4943f42f83cff8e1ecac775ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/odiseoteam/OdiseoBackendBundle/zipball/17fe0814e5e156c0b8bfc91711d5abf613599e3b",
-                "reference": "17fe0814e5e156c0b8bfc91711d5abf613599e3b",
+                "url": "https://api.github.com/repos/odiseoteam/OdiseoBackendBundle/zipball/4a11780c38bdeaf4943f42f83cff8e1ecac775ff",
+                "reference": "4a11780c38bdeaf4943f42f83cff8e1ecac775ff",
                 "shasum": ""
             },
             "require": {
@@ -2023,7 +2023,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2015-03-30 18:08:31"
+            "time": "2015-04-15 16:06:02"
         },
         {
             "name": "odiseoteam/odiseo-project-bundle",

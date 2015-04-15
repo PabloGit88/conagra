@@ -1,24 +1,29 @@
 <form class="form" action="{{ path('fos_user_registration_register') }}"  {{ form_enctype(form) }} method="post">
        	<div class="row form-group">
-           	<div class="col-xs-12 col-sm-6 customSelect">
+           	<div class="col-xs-12 col-sm-6">
+           		<div class="customSelect">
            		 {{ form_widget(form.country) }}
+            	</div>
            	</div>
 			<div class="col-xs-12 col-sm-6">
-					
 				{{ form_widget(form.username) }}
 			</div>
        	</div>
 		<div class="row form-group">
            	<div class="col-xs-12 col-sm-6">
+           		<div class="customSelect">
                  {{ form_widget(form.distributor, {'attr': { 'data-country-information-url' :  path('odiseo_conagra_frontend_distribuitors')}  }) }}
+                 </div>
            	</div>  
 			<div class="col-xs-12 col-sm-6">
 				 {{ form_widget(form.phone) }}
 			</div>   
 		</div>
 		<div class="row form-group">
-           	<div class="col-xs-12 col-sm-6 customSelect">
+           	<div class="col-xs-12 col-sm-6">
+           		<div class="customSelect">
            		 {{ form_widget(form.position, {'attr': {'class': 'form-control', 'data-rule-required' : 'true'}  }) }}
+           		</div>
        		</div>
 			<div class="col-xs-12 col-sm-6">
 				

@@ -178,6 +178,11 @@ footer {
 	width: 1140px;
 	overflow: visible;
 }
+
+.container img.inicio {
+  position: absolute;
+  left: 31%;
+}
 .quienesconagra .mainTitle {
 	font-family: 'hand_of_sean_demoregular';
 	font-size: 22px;
@@ -186,6 +191,25 @@ footer {
 	background-size: contain;
 	background-position: left center;
 	margin-bottom:22px;
+}
+.quienesconagra .customInfoBox{
+	position:relative !important;
+} 
+.quienesconagra .inicio .videos{
+  text-align:center;
+}
+.quienesconagra .inicio .videos a{
+  display:inline-block;
+  position:relative;
+}
+.quienesconagra .inicio .video span{
+  position: absolute;
+  bottom: 33%;
+  left: 0%;
+  font-size: 22px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
 }
 .quienesconagra .quienes_03 p {
   color: #383838;
