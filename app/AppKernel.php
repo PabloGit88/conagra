@@ -11,7 +11,8 @@ class AppKernel extends Kernel
 			new JavierEguiluz\Bundle\EasyAdminBundle\EasyAdminBundle(),
             new Odiseo\Bundle\ConAgraBundle\OdiseoConAgraBundle(),
 			new Lunetics\LocaleBundle\LuneticsLocaleBundle(),
-			new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle()
+			new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
+			new Lexik\Bundle\TranslationBundle\LexikTranslationBundle()
 		);
 		
 		if (in_array($this->getEnvironment(), array('dev', 'test'))) {

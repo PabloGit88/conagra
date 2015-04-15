@@ -96,27 +96,23 @@ sylius_resource:
             driver: doctrine/orm
             classes:
                 model: Odiseo\Bundle\ConAgraBundle\Entity\TriviaAnswer
-                
+       
+stof_doctrine_extensions:
+    default_locale: en_US
+    orm:
+        default:
+            sortable: true
+
 lunetics_locale:
     strict_mode: true # defaults to false
-    allowed_locales:
-        - es
-        - en
-        - pt
-    guessing_order:
-        - query
-        - router
-        - session
-        - cookie
-        - browser
+    allowed_locales: [es, en, pt]
+    guessing_order: [query, router, session, cookie, browser]
     switcher:
         use_controller: true
         use_referrer: true   
         template: OdiseoConAgraBundle:Frontend:switcher_language.html.twig
         show_current_locale: true
         
-stof_doctrine_extensions:
-    default_locale: en_US
-    orm:
-        default:
-            sortable: true
+lexik_translation:
+    fallback_locale: "%locale%"      # (required) default locale to use
+    managed_locales: [es, en, pt]    # (required) locales that the bundle have to manage
