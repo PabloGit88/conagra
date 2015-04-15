@@ -1648,24 +1648,24 @@ img.marca_descripcion {
 	padding: 0 30px;
 	font-size: 13px;
 }
-
-.arrowButton.nextArrow {
+.arrowButton{
 	position: absolute;
-	background-image: url("../images/arrowButtonRight.png");
-	background-repeat: no-repeat;
-	/*background-position: 94% 100%;*/
 	width: 88px;
 	height: 61px;
 	bottom: 5%;
 	right: 0;
+	
+}
+.arrowButton.nextArrow {
+	background-image: url("../images/arrowButtonRight.png");
+	background-repeat: no-repeat;
+	bottom: 5%;
+	right: 0;
 }
 .arrowButton.prevArrow{
-	position: absolute;
 	background-image: url("../images/arrowButtonLeft.png");
 	background-repeat: no-repeat;
-	/*background-position: 94% 100%;*/
-	width: 88px;
-	height: 61px;
+	left:0%;
 	bottom: 5%;
 }
 .customDiv_foreground p:nth-child(1) {
