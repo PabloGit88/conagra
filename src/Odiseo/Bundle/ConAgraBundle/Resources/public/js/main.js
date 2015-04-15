@@ -136,12 +136,6 @@
     	 });
     	//popover
     	$('.pageButton.nextButton, .pageButton.previousButton').popover({ trigger: "hover" });
-    	$('.marcasComerciales > div p').flowtype({
-    		 minimum   : 50,
-    		 maximum   : 182,
-    		 minFont   : 9,
-    		 maxFont   : 14
-    	});
     });
     
 })( jQuery );

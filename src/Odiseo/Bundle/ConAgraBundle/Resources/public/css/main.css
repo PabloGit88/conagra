@@ -248,7 +248,30 @@ footer {
   width: 100%;
   text-align: center;
   color: #fff;
-}	
+}		
+.quienesconagra .quienes_05 .graphics{
+  width: 56%;
+  heigth:50%;
+  margin: 0 auto;
+}
+.quienesconagra .quienes_05 .mainTitle{
+	margin-top:0px;
+}		
+.quienesconagra .quienes_05 svg{
+	width:100%;
+	height:100%;
+	text-align:center;
+}		
+.quienesconagra .quienes_05 h3{
+  text-align:center;
+  font-weight:bold;
+}		
+.quienesconagra .quienes_05 .asterisk{
+  text-align:center;
+  margin-top:10px;
+  margin-bottom:0px;
+  font-size:13px;
+}
 .quienesconagra .quienes_06 .marcas > div{
   padding:0;
 }
