@@ -34,9 +34,18 @@ html, body {
 
 
 /** Welcome screen **/
-section .welcome .logo {
-	margin-top: 1%;
-}	
+
+section#content{
+	height:70%;
+}
+section#content .intro{
+  display: table;
+  height: 100%;
+}
+section#content .intro .welcome{
+  display: table-cell;
+  vertical-align: middle;
+}
 
 section .welcome h2 {
 	font-weight: 300;
