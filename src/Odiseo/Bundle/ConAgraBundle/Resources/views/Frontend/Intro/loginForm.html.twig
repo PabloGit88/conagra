@@ -4,9 +4,10 @@
 </div>
 {% endif %}	
 <form class="form" action="{{ path("fos_user_security_check") }}" method="post">
+	<input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
 		<div class="row form-group">
 			<div class="col-xs-12 col-sm-12">
-				<input type="text" class="form-control" name="_username" id="register_mail" placeholder="{{ 'login_email' | trans |  raw }}"
+				<input type="text" class="form-control" value="{{ last_username }}" name="_username" id="register_mail" placeholder="{{ 'login_email' | trans |  raw }}"
 					data-rule-required="true"
 				>
 			</div> 
