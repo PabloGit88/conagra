@@ -12,8 +12,8 @@
 		"php" : ">=5.3.3",
 		"odiseoteam/odiseo-project-bundle" : "dev-master",
 		"odiseoteam/odiseo-backend-bundle" : "dev-master",
-		"stof/doctrine-extensions-bundle" : "1.1.*",
-		"lunetics/locale-bundle" : "2.2.*"
+		"pulse00/ffmpeg-bundle" : "dev-master",
+		"facebook/php-sdk-v4" : "4.0.*"
 	},
 	"require-dev" : {
 		"phpunit/phpunit" : "3.7.*"
