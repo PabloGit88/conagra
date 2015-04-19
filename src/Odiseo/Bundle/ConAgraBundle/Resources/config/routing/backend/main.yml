@@ -10,3 +10,6 @@ odiseo_conagra_backend_dashboard:
 lexik_translation_edition:
     resource: "@LexikTranslationBundle/Resources/config/routing.yml"
     prefix:   /translations
+
+odiseo_conagra_backend_translations:
+    pattern: /translations/grid

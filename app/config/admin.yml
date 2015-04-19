@@ -39,3 +39,115 @@ easy_admin:
                     - { property: 'phone', label: 'Telefono' }
                     - 'dni'
                     - 'email'
+        Country:
+            label: 'Paises'
+            class: Odiseo\Bundle\ConAgraBundle\Entity\Country
+            list:
+                title: "Paises"
+                fields: 
+                    - 'id'
+                    - { property: 'name', label: 'Nombre' }
+                    - { property: 'isoCode', label: 'Codigo Iso' }
+            new:
+                action_label: "Nuevo Pais"
+                fields: 
+                    - { property: 'name', label: 'Nombre' }
+                    - { property: 'isoCode', label: 'Codigo Iso' }
+                title:  "Nuevo Pais"
+            edit:
+                fields: 
+                    - { property: 'name', label: 'Nombre' }
+                    - { property: 'isoCode', label: 'Codigo Iso' }
+                title:  'Editar Pais'
+            show:
+                title: "Mostrando Pais "
+                fields: 
+                    - 'id'
+                    - { property: 'name', label: 'Nombre' }
+                    - { property: 'isoCode', label: 'Codigo Iso' }
+        Distributor:
+            label: 'Distribuidores'
+            class: Odiseo\Bundle\ConAgraBundle\Entity\Distributor
+            list:
+                title: "Distribuidores"
+                fields: 
+                    - 'id'
+                    - { property: 'name', label: 'Nombre' }
+                    - { property: 'country', label: 'Pais' }
+            new:
+                action_label: "Nuevo Distribuidor"
+                fields: 
+                    - { property: 'name', label: 'Nombre' }
+                    - { property: 'country', label: 'Pais' }
+                title:  "Nuevo Distribuidor"
+            edit:
+                fields: 
+                    - { property: 'name', label: 'Nombre' }
+                    - { property: 'country', label: 'Pais' }
+                title:  'Editar Distribuidor'
+            show:
+                title: "Mostrando Distribuidor "
+                fields: 
+                    - 'id'
+                    - { property: 'name', label: 'Nombre' }
+                    - { property: 'country', label: 'Pais' }
+        TriviaAnswer:
+            label: 'Respuestas'
+            class: Odiseo\Bundle\ConAgraBundle\Entity\TriviaAnswer
+            list:
+                title: "Respuestas"
+                fields: 
+                    - 'id'
+                    - { property: 'title', label: 'Titulo' }
+                    - { property: 'position', label: 'Posicion' }
+                    - { property: 'question', label: 'Pregunta' }
+            new:
+                action_label: "Nueva Respuesta"
+                fields: 
+                    - { property: 'title', label: 'Titulo' }
+                    - { property: 'position', label: 'Posicion' }
+                    - { property: 'question', label: 'Pregunta' }
+                title:  "Nueva Respuesta"
+            edit:
+                fields: 
+                    - { property: 'title', label: 'Titulo' }
+                    - { property: 'position', label: 'Posicion' }
+                    - { property: 'question', label: 'Pregunta' }
+                title:  'Editar Respuesta'
+            show:
+                title: "Mostrando Respuesta "
+                fields: 
+                    - 'id'
+                    - { property: 'title', label: 'Titulo' }
+                    - { property: 'position', label: 'Posicion' }
+                    - { property: 'question', label: 'Pregunta' }
+        TriviaQuestion:
+            label: 'Preguntas'
+            class: Odiseo\Bundle\ConAgraBundle\Entity\TriviaQuestion
+            list:
+                title: "Preguntas"
+                fields: 
+                    - 'id'
+                    - { property: 'title', label: 'Titulo' }
+                    - { property: 'position', label: 'Posicion' }
+                    - { property: 'country', label: 'Pais' }
+            new:
+                action_label: "Nueva Pregunta"
+                fields: 
+                    - { property: 'title', label: 'Titulo' }
+                    - { property: 'position', label: 'Posicion' }
+                    - { property: 'country', label: 'Pais' }
+                title:  "Nueva Pregunta"
+            edit:
+                fields: 
+                    - { property: 'title', label: 'Titulo' }
+                    - { property: 'position', label: 'Posicion' }
+                    - { property: 'country', label: 'Pais' }
+                title:  'Editar Pregunta'
+            show:
+                title: "Mostrando Pregunta "
+                fields: 
+                    - 'id'
+                    - { property: 'title', label: 'Titulo' }
+                    - { property: 'position', label: 'Posicion' }
+                    - { property: 'country', label: 'Pais' }

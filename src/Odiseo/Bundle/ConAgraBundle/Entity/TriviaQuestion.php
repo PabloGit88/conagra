@@ -96,4 +96,9 @@ class TriviaQuestion
 		$this->answers = $answers;
 		return $this;
 	}
+	
+	public function __toString()
+	{
+		return $this->title;
+	}
 }
